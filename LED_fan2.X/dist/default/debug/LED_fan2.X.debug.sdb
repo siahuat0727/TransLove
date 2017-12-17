@@ -33,15 +33,15 @@
 [v _mode_walker mode_walker `(v  1 e 1 0 ]
 "384
 [v _mode_TransLove mode_TransLove `(v  1 e 1 0 ]
-"566
+"543
 [v _display display `(v  1 e 1 0 ]
-"652
+"629
 [v _mode_clock mode_clock `(v  1 e 1 0 ]
-"795
+"772
 [v _update_time update_time `(v  1 e 1 0 ]
-"806
+"783
 [v _tc_int tc_int `II(v  1 e 1 0 ]
-"819
+"796
 [v _main main `(v  1 e 1 0 ]
 "975 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f4520.h
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
@@ -189,10 +189,10 @@
 [v _minutes minutes `i  1 e 2 0 ]
 "25
 [v _hours hours `i  1 e 2 0 ]
-"819
+"796
 [v _main main `(v  1 e 1 0 ]
 {
-"845
+"822
 } 0
 "27
 [v _mode_walker mode_walker `(v  1 e 1 0 ]
@@ -241,55 +241,55 @@
 [v mode_walker@F3012 F3012 `[4]i  1 s 8 F3012 ]
 "223
 } 0
-"652
+"629
 [v _mode_clock mode_clock `(v  1 e 1 0 ]
 {
-"784
+"761
 [v mode_clock@dark dark `i  1 a 2 134 ]
-"780
+"757
 [v mode_clock@bright bright `i  1 a 2 132 ]
-"777
+"754
 [v mode_clock@j j `i  1 a 2 140 ]
-"776
+"753
 [v mode_clock@show show `*.39ui  1 a 2 138 ]
-"775
+"752
 [v mode_clock@i i `i  1 a 2 142 ]
-"739
+"716
 [v mode_clock@delay delay `i  1 a 2 144 ]
-"764
+"741
 [v mode_clock@secL secL `i  1 a 2 130 ]
-"762
+"739
 [v mode_clock@secH secH `i  1 a 2 128 ]
-"747
+"724
 [v mode_clock@minL minL `i  1 a 2 126 ]
-"745
+"722
 [v mode_clock@minH minH `i  1 a 2 124 ]
-"654
+"631
 [v mode_clock@XMAS XMAS `[6][10]i  1 a 120 0 ]
-"730
+"707
 [v mode_clock@display_cycle display_cycle `l  1 a 4 120 ]
-"653
+"630
 [v mode_clock@state state `i  1 a 2 136 ]
 [v mode_clock@F3075 F3075 `[6][10]i  1 s 120 F3075 ]
-"793
+"770
 } 0
-"566
+"543
 [v _display display `(v  1 e 1 0 ]
 {
-"645
+"622
 [v display@dark_i dark_i `i  1 a 2 102 ]
-"642
+"619
 [v display@bright_i bright_i `i  1 a 2 100 ]
-"640
+"617
 [v display@i i `i  1 a 2 106 ]
-"567
+"544
 [v display@num num `[10][5]i  1 a 100 0 ]
-"639
+"616
 [v display@iter iter `*.39i  1 a 2 104 ]
-"566
+"543
 [v display@n n `i  1 p 2 26 ]
 [v display@F3065 F3065 `[10][5]i  1 s 100 F3065 ]
-"650
+"627
 } 0
 "15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
@@ -328,14 +328,16 @@
 "384 C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
 [v _mode_TransLove mode_TransLove `(v  1 e 1 0 ]
 {
-"489
+"487
 [v mode_TransLove@delay delay `i  1 a 2 97 ]
-"548
-[v mode_TransLove@dark dark `i  1 a 2 93 ]
-"545
-[v mode_TransLove@bright bright `i  1 a 2 91 ]
-"488
+"531
+[v mode_TransLove@dark dark `i  1 a 2 95 ]
+"528
+[v mode_TransLove@bright bright `i  1 a 2 93 ]
+"486
 [v mode_TransLove@i i `i  1 a 2 101 ]
+"536
+[v mode_TransLove@delay_323 delay `i  1 a 2 87 ]
 "397
 [v mode_TransLove@arrow arrow `[16]ui  1 a 32 0 ]
 "386
@@ -358,12 +360,10 @@
 [v mode_TransLove@R R `[5]uc  1 a 5 47 ]
 "416
 [v mode_TransLove@T T `[5]uc  1 a 5 42 ]
-"486
-[v mode_TransLove@cycle cycle `l  1 a 4 87 ]
-"485
-[v mode_TransLove@arrow_i arrow_i `i  1 a 2 99 ]
 "484
-[v mode_TransLove@stop_arrow stop_arrow `i  1 a 2 95 ]
+[v mode_TransLove@cycle cycle `l  1 a 4 89 ]
+"483
+[v mode_TransLove@arrow_i arrow_i `i  1 a 2 99 ]
 "384
 [v mode_TransLove@F3033 F3033 `[10]uc  1 s 10 F3033 ]
 "396
@@ -386,15 +386,15 @@
 [v mode_TransLove@F3051 F3051 `[5]uc  1 s 5 F3051 ]
 "471
 [v mode_TransLove@F3053 F3053 `[5]uc  1 s 5 F3053 ]
-"564
+"541
 } 0
-"806
+"783
 [v _tc_int tc_int `II(v  1 e 1 0 ]
 {
-"817
+"794
 } 0
-"795
+"772
 [v _update_time update_time `(v  1 e 1 0 ]
 {
-"804
+"781
 } 0

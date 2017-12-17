@@ -477,9 +477,11 @@ void mode_TransLove(){
                             0b10101
                          };
     
-#define LOVE_START 74
-#define LOVE_END 84
-#define FOR 95
+#define LOVE_START 87
+#define LOVE_END 97
+#define FOR 99
+#define STOP_ARROW 120
+    int stop_arrow = STOP_ARROW;
     int arrow_i = -15;
     long int cycle = -1;
     while(cycle--){
@@ -497,28 +499,43 @@ void mode_TransLove(){
                 case 58: delay += 4;
                 while(delay--);
             }
-//            if(i >= 0 && i < 5){
-//                delay = 100;
-//                while(delay--);
-//            }
-            if(i >= 5  && i < 10)
-                LATA |= T[i - 5];
-            if(i >= 11 && i < 16)
-                LATA |= R[i - 11];
-            if(i >= 17 && i < 22)
-                LATA |= A[i - 17];
-            if(i >= 23  && i < 28)
-                LATA |= N[i - 23];
-            if(i >= 29 && i < 34)
-                LATA |= S[i - 29];
-            if(i >= 35  && i < 40)
-                LATA |= L[i - 35];
-            if(i >= 41 && i < 46)
-                LATA |= O[i - 41];
-            if(i >= 47 && i < 52)
-                LATA |= V[i - 47];
-            if(i >= 53 && i < 58)
-                LATA |= E[i - 53];
+            if(i < 20 && i >= 15)
+                LATA |= T[i - 15];
+            if(i < 26 && i >= 21)
+                LATA |= R[i - 21];
+            if(i < 32 && i >= 27)
+                LATA |= A[i - 27];
+            if(i >= 33  && i < 38)
+                LATA |= N[i - 33];
+            if(i < 44 && i >= 39)
+                LATA |= S[i - 39];
+            if(i >= 45  && i < 50)
+                LATA |= L[i - 45];
+            if(i >= 51 && i < 56)
+                LATA |= O[i - 51];
+            if(i >= 57 && i < 62)
+                LATA |= V[i - 57];
+            if(i >= 63 && i < 68)
+                LATA |= E[i - 63];
+            
+//            if(i >= 15  && i < 20)
+//                LATA |= T[i - 15];
+//            if(i < 26 && i >= 21)
+//                LATA |= R[i - 21];
+//            if(i >= 27 && i < 32)
+//                LATA |= A[i - 27];
+//            if(i < 38 && i >= 33)
+//                LATA |= N[i - 33];
+//            if(i >= 39 && i < 44)
+//                LATA |= S[i - 39];
+//            if(i < 50 && i >= 45)
+//                LATA |= L[i - 45];
+//            if(i >= 51 && i < 56)
+//                LATA |= O[i - 51];
+//            if(i < 62 && i >= 57)
+//                LATA |= V[i - 57];
+//            if(i >= 63 && i < 68)
+//                LATA |= E[i - 63];
             if(i >= LOVE_START && i < LOVE_END)
                 LATA |= love[i-LOVE_START];
             if(i >= arrow_i && i < arrow_i + ARROW_COLUMN)
@@ -531,8 +548,16 @@ void mode_TransLove(){
             int dark = 40;
             while(dark--);
         }
-        if(++arrow_i > FOR-15)
+        
+        if(arrow_i == LOVE_START-3)
+            if(--stop_arrow)
+                --arrow_i;
+        
+        if(++arrow_i > FOR-15){
+            stop_arrow = STOP_ARROW;
             arrow_i = -15;
+        }
+        
     }
 #undef LOVE_START
 #undef LOVE_END
