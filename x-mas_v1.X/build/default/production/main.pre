@@ -1,5 +1,5 @@
 
-# 1 "main2.c"
+# 1 "main.c"
 
 # 26 "C:\Program Files (x86)\Microchip\xc8\v1.44\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -3823,8 +3823,80 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.44\include\__size_t.h"
+typedef unsigned size_t;
 
-# 4 "main2.c"
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.44\include\stdlib.h"
+typedef unsigned short wchar_t;
+
+# 15
+typedef struct {
+int rem;
+int quot;
+} div_t;
+typedef struct {
+unsigned rem;
+unsigned quot;
+} udiv_t;
+typedef struct {
+long quot;
+long rem;
+} ldiv_t;
+typedef struct {
+unsigned long quot;
+unsigned long rem;
+} uldiv_t;
+
+# 53
+extern double atof(const char *);
+extern double strtod(const char *, const char **);
+extern int atoi(const char *);
+extern unsigned xtoi(const char *);
+extern long atol(const char *);
+extern long strtol(const char *, char **, int);
+
+extern int rand(void);
+extern void srand(unsigned int);
+extern void * calloc(size_t, size_t);
+extern div_t div(int numer, int denom);
+extern udiv_t udiv(unsigned numer, unsigned denom);
+extern ldiv_t ldiv(long numer, long denom);
+extern uldiv_t uldiv(unsigned long numer,unsigned long denom);
+extern unsigned long _lrotl(unsigned long value, unsigned int shift);
+extern unsigned long _lrotr(unsigned long value, unsigned int shift);
+extern unsigned int _rotl(unsigned int value, unsigned int shift);
+extern unsigned int _rotr(unsigned int value, unsigned int shift);
+
+
+
+
+extern void * malloc(size_t);
+extern void free(void *);
+extern void * realloc(void *, size_t);
+
+# 86
+extern int atexit(void (*)(void));
+extern char * getenv(const char *);
+extern char ** environ;
+extern int system(char *);
+extern void qsort(void *, size_t, size_t, int (*)(const void *, const void *));
+extern void * bsearch(const void *, void *, size_t, size_t, int(*)(const void *, const void *));
+extern int abs(int);
+extern long labs(long);
+
+extern char * itoa(char * buf, int val, int base);
+extern char * utoa(char * buf, unsigned val, int base);
+
+
+
+
+extern char * ltoa(char * buf, long val, int base);
+extern char * ultoa(char * buf, unsigned long val, int base);
+
+extern char * ftoa(float f, int * status);
+
+
+# 13 "main.c"
 #pragma config OSC = INTIO67
 
 #pragma config WDT = OFF
@@ -3832,773 +3904,143 @@ extern __nonreentrant void _delay3(unsigned char);
 #pragma config PBADEN = OFF
 #pragma config MCLRE = ON
 
-#pragma config LVP = ON
-
-typedef int bool;
-
-# 20
-int count=0;
+#pragma config LVP = OFF
 
 
-int seconds;
-int minutes;
-int hours;
 
-void mode_tree(){
+void UART_WRITE(char);
+void UART_READ();
+void UART_INIT();
+void ISR_INIT();
+void LED_DISP();
+void show_words();
+char* next(char* ptr);
+void add_word(char c);
 
-int tree[1][21] =
-{
-{
-0b0100000000,
-0b0000000000,
-0b0000000000,
-0b0110000000,
-0b0000100000,
-0b0001100000,
-0b0100010000,
-0b0000100100,
-0b0100001110,
-0b1100100101,
-0b0100001110,
-0b0000100100,
-0b0100010000,
-0b0001100000,
-0b0000100000,
-0b0110000000,
-0b0000000000,
-0b0000000000,
-0b0100000000,
-}
-};
-while(1){
-int cycle = 100;
-while(cycle--){
-int* show = (int*)tree[0];
-for(int i = 0; i < 21; ++i, ++show){
-LATA = *show;
-LATD = *show >> 8;
-int bright = 30;
-while(bright--);
-LATA = LATD = 0;
-int dark = 30;
-while(dark--);
-}
-int delay = 10650;
-while(delay--);
-}
-cycle = 500;
-int move = 0;
-while(cycle--){
+char data[250] = "Welcome to TransLove <3 <3 <3";
+char* now = (char*)data;
+char* tail = data + 250;
+char temp;
 
-int* show = (int*)tree[0];
-for(int i = 0; i < 21; ++i, ++show){
-LATA = *show;
-LATD = *show >> 8;
-int bright = 30;
-while(bright--);
-LATA = LATD = 0;
-int dark = 30;
-while(dark--);
-}
-int delay = 10640;
-if(cycle & 1)
-delay += move;
-else
-delay -= move;
-move += 25;
-while(delay--);
-}
-}
-}
-
-void mode_walker(){
-
-# 101
-int walker[6][9] =
-{
-{
-0b0000000000,
-0b1000000000,
-0b0100100000,
-0b0011010000,
-0b0001111111,
-0b1010100111,
-0b0100010000,
-0b0000000000,
-0b0000000000
-},
-{
-0b0000000000,
-0b0010000000,
-0b0100110000,
-0b0010010000,
-0b0001111111,
-0b1010010111,
-0b0100100000,
-0b0000100000,
-0b0000000000
-},
-{
-0b0010000000,
-0b0100001000,
-0b0010001000,
-0b0001010000,
-0b0010111111,
-0b1100010111,
-0b0000100000,
-0b0001000000,
-0b0000000000
-},
-{
-0b0000000000,
-0b0101000000,
-0b0100100000,
-0b0010010000,
-0b1101111111,
-0b0001010111,
-0b0000100000,
-0b0000000000,
-0b0000000000
-},
-{
-0b0000000000,
-0b1000000000,
-0b0100000000,
-0b1010110000,
-0b0101111111,
-0b0000110111,
-0b0000000000,
-0b0000000000,
-0b0000000000
-},
-{
-0b1000000000,
-0b0100000000,
-0b0010000000,
-0b0001010000,
-0b0001111111,
-0b0111010111,
-0b0100100000,
-0b0000010000,
-0b0000000000
-}
-};
-
-bool four[4] = {1};
-int state_change_cycle = 160;
-int state = 0;
-long int move = 1000;
-bool update = 0;
-bool update_next_time = 0;
-const int pic_cycle = 3;
-int pic_cycle_i = 0;
-int pic_i = 0;
-unsigned int* show;
-
-int display_cycle = 700;
-while(display_cycle--){
-if(move > 0)
-move -= 30;
-else{
-int delay = 20;
-while(delay--);
-}
-if(update_next_time == 1){
-update_next_time = 0;
-
-switch(state){
-case 4:
-four[2] = 0;
-case 3:
-four[1] = four[3] = 0;
-}
-}
-if(update == 0 && move <= 0){
-update = 1;
-update_next_time = 1;
-move = 0;
-}
-
-
-int i;
-for(i = 0; i < 4; ++i){
-
-int delay;
-switch(state){
-case 0:
-delay = 28;
-while(delay--);
-break;
-case 1:
-delay = 15;
-while(delay--);
-break;
-case 2:
-delay = 0;
-while(delay--);
-break;
-case 3:
-delay = 10;
-while(delay--);
-break;
-case 4:
-delay = 16;
-while(delay--);
-break;
-}
-
-show = (unsigned int*)walker[pic_i];
-for(int column = 0; column < 9; ++column, ++show){
-if(four[i]){
-LATA = *show;
-LATD = (*show) >> 8;
-}
-else{
-LATA = 0;
-LATD = 0;
-}
-int bright = 60;
+void test(){
+LATA = 0xFF;
+long int bright = 200;
 while(bright--);
 LATA = 0;
-LATD = 0;
-int dark = 60;
+long int dark = 18000;
 while(dark--);
-}
-
-
-long int dark = 1000;
-if(state == 1 || state == 2){
-if((state==1 && i<2) || (state==2 && (i==0||i==2)))
-dark -= move;
-else
-dark += move;
-}else if(state != 0){
-if((state==4 && i<2) || (state==3 && (i==0||i==2)))
-dark += 1000 - move;
-else
-dark -= 1000 - move;
-}
-while(dark--);
-}
-
-if(++pic_cycle_i == pic_cycle){
-pic_cycle_i = 0;
-if(++pic_i == 6)
-pic_i = 0;
-}
-
-
-if(state_change_cycle-- == 0){
-state_change_cycle = 160;
-move = 1000;
-update = 0;
-state++;
-state %= 5;
-for(i = 0; i < 4; ++i)
-four[i] = 0;
-switch(state){
-case 2:
-case 3:
-four[1] = four[3] = 1;
-case 1:
-case 4:
-four[2] = 1;
-case 0:
-four[0] = 1;
-break;
-}
-}
-}
-
-# 301
-}
-
-void mode_TransLove(){
-
-unsigned char love[10] = {
-0b00000000,
-0b00001100,
-0b00011110,
-0b00111110,
-0b01111100,
-0b00111110,
-0b00011110,
-0b00001100,
-0b00000000
-};
-unsigned int arrow[16] = {
-0b00110010,
-0b00110110,
-0b00011100,
-0b00001000,
-0b00001000,
-0b00001000,
-0b00001000,
-0b00001000,
-0b00001000,
-0b00001000,
-0b00001000,
-0b00001000,
-0b00001000,
-0b00101010,
-0b00011100,
-0b00001000
-};
-
-unsigned char T[5] = {
-0b00011,
-0b00001,
-0b11111,
-0b00001,
-0b00011
-};
-unsigned char R[5] = {
-0b11111,
-0b00101,
-0b00101,
-0b01101,
-0b10010
-};
-unsigned char A[5] = {
-0b11100,
-0b01010,
-0b01001,
-0b01010,
-0b11100
-};
-unsigned char N[5] = {
-0b11111,
-0b00010,
-0b00100,
-0b01000,
-0b11111
-};
-unsigned char S[5] = {
-0b10010,
-0b10101,
-0b10101,
-0b10101,
-0b01001
-};
-unsigned char L[5] = {
-0b11111,
-0b10000,
-0b10000,
-0b10000,
-0b10000
-};
-unsigned char O[5] = {
-0b01110,
-0b10001,
-0b10001,
-0b10001,
-0b01110
-};
-unsigned char V[5] = {
-0b00111,
-0b01100,
-0b10000,
-0b01100,
-0b00111
-};
-unsigned char E[5] = {
-0b11111,
-0b10101,
-0b10101,
-0b10101,
-0b10101
-};
-
-# 405
-int arrow_speed = 3;
-int stop_arrow = 120;
-int arrow_i = -15;
-int cycle = 666;
-while(cycle--){
-for(int i = 0; i < 99; ++i){
-int delay = 0;
-switch(i){
-case 10: delay += 4;
-case 16: delay += 4;
-case 22: delay += 4;
-case 28: delay += 4;
-case 34: delay += 4;
-case 40: delay += 4;
-case 46: delay += 4;
-case 52: delay += 4;
-case 58: delay += 4;
-while(delay--);
-}
-if(i < 20 && i >= 15)
-LATA |= T[i - 15];
-if(i < 26 && i >= 21)
-LATA |= R[i - 21];
-if(i < 32 && i >= 27)
-LATA |= A[i - 27];
-if(i >= 33 && i < 38)
-LATA |= N[i - 33];
-if(i < 44 && i >= 39)
-LATA |= S[i - 39];
-if(i >= 45 && i < 50)
-LATA |= L[i - 45];
-if(i >= 51 && i < 56)
-LATA |= O[i - 51];
-if(i >= 57 && i < 62)
-LATA |= V[i - 57];
-if(i >= 63 && i < 68)
-LATA |= E[i - 63];
-if(i >= 87 && i < 97)
-LATA |= love[i-87];
-if(i >= arrow_i && i < arrow_i + 16)
-LATA |= arrow[i-arrow_i];
-if(i >= arrow_i + 99 && i < arrow_i + 99 + 16)
-LATA |= arrow[i-arrow_i-99];
-int bright = 40;
-while(bright--);
-LATA = 0;
-int dark = 40;
-while(dark--);
-}
-
-if(arrow_i == 48)
-arrow_speed = 1;
-
-if(arrow_i == 87-4)
-if(--stop_arrow)
---arrow_i;
-
-arrow_i += arrow_speed;
-
-if(arrow_i > 99-15){
-stop_arrow = 120;
-arrow_i = -15;
-arrow_speed = 3;
-}
-}
-
-# 476
-}
-
-# 537
-void display_num(int n){
-unsigned char num[10][5] = {
-{
-0b00011111,
-0b00010001,
-0b00010001,
-0b00010001,
-0b00011111
-},
-{
-0b00000000,
-0b00000000,
-0b00011111,
-0b00000000,
-0b00000000
-},
-{
-0b00011100,
-0b00010101,
-0b00010101,
-0b00010101,
-0b00010111
-},
-{
-0b00010000,
-0b00010001,
-0b00010101,
-0b00010101,
-0b00011111
-},
-{
-0b00000111,
-0b00000100,
-0b00000100,
-0b00011111,
-0b00000100
-},
-{
-0b00010111,
-0b00010101,
-0b00010101,
-0b00010101,
-0b00011101
-},
-{
-0b00011111,
-0b00010100,
-0b00010100,
-0b00010100,
-0b00011100
-},
-{
-0b00000000,
-0b00000001,
-0b00000001,
-0b00000001,
-0b00011111
-},
-{
-0b00011111,
-0b00010101,
-0b00010101,
-0b00010101,
-0b00011111
-},
-{
-0b00000111,
-0b00000101,
-0b00000101,
-0b00000101,
-0b00011111
-}
-};
-unsigned char *iter = (unsigned char*)num[n];
-for(int i = 0; i < 5; ++i, ++iter){
-LATA = *iter;
-int bright_i = 40;
-while(bright_i--);
-LATA = 0;
-int dark_i = 40;
-while(dark_i--);
-}
-}
-
-void mode_clock(){
-int state = 0;
-int X[14] = {
-0b1000000000,
-0b1000000000,
-0b1100000011,
-0b0100000001,
-0b0111001111,
-0b0011011100,
-0b0001110000,
-0b0000111000,
-0b0011101100,
-0b0111001111,
-0b1100000001,
-0b1000000011,
-0b1000000000,
-0b1000000000,
-};
-
-int MAS[4][10] =
-{
-{
-0b0000000000,
-0b0000000000,
-0b0000000000,
-0b0000000011,
-0b0000001011,
-0b0000000111,
-0b0000000000,
-0b0000000000,
-0b0000000000,
-0b0000000000
-},
-{
-0b1100000011,
-0b1111111111,
-0b0000001110,
-0b0000011000,
-0b0000110000,
-0b0000110000,
-0b0000011000,
-0b0000001110,
-0b1111111111,
-0b1100000011
-},
-{
-0b1100000000,
-0b1111110000,
-0b1001111100,
-0b0000101110,
-0b0000100011,
-0b0000100011,
-0b0000101110,
-0b1001111100,
-0b1111110000,
-0b1100000000
-},
-{
-0b1110001100,
-0b0110011110,
-0b1100110011,
-0b1100100011,
-0b1000100001,
-0b1000010001,
-0b1100010011,
-0b1100110111,
-0b0111100110,
-0b0011000111
-}
-};
-int face[13] = {
-0b0011111110,
-0b0100000111,
-0b1000110111,
-0b1000110110,
-0b1000110111,
-0b1010000110,
-0b1010000110,
-0b1010000111,
-0b1000110110,
-0b1000110111,
-0b1000110111,
-0b0100000111,
-0b0011111110
-};
-
-int display_cycle = 1000;
-
-while(--display_cycle){
-
-
-display_num(hours/10);
-display_num(hours%10);
-
-
-int delay = 80;
-while(delay--);
-if(++state & 0b1000)
-LATA = 0b00001010;
-else
-LATA = 0;
-int minH = minutes / 10;
-LATA = 0;
-int minL = minutes % 10;
-delay = 80;
-while(delay--);
-
-
-display_num(minH);
-display_num(minL);
-
-
-delay = 80;
-while(delay--);
-if(state & 0b1000)
-LATA = 0b00001010;
-else
-LATA = 0;
-int secH = seconds / 10;
-LATA = 0;
-int secL = seconds % 10;
-delay = 80;
-while(delay--);
-
-
-display_num(secH);
-display_num(secL);
-
-
-delay = 860;
-while(delay--);
-
-
-int *show = (int*) X;
-for(int i = 0; i < 14; ++i, ++show){
-LATA = *show;
-LATD = *show >> 8;
-int bright = 40;
-while(bright--);
-LATA = 0;
-LATD = 0;
-int dark = 40;
-while(dark--);
-}
-
-
-for(int i = 0; i < 4; ++i){
-show = (int*)MAS[i];
-for(int j = 0; j < 10; ++j, ++show){
-LATA = *show;
-LATD = *show >> 8;
-int bright = 40;
-while(bright--);
-LATA = 0;
-LATD = 0;
-int dark = 40;
-while(dark--);
-}
-delay = 100;
-while(delay--);
-}
-delay = 300;
-while(delay--);
-int *face_i = (int*)face;
-for(int i = 0; i < 13; ++i, ++face_i){
-LATA = *face_i;
-LATD = *face_i >> 8;
-int bright = 40;
-while(bright--);
-LATA = 0;
-LATD = 0;
-int dark = 40;
-while(dark--);
-}
-
-delay = 860;
-while(delay--);
-}
-
-}
-
-void update_time(){
-if(++seconds == 60){
-seconds = 0;
-if(++minutes==60){
-minutes = 0;
-if(++hours == 24)
-hours = 0;
-}
-}
-}
-
-void interrupt tc_int(void)
-{
-if(TMR1IE && TMR1IF){
-TMR1 = 15535;
-TMR1IF=0;
-count++;
-if(count == 5){
-count = 0;
-update_time();
-}
-}
 }
 
 void main(void) {
-OSCCONbits.IRCF = 0b111;
+
+OSCCONbits.IRCF = 0x7;
 
 
-RCONbits.IPEN=0x01;
-T1CON = 0b10110101;
-TMR1 = 15536;
-PIE1bits.TMR1IE=1;
-IPR1bits.TMR1IP=1;
-PIR1bits.TMR1IF=0;
-INTCONbits.GIE=1;
-
-
-hours = 21;
-minutes = 0;
-
-TRISA = 0;
 TRISD = 0;
-LATD = 0;
-LATA = 0;
+TRISA = 0;
 
 
-mode_tree();
-while(1){
-mode_clock();
+UART_INIT();
+ISR_INIT();
+while(1)
+test();
+LED_DISP();
 
-mode_walker();
-mode_TransLove();
-
+while (1)
+show_words();
+return;
 }
 
-while(1);
+void show_words(){
+char* iter = now;
+for(int i = 0; i < 250; ++i){
+LATA = *iter;
+int bright = 50;
+while(bright--);
+int dark = 50;
+while(dark--);
+iter = next(iter);
+}
+}
+
+void add_word(char c){
+*now = c;
+now = next(now);
+}
+
+char* next(char* ptr){
+if(++ptr == tail)
+return (char*)data;
+return ptr;
+}
+
+void LED_DISP(){
+add_word((char)255);
+add_word((char)255);
+add_word((char)200);
+add_word((char)128);
+add_word((char)64);
+}
+
+void UART_WRITE(char output) {
+TXREG = output;
+return;
+}
+
+void UART_READ() {
+temp = RCREG;
+
+
+add_word(temp);
+
+return;
+}
+
+void UART_INIT() {
+
+TRISCbits.TRISC6 = 1;
+TRISCbits.TRISC7 = 1;
+
+
+BAUDCONbits.BRG16 = 0;
+TXSTAbits.BRGH = 1;
+SPBRG = 25;
+
+
+TXSTAbits.SYNC = 0;
+
+
+RCSTAbits.SPEN = 1;
+
+
+TXSTAbits.TXEN = 1;
+RCSTAbits.CREN = 1;
+
+
+PIE1bits.TXIE = 0;
+IPR1bits.TXIP = 1;
+PIE1bits.RCIE = 1;
+IPR1bits.RCIP = 1;
+}
+
+void ISR_INIT() {
+RCONbits.IPEN = 1;
+INTCONbits.GIEH = 1;
+INTCONbits.GIEL = 1;
+return;
+}
+
+void interrupt ISR_HIGH(void) {
+if (RCIF) {
+if (RCSTAbits.OERR == 1) {
+
+}
+UART_READ();
+UART_WRITE(temp);
+}
+return ;
+}
+
+void interrupt low_priority ISR_LOW(void) {
+return;
 }

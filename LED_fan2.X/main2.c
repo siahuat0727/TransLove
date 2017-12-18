@@ -24,11 +24,78 @@ int seconds;
 int minutes;
 int hours;
 
+void mode_tree(){
+#define TREE_COLUMN 21
+    int tree[1][TREE_COLUMN] =
+    {
+        {
+            0b0100000000,
+            0b0000000000,
+            0b0000000000,
+            0b0110000000,
+            0b0000100000,
+            0b0001100000,
+            0b0100010000,
+            0b0000100100,
+            0b0100001110,
+            0b1100100101,
+            0b0100001110,
+            0b0000100100,
+            0b0100010000,
+            0b0001100000,
+            0b0000100000,
+            0b0110000000,
+            0b0000000000,
+            0b0000000000,
+            0b0100000000,
+        }
+    };
+    while(1){
+    int cycle = 100;
+    while(cycle--){
+        int* show = (int*)tree[0];
+        for(int i = 0; i < TREE_COLUMN; ++i, ++show){
+            LATA = *show;
+            LATD = *show >> 8;
+            int bright = 30;
+            while(bright--);
+            LATA = LATD = 0;
+            int dark = 30;
+            while(dark--);
+        }
+        int delay = 10650;
+        while(delay--);
+    }
+    cycle = 500;
+    int move = 0;
+    while(cycle--){
+        
+        int* show = (int*)tree[0];
+        for(int i = 0; i < TREE_COLUMN; ++i, ++show){
+            LATA = *show;
+            LATD = *show >> 8;
+            int bright = 30;
+            while(bright--);
+            LATA = LATD = 0;
+            int dark = 30;
+            while(dark--);
+        }
+        int delay = 10640;
+        if(cycle & 1)
+            delay += move;
+        else
+            delay -= move;
+        move += 25;
+        while(delay--);
+    }
+    }
+}
+
 void mode_walker(){
 #define QUATER_CYCLE 2080  //順時要減少(指令太多)，逆時要增加
 #define STATE_CHANGE 160
 #define MOVE_START 1000 // 2072 - 1080 //QUATER_CYCLE - (9*(BRIGHT_INTERVAL + DARK_INTERVAL)))    
-#define WALKER_PIC 5
+#define WALKER_PIC 6
 #define WALKER_COLUMN 9
     
     int walker[WALKER_PIC][WALKER_COLUMN] =
@@ -86,6 +153,17 @@ void mode_walker(){
             0b0000110111,
             0b0000000000,
             0b0000000000,
+            0b0000000000
+        },
+        {
+            0b1000000000,
+            0b0100000000,
+            0b0010000000,
+            0b0001010000,
+            0b0001111111,
+            0b0111010111,
+            0b0100100000,
+            0b0000010000,
             0b0000000000
         }
       };
@@ -397,34 +475,47 @@ void mode_TransLove(){
 #undef ARROW_COLUMN
 }
 
-void transition(){
-    int cycle = 1000;
-    while(cycle--){
-        int s[6] = {0b0111100000111110,
-                    0b1110000001111000,
-                    0b0000011111000111,
-                    0b1111000001111100,
-                    0b1111111100000001,
-                    0b1111100000111110
-        };
-        unsigned char line[3] = {
-            0b11111111,
-            0b10101010,
-            0b01010101
-        };
-        int move = 0;
-        int cycle = -1;
-        while(cycle--){
-            for(int i = 0; i < 3; ++i){
-                LATA = line[i];
-                int bright = 60;
-                while(bright--);
-                LATA = 0;
-                int dark = move;
-                while(dark--);
-            }
-            move += 10;
-        }
+//void transition(){
+//    int cycle = 1000;
+//    while(cycle--){
+//        int loop2 = 100;
+//        while(loop2--){
+//            
+//        }
+//        LATA = 3;
+//        int bright = 3000;
+//        while(bright--);
+//        LATA = 0;
+//        int dark = 20000;
+//        while(dark--);
+//    }
+//    while(cycle--){
+//        int s[6] = {0b0111100000111110,
+//                    0b1110000001111000,
+//                    0b0000011111000111,
+//                    0b1111000001111100,
+//                    0b1111111100000001,
+//                    0b1111100000111110
+//        };
+//        unsigned char line[3] = {
+//            0b11111111,
+//            0b10101010,
+//            0b01010101
+//        };
+//        
+//        int move = 0;
+//        int cycle = -1;
+//        while(cycle--){
+//            for(int i = 0; i < 3; ++i){
+//                LATA = line[i];
+//                int bright = 60;
+//                while(bright--);
+//                LATA = 0;
+//                int dark = move;
+//                while(dark--);
+//            }
+//            move += 10;
+//        }
 //        int cycle_2 = 16;
 //        int state = 0;
 //        while(cycle_2--){
@@ -440,8 +531,8 @@ void transition(){
 //                while(dark--);
 //            }
 //        }
-    }
-}
+//    }
+//}
 
 void display_num(int n){
     unsigned char num[10][5] = {
@@ -453,11 +544,11 @@ void display_num(int n){
                0b00011111 
                 },
                 {
-               0b00010000,
-               0b00010010,
+               0b00000000,
+               0b00000000,
                0b00011111,
-               0b00010000,
-               0b00010000 
+               0b00000000,
+               0b00000000 
                 },
                 {
                0b00011100,
@@ -495,7 +586,7 @@ void display_num(int n){
                0b00011100 
                 },
                 {
-               0b00000001,
+               0b00000000,
                0b00000001,
                0b00000001,
                0b00000001,
@@ -529,80 +620,88 @@ void display_num(int n){
 
 void mode_clock(){
     int state = 0;
-    int XMAS[6][10] = // inverse face/M/A/S/'/X
+    int X[14] = {
+        0b1000000000,
+        0b1000000000,
+        0b1100000011,
+        0b0100000001,
+        0b0111001111,
+        0b0011011100,
+        0b0001110000,
+        0b0000111000,
+        0b0011101100,
+        0b0111001111,
+        0b1100000001,
+        0b1000000011,
+        0b1000000000,
+        0b1000000000,
+    };
+    
+    int MAS[4][10] = // 'MAS
     {
         {
             0b0000000000,
-            0b1111111100,
-            0b1110110010,
-            0b1100100101,
-            0b1100110011,
-            0b1110001011,
-            0b1100110011,
-            0b1100100101,
-            0b1110110010,
-            0b1111111100
-        },
-        {
-            0b1110001100,
-            0b0110011110,
-            0b1110110011,
-            0b1100100011,
-            0b1000100001,
-            0b1000010001,
-            0b1100010011,
-            0b1100110011,
-            0b0111100110,
-            0b0011000111
-        },
-        {
+            0b0000000000,
+            0b0000000000,
             0b0000000011,
-            0b0000111111,
-            0b0011111001,
-            0b0111010000,
-            0b1100010000,
-            0b1100010000,
-            0b0111010000,
-            0b0011111001,
-            0b0000111111,
-            0b0000000011
-        },
-        {
-            0b1100000011,
-            0b1111111111,
-            0b0111000000,
-            0b0001100000,
-            0b0000110000,
-            0b0000110000,
-            0b0001100000,
-            0b0111000000,
-            0b1111111111,
-            0b1100000011
-        },
-        {
+            0b0000001011,
+            0b0000000111,
             0b0000000000,
-            0b0000000000,
-            0b0000000000,
-            0b0000000000,
-            0b1110000000,
-            0b1101000000,
-            0b1100000000,
             0b0000000000,
             0b0000000000,
             0b0000000000
         },
         {
-            0b1100000001,
-            0b1000000011,
-            0b1111001111,
-            0b0011011100,
-            0b0001110000,
-            0b0000111000,
-            0b0011101100,
-            0b1111001111,
-            0b1000000011,
-            0b1100000001
+            0b1100000011,
+            0b1111111111,
+            0b0000001110,
+            0b0000011000,
+            0b0000110000,
+            0b0000110000,
+            0b0000011000,
+            0b0000001110,
+            0b1111111111,
+            0b1100000011
+        },
+        {
+            0b1100000000,
+            0b1111110000,
+            0b1001111100,
+            0b0000101110,
+            0b0000100011,
+            0b0000100011,
+            0b0000101110,
+            0b1001111100,
+            0b1111110000,
+            0b1100000000
+        },
+        {
+            0b1110001100,
+            0b0110011110,
+            0b1100110011,
+            0b1100100011,
+            0b1000100001,
+            0b1000010001,
+            0b1100010011,
+            0b1100110111,
+            0b0111100110,
+            0b0011000111
         }
+    };
+    int face[13] = {
+        0b0011111110,
+        0b0100000111,
+        0b1000110111,
+        0b1000110110,
+        0b1000110111,
+        0b1010000110,
+        0b1010000110,
+        0b1010000111,
+        0b1000110110,
+        0b1000110111,
+        0b1000110111,
+        0b0100000111,
+        0b0011111110
     };
     
     int display_cycle = 1000;
@@ -647,11 +746,26 @@ void mode_clock(){
         display_num(secH);
         display_num(secL);
         
-#define DELAY_CLOCK 1223
+#define DELAY_CLOCK 860
 		delay = DELAY_CLOCK;
 		while(delay--);
-		for(int i = 0; i < 6; ++i){
-			unsigned int *show = (unsigned int*)XMAS[i];
+        
+        // X
+       int *show = (int*) X;
+        for(int i = 0; i < 14; ++i, ++show){            
+                LATA = *show;
+                LATD = *show >> 8;
+                int bright = 40;
+                while(bright--);
+                LATA = 0;
+                LATD = 0;
+                int dark = 40;
+                while(dark--);
+        }
+        
+        // 'MAS
+		for(int i = 0; i < 4; ++i){
+			show = (int*)MAS[i];
             for(int j = 0; j < 10; ++j, ++show){
                 LATA = *show;
                 LATD = *show >> 8;
@@ -665,6 +779,20 @@ void mode_clock(){
             delay = 100;
             while(delay--);
 		}
+        delay = 300;
+        while(delay--);
+        int *face_i = (int*)face;
+        for(int i = 0; i < 13; ++i, ++face_i){
+            LATA = *face_i;
+            LATD = *face_i >> 8;
+            int bright = 40;
+            while(bright--);
+            LATA = 0;
+            LATD = 0;
+            int dark = 40;
+            while(dark--);
+        }
+        
 		delay = DELAY_CLOCK;
 		while(delay--);
     }
@@ -715,6 +843,9 @@ void main(void) {
     TRISD = 0; // set as output
     LATD  = 0;
     LATA  = 0;
+    
+//    transition();
+   mode_tree(); 
     while(1){
         mode_clock();
 //        transition();

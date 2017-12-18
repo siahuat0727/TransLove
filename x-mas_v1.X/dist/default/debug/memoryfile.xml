@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\LED_fan2.X.production.hex">
+  <executable name="dist/default/debug\x-mas_v1.X.debug.hex">
     <memory name="program">
       <units>bytes</units>
       <length>32768</length>
-      <used>5833</used>
-      <free>26935</free>
+      <used>1186</used>
+      <free>31582</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>1536</length>
-      <used>745</used>
-      <free>791</free>
+      <used>308</used>
+      <free>1228</free>
     </memory>
   </executable>
 </project>
