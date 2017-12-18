@@ -3909,7 +3909,7 @@ int walker[5][9] =
 bool four[4] = {1};
 int state_change_cycle = 160;
 int state = 0;
-long int move = 992;
+long int move = 1000;
 bool update = 0;
 bool update_next_time = 0;
 const int pic_cycle = 3;
@@ -3917,7 +3917,7 @@ int pic_cycle_i = 0;
 int pic_i = 0;
 unsigned int* show;
 
-long int display_cycle = -1;
+int display_cycle = 700;
 while(display_cycle--){
 if(move > 0)
 move -= 30;
@@ -3988,7 +3988,7 @@ while(dark--);
 }
 
 
-long int dark = 992;
+long int dark = 1000;
 if(state == 1 || state == 2){
 if((state==1 && i<2) || (state==2 && (i==0||i==2)))
 dark -= move;
@@ -3996,9 +3996,9 @@ else
 dark += move;
 }else if(state != 0){
 if((state==4 && i<2) || (state==3 && (i==0||i==2)))
-dark += 992 - move;
+dark += 1000 - move;
 else
-dark -= 992 - move;
+dark -= 1000 - move;
 }
 while(dark--);
 }
@@ -4012,7 +4012,7 @@ pic_i = 0;
 
 if(state_change_cycle-- == 0){
 state_change_cycle = 160;
-move = 992;
+move = 1000;
 update = 0;
 state++;
 state %= 5;
@@ -4035,7 +4035,6 @@ break;
 # 223
 }
 
-# 384
 void mode_TransLove(){
 
 unsigned char love[10] = {
@@ -4132,10 +4131,11 @@ unsigned char E[5] = {
 0b10101
 };
 
-# 484
+# 327
+int arrow_speed = 3;
 int stop_arrow = 120;
 int arrow_i = -15;
-long int cycle = -1;
+int cycle = 740;
 while(cycle--){
 for(int i = 0; i < 99; ++i){
 int delay = 0;
@@ -4169,8 +4169,6 @@ if(i >= 57 && i < 62)
 LATA |= V[i - 57];
 if(i >= 63 && i < 68)
 LATA |= E[i - 63];
-
-# 539
 if(i >= 87 && i < 97)
 LATA |= love[i-87];
 if(i >= arrow_i && i < arrow_i + 16)
@@ -4184,22 +4182,60 @@ int dark = 40;
 while(dark--);
 }
 
-if(arrow_i == 87-3)
+if(arrow_i == 48)
+arrow_speed = 1;
+
+if(arrow_i == 87-4)
 if(--stop_arrow)
 --arrow_i;
 
-if(++arrow_i > 99-15){
+arrow_i += arrow_speed;
+
+if(arrow_i > 99-15){
 stop_arrow = 120;
 arrow_i = -15;
+arrow_speed = 3;
+}
 }
 
+# 398
 }
 
-
+void transition(){
+int cycle = 1000;
+while(cycle--){
+int s[6] = {0b0111100000111110,
+0b1110000001111000,
+0b0000011111000111,
+0b1111000001111100,
+0b1111111100000001,
+0b1111100000111110
+};
+unsigned char line[3] = {
+0b11111111,
+0b10101010,
+0b01010101
+};
+int move = 0;
+int cycle = -1;
+while(cycle--){
+for(int i = 0; i < 3; ++i){
+LATA = line[i];
+int bright = 60;
+while(bright--);
+LATA = 0;
+int dark = move;
+while(dark--);
+}
+move += 10;
 }
 
-void display(int n){
-int num[10][5] = {
+# 443
+}
+}
+
+void display_num(int n){
+unsigned char num[10][5] = {
 {
 0b00011111,
 0b00010001,
@@ -4271,7 +4307,7 @@ int num[10][5] = {
 0b00011111
 }
 };
-int *iter = (int*)num[n];
+unsigned char *iter = (unsigned char*)num[n];
 for(int i = 0; i < 5; ++i, ++iter){
 LATA = *iter;
 int bright_i = 40;
@@ -4280,8 +4316,6 @@ LATA = 0;
 int dark_i = 40;
 while(dark_i--);
 }
-
-
 }
 
 void mode_clock(){
@@ -4341,9 +4375,9 @@ int XMAS[6][10] =
 0b0000000000,
 0b0000000000,
 0b0000000000,
-0b1111100000,
-0b1110010000,
 0b1110000000,
+0b1101000000,
+0b1100000000,
 0b0000000000,
 0b0000000000,
 0b0000000000
@@ -4362,13 +4396,13 @@ int XMAS[6][10] =
 }
 };
 
-long int display_cycle = -1;
+int display_cycle = 1000;
 
-while(1){
+while(--display_cycle){
 
 
-display(hours/10);
-display(hours%10);
+display_num(hours/10);
+display_num(hours%10);
 
 
 int delay = 80;
@@ -4384,8 +4418,8 @@ delay = 80;
 while(delay--);
 
 
-display(minH);
-display(minL);
+display_num(minH);
+display_num(minL);
 
 
 delay = 80;
@@ -4401,12 +4435,12 @@ delay = 80;
 while(delay--);
 
 
-display(secH);
-display(secL);
+display_num(secH);
+display_num(secL);
 
-delay = 1120;
+
+delay = 1223;
 while(delay--);
-
 for(int i = 0; i < 6; ++i){
 unsigned int *show = (unsigned int*)XMAS[i];
 for(int j = 0; j < 10; ++j, ++show){
@@ -4422,9 +4456,10 @@ while(dark--);
 delay = 100;
 while(delay--);
 }
-delay = 1120;
+delay = 1223;
 while(delay--);
 }
+
 }
 
 void update_time(){
@@ -4471,10 +4506,13 @@ TRISA = 0;
 TRISD = 0;
 LATD = 0;
 LATA = 0;
-mode_TransLove();
+while(1){
 mode_clock();
-mode_walker();
 
+mode_walker();
+mode_TransLove();
+
+}
 
 while(1);
 }

@@ -25,9 +25,9 @@ int minutes;
 int hours;
 
 void mode_walker(){
-#define QUATER_CYCLE 2072  //順時要減少(指令太多)，逆時要增加
+#define QUATER_CYCLE 2080  //順時要減少(指令太多)，逆時要增加
 #define STATE_CHANGE 160
-#define MOVE_START 992 // 2072 - 1080 //QUATER_CYCLE - (9*(BRIGHT_INTERVAL + DARK_INTERVAL)))    
+#define MOVE_START 1000 // 2072 - 1080 //QUATER_CYCLE - (9*(BRIGHT_INTERVAL + DARK_INTERVAL)))    
 #define WALKER_PIC 5
 #define WALKER_COLUMN 9
     
@@ -101,7 +101,7 @@ void mode_walker(){
     int pic_i = 0;
     unsigned int* show;
     
-    long int display_cycle = -1;
+    int display_cycle = 700;
     while(display_cycle--){
         if(move > 0)
             move -= 30;
@@ -221,165 +221,6 @@ void mode_walker(){
 #undef WALKER_PIC
 #undef WALKER_COLUMN
 }
-/*
-void mode2(){
-#define QUATER_CYCLE 2072  //順時要減少(指令太多)，逆時要增加
-#define STATE_CHANGE 160
-#define BRIGHT_INTERVAL 60
-#define DARK_INTERVAL 60
-#define MOVE_START 1472 // 2072 - 600 //QUATER_CYCLE - (9*(BRIGHT_INTERVAL + DARK_INTERVAL)))
-#define TREE_PIC 2
-#define TREE_COLUMN 5
-
-    int tree[2][5] ={ 
-                { 0b01100100,
-                0b01110110,
-                0b11111111,
-                0b01110110,
-                0b01100100
-                },
-                { 0b00000000,
-                0b01110110,
-                0b11111111,
-                0b01110110,
-                0b00000000
-                }
-                };
-
-    
-    bool four[4] = {false, false, true, false};
-    int state = 0;
-    int state_change_cycle = STATE_CHANGE;
-    long int move = MOVE_START; 
-    bool update = false;
-    const int pic_cycle = 3;
-    int pic_cycle_i = 0;
-    int pic_i = 0;
-    unsigned int* show;
-    bool update_next_time = false;
-    long int display_cycle = -1;
-    while(display_cycle--){
-        if(move > 0)
-            move -= 30;
-        else{
-            int delay = 20;
-            while(delay--);
-        }
-        if(update_next_time == true){
-            update_next_time = false;
-            // delete walker
-            switch(state){
-                case 4:
-                    four[2] = false;
-                case 3:
-                    four[1] = four[3] = false;
-            }
-        }
-        if(update == false && move <= 0){
-            update = true;
-            update_next_time = true;
-            move = 0;
-        }
-        
-        // loop for one cycle
-        int i;
-        for(i = 0; i < 4; ++i){
-            // adjust delay for each state
-//            int delay;
-//            switch(state){
-//                case 0:
-//                    delay = 28;
-//                    while(delay--);
-//                    break;
-//                case 1:
-//                    delay = 15;
-//                    while(delay--);
-//                    break;
-//                case 2:
-//                    delay = 0;
-//                    while(delay--);
-//                    break;
-//                case 3:
-//                    delay = 10;
-//                    while(delay--);
-//                    break;
-//                case 4:
-//                    delay = 16;
-//                    while(delay--);
-//                    break;
-//            }
-            
-            show = (unsigned int*)tree[pic_i];
-            for(int column = 0; column < TREE_COLUMN; ++column, ++show){
-                if(four[i]){
-                    LATA = *show;
-                    LATD = (*show) >> 8;
-                }
-                else{
-                    LATA = 0;
-                    LATD = 0;
-                }
-                int bright = BRIGHT_INTERVAL;
-                while(bright--);
-                LATA = 0;
-                LATD = 0;
-                int dark = DARK_INTERVAL;
-                while(dark--);
-            }
-            
-            // adjust dark interval
-            long int dark = MOVE_START;
-            if(state == 1 || state == 2){
-                if((state==1 && i<2) || (state==2 && (i==0||i==2)))
-                    dark -= move;
-                else
-                    dark += move;
-            }else if(state != 0){
-                if((state==4 && i<2) || (state==3 && (i==0||i==2)))
-                    dark += MOVE_START - move;
-                else
-                    dark -= MOVE_START - move;
-            }
-            while(dark--);
-        }
-        
-        if(++pic_cycle_i == pic_cycle){
-            pic_cycle_i = 0;
-            if(++pic_i == WALKER_PIC)
-                pic_i = 0;
-        }
-        
-        // change state
-        if(state_change_cycle-- == 0){
-            state_change_cycle = STATE_CHANGE;
-            move = MOVE_START;
-            update = false;
-            state++;
-            state %= 5;
-            for(i = 0; i < 4; ++i)
-                four[i] = 0;
-            switch(state){
-                case 2:
-                case 3:
-                    four[0] = four[3] = 1;
-                case 1:
-                case 4:
-                    four[1] = 1;
-                case 0:
-                    four[2] = 1;
-					break;
-            }
-        }
-    }
-#undef QUATER_CYCLE
-#undef STATE_CHANGE
-#undef BRIGHT_INTERVAL
-#undef DARK_INTERVAL
-#undef MOVE_START
-#undef TREE_PIC
-#undef TREE_COLUMN
-}
-*/
 
 void mode_TransLove(){
 #define ARROW_COLUMN 16
@@ -477,13 +318,16 @@ void mode_TransLove(){
                             0b10101
                          };
     
-#define LOVE_START 87
-#define LOVE_END 97
+#define LOVE_START 87 // FOR - 12
+#define LOVE_END 97 // FOR - 2
 #define FOR 99
 #define STOP_ARROW 120
+#define ARROW_SPEED 3
+    
+    int arrow_speed = ARROW_SPEED;
     int stop_arrow = STOP_ARROW;
     int arrow_i = -15;
-    long int cycle = -1;
+    int cycle = 666;
     while(cycle--){
         for(int i = 0; i < FOR; ++i){
             int delay = 0;
@@ -517,25 +361,6 @@ void mode_TransLove(){
                 LATA |= V[i - 57];
             if(i >= 63 && i < 68)
                 LATA |= E[i - 63];
-            
-//            if(i >= 15  && i < 20)
-//                LATA |= T[i - 15];
-//            if(i < 26 && i >= 21)
-//                LATA |= R[i - 21];
-//            if(i >= 27 && i < 32)
-//                LATA |= A[i - 27];
-//            if(i < 38 && i >= 33)
-//                LATA |= N[i - 33];
-//            if(i >= 39 && i < 44)
-//                LATA |= S[i - 39];
-//            if(i < 50 && i >= 45)
-//                LATA |= L[i - 45];
-//            if(i >= 51 && i < 56)
-//                LATA |= O[i - 51];
-//            if(i < 62 && i >= 57)
-//                LATA |= V[i - 57];
-//            if(i >= 63 && i < 68)
-//                LATA |= E[i - 63];
             if(i >= LOVE_START && i < LOVE_END)
                 LATA |= love[i-LOVE_START];
             if(i >= arrow_i && i < arrow_i + ARROW_COLUMN)
@@ -549,22 +374,77 @@ void mode_TransLove(){
             while(dark--);
         }
         
-        if(arrow_i == LOVE_START-3)
+        if(arrow_i == 48) // must be multiple of 3
+            arrow_speed = 1;
+        
+        if(arrow_i == LOVE_START-4)
             if(--stop_arrow)
                 --arrow_i;
         
-        if(++arrow_i > FOR-15){
+        arrow_i += arrow_speed;
+        
+        if(arrow_i > FOR-15){
             stop_arrow = STOP_ARROW;
             arrow_i = -15;
+            arrow_speed = ARROW_SPEED;
         }
-        
     }
 #undef LOVE_START
 #undef LOVE_END
+#undef FOR
+#undef STOP_ARROW
+#undef ARROW_SPEED
+#undef ARROW_COLUMN
 }
 
-void display(int n){
-    int num[10][5] = {
+void transition(){
+    int cycle = 1000;
+    while(cycle--){
+        int s[6] = {0b0111100000111110,
+                    0b1110000001111000,
+                    0b0000011111000111,
+                    0b1111000001111100,
+                    0b1111111100000001,
+                    0b1111100000111110
+        };
+        unsigned char line[3] = {
+            0b11111111,
+            0b10101010,
+            0b01010101
+        };
+        int move = 0;
+        int cycle = -1;
+        while(cycle--){
+            for(int i = 0; i < 3; ++i){
+                LATA = line[i];
+                int bright = 60;
+                while(bright--);
+                LATA = 0;
+                int dark = move;
+                while(dark--);
+            }
+            move += 10;
+        }
+//        int cycle_2 = 16;
+//        int state = 0;
+//        while(cycle_2--){
+//            ++state;
+//            for(int i = 0; i < 6; ++i){
+//                LATA = s[i];
+//                if(state & 0b111 == false)
+//                    s[i] >>= 1;
+//                int bright = 60;
+//                while(bright--);
+//                LATA = 0;
+//                int dark = 200;
+//                while(dark--);
+//            }
+//        }
+    }
+}
+
+void display_num(int n){
+    unsigned char num[10][5] = {
                 {
                0b00011111,
                0b00010001,
@@ -636,7 +516,7 @@ void display(int n){
                0b00011111 
                 }
               };
-    int *iter = (int*)num[n];
+    unsigned char *iter = (unsigned char*)num[n];
     for(int i = 0; i < 5; ++i, ++iter){
         LATA = *iter;
         int bright_i = 40;
@@ -645,8 +525,6 @@ void display(int n){
         int dark_i = 40;
         while(dark_i--);
     }
-//    int dark_i = 1;
-//    while(dark_i--);
 }
 
 void mode_clock(){
@@ -706,9 +584,9 @@ void mode_clock(){
             0b0000000000,
             0b0000000000,
             0b0000000000,
-            0b1111100000,
-            0b1110010000,
             0b1110000000,
+            0b1101000000,
+            0b1100000000,
             0b0000000000,
             0b0000000000,
             0b0000000000
@@ -727,13 +605,13 @@ void mode_clock(){
         }
     };
     
-    long int display_cycle = -1;
+    int display_cycle = 1000;
 //    while(display_cycle--){
-    while(1){
+    while(--display_cycle){
         // HH : MM : SS
         // HH
-        display(hours/10);
-        display(hours%10);
+        display_num(hours/10);
+        display_num(hours%10);
         
         // :
         int delay = 80;
@@ -749,8 +627,8 @@ void mode_clock(){
         while(delay--);
         
         // MM
-        display(minH);
-        display(minL);
+        display_num(minH);
+        display_num(minL);
         
         // :
         delay = 80;
@@ -766,12 +644,12 @@ void mode_clock(){
         while(delay--);
      
         // SS
-        display(secH);
-        display(secL);
+        display_num(secH);
+        display_num(secL);
         
-		delay = 1120;
+#define DELAY_CLOCK 1223
+		delay = DELAY_CLOCK;
 		while(delay--);
-		
 		for(int i = 0; i < 6; ++i){
 			unsigned int *show = (unsigned int*)XMAS[i];
             for(int j = 0; j < 10; ++j, ++show){
@@ -787,9 +665,10 @@ void mode_clock(){
             delay = 100;
             while(delay--);
 		}
-		delay = 1120;
+		delay = DELAY_CLOCK;
 		while(delay--);
     }
+#undef DELAY_CLOCK
 }
 
 void update_time(){
@@ -836,10 +715,13 @@ void main(void) {
     TRISD = 0; // set as output
     LATD  = 0;
     LATA  = 0;
-    mode_TransLove();
-    mode_clock();
-    mode_walker();
+    while(1){
+        mode_clock();
+//        transition();
+        mode_walker();
+        mode_TransLove();
+//        transition();
+    }
     
-//    int num0[6] = NUM(0);
     while(1);
 }

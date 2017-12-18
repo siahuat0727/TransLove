@@ -31,17 +31,17 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "27 C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
 [v _mode_walker mode_walker `(v  1 e 1 0 ]
-"384
+"225
 [v _mode_TransLove mode_TransLove `(v  1 e 1 0 ]
-"566
-[v _display display `(v  1 e 1 0 ]
-"652
+"446
+[v _display_num display_num `(v  1 e 1 0 ]
+"530
 [v _mode_clock mode_clock `(v  1 e 1 0 ]
-"795
+"674
 [v _update_time update_time `(v  1 e 1 0 ]
-"806
+"685
 [v _tc_int tc_int `II(v  1 e 1 0 ]
-"819
+"698
 [v _main main `(v  1 e 1 0 ]
 "975 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f4520.h
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
@@ -189,107 +189,108 @@
 [v _minutes minutes `i  1 e 2 0 ]
 "25
 [v _hours hours `i  1 e 2 0 ]
-"819
+"698
 [v _main main `(v  1 e 1 0 ]
 {
-"845
+"727
 } 0
 "27
 [v _mode_walker mode_walker `(v  1 e 1 0 ]
 {
 "170
-[v mode_walker@dark dark `i  1 a 2 100 ]
+[v mode_walker@dark dark `i  1 a 2 98 ]
 "166
-[v mode_walker@bright bright `i  1 a 2 98 ]
+[v mode_walker@bright bright `i  1 a 2 96 ]
 "157
-[v mode_walker@column column `i  1 a 2 118 ]
+[v mode_walker@column column `i  1 a 2 116 ]
 "175
-[v mode_walker@dark_293 dark `l  1 a 4 110 ]
+[v mode_walker@dark_293 dark `l  1 a 4 108 ]
 "132
-[v mode_walker@delay_289 delay `i  1 a 2 128 ]
+[v mode_walker@delay_289 delay `i  1 a 2 126 ]
 "109
-[v mode_walker@delay delay `i  1 a 2 96 ]
+[v mode_walker@delay delay `i  1 a 2 94 ]
 "129
-[v mode_walker@i i `i  1 a 2 136 ]
+[v mode_walker@i i `i  1 a 2 134 ]
 "34
 [v mode_walker@walker walker `[5][9]i  1 a 90 0 ]
 "93
-[v mode_walker@four four `[4]i  1 a 8 120 ]
+[v mode_walker@four four `[4]i  1 a 8 118 ]
 "96
-[v mode_walker@move move `l  1 a 4 130 ]
-"104
-[v mode_walker@display_cycle display_cycle `l  1 a 4 90 ]
+[v mode_walker@move move `l  1 a 4 128 ]
 "95
-[v mode_walker@state state `i  1 a 2 134 ]
+[v mode_walker@state state `i  1 a 2 132 ]
 "102
-[v mode_walker@show show `*.39ui  1 a 2 116 ]
+[v mode_walker@show show `*.39ui  1 a 2 114 ]
 "101
-[v mode_walker@pic_i pic_i `i  1 a 2 114 ]
+[v mode_walker@pic_i pic_i `i  1 a 2 112 ]
 "98
-[v mode_walker@update_next_time update_next_time `i  1 a 2 108 ]
+[v mode_walker@update_next_time update_next_time `i  1 a 2 106 ]
 "97
-[v mode_walker@update update `i  1 a 2 106 ]
+[v mode_walker@update update `i  1 a 2 104 ]
 "100
-[v mode_walker@pic_cycle_i pic_cycle_i `i  1 a 2 104 ]
+[v mode_walker@pic_cycle_i pic_cycle_i `i  1 a 2 102 ]
 "94
-[v mode_walker@state_change_cycle state_change_cycle `i  1 a 2 102 ]
+[v mode_walker@state_change_cycle state_change_cycle `i  1 a 2 100 ]
+"104
+[v mode_walker@display_cycle display_cycle `i  1 a 2 92 ]
 "99
-[v mode_walker@pic_cycle pic_cycle `Ci  1 a 2 94 ]
+[v mode_walker@pic_cycle pic_cycle `Ci  1 a 2 90 ]
 "27
 [v mode_walker@F3010 F3010 `[5][9]i  1 s 90 F3010 ]
 "91
 [v mode_walker@F3012 F3012 `[4]i  1 s 8 F3012 ]
 "223
 } 0
-"652
+"530
 [v _mode_clock mode_clock `(v  1 e 1 0 ]
 {
-"784
-[v mode_clock@dark dark `i  1 a 2 134 ]
-"780
-[v mode_clock@bright bright `i  1 a 2 132 ]
-"777
-[v mode_clock@j j `i  1 a 2 140 ]
-"776
-[v mode_clock@show show `*.39ui  1 a 2 138 ]
-"775
-[v mode_clock@i i `i  1 a 2 142 ]
-"739
-[v mode_clock@delay delay `i  1 a 2 144 ]
-"764
-[v mode_clock@secL secL `i  1 a 2 130 ]
-"762
-[v mode_clock@secH secH `i  1 a 2 128 ]
-"747
-[v mode_clock@minL minL `i  1 a 2 126 ]
-"745
-[v mode_clock@minH minH `i  1 a 2 124 ]
+"662
+[v mode_clock@dark dark `i  1 a 2 132 ]
+"658
+[v mode_clock@bright bright `i  1 a 2 130 ]
+"655
+[v mode_clock@j j `i  1 a 2 138 ]
 "654
-[v mode_clock@XMAS XMAS `[6][10]i  1 a 120 0 ]
-"730
-[v mode_clock@display_cycle display_cycle `l  1 a 4 120 ]
+[v mode_clock@show show `*.39ui  1 a 2 136 ]
 "653
-[v mode_clock@state state `i  1 a 2 136 ]
-[v mode_clock@F3075 F3075 `[6][10]i  1 s 120 F3075 ]
-"793
-} 0
-"566
-[v _display display `(v  1 e 1 0 ]
-{
-"645
-[v display@dark_i dark_i `i  1 a 2 102 ]
+[v mode_clock@i i `i  1 a 2 140 ]
+"617
+[v mode_clock@delay delay `i  1 a 2 142 ]
 "642
-[v display@bright_i bright_i `i  1 a 2 100 ]
+[v mode_clock@secL secL `i  1 a 2 128 ]
 "640
-[v display@i i `i  1 a 2 106 ]
-"567
-[v display@num num `[10][5]i  1 a 100 0 ]
-"639
-[v display@iter iter `*.39i  1 a 2 104 ]
-"566
-[v display@n n `i  1 p 2 26 ]
-[v display@F3065 F3065 `[10][5]i  1 s 100 F3065 ]
-"650
+[v mode_clock@secH secH `i  1 a 2 126 ]
+"625
+[v mode_clock@minL minL `i  1 a 2 124 ]
+"623
+[v mode_clock@minH minH `i  1 a 2 122 ]
+"532
+[v mode_clock@XMAS XMAS `[6][10]i  1 a 120 0 ]
+"531
+[v mode_clock@state state `i  1 a 2 134 ]
+"608
+[v mode_clock@display_cycle display_cycle `i  1 a 2 120 ]
+"531
+[v mode_clock@F3087 F3087 `[6][10]i  1 s 120 F3087 ]
+"672
+} 0
+"446
+[v _display_num display_num `(v  1 e 1 0 ]
+{
+"525
+[v display_num@dark_i dark_i `i  1 a 2 52 ]
+"522
+[v display_num@bright_i bright_i `i  1 a 2 50 ]
+"520
+[v display_num@i i `i  1 a 2 56 ]
+"447
+[v display_num@num num `[10][5]uc  1 a 50 0 ]
+"519
+[v display_num@iter iter `*.39uc  1 a 2 54 ]
+"446
+[v display_num@n n `i  1 p 2 26 ]
+[v display_num@F3077 F3077 `[10][5]uc  1 s 50 F3077 ]
+"528
 } 0
 "15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
@@ -325,76 +326,78 @@
 [v ___awdiv@divisor divisor `i  1 p 2 20 ]
 "42
 } 0
-"384 C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+"225 C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
 [v _mode_TransLove mode_TransLove `(v  1 e 1 0 ]
 {
-"489
+"333
 [v mode_TransLove@delay delay `i  1 a 2 97 ]
-"548
-[v mode_TransLove@dark dark `i  1 a 2 93 ]
-"545
-[v mode_TransLove@bright bright `i  1 a 2 91 ]
-"488
+"373
+[v mode_TransLove@dark dark `i  1 a 2 91 ]
+"370
+[v mode_TransLove@bright bright `i  1 a 2 89 ]
+"332
 [v mode_TransLove@i i `i  1 a 2 101 ]
-"397
+"238
 [v mode_TransLove@arrow arrow `[16]ui  1 a 32 0 ]
-"386
+"227
 [v mode_TransLove@love love `[10]uc  1 a 10 32 ]
-"472
+"313
 [v mode_TransLove@E E `[5]uc  1 a 5 82 ]
-"465
+"306
 [v mode_TransLove@V V `[5]uc  1 a 5 77 ]
-"458
+"299
 [v mode_TransLove@O O `[5]uc  1 a 5 72 ]
-"451
+"292
 [v mode_TransLove@L L `[5]uc  1 a 5 67 ]
-"444
+"285
 [v mode_TransLove@S S `[5]uc  1 a 5 62 ]
-"437
+"278
 [v mode_TransLove@N N `[5]uc  1 a 5 57 ]
-"430
+"271
 [v mode_TransLove@A A `[5]uc  1 a 5 52 ]
-"423
+"264
 [v mode_TransLove@R R `[5]uc  1 a 5 47 ]
-"416
+"257
 [v mode_TransLove@T T `[5]uc  1 a 5 42 ]
-"486
-[v mode_TransLove@cycle cycle `l  1 a 4 87 ]
-"485
+"329
 [v mode_TransLove@arrow_i arrow_i `i  1 a 2 99 ]
-"484
-[v mode_TransLove@stop_arrow stop_arrow `i  1 a 2 95 ]
-"384
+"327
+[v mode_TransLove@arrow_speed arrow_speed `i  1 a 2 95 ]
+"328
+[v mode_TransLove@stop_arrow stop_arrow `i  1 a 2 93 ]
+"330
+[v mode_TransLove@cycle cycle `i  1 a 2 87 ]
+"225
 [v mode_TransLove@F3033 F3033 `[10]uc  1 s 10 F3033 ]
-"396
+"237
 [v mode_TransLove@F3035 F3035 `[16]ui  1 s 32 F3035 ]
-"414
+"255
 [v mode_TransLove@F3037 F3037 `[5]uc  1 s 5 F3037 ]
-"422
+"263
 [v mode_TransLove@F3039 F3039 `[5]uc  1 s 5 F3039 ]
-"429
+"270
 [v mode_TransLove@F3041 F3041 `[5]uc  1 s 5 F3041 ]
-"436
+"277
 [v mode_TransLove@F3043 F3043 `[5]uc  1 s 5 F3043 ]
-"443
+"284
 [v mode_TransLove@F3045 F3045 `[5]uc  1 s 5 F3045 ]
-"450
+"291
 [v mode_TransLove@F3047 F3047 `[5]uc  1 s 5 F3047 ]
-"457
+"298
 [v mode_TransLove@F3049 F3049 `[5]uc  1 s 5 F3049 ]
-"464
+"305
 [v mode_TransLove@F3051 F3051 `[5]uc  1 s 5 F3051 ]
-"471
+"312
 [v mode_TransLove@F3053 F3053 `[5]uc  1 s 5 F3053 ]
-"564
+"398
 } 0
-"806
+"685
 [v _tc_int tc_int `II(v  1 e 1 0 ]
 {
-"817
+"696
 } 0
-"795
+"674
 [v _update_time update_time `(v  1 e 1 0 ]
 {
-"804
+"683
 } 0
