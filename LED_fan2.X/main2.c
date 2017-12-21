@@ -24,81 +24,9 @@ int seconds;
 int minutes;
 int hours;
 
-void mode_tree(){
-#define TREE_COLUMN 21
-    int tree[1][TREE_COLUMN] =
-    {
-        {
-            0b0100000000,
-            0b0000000000,
-            0b0000000000,
-            0b0110000000,
-            0b0000100000,
-            0b0001100000,
-            0b0100010000,
-            0b0000100100,
-            0b0100001110,
-            0b1100100101,
-            0b0100001110,
-            0b0000100100,
-            0b0100010000,
-            0b0001100000,
-            0b0000100000,
-            0b0110000000,
-            0b0000000000,
-            0b0000000000,
-            0b0100000000,
-        }
-    };
-    while(1){
-    int cycle = 100;
-    while(cycle--){
-        int* show = (int*)tree[0];
-        for(int i = 0; i < TREE_COLUMN; ++i, ++show){
-            LATA = *show;
-            LATD = *show >> 8;
-            int bright = 30;
-            while(bright--);
-            LATA = LATD = 0;
-            int dark = 30;
-            while(dark--);
-        }
-        int delay = 10650;
-        while(delay--);
-    }
-    cycle = 500;
-    int move = 0;
-    while(cycle--){
-        
-        int* show = (int*)tree[0];
-        for(int i = 0; i < TREE_COLUMN; ++i, ++show){
-            LATA = *show;
-            LATD = *show >> 8;
-            int bright = 30;
-            while(bright--);
-            LATA = LATD = 0;
-            int dark = 30;
-            while(dark--);
-        }
-        int delay = 10640;
-        if(cycle & 1)
-            delay += move;
-        else
-            delay -= move;
-        move += 25;
-        while(delay--);
-    }
-    }
-}
-
-void mode_walker(){
-#define QUATER_CYCLE 2080  //順時要減少(指令太多)，逆時要增加
-#define STATE_CHANGE 160
-#define MOVE_START 1000 // 2072 - 1080 //QUATER_CYCLE - (9*(BRIGHT_INTERVAL + DARK_INTERVAL)))    
 #define WALKER_PIC 6
-#define WALKER_COLUMN 9
-    
-    int walker[WALKER_PIC][WALKER_COLUMN] =
+#define WALKER_COLUMN 9    
+int walker[WALKER_PIC][WALKER_COLUMN] =
         {
             {
             0b0000000000,
@@ -168,10 +96,277 @@ void mode_walker(){
         }
       };
 
+
+void mode_snow(){
+#define SNOW_CAR_COLUMN 43
+    int snow_car[SNOW_CAR_COLUMN] = {
+//                                0b000000000,
+//                                0b000100000,
+//                                0b100010000,
+//                                0b011111011,
+//                                0b011111111,
+//                                
+//                                0b011111000,
+//                                0b100010000,
+                                0b000011000,
+                                0b000111100,
+                                0b000111100,
+                                
+                                0b001111000,
+                                0b011010000,
+                                0b110010000,
+                                0b000010000,
+                                0b000010000,
+                                
+                                0b000010000,
+                                0b000010000,
+                                0b000100100,
+                                0b001001100,
+                                0b011111100,
+                                
+                                0b010000000,
+                                0b110000000,
+                                0b011111100,
+                                0b010010101,
+                                0b011111110,
+                                
+                                0b010010110,
+                                0b111111101,
+                                0b010000000,
+                                0b011111100,
+                                0b010010101,// 18 27
+                                
+                                0b011111110,
+                                0b010010101,
+                                0b011111100,
+                                0b010000000,
+                                0b011111100,
+                                
+                                0b010010101,
+                                0b011111110,
+                                0b010010101,
+                                0b011111100,
+                                0b010000000,
+                                
+                                0b111111101,
+                                0b010010110,
+                                0b011111110,
+                                0b110010101,
+                                0b011111100,
+                                
+                                0b010000000,
+                                0b011111100,
+                                0b000001100,
+                                0b000000100,
+                                0b000000000
+                            };
+    int display_cycle;
+    int delay;
+    int* show;
+    int count = 0;
+    int walker_pic_i = 0;
+    
+    display_cycle = 500;
+    while(display_cycle--){
+        // walker
+        show = (int*)walker[walker_pic_i] + WALKER_COLUMN - 1;
+        for(int i = 0; i < WALKER_COLUMN; ++i, --show){
+            LATA = *show;
+            LATD = (*show >> 8) | 0b10;
+            if(i&0b1100)
+                LATAbits.LATA4 = 1; // rope from walker to gifts
+                        
+            delay = BRIGHT_INTERVAL;
+            while(delay--);
+            LATA = 0;
+            LATDbits.LATD0 = 0;
+            delay = DARK_INTERVAL;
+            while(delay--);
+        }
+        if(!(++count & 0b11))
+            if(++walker_pic_i == WALKER_PIC)
+                walker_pic_i = 0;
+        
+        // snow car
+        show = (int*)snow_car;
+        for(int i = 0; i < SNOW_CAR_COLUMN; ++i, ++show){
+            LATA = *show;
+            LATD = (*show >> 8) | 0b10;
+            delay = BRIGHT_INTERVAL;
+            while(delay--);
+            LATA = 0;
+            LATDbits.LATD0 = 0;
+            delay = DARK_INTERVAL;
+            while(delay--);
+        }
+        delay = 5150;
+        while(delay--);
+    }
+}
+
+void mode_tree(){
+#define TREE_COLUMN 21
+    int tree[TREE_COLUMN] =
+        {
+            0b0100000000,
+            0b0000000000,
+            0b0000000000,
+            0b0110000000,
+            0b0000100000,
+            0b0001100000,
+            0b0100010000,
+            0b0000100100,
+            0b0100001110,
+            0b1100100101,
+            0b0100001110,
+            0b0000100100,
+            0b0100010000,
+            0b0001100000,
+            0b0000100000,
+            0b0110000000,
+            0b0000000000,
+            0b0000000000,
+            0b0100000000,
+        };
+    
+    bool six[6] = {true, false, false, false, false, false};
+    int cycle, delay;
+    int count_4 = 4;
+    int state = 0;
+    while(count_4--){
+        cycle = 8;
+        while(cycle--){
+            int* six_ptr = (int*)six;
+            for(int six_i = 0; six_i < 6; ++six_i, ++six_ptr){
+                int* show = (int*)tree;
+                for(int i = 0; i < TREE_COLUMN; ++i, ++show){
+                    if(*six_ptr){
+                        LATA = *show;
+                        LATD = *show >> 8;
+                    }else{
+                        LATA = 0;
+                        LATD = 0;
+                        delay = 1;
+                        while(delay--);
+                    }
+                    int bright = 30;
+                    while(bright--);
+                    LATA = LATD = 0;
+                    int dark = 30;
+                    while(dark--);
+                }
+                delay = 510;
+                while(delay--);
+            }
+        }
+        cycle = 15;
+        int move = 0;
+        while(cycle--){
+            int* six_ptr = (int*)six;
+            for(int six_i = 0; six_i < 6; ++six_i, ++six_ptr){
+                int* show = (int*)tree;
+                for(int i = 0; i < TREE_COLUMN; ++i, ++show){
+                    if(*six_ptr){
+                        LATA = *show;
+                        LATD = *show >> 8;
+                    }else{
+                        LATA = 0;
+                        LATD = 0;
+                        int wait = 1;
+                        while(wait--);
+                    }
+                    int bright = 30;
+                    while(bright--);
+                    LATA = LATD = 0;
+                    int dark = 30;
+                    while(dark--);
+                }
+                delay = 510;
+                if(six_i == 0){
+                    if(cycle & 1)
+                        delay += move;
+                    else
+                        delay -= move;
+                    move += 33;
+                }
+                while(delay--);
+            }
+        }
+        switch(++state){
+            case 1:
+                six[0] = false;
+                six[1] = six[5] = true;
+                break;
+            case 2:
+                six[0] = six[2] = six[4] = true;
+                six[1] = six[5] = false;
+                break;
+            case 3:
+                six[1] = six[3] = six[5] = true;
+                break;
+        }
+    }
+    int count = 15;
+    while(count--){
+        int* show = (int*)tree;
+        for(int i = 0; i < TREE_COLUMN; ++i, ++show){
+            LATA = *show;
+            LATD = *show >> 8;
+            int bright = 30;
+            while(bright--);
+            LATA = LATD = 0;
+            int dark = 30;
+            while(dark--);
+        }
+        delay = 15500;
+        while(delay--);
+    }
+    count = 20;
+    while(count--){
+        int* show = (int*)tree;
+        for(int i = 0; i < TREE_COLUMN; ++i, ++show){
+            LATA = *show;
+            LATD = *show >> 8;
+            int bright = 30;
+            while(bright--);
+            LATA = LATD = 0;
+            int dark = 30;
+            while(dark--);
+        }
+        delay = 10000;
+        while(delay--);
+    }
+    count = 40;
+    int interval = 0;
+    while(count--){
+        if(interval < 20)
+            ++interval;
+        for(int tree_i = 0; tree_i < 11; ++tree_i){
+            int* show = (int*)tree;
+            for(int i = 0; i < TREE_COLUMN; ++i, ++show){
+                LATA = *show;
+                LATD = *show >> 8;
+                int bright = interval;
+                while(bright--);
+                LATA = LATD = 0;
+                int dark = interval;
+                while(dark--);
+            }
+            delay = 35;
+            while(delay--);
+        }
+    }
+}
+
+void mode_walker(){
+#define QUATER_CYCLE 2080  //順時要減少(指令太多)，逆時要增加
+#define STATE_CHANGE 120
+#define MOVE_START 1000 // 2072 - 1080 //QUATER_CYCLE - (9*(BRIGHT_INTERVAL + DARK_INTERVAL)))    
+
     bool four[4] = {true};
     int state_change_cycle = STATE_CHANGE;
     int state = 0;
-    long int move = MOVE_START; 
+    int move = MOVE_START; 
     bool update = false;
     bool update_next_time = false;
     const int pic_cycle = 3;
@@ -179,7 +374,7 @@ void mode_walker(){
     int pic_i = 0;
     unsigned int* show;
     
-    int display_cycle = 700;
+    int display_cycle = 480;
     while(display_cycle--){
         if(move > 0)
             move -= 30;
@@ -230,7 +425,6 @@ void mode_walker(){
                     while(delay--);
                     break;
             }
-            
             show = (unsigned int*)walker[pic_i];
             for(int column = 0; column < WALKER_COLUMN; ++column, ++show){
                 if(four[i]){
@@ -293,11 +487,70 @@ void mode_walker(){
             }
         }
     }
+    
+#define DISTANCE 4880
+    display_cycle = 120;
+    move = 0;
+    int delay;
+    while(display_cycle--){
+        move += 70;
+        if(move > DISTANCE)
+            move = DISTANCE;
+        else{
+            delay = 5;
+            while(delay--);
+        }
+        
+        delay = move;
+        while(delay--);
+        
+        show = (unsigned int*)walker[pic_i];
+        for(int column = 0; column < WALKER_COLUMN; ++column, ++show){
+            LATA = *show;
+            LATD = (*show) >> 8;
+            int bright = BRIGHT_INTERVAL;
+            while(bright--);
+            LATA = 0;
+            LATD = 0;
+            int dark = DARK_INTERVAL;
+            while(dark--);
+        }
+            
+        // distance between 
+        int dark = DISTANCE;
+        dark -= move;
+        while(dark--);
+        
+        for(int column = 0; column < WALKER_COLUMN; ++column){
+            --show;
+            LATA = *show;
+            LATD = (*show) >> 8;
+            int bright = BRIGHT_INTERVAL;
+            while(bright--);
+            LATA = 0;
+            LATD = 0;
+            int dark = DARK_INTERVAL;
+            while(dark--);
+        }
+        if(display_cycle > 40){
+            if(++pic_cycle_i == pic_cycle){
+                pic_cycle_i = 0;
+                if(++pic_i == WALKER_PIC)
+                    pic_i = 0;
+            }
+        }else{
+            delay = 15;
+            while(delay--);
+        }
+        
+        delay = 4950;
+        while(delay--);
+        
+    }
 #undef QUATER_CYCLE
 #undef STATE_CHANGE
 #undef MOVE_START
-#undef WALKER_PIC
-#undef WALKER_COLUMN
+#undef DISTANCE
 }
 
 void mode_TransLove(){
@@ -475,65 +728,6 @@ void mode_TransLove(){
 #undef ARROW_COLUMN
 }
 
-//void transition(){
-//    int cycle = 1000;
-//    while(cycle--){
-//        int loop2 = 100;
-//        while(loop2--){
-//            
-//        }
-//        LATA = 3;
-//        int bright = 3000;
-//        while(bright--);
-//        LATA = 0;
-//        int dark = 20000;
-//        while(dark--);
-//    }
-//    while(cycle--){
-//        int s[6] = {0b0111100000111110,
-//                    0b1110000001111000,
-//                    0b0000011111000111,
-//                    0b1111000001111100,
-//                    0b1111111100000001,
-//                    0b1111100000111110
-//        };
-//        unsigned char line[3] = {
-//            0b11111111,
-//            0b10101010,
-//            0b01010101
-//        };
-//        
-//        int move = 0;
-//        int cycle = -1;
-//        while(cycle--){
-//            for(int i = 0; i < 3; ++i){
-//                LATA = line[i];
-//                int bright = 60;
-//                while(bright--);
-//                LATA = 0;
-//                int dark = move;
-//                while(dark--);
-//            }
-//            move += 10;
-//        }
-//        int cycle_2 = 16;
-//        int state = 0;
-//        while(cycle_2--){
-//            ++state;
-//            for(int i = 0; i < 6; ++i){
-//                LATA = s[i];
-//                if(state & 0b111 == false)
-//                    s[i] >>= 1;
-//                int bright = 60;
-//                while(bright--);
-//                LATA = 0;
-//                int dark = 200;
-//                while(dark--);
-//            }
-//        }
-//    }
-//}
-
 void display_num(int n){
     unsigned char num[10][5] = {
                 {
@@ -704,8 +898,7 @@ void mode_clock(){
         0b0011111110
     };
     
-    int display_cycle = 1000;
-//    while(display_cycle--){
+    int display_cycle = 500;
     while(--display_cycle){
         // HH : MM : SS
         // HH
@@ -746,7 +939,7 @@ void mode_clock(){
         display_num(secH);
         display_num(secL);
         
-#define DELAY_CLOCK 860
+#define DELAY_CLOCK 865
 		delay = DELAY_CLOCK;
 		while(delay--);
         
@@ -844,14 +1037,13 @@ void main(void) {
     LATD  = 0;
     LATA  = 0;
     
-//    transition();
-   mode_tree(); 
+//    mode_snow();
     while(1){
         mode_clock();
-//        transition();
         mode_walker();
         mode_TransLove();
-//        transition();
+        mode_tree(); 
+        mode_snow();
     }
     
     while(1);

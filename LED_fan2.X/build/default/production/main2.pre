@@ -3844,76 +3844,8 @@ int seconds;
 int minutes;
 int hours;
 
-void mode_tree(){
 
-int tree[1][21] =
-{
-{
-0b0100000000,
-0b0000000000,
-0b0000000000,
-0b0110000000,
-0b0000100000,
-0b0001100000,
-0b0100010000,
-0b0000100100,
-0b0100001110,
-0b1100100101,
-0b0100001110,
-0b0000100100,
-0b0100010000,
-0b0001100000,
-0b0000100000,
-0b0110000000,
-0b0000000000,
-0b0000000000,
-0b0100000000,
-}
-};
-while(1){
-int cycle = 100;
-while(cycle--){
-int* show = (int*)tree[0];
-for(int i = 0; i < 21; ++i, ++show){
-LATA = *show;
-LATD = *show >> 8;
-int bright = 30;
-while(bright--);
-LATA = LATD = 0;
-int dark = 30;
-while(dark--);
-}
-int delay = 10650;
-while(delay--);
-}
-cycle = 500;
-int move = 0;
-while(cycle--){
 
-int* show = (int*)tree[0];
-for(int i = 0; i < 21; ++i, ++show){
-LATA = *show;
-LATD = *show >> 8;
-int bright = 30;
-while(bright--);
-LATA = LATD = 0;
-int dark = 30;
-while(dark--);
-}
-int delay = 10640;
-if(cycle & 1)
-delay += move;
-else
-delay -= move;
-move += 25;
-while(delay--);
-}
-}
-}
-
-void mode_walker(){
-
-# 101
 int walker[6][9] =
 {
 {
@@ -3984,10 +3916,271 @@ int walker[6][9] =
 }
 };
 
-bool four[4] = {1};
-int state_change_cycle = 160;
+
+void mode_snow(){
+
+int snow_car[43] = {
+
+# 111
+0b000011000,
+0b000111100,
+0b000111100,
+
+0b001111000,
+0b011010000,
+0b110010000,
+0b000010000,
+0b000010000,
+
+0b000010000,
+0b000010000,
+0b000100100,
+0b001001100,
+0b011111100,
+
+0b010000000,
+0b110000000,
+0b011111100,
+0b010010101,
+0b011111110,
+
+0b010010110,
+0b111111101,
+0b010000000,
+0b011111100,
+0b010010101,
+
+0b011111110,
+0b010010101,
+0b011111100,
+0b010000000,
+0b011111100,
+
+0b010010101,
+0b011111110,
+0b010010101,
+0b011111100,
+0b010000000,
+
+0b111111101,
+0b010010110,
+0b011111110,
+0b110010101,
+0b011111100,
+
+0b010000000,
+0b011111100,
+0b000001100,
+0b000000100,
+0b000000000
+};
+int display_cycle;
+int delay;
+int* show;
+int count = 0;
+int walker_pic_i = 0;
+
+display_cycle = 500;
+while(display_cycle--){
+
+show = (int*)walker[walker_pic_i] + 9 - 1;
+for(int i = 0; i < 9; ++i, --show){
+LATA = *show;
+LATD = (*show >> 8) | 0b10;
+if(i&0b1100)
+LATAbits.LATA4 = 1;
+
+delay = 60;
+while(delay--);
+LATA = 0;
+LATDbits.LATD0 = 0;
+delay = 60;
+while(delay--);
+}
+if(!(++count & 0b11))
+if(++walker_pic_i == 6)
+walker_pic_i = 0;
+
+
+show = (int*)snow_car;
+for(int i = 0; i < 43; ++i, ++show){
+LATA = *show;
+LATD = (*show >> 8) | 0b10;
+delay = 60;
+while(delay--);
+LATA = 0;
+LATDbits.LATD0 = 0;
+delay = 60;
+while(delay--);
+}
+delay = 5400;
+while(delay--);
+}
+}
+
+void mode_tree(){
+
+int tree[21] =
+{
+0b0100000000,
+0b0000000000,
+0b0000000000,
+0b0110000000,
+0b0000100000,
+0b0001100000,
+0b0100010000,
+0b0000100100,
+0b0100001110,
+0b1100100101,
+0b0100001110,
+0b0000100100,
+0b0100010000,
+0b0001100000,
+0b0000100000,
+0b0110000000,
+0b0000000000,
+0b0000000000,
+0b0100000000,
+};
+
+bool six[6] = {1, 0, 0, 0, 0, 0};
+int cycle, delay;
+int count_4 = 4;
 int state = 0;
-long int move = 1000;
+while(count_4--){
+cycle = 8;
+while(cycle--){
+int* six_ptr = (int*)six;
+for(int six_i = 0; six_i < 6; ++six_i, ++six_ptr){
+int* show = (int*)tree;
+for(int i = 0; i < 21; ++i, ++show){
+if(*six_ptr){
+LATA = *show;
+LATD = *show >> 8;
+}else{
+LATA = 0;
+LATD = 0;
+delay = 1;
+while(delay--);
+}
+int bright = 30;
+while(bright--);
+LATA = LATD = 0;
+int dark = 30;
+while(dark--);
+}
+delay = 510;
+while(delay--);
+}
+}
+cycle = 15;
+int move = 0;
+while(cycle--){
+int* six_ptr = (int*)six;
+for(int six_i = 0; six_i < 6; ++six_i, ++six_ptr){
+int* show = (int*)tree;
+for(int i = 0; i < 21; ++i, ++show){
+if(*six_ptr){
+LATA = *show;
+LATD = *show >> 8;
+}else{
+LATA = 0;
+LATD = 0;
+int wait = 1;
+while(wait--);
+}
+int bright = 30;
+while(bright--);
+LATA = LATD = 0;
+int dark = 30;
+while(dark--);
+}
+delay = 510;
+if(six_i == 0){
+if(cycle & 1)
+delay += move;
+else
+delay -= move;
+move += 33;
+}
+while(delay--);
+}
+}
+switch(++state){
+case 1:
+six[0] = 0;
+six[1] = six[5] = 1;
+break;
+case 2:
+six[0] = six[2] = six[4] = 1;
+six[1] = six[5] = 0;
+break;
+case 3:
+six[1] = six[3] = six[5] = 1;
+break;
+}
+}
+int count = 15;
+while(count--){
+int* show = (int*)tree;
+for(int i = 0; i < 21; ++i, ++show){
+LATA = *show;
+LATD = *show >> 8;
+int bright = 30;
+while(bright--);
+LATA = LATD = 0;
+int dark = 30;
+while(dark--);
+}
+delay = 15500;
+while(delay--);
+}
+count = 20;
+while(count--){
+int* show = (int*)tree;
+for(int i = 0; i < 21; ++i, ++show){
+LATA = *show;
+LATD = *show >> 8;
+int bright = 30;
+while(bright--);
+LATA = LATD = 0;
+int dark = 30;
+while(dark--);
+}
+delay = 10000;
+while(delay--);
+}
+count = 40;
+int interval = 0;
+while(count--){
+if(interval < 20)
+++interval;
+for(int tree_i = 0; tree_i < 11; ++tree_i){
+int* show = (int*)tree;
+for(int i = 0; i < 21; ++i, ++show){
+LATA = *show;
+LATD = *show >> 8;
+int bright = interval;
+while(bright--);
+LATA = LATD = 0;
+int dark = interval;
+while(dark--);
+}
+delay = 35;
+while(delay--);
+}
+}
+}
+
+void mode_walker(){
+
+
+
+
+bool four[4] = {1};
+int state_change_cycle = 120;
+int state = 0;
+int move = 1000;
 bool update = 0;
 bool update_next_time = 0;
 const int pic_cycle = 3;
@@ -3995,7 +4188,7 @@ int pic_cycle_i = 0;
 int pic_i = 0;
 unsigned int* show;
 
-int display_cycle = 700;
+int display_cycle = 480;
 while(display_cycle--){
 if(move > 0)
 move -= 30;
@@ -4046,7 +4239,6 @@ delay = 16;
 while(delay--);
 break;
 }
-
 show = (unsigned int*)walker[pic_i];
 for(int column = 0; column < 9; ++column, ++show){
 if(four[i]){
@@ -4089,7 +4281,7 @@ pic_i = 0;
 
 
 if(state_change_cycle-- == 0){
-state_change_cycle = 160;
+state_change_cycle = 120;
 move = 1000;
 update = 0;
 state++;
@@ -4110,7 +4302,69 @@ break;
 }
 }
 
-# 301
+
+display_cycle = 120;
+move = 0;
+int delay;
+while(display_cycle--){
+move += 70;
+if(move > 4880)
+move = 4880;
+else{
+delay = 5;
+while(delay--);
+}
+
+delay = move;
+while(delay--);
+
+show = (unsigned int*)walker[pic_i];
+for(int column = 0; column < 9; ++column, ++show){
+LATA = *show;
+LATD = (*show) >> 8;
+int bright = 60;
+while(bright--);
+LATA = 0;
+LATD = 0;
+int dark = 60;
+while(dark--);
+}
+
+
+int dark = 4880;
+dark -= move;
+while(dark--);
+
+for(int column = 0; column < 9; ++column){
+--show;
+LATA = *show;
+LATD = (*show) >> 8;
+int bright = 60;
+while(bright--);
+LATA = 0;
+LATD = 0;
+int dark = 60;
+while(dark--);
+}
+if(display_cycle > 40){
+if(++pic_cycle_i == pic_cycle){
+pic_cycle_i = 0;
+if(++pic_i == 6)
+pic_i = 0;
+}
+}else{
+delay = 15;
+while(delay--);
+}
+
+delay = 4950;
+while(delay--);
+
+}
+
+
+
+
 }
 
 void mode_TransLove(){
@@ -4209,7 +4463,7 @@ unsigned char E[5] = {
 0b10101
 };
 
-# 405
+# 658
 int arrow_speed = 3;
 int stop_arrow = 120;
 int arrow_i = -15;
@@ -4276,10 +4530,9 @@ arrow_speed = 3;
 }
 }
 
-# 476
+# 729
 }
 
-# 537
 void display_num(int n){
 unsigned char num[10][5] = {
 {
@@ -4450,8 +4703,7 @@ int face[13] = {
 0b0011111110
 };
 
-int display_cycle = 1000;
-
+int display_cycle = 500;
 while(--display_cycle){
 
 
@@ -4493,7 +4745,7 @@ display_num(secH);
 display_num(secL);
 
 
-delay = 860;
+delay = 865;
 while(delay--);
 
 
@@ -4539,7 +4791,7 @@ int dark = 40;
 while(dark--);
 }
 
-delay = 860;
+delay = 865;
 while(delay--);
 }
 
@@ -4591,13 +4843,12 @@ LATD = 0;
 LATA = 0;
 
 
-mode_tree();
 while(1){
 mode_clock();
-
 mode_walker();
 mode_TransLove();
-
+mode_tree();
+mode_snow();
 }
 
 while(1);

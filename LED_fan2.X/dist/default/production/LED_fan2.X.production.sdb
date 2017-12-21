@@ -29,31 +29,75 @@
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"27 C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+"100 C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+[v _mode_snow mode_snow `(v  1 e 1 0 ]
+"207
 [v _mode_tree mode_tree `(v  1 e 1 0 ]
-"94
+"361
 [v _mode_walker mode_walker `(v  1 e 1 0 ]
-"303
+"556
 [v _mode_TransLove mode_TransLove `(v  1 e 1 0 ]
-"537
+"731
 [v _display_num display_num `(v  1 e 1 0 ]
-"621
+"815
 [v _mode_clock mode_clock `(v  1 e 1 0 ]
-"802
+"995
 [v _update_time update_time `(v  1 e 1 0 ]
-"813
+"1006
 [v _tc_int tc_int `II(v  1 e 1 0 ]
-"826
+"1019
 [v _main main `(v  1 e 1 0 ]
 "975 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f4520.h
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S23 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"1002
+[s S32 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S41 . 1 `S23 1 . 1 0 `S32 1 . 1 0 ]
+[v _LATAbits LATAbits `VES41  1 e 1 @3977 ]
 "1311
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S63 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"1338
+[s S72 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S81 . 1 `S63 1 . 1 0 `S72 1 . 1 0 ]
+[v _LATDbits LATDbits `VES81  1 e 1 @3980 ]
 "1475
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "2141
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
-[s S126 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S206 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSPIE 1 0 :1:3 
@@ -63,13 +107,13 @@
 `uc 1 PSPIE 1 0 :1:7 
 ]
 "2614
-[s S135 . 1 `uc 1 . 1 0 :4:0 
+[s S215 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TX1IE 1 0 :1:4 
 `uc 1 RC1IE 1 0 :1:5 
 ]
-[u S139 . 1 `S126 1 . 1 0 `S135 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES139  1 e 1 @3997 ]
-[s S186 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S219 . 1 `S206 1 . 1 0 `S215 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES219  1 e 1 @3997 ]
+[s S266 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -79,13 +123,13 @@
 `uc 1 PSPIF 1 0 :1:7 
 ]
 "2691
-[s S195 . 1 `uc 1 . 1 0 :4:0 
+[s S275 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TX1IF 1 0 :1:4 
 `uc 1 RC1IF 1 0 :1:5 
 ]
-[u S199 . 1 `S186 1 . 1 0 `S195 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES199  1 e 1 @3998 ]
-[s S156 . 1 `uc 1 TMR1IP 1 0 :1:0 
+[u S279 . 1 `S266 1 . 1 0 `S275 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES279  1 e 1 @3998 ]
+[s S236 . 1 `uc 1 TMR1IP 1 0 :1:0 
 `uc 1 TMR2IP 1 0 :1:1 
 `uc 1 CCP1IP 1 0 :1:2 
 `uc 1 SSPIP 1 0 :1:3 
@@ -95,32 +139,32 @@
 `uc 1 PSPIP 1 0 :1:7 
 ]
 "2768
-[s S165 . 1 `uc 1 . 1 0 :4:0 
+[s S245 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TX1IP 1 0 :1:4 
 `uc 1 RC1IP 1 0 :1:5 
 ]
-[u S169 . 1 `S156 1 . 1 0 `S165 1 . 1 0 ]
-[v _IPR1bits IPR1bits `VES169  1 e 1 @3999 ]
+[u S249 . 1 `S236 1 . 1 0 `S245 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES249  1 e 1 @3999 ]
 "5528
 [v _T1CON T1CON `VEuc  1 e 1 @4045 ]
 "5631
 [v _TMR1 TMR1 `VEus  1 e 2 @4046 ]
-[s S58 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+[s S138 . 1 `uc 1 NOT_BOR 1 0 :1:0 
 ]
 "5695
-[s S60 . 1 `uc 1 . 1 0 :1:0 
+[s S140 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_POR 1 0 :1:1 
 ]
-[s S63 . 1 `uc 1 . 1 0 :2:0 
+[s S143 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_PD 1 0 :1:2 
 ]
-[s S66 . 1 `uc 1 . 1 0 :3:0 
+[s S146 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_TO 1 0 :1:3 
 ]
-[s S69 . 1 `uc 1 . 1 0 :4:0 
+[s S149 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 NOT_RI 1 0 :1:4 
 ]
-[s S72 . 1 `uc 1 nBOR 1 0 :1:0 
+[s S152 . 1 `uc 1 nBOR 1 0 :1:0 
 `uc 1 nPOR 1 0 :1:1 
 `uc 1 nPD 1 0 :1:2 
 `uc 1 nTO 1 0 :1:3 
@@ -129,22 +173,22 @@
 `uc 1 SBOREN 1 0 :1:6 
 `uc 1 IPEN 1 0 :1:7 
 ]
-[s S81 . 1 `uc 1 BOR 1 0 :1:0 
+[s S161 . 1 `uc 1 BOR 1 0 :1:0 
 `uc 1 POR 1 0 :1:1 
 `uc 1 PD 1 0 :1:2 
 `uc 1 TO 1 0 :1:3 
 `uc 1 RI 1 0 :1:4 
 ]
-[u S87 . 1 `S58 1 . 1 0 `S60 1 . 1 0 `S63 1 . 1 0 `S66 1 . 1 0 `S69 1 . 1 0 `S72 1 . 1 0 `S81 1 . 1 0 ]
-[v _RCONbits RCONbits `VES87  1 e 1 @4048 ]
-[s S26 . 1 `uc 1 SCS 1 0 :2:0 
+[u S167 . 1 `S138 1 . 1 0 `S140 1 . 1 0 `S143 1 . 1 0 `S146 1 . 1 0 `S149 1 . 1 0 `S152 1 . 1 0 `S161 1 . 1 0 ]
+[v _RCONbits RCONbits `VES167  1 e 1 @4048 ]
+[s S106 . 1 `uc 1 SCS 1 0 :2:0 
 `uc 1 IOFS 1 0 :1:2 
 `uc 1 OSTS 1 0 :1:3 
 `uc 1 IRCF 1 0 :3:4 
 `uc 1 IDLEN 1 0 :1:7 
 ]
 "6106
-[s S32 . 1 `uc 1 SCS0 1 0 :1:0 
+[s S112 . 1 `uc 1 SCS0 1 0 :1:0 
 `uc 1 SCS1 1 0 :1:1 
 `uc 1 FLTS 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -152,9 +196,9 @@
 `uc 1 IRCF1 1 0 :1:5 
 `uc 1 IRCF2 1 0 :1:6 
 ]
-[u S40 . 1 `S26 1 . 1 0 `S32 1 . 1 0 ]
-[v _OSCCONbits OSCCONbits `VES40  1 e 1 @4051 ]
-[s S216 . 1 `uc 1 RBIF 1 0 :1:0 
+[u S120 . 1 `S106 1 . 1 0 `S112 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES120  1 e 1 @4051 ]
+[s S296 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -164,7 +208,7 @@
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "6722
-[s S225 . 1 `uc 1 . 1 0 :1:0 
+[s S305 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -173,12 +217,12 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S234 . 1 `uc 1 . 1 0 :6:0 
+[s S314 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S238 . 1 `S216 1 . 1 0 `S225 1 . 1 0 `S234 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES238  1 e 1 @4082 ]
+[u S318 . 1 `S296 1 . 1 0 `S305 1 . 1 0 `S314 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES318  1 e 1 @4082 ]
 "8007
 [v _TMR1IE TMR1IE `VEb  1 e 0 @31976 ]
 "8009
@@ -191,163 +235,246 @@
 [v _minutes minutes `i  1 e 2 0 ]
 "25
 [v _hours hours `i  1 e 2 0 ]
-"826
+"29
+[v _walker walker `[6][9]i  1 e 108 0 ]
+"1019
 [v _main main `(v  1 e 1 0 ]
 {
-"858
+"1050
 } 0
-"94
+"361
 [v _mode_walker mode_walker `(v  1 e 1 0 ]
 {
-"248
-[v mode_walker@dark dark `i  1 a 2 116 ]
-"244
-[v mode_walker@bright bright `i  1 a 2 114 ]
-"235
-[v mode_walker@column column `i  1 a 2 134 ]
-"253
-[v mode_walker@dark_309 dark `l  1 a 4 126 ]
-"210
-[v mode_walker@delay_305 delay `i  1 a 2 144 ]
-"187
-[v mode_walker@delay delay `i  1 a 2 112 ]
-"207
-[v mode_walker@i i `i  1 a 2 152 ]
-"101
-[v mode_walker@walker walker `[6][9]i  1 a 108 0 ]
-"171
-[v mode_walker@four four `[4]i  1 a 8 136 ]
-"174
-[v mode_walker@move move `l  1 a 4 146 ]
-"173
-[v mode_walker@state state `i  1 a 2 150 ]
-"180
-[v mode_walker@show show `*.39ui  1 a 2 132 ]
-"179
-[v mode_walker@pic_i pic_i `i  1 a 2 130 ]
-"176
-[v mode_walker@update_next_time update_next_time `i  1 a 2 124 ]
-"175
-[v mode_walker@update update `i  1 a 2 122 ]
-"178
-[v mode_walker@pic_cycle_i pic_cycle_i `i  1 a 2 120 ]
-"172
-[v mode_walker@state_change_cycle state_change_cycle `i  1 a 2 118 ]
-"182
-[v mode_walker@display_cycle display_cycle `i  1 a 2 110 ]
-"177
-[v mode_walker@pic_cycle pic_cycle `Ci  1 a 2 108 ]
-"94
-[v mode_walker@F3028 F3028 `[6][9]i  1 s 108 F3028 ]
-"169
-[v mode_walker@F3030 F3030 `[4]i  1 s 8 F3030 ]
-"301
+"442
+[v mode_walker@dark dark `i  1 a 2 4 ]
+"438
+[v mode_walker@bright bright `i  1 a 2 2 ]
+"429
+[v mode_walker@column column `i  1 a 2 28 ]
+"531
+[v mode_walker@dark_444 dark `i  1 a 2 12 ]
+"528
+[v mode_walker@bright_443 bright `i  1 a 2 10 ]
+"515
+[v mode_walker@dark_440 dark `i  1 a 2 8 ]
+"511
+[v mode_walker@bright_439 bright `i  1 a 2 6 ]
+"447
+[v mode_walker@dark_436 dark `l  1 a 4 24 ]
+"405
+[v mode_walker@delay_432 delay `i  1 a 2 50 ]
+"524
+[v mode_walker@column_442 column `i  1 a 2 32 ]
+"508
+[v mode_walker@column_438 column `i  1 a 2 30 ]
+"382
+[v mode_walker@delay delay `i  1 a 2 0 ]
+"520
+[v mode_walker@dark_441 dark `i  1 a 2 16 ]
+"402
+[v mode_walker@i i `i  1 a 2 58 ]
+"366
+[v mode_walker@four four `[4]i  1 a 8 36 ]
+"368
+[v mode_walker@state state `i  1 a 2 56 ]
+"369
+[v mode_walker@move move `i  1 a 2 54 ]
+"375
+[v mode_walker@show show `*.39ui  1 a 2 52 ]
+"494
+[v mode_walker@delay_437 delay `i  1 a 2 48 ]
+"374
+[v mode_walker@pic_i pic_i `i  1 a 2 46 ]
+"377
+[v mode_walker@display_cycle display_cycle `i  1 a 2 44 ]
+"373
+[v mode_walker@pic_cycle_i pic_cycle_i `i  1 a 2 34 ]
+"372
+[v mode_walker@pic_cycle pic_cycle `Ci  1 a 2 22 ]
+"371
+[v mode_walker@update_next_time update_next_time `i  1 a 2 20 ]
+"370
+[v mode_walker@update update `i  1 a 2 18 ]
+"367
+[v mode_walker@state_change_cycle state_change_cycle `i  1 a 2 14 ]
+"361
+[v mode_walker@F3068 F3068 `[4]i  1 s 8 F3068 ]
+"554
 } 0
-"27
+"207
 [v _mode_tree mode_tree `(v  1 e 1 0 ]
 {
-"80
-[v mode_tree@dark_285 dark `i  1 a 2 50 ]
-"77
-[v mode_tree@bright_284 bright `i  1 a 2 48 ]
-"63
-[v mode_tree@dark dark `i  1 a 2 44 ]
-"60
-[v mode_tree@bright bright `i  1 a 2 42 ]
-"74
-[v mode_tree@i_283 i `i  1 a 2 62 ]
-"57
-[v mode_tree@i i `i  1 a 2 56 ]
-"73
-[v mode_tree@show_282 show `*.39i  1 a 2 60 ]
-"83
-[v mode_tree@delay_286 delay `i  1 a 2 52 ]
-"56
-[v mode_tree@show show `*.39i  1 a 2 54 ]
-"66
-[v mode_tree@delay delay `i  1 a 2 46 ]
-"54
-[v mode_tree@cycle cycle `i  1 a 2 64 ]
-"70
-[v mode_tree@move move `i  1 a 2 58 ]
-"29
-[v mode_tree@tree tree `[1][21]i  1 a 42 0 ]
-"27
-[v mode_tree@F3010 F3010 `[1][21]i  1 s 42 F3010 ]
-"92
+"275
+[v mode_tree@wait wait `i  1 a 2 50 ]
+"281
+[v mode_tree@dark_401 dark `i  1 a 2 54 ]
+"278
+[v mode_tree@bright_400 bright `i  1 a 2 52 ]
+"255
+[v mode_tree@dark dark `i  1 a 2 48 ]
+"252
+[v mode_tree@bright bright `i  1 a 2 46 ]
+"352
+[v mode_tree@dark_416 dark `i  1 a 2 66 ]
+"349
+[v mode_tree@bright_415 bright `i  1 a 2 64 ]
+"268
+[v mode_tree@i_398 i `i  1 a 2 82 ]
+"242
+[v mode_tree@i i `i  1 a 2 76 ]
+"346
+[v mode_tree@i_414 i `i  1 a 2 96 ]
+"267
+[v mode_tree@show_397 show `*.39i  1 a 2 80 ]
+"241
+[v mode_tree@show show `*.39i  1 a 2 74 ]
+"345
+[v mode_tree@show_413 show `*.39i  1 a 2 94 ]
+"333
+[v mode_tree@dark_410 dark `i  1 a 2 62 ]
+"330
+[v mode_tree@bright_409 bright `i  1 a 2 60 ]
+"318
+[v mode_tree@dark_406 dark `i  1 a 2 58 ]
+"315
+[v mode_tree@bright_405 bright `i  1 a 2 56 ]
+"266
+[v mode_tree@six_i_396 six_i `i  1 a 2 112 ]
+"240
+[v mode_tree@six_i six_i `i  1 a 2 72 ]
+"344
+[v mode_tree@tree_i tree_i `i  1 a 2 92 ]
+"327
+[v mode_tree@i_408 i `i  1 a 2 90 ]
+"312
+[v mode_tree@i_404 i `i  1 a 2 86 ]
+"265
+[v mode_tree@six_ptr_395 six_ptr `*.39i  1 a 2 70 ]
+"239
+[v mode_tree@six_ptr six_ptr `*.39i  1 a 2 68 ]
+"326
+[v mode_tree@show_407 show `*.39i  1 a 2 88 ]
+"311
+[v mode_tree@show_403 show `*.39i  1 a 2 84 ]
+"263
+[v mode_tree@move move `i  1 a 2 78 ]
+"209
+[v mode_tree@tree tree `[21]i  1 a 42 0 ]
+"232
+[v mode_tree@six six `[6]i  1 a 12 98 ]
+"233
+[v mode_tree@delay delay `i  1 a 2 118 ]
+"236
+[v mode_tree@count count `i  1 a 2 116 ]
+"340
+[v mode_tree@interval interval `i  1 a 2 114 ]
+"233
+[v mode_tree@cycle cycle `i  1 a 2 110 ]
+"235
+[v mode_tree@state state `i  1 a 2 44 ]
+"234
+[v mode_tree@count_4 count_4 `i  1 a 2 42 ]
+"207
+[v mode_tree@F3023 F3023 `[21]i  1 s 42 F3023 ]
+"230
+[v mode_tree@F3025 F3025 `[6]i  1 s 12 F3025 ]
+"359
 } 0
-"621
+"100
+[v _mode_snow mode_snow `(v  1 e 1 0 ]
+{
+"192
+[v mode_snow@i_378 i `i  1 a 2 92 ]
+"173
+[v mode_snow@i i `i  1 a 2 94 ]
+"102
+[v mode_snow@snow_car snow_car `[43]i  1 a 86 0 ]
+"164
+[v mode_snow@delay delay `i  1 a 2 98 ]
+"165
+[v mode_snow@show show `*.39i  1 a 2 96 ]
+"167
+[v mode_snow@walker_pic_i walker_pic_i `i  1 a 2 90 ]
+"165
+[v mode_snow@count count `i  1 a 2 88 ]
+"163
+[v mode_snow@display_cycle display_cycle `i  1 a 2 86 ]
+"100
+[v mode_snow@F3011 F3011 `[43]i  1 s 86 F3011 ]
+"205
+} 0
+"815
 [v _mode_clock mode_clock `(v  1 e 1 0 ]
 {
-"776
-[v mode_clock@dark_373 dark `i  1 a 2 150 ]
-"772
-[v mode_clock@bright_372 bright `i  1 a 2 148 ]
-"769
+"969
+[v mode_clock@dark_508 dark `i  1 a 2 150 ]
+"965
+[v mode_clock@bright_507 bright `i  1 a 2 148 ]
+"962
 [v mode_clock@j j `i  1 a 2 160 ]
-"792
-[v mode_clock@dark_377 dark `i  1 a 2 154 ]
-"788
-[v mode_clock@bright_376 bright `i  1 a 2 152 ]
-"762
+"985
+[v mode_clock@dark_512 dark `i  1 a 2 154 ]
+"981
+[v mode_clock@bright_511 bright `i  1 a 2 152 ]
+"955
 [v mode_clock@dark dark `i  1 a 2 146 ]
-"758
+"951
 [v mode_clock@bright bright `i  1 a 2 144 ]
-"785
-[v mode_clock@i_375 i `i  1 a 2 164 ]
-"767
-[v mode_clock@i_370 i `i  1 a 2 166 ]
-"755
+"978
+[v mode_clock@i_510 i `i  1 a 2 164 ]
+"960
+[v mode_clock@i_505 i `i  1 a 2 166 ]
+"948
 [v mode_clock@i i `i  1 a 2 158 ]
-"716
+"909
 [v mode_clock@delay delay `i  1 a 2 170 ]
-"754
+"947
 [v mode_clock@show show `*.39i  1 a 2 168 ]
-"784
+"977
 [v mode_clock@face_i face_i `*.39i  1 a 2 162 ]
-"741
+"934
 [v mode_clock@secL secL `i  1 a 2 142 ]
-"739
+"932
 [v mode_clock@secH secH `i  1 a 2 140 ]
-"724
+"917
 [v mode_clock@minL minL `i  1 a 2 138 ]
-"722
+"915
 [v mode_clock@minH minH `i  1 a 2 136 ]
-"640
+"834
 [v mode_clock@MAS MAS `[4][10]i  1 a 80 0 ]
-"623
+"817
 [v mode_clock@X X `[14]i  1 a 28 106 ]
-"691
+"885
 [v mode_clock@face face `[13]i  1 a 26 80 ]
-"622
+"816
 [v mode_clock@state state `i  1 a 2 156 ]
-"707
+"901
 [v mode_clock@display_cycle display_cycle `i  1 a 2 134 ]
-"622
-[v mode_clock@F3093 F3093 `[14]i  1 s 28 F3093 ]
-"638
-[v mode_clock@F3096 F3096 `[4][10]i  1 s 80 F3096 ]
-"690
-[v mode_clock@F3098 F3098 `[13]i  1 s 26 F3098 ]
-"800
+"816
+[v mode_clock@F3140 F3140 `[14]i  1 s 28 F3140 ]
+"832
+[v mode_clock@F3143 F3143 `[4][10]i  1 s 80 F3143 ]
+"884
+[v mode_clock@F3145 F3145 `[13]i  1 s 26 F3145 ]
+"993
 } 0
-"537
+"731
 [v _display_num display_num `(v  1 e 1 0 ]
 {
-"616
+"810
 [v display_num@dark_i dark_i `i  1 a 2 52 ]
-"613
+"807
 [v display_num@bright_i bright_i `i  1 a 2 50 ]
-"611
+"805
 [v display_num@i i `i  1 a 2 56 ]
-"538
+"732
 [v display_num@num num `[10][5]uc  1 a 50 0 ]
-"610
+"804
 [v display_num@iter iter `*.39uc  1 a 2 54 ]
-"537
+"731
 [v display_num@n n `i  1 p 2 26 ]
-[v display_num@F3084 F3084 `[10][5]uc  1 s 50 F3084 ]
-"619
+[v display_num@F3131 F3131 `[10][5]uc  1 s 50 F3131 ]
+"813
 } 0
 "15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
@@ -383,78 +510,78 @@
 [v ___awdiv@divisor divisor `i  1 p 2 20 ]
 "42
 } 0
-"303 C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+"556 C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
 [v _mode_TransLove mode_TransLove `(v  1 e 1 0 ]
 {
-"411
+"664
 [v mode_TransLove@delay delay `i  1 a 2 97 ]
-"451
+"704
 [v mode_TransLove@dark dark `i  1 a 2 91 ]
-"448
+"701
 [v mode_TransLove@bright bright `i  1 a 2 89 ]
-"410
+"663
 [v mode_TransLove@i i `i  1 a 2 101 ]
-"316
+"569
 [v mode_TransLove@arrow arrow `[16]ui  1 a 32 0 ]
-"305
+"558
 [v mode_TransLove@love love `[10]uc  1 a 10 32 ]
-"391
+"644
 [v mode_TransLove@E E `[5]uc  1 a 5 82 ]
-"384
+"637
 [v mode_TransLove@V V `[5]uc  1 a 5 77 ]
-"377
+"630
 [v mode_TransLove@O O `[5]uc  1 a 5 72 ]
-"370
+"623
 [v mode_TransLove@L L `[5]uc  1 a 5 67 ]
-"363
+"616
 [v mode_TransLove@S S `[5]uc  1 a 5 62 ]
-"356
+"609
 [v mode_TransLove@N N `[5]uc  1 a 5 57 ]
-"349
+"602
 [v mode_TransLove@A A `[5]uc  1 a 5 52 ]
-"342
+"595
 [v mode_TransLove@R R `[5]uc  1 a 5 47 ]
-"335
+"588
 [v mode_TransLove@T T `[5]uc  1 a 5 42 ]
-"407
+"660
 [v mode_TransLove@arrow_i arrow_i `i  1 a 2 99 ]
-"405
+"658
 [v mode_TransLove@arrow_speed arrow_speed `i  1 a 2 95 ]
-"406
+"659
 [v mode_TransLove@stop_arrow stop_arrow `i  1 a 2 93 ]
-"408
+"661
 [v mode_TransLove@cycle cycle `i  1 a 2 87 ]
-"303
-[v mode_TransLove@F3051 F3051 `[10]uc  1 s 10 F3051 ]
-"315
-[v mode_TransLove@F3053 F3053 `[16]ui  1 s 32 F3053 ]
-"333
-[v mode_TransLove@F3055 F3055 `[5]uc  1 s 5 F3055 ]
-"341
-[v mode_TransLove@F3057 F3057 `[5]uc  1 s 5 F3057 ]
-"348
-[v mode_TransLove@F3059 F3059 `[5]uc  1 s 5 F3059 ]
-"355
-[v mode_TransLove@F3061 F3061 `[5]uc  1 s 5 F3061 ]
-"362
-[v mode_TransLove@F3063 F3063 `[5]uc  1 s 5 F3063 ]
-"369
-[v mode_TransLove@F3065 F3065 `[5]uc  1 s 5 F3065 ]
-"376
-[v mode_TransLove@F3067 F3067 `[5]uc  1 s 5 F3067 ]
-"383
-[v mode_TransLove@F3069 F3069 `[5]uc  1 s 5 F3069 ]
-"390
-[v mode_TransLove@F3071 F3071 `[5]uc  1 s 5 F3071 ]
-"476
+"556
+[v mode_TransLove@F3098 F3098 `[10]uc  1 s 10 F3098 ]
+"568
+[v mode_TransLove@F3100 F3100 `[16]ui  1 s 32 F3100 ]
+"586
+[v mode_TransLove@F3102 F3102 `[5]uc  1 s 5 F3102 ]
+"594
+[v mode_TransLove@F3104 F3104 `[5]uc  1 s 5 F3104 ]
+"601
+[v mode_TransLove@F3106 F3106 `[5]uc  1 s 5 F3106 ]
+"608
+[v mode_TransLove@F3108 F3108 `[5]uc  1 s 5 F3108 ]
+"615
+[v mode_TransLove@F3110 F3110 `[5]uc  1 s 5 F3110 ]
+"622
+[v mode_TransLove@F3112 F3112 `[5]uc  1 s 5 F3112 ]
+"629
+[v mode_TransLove@F3114 F3114 `[5]uc  1 s 5 F3114 ]
+"636
+[v mode_TransLove@F3116 F3116 `[5]uc  1 s 5 F3116 ]
+"643
+[v mode_TransLove@F3118 F3118 `[5]uc  1 s 5 F3118 ]
+"729
 } 0
-"813
+"1006
 [v _tc_int tc_int `II(v  1 e 1 0 ]
 {
-"824
+"1017
 } 0
-"802
+"995
 [v _update_time update_time `(v  1 e 1 0 ]
 {
-"811
+"1004
 } 0
