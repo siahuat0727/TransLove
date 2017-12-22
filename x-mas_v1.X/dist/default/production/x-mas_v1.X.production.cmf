@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
+$C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 E E 4 1
 reset_vec CODE 0 0 0 4 1
@@ -73,121 +73,121 @@ MEDIUMCONST 600-7FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\x-mas_v1.X.production.obj
-8 intcode CODE >266:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-8 intcode CODE >322:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-484 text10 CODE >243:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-484 text10 CODE >244:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-492 text10 CODE >245:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-49C text10 CODE >246:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4AA text9 CODE >232:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4AC text9 CODE >233:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4B8 text9 CODE >234:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4CC text9 CODE >235:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4F0 text8 CODE >267:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4F0 text8 CODE >270:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4F4 text8 CODE >271:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-504 text7 CODE >275:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-506 text7 CODE >278:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-26A intcode_body CODE >322:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-2B4 intcode_body CODE >324:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-2B8 intcode_body CODE >326:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-2BC intcode_body CODE >327:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-2C2 intcode_body CODE >328:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-2C2 intcode_body CODE >330:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4FC text5 CODE >258:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4FC text5 CODE >261:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4FE text5 CODE >262:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-500 text5 CODE >263:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-502 text5 CODE >266:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-45E text4 CODE >237:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-45E text4 CODE >238:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-46C text4 CODE >239:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-476 text4 CODE >240:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-30E text3 CODE >217:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+8 intcode CODE >272:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+8 intcode CODE >332:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+484 text10 CODE >247:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+484 text10 CODE >249:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+492 text10 CODE >250:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+49C text10 CODE >251:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4AA text9 CODE >234:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4AC text9 CODE >236:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4B8 text9 CODE >237:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4CC text9 CODE >238:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4F0 text8 CODE >273:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4F0 text8 CODE >276:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4F4 text8 CODE >277:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+504 text7 CODE >281:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+506 text7 CODE >284:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+26A intcode_body CODE >332:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+2B4 intcode_body CODE >334:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+2B8 intcode_body CODE >335:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+2BC intcode_body CODE >336:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+2C2 intcode_body CODE >337:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+2C2 intcode_body CODE >339:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4FC text5 CODE >264:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4FC text5 CODE >267:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4FE text5 CODE >268:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+500 text5 CODE >269:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+502 text5 CODE >272:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+45E text4 CODE >240:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+45E text4 CODE >242:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+46C text4 CODE >243:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+476 text4 CODE >244:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
 30E text3 CODE >218:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-316 text3 CODE >219:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-32E text3 CODE >220:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-33A text3 CODE >221:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-342 text3 CODE >222:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-352 text3 CODE >223:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-356 text3 CODE >224:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-35E text3 CODE >225:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-36E text3 CODE >226:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-382 text3 CODE >219:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-388 text3 CODE >228:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-390 text3 CODE >229:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4CE text2 CODE >281:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4CE text2 CODE >284:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4D0 text2 CODE >285:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4D2 text2 CODE >298:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4D4 text2 CODE >299:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4D6 text2 CODE >300:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4DA text2 CODE >303:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4DC text2 CODE >304:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4DE text2 CODE >309:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4E0 text2 CODE >310:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4E2 text2 CODE >311:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4E4 text2 CODE >312:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4E6 text2 CODE >314:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4E8 text2 CODE >315:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4EA text2 CODE >316:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-4EC text2 CODE >317:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-438 text1 CODE >243:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-438 text1 CODE >244:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-446 text1 CODE >245:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-450 text1 CODE >246:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+30E text3 CODE >220:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+316 text3 CODE >221:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+32E text3 CODE >222:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+33A text3 CODE >223:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+342 text3 CODE >224:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+352 text3 CODE >225:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+356 text3 CODE >226:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+35E text3 CODE >227:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+36E text3 CODE >228:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+382 text3 CODE >221:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+388 text3 CODE >230:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+390 text3 CODE >231:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4CE text2 CODE >287:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4CE text2 CODE >290:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4D0 text2 CODE >291:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4D2 text2 CODE >304:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4D4 text2 CODE >305:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4D6 text2 CODE >306:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4DA text2 CODE >309:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4DC text2 CODE >310:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4DE text2 CODE >316:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4E0 text2 CODE >318:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4E2 text2 CODE >319:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4E4 text2 CODE >320:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4E6 text2 CODE >322:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4E8 text2 CODE >324:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4EA text2 CODE >325:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+4EC text2 CODE >327:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+438 text1 CODE >247:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+438 text1 CODE >249:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+446 text1 CODE >250:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+450 text1 CODE >251:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
 3F6 text0 CODE >197:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-3F6 text0 CODE >198:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-3FE text0 CODE >199:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-402 text0 CODE >200:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-406 text0 CODE >201:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-40A text0 CODE >202:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-40E text0 CODE >205:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-416 text0 CODE >207:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-416 text0 CODE >209:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-42A text0 CODE >210:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-436 text0 CODE >207:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-3A2 cinit CODE >1065:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3A2 cinit CODE >1067:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3A2 cinit CODE >1070:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3A2 cinit CODE >1109:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3A4 cinit CODE >1110:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3A6 cinit CODE >1111:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3A8 cinit CODE >1112:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3AA cinit CODE >1113:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3AC cinit CODE >1114:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3AE cinit CODE >1115:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3B2 cinit CODE >1116:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3B6 cinit CODE >1117:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3B6 cinit CODE >1118:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3B8 cinit CODE >1119:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3BC cinit CODE >1120:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3BE cinit CODE >1121:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3C0 cinit CODE >1122:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3C2 cinit CODE >1123:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3C4 cinit CODE >1124:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3C6 cinit CODE >1128:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3C8 cinit CODE >1129:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3CA cinit CODE >1130:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3CC cinit CODE >1131:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3CE cinit CODE >1132:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3D0 cinit CODE >1133:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3D2 cinit CODE >1134:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3D6 cinit CODE >1135:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3DA cinit CODE >1136:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3DA cinit CODE >1137:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3DC cinit CODE >1138:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3E0 cinit CODE >1139:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3E2 cinit CODE >1140:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3E4 cinit CODE >1141:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3E6 cinit CODE >1145:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3E8 cinit CODE >1146:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3EA cinit CODE >1147:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3EC cinit CODE >1153:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3EC cinit CODE >1155:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3EE cinit CODE >1156:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3F0 cinit CODE >1157:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
-3F2 cinit CODE >1158:C:\Users\Lenovo\AppData\Local\Temp\s1v4.
+3F6 text0 CODE >199:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+3FE text0 CODE >200:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+402 text0 CODE >201:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+406 text0 CODE >202:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+40A text0 CODE >203:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+40E text0 CODE >206:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+416 text0 CODE >208:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+416 text0 CODE >210:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+42A text0 CODE >211:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+436 text0 CODE >208:C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+3A2 cinit CODE >1065:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3A2 cinit CODE >1067:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3A2 cinit CODE >1070:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3A2 cinit CODE >1109:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3A4 cinit CODE >1110:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3A6 cinit CODE >1111:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3A8 cinit CODE >1112:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3AA cinit CODE >1113:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3AC cinit CODE >1114:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3AE cinit CODE >1115:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3B2 cinit CODE >1116:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3B6 cinit CODE >1117:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3B6 cinit CODE >1118:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3B8 cinit CODE >1119:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3BC cinit CODE >1120:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3BE cinit CODE >1121:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3C0 cinit CODE >1122:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3C2 cinit CODE >1123:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3C4 cinit CODE >1124:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3C6 cinit CODE >1128:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3C8 cinit CODE >1129:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3CA cinit CODE >1130:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3CC cinit CODE >1131:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3CE cinit CODE >1132:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3D0 cinit CODE >1133:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3D2 cinit CODE >1134:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3D6 cinit CODE >1135:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3DA cinit CODE >1136:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3DA cinit CODE >1137:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3DC cinit CODE >1138:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3E0 cinit CODE >1139:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3E2 cinit CODE >1140:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3E4 cinit CODE >1141:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3E6 cinit CODE >1145:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3E8 cinit CODE >1146:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3EA cinit CODE >1147:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3EC cinit CODE >1153:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3EC cinit CODE >1155:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3EE cinit CODE >1156:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3F0 cinit CODE >1157:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
+3F2 cinit CODE >1158:C:\Users\Lenovo\AppData\Local\Temp\s6ao.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -207,20 +207,20 @@ __Hspace_1 600 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
 __Hspace_2 0 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
 __end_of_Hi_ISR 30E 0 CODE 0 intcode_body dist/default/production\x-mas_v1.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\x-mas_v1.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\x-mas_v1.X.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\x-mas_v1.X.production.obj
 _LATA F89 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
 _RCIF 7CF5 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
 _TAIL 26 0 COMRAM 1 dataCOMRAM dist/default/production\x-mas_v1.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
+___sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
 _data 3A8 0 BIGRAM 1 dataBIGRAM dist/default/production\x-mas_v1.X.production.obj
 _main 3F6 0 CODE 0 text0 dist/default/production\x-mas_v1.X.production.obj
 _next 438 0 CODE 0 text1 dist/default/production\x-mas_v1.X.production.obj
 _prev 45E 0 CODE 0 text4 dist/default/production\x-mas_v1.X.production.obj
 btemp 2D 0 COMRAM 1 temp dist/default/production\x-mas_v1.X.production.obj
-start E 0 CODE 0 init C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
+start E 0 CODE 0 init C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
 __size_of_next 0 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
 __size_of_prev 0 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
@@ -234,11 +234,11 @@ __HdataBIGRAM 0 0 ABS 0 dataBIGRAM dist/default/production\x-mas_v1.X.production
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\x-mas_v1.X.production.obj
 LED_DISP@dark 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\x-mas_v1.X.production.obj
 LED_DISP@iter 20 0 COMRAM 1 cstackCOMRAM dist/default/production\x-mas_v1.X.production.obj
-__accesstop 80 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
-intlevel0 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
-intlevel1 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
-intlevel2 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
-intlevel3 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
+__accesstop 80 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
+intlevel0 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
+intlevel1 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
+intlevel2 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
+intlevel3 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\x-mas_v1.X.production.obj
 _MyusartRead 4F0 0 CODE 0 text8 dist/default/production\x-mas_v1.X.production.obj
 _Myusartinit 4CE 0 CODE 0 text2 dist/default/production\x-mas_v1.X.production.obj
@@ -257,8 +257,8 @@ __Hclrtext 0 0 ABS 0 clrtext dist/default/production\x-mas_v1.X.production.obj
 __size_ofi2_next 0 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
 __pidataCOMRAM 50C 0 CODE 0 idataCOMRAM dist/default/production\x-mas_v1.X.production.obj
 __LdataBIGRAM 0 0 ABS 0 dataBIGRAM dist/default/production\x-mas_v1.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\x-mas_v1.X.production.obj
 add_word@c 3 0 COMRAM 1 cstackCOMRAM dist/default/production\x-mas_v1.X.production.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\x-mas_v1.X.production.obj
@@ -305,7 +305,7 @@ __Htext8 0 0 ABS 0 text8 dist/default/production\x-mas_v1.X.production.obj
 __Htext9 0 0 ABS 0 text9 dist/default/production\x-mas_v1.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\x-mas_v1.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\x-mas_v1.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\x-mas_v1.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\x-mas_v1.X.production.obj
 __CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
@@ -393,8 +393,8 @@ __CFG_IESO$ON 0 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\x-mas_v1.X.production.obj
 main@start 24 0 COMRAM 1 cstackCOMRAM dist/default/production\x-mas_v1.X.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\x-mas_v1.X.production.obj
-stackhi 3A7 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
-stacklo 80 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
+stackhi 3A7 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
+stacklo 80 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
 ?i2_next 1 0 COMRAM 1 cstackCOMRAM dist/default/production\x-mas_v1.X.production.obj
 __Lintcode 8 0 CODE 0 intcode dist/default/production\x-mas_v1.X.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\x-mas_v1.X.production.obj
@@ -432,7 +432,7 @@ __ptext8 4F0 0 CODE 0 text8 dist/default/production\x-mas_v1.X.production.obj
 __ptext9 4AA 0 CODE 0 text9 dist/default/production\x-mas_v1.X.production.obj
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\x-mas_v1.X.production.obj
 __Ltext10 0 0 ABS 0 text10 dist/default/production\x-mas_v1.X.production.obj
-__ramtop 600 0 RAM 0 ramtop C:\Users\Lenovo\AppData\Local\Temp\s1v4.obj
+__ramtop 600 0 RAM 0 ramtop C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
 __Lpowerup E 0 CODE 0 powerup dist/default/production\x-mas_v1.X.production.obj
 __size_of_Myusartwrite 0 0 ABS 0 - dist/default/production\x-mas_v1.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\x-mas_v1.X.production.obj

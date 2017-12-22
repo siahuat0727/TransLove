@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>x-mas_v1</name>
+            <name>x-mas_black</name>
             <creation-uuid>2b009560-69a5-48cf-9e7b-da3b277c0ff9</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>

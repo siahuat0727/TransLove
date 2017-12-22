@@ -3,10 +3,10 @@ Microchip MPLAB XC8 Compiler V1.44 ()
 Linker command line:
 
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.44\dat\en_msgs.txt -cs \
-  -h+dist/default/production\x-mas_v1.X.production.sym \
-  --cmf=dist/default/production\x-mas_v1.X.production.cmf -z -Q18F4520 \
-  -oC:\Users\Lenovo\AppData\Local\Temp\s6ao.2 \
-  -Mdist/default/production/x-mas_v1.X.production.map -E1 -ver=XC8 \
+  -h+dist/default/production\x-mas_white.X.production.sym \
+  --cmf=dist/default/production\x-mas_white.X.production.cmf -z -Q18F4520 \
+  -oC:\Users\Lenovo\AppData\Local\Temp\s1ts.2 \
+  -Mdist/default/production/x-mas_white.X.production.map -E1 -ver=XC8 \
   -ASTACK=080h-03a7h -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0600h-06FFhx122 -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-07Fh \
   -AABS1=00h-05FFh -ABIGRAM=01h-05FFh -ARAM=080h-0FFh,0100h-01FFhx5 \
@@ -21,8 +21,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj \
-  dist/default/production\x-mas_v1.X.production.obj 
+  C:\Users\Lenovo\AppData\Local\Temp\s1ts.obj \
+  dist/default/production\x-mas_white.X.production.obj 
 
 Object code version is 3.11
 
@@ -34,12 +34,12 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Lenovo\AppData\Local\Temp\s6ao.obj
+C:\Users\Lenovo\AppData\Local\Temp\s1ts.obj
                 init                                  E        E        4        4       0
                 reset_vec                             0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
                 config                           300000   300000        E   300000       0
-dist/default/production\x-mas_v1.X.production.obj
+dist/default/production\x-mas_white.X.production.obj
                 intcode                               8        8        6        4       0
                 temp                                 2D       2D        1        1       1
                 text10                              484      484       26        4       0
@@ -458,7 +458,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 197 in file "main.c"
+		line 196 in file "white_fan.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -491,7 +491,7 @@ Total ram usage:        2 bytes
 
  *************** function _next *****************
  Defined at:
-		line 247 in file "main.c"
+		line 242 in file "white_fan.c"
  Parameters:    Size  Location     Type
   ptr             2   21[COMRAM] PTR unsigned char 
 		 -> data(600), 
@@ -522,7 +522,7 @@ Total ram usage:        2 bytes
 
  *************** function _Myusartinit *****************
  Defined at:
-		line 287 in file "main.c"
+		line 280 in file "white_fan.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -552,7 +552,7 @@ Total ram usage:        0 bytes
 
  *************** function _LED_DISP *****************
  Defined at:
-		line 218 in file "main.c"
+		line 216 in file "white_fan.c"
  Parameters:    Size  Location     Type
   start           2   23[COMRAM] PTR unsigned char 
 		 -> data(600), 
@@ -588,7 +588,7 @@ Total ram usage:       12 bytes
 
  *************** function _prev *****************
  Defined at:
-		line 240 in file "main.c"
+		line 236 in file "white_fan.c"
  Parameters:    Size  Location     Type
   ptr             2   21[COMRAM] PTR unsigned char 
 		 -> data(600), 
@@ -619,7 +619,7 @@ Total ram usage:        2 bytes
 
  *************** function _ISR_Init *****************
  Defined at:
-		line 264 in file "main.c"
+		line 257 in file "white_fan.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -649,7 +649,7 @@ Total ram usage:        0 bytes
 
  *************** function _Hi_ISR *****************
  Defined at:
-		line 332 in file "main.c"
+		line 321 in file "white_fan.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -680,7 +680,7 @@ Total ram usage:       18 bytes
 
  *************** function _Myusartwrite *****************
  Defined at:
-		line 281 in file "main.c"
+		line 274 in file "white_fan.c"
  Parameters:    Size  Location     Type
   a               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -709,7 +709,7 @@ Total ram usage:        1 bytes
 
  *************** function _MyusartRead *****************
  Defined at:
-		line 273 in file "main.c"
+		line 266 in file "white_fan.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -739,7 +739,7 @@ Total ram usage:        0 bytes
 
  *************** function _add_word *****************
  Defined at:
-		line 234 in file "main.c"
+		line 231 in file "white_fan.c"
  Parameters:    Size  Location     Type
   c               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -770,7 +770,7 @@ Total ram usage:        1 bytes
 
  *************** function i2_next *****************
  Defined at:
-		line 247 in file "main.c"
+		line 242 in file "white_fan.c"
  Parameters:    Size  Location     Type
   ptr             2    0[COMRAM] PTR unsigned char 
 		 -> data(600), 
@@ -802,13 +802,7 @@ Total ram usage:        2 bytes
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-shared
-		__initialization		CODE           	03A2	0000	75
-		i2_next        		CODE           	0484	0000	39
-
-shared estimated size: 114
-
-main.c
+white_fan.c
 		_MyusartRead   		CODE           	04F0	0000	13
 		_Myusartinit   		CODE           	04CE	0000	35
 		_Myusartwrite  		CODE           	0504	0000	9
@@ -820,5 +814,11 @@ main.c
 		_Hi_ISR        		CODE           	0008	0000	171
 		_ISR_Init      		CODE           	04FC	0000	9
 
-main.c estimated size: 568
+white_fan.c estimated size: 568
+
+shared
+		__initialization		CODE           	03A2	0000	75
+		i2_next        		CODE           	0484	0000	39
+
+shared estimated size: 114
 

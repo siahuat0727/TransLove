@@ -1,5 +1,5 @@
 
-# 1 "main.c"
+# 1 "white_fan.c"
 
 
 # 13
@@ -3879,7 +3879,7 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 77 "main.c"
+# 77 "white_fan.c"
 unsigned char data[600] = {
 0b01111111,
 0b01111111,
@@ -3889,13 +3889,13 @@ unsigned char data[600] = {
 0b01111111,
 0b01111111,
 0b00000000,
-0b00000000,
 0b00111000,
 0b01111100,
 0b01010100,
 0b01010100,
 0b01011100,
 0b00011000,
+0b00000000,
 0b00000000,
 0b00000000,
 0b01000001,
@@ -3978,7 +3978,6 @@ unsigned char data[600] = {
 0b01101000,
 0b01000000
 };
-
 unsigned char* NOW = (unsigned char*)data + 96;
 unsigned char* TAIL = data + 600 - 1;
 
@@ -4000,8 +3999,7 @@ unsigned char* next(unsigned char* ptr);
 void add_word(unsigned char c);
 void init_word();
 
-void main(void)
-{
+void main(void) {
 OSCCONbits.IRCF = 0b110;
 TRISD = 0;
 TRISA = 0;
@@ -4011,7 +4009,7 @@ ISR_Init();
 
 unsigned char* start = (unsigned char*)data;
 
-while(1) {
+while(1){
 
 start = next(start);
 LED_DISP(start);
@@ -4021,10 +4019,9 @@ return;
 }
 
 
-void LED_DISP(unsigned char* start)
-{
+void LED_DISP(unsigned char* start){
 unsigned char* iter = start;
-for(int i = 0; i < 220; ++i) {
+for(int i = 0; i < 202; ++i){
 LATA = *iter;
 int bright = 30;
 while(bright--);
@@ -4037,28 +4034,24 @@ int delay = 0;
 while(delay--);
 }
 
-void add_word(unsigned char c)
-{
+void add_word(unsigned char c){
 *NOW = c;
 NOW = next(NOW);
 }
 
-unsigned char* prev(unsigned char* ptr)
-{
+unsigned char* prev(unsigned char* ptr){
 if(ptr == (unsigned char*)data)
 return TAIL;
 return ptr-1;
 }
 
-unsigned char* next(unsigned char* ptr)
-{
+unsigned char* next(unsigned char* ptr){
 if(ptr == TAIL)
 return (unsigned char*)data;
 return ptr+1;
 }
 
-void init_word()
-{
+void init_word(){
 add_word((unsigned char)255);
 add_word((unsigned char)255);
 add_word((unsigned char)200);
@@ -4096,7 +4089,7 @@ void Myusartinit()
 TRISCbits.TRISC6 = 1;
 TRISCbits.TRISC7 = 1;
 
-# 304
+# 297
 BAUDCONbits.BRG16 = 0 ;
 TXSTAbits.BRGH = 1;
 SPBRG = 25;
@@ -4108,26 +4101,23 @@ RCSTAbits.SPEN = 1;
 
 
 
-PIR1bits.TXIF =
-1;
-PIR1bits.RCIF =
-0;
+PIR1bits.TXIF = 1;
+PIR1bits.RCIF = 0;
 TXSTAbits.TXEN = 1;
 RCSTAbits.CREN = 1;
 
 PIE1bits.TXIE = 0;
-IPR1bits.TXIP =
-1;
+IPR1bits.TXIP = 1;
 PIE1bits.RCIE = 1;
-IPR1bits.RCIP =
-1;
+IPR1bits.RCIP = 1;
 
 
 return ;
 }
 void interrupt Hi_ISR(void)
 {
-if(RCIF) {
+if(RCIF)
+{
 MyusartRead();
 Myusartwrite(global_char);
 }

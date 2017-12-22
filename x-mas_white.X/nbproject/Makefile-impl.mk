@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=simulate.X
+PROJECTNAME=x-mas_white.X
 
 # Active Configuration
 DEFAULTCONF=default

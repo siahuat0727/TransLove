@@ -11,11 +11,6 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
-idloc IDLOC 0 200000 200000 8 1
-init CODE 0 E E 4 1
-reset_vec CODE 0 0 0 4 1
-config CONFIG 0 300000 300000 E 1
 $dist/default/production\LED_fan2.X.production.obj
 cinit CODE 0 1B5A 1B5A 9A 1
 intcode_body CODE 0 1A9A 1A9A C0 1
@@ -44,6 +39,11 @@ dataBANK1 BANK1 1 100 100 DA 1
 dataBANK2 BANK2 1 200 200 EE 1
 dataCOMRAM COMRAM 1 4D 4D 14 1
 bssCOMRAM COMRAM 1 61 61 6 1
+$C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 E E 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -672,78 +672,78 @@ EA text1 CODE >700:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
 1E30 text0 CODE >1109:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
 1E34 text0 CODE >1110:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
 1E38 text0 CODE >1105:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1B5A cinit CODE >850:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B5A cinit CODE >852:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B5A cinit CODE >855:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B5A cinit CODE >1006:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B5C cinit CODE >1007:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B5E cinit CODE >1008:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B60 cinit CODE >1009:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B62 cinit CODE >1010:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B64 cinit CODE >1011:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B66 cinit CODE >1012:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B6A cinit CODE >1013:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B6E cinit CODE >1014:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B6E cinit CODE >1015:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B70 cinit CODE >1016:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B74 cinit CODE >1017:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B76 cinit CODE >1018:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B78 cinit CODE >1019:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B7A cinit CODE >1023:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B7C cinit CODE >1024:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B7E cinit CODE >1025:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B80 cinit CODE >1026:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B82 cinit CODE >1027:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B84 cinit CODE >1028:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B86 cinit CODE >1029:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B8A cinit CODE >1030:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B8E cinit CODE >1031:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B8E cinit CODE >1032:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B90 cinit CODE >1033:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B94 cinit CODE >1034:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B96 cinit CODE >1035:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B98 cinit CODE >1036:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B9A cinit CODE >1040:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B9C cinit CODE >1041:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1B9E cinit CODE >1042:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BA0 cinit CODE >1043:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BA2 cinit CODE >1044:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BA4 cinit CODE >1045:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BA6 cinit CODE >1046:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BAA cinit CODE >1047:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BAE cinit CODE >1048:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BAE cinit CODE >1049:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BB0 cinit CODE >1050:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BB4 cinit CODE >1051:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BB6 cinit CODE >1052:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BB8 cinit CODE >1053:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BBA cinit CODE >1057:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BBC cinit CODE >1058:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BBE cinit CODE >1059:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BC0 cinit CODE >1060:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BC2 cinit CODE >1061:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BC4 cinit CODE >1062:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BC6 cinit CODE >1063:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BCA cinit CODE >1064:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BCE cinit CODE >1065:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BCE cinit CODE >1066:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BD0 cinit CODE >1067:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BD4 cinit CODE >1068:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BD6 cinit CODE >1069:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BD8 cinit CODE >1070:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BDA cinit CODE >1074:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BDC cinit CODE >1075:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BDE cinit CODE >1076:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BE0 cinit CODE >1077:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BE2 cinit CODE >1078:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BE4 cinit CODE >1079:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BE6 cinit CODE >1085:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BE6 cinit CODE >1087:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BE8 cinit CODE >1088:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BEA cinit CODE >1090:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BEC cinit CODE >1091:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BEE cinit CODE >1092:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
-1BF0 cinit CODE >1093:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B5A cinit CODE >850:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B5A cinit CODE >852:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B5A cinit CODE >855:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B5A cinit CODE >1006:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B5C cinit CODE >1007:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B5E cinit CODE >1008:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B60 cinit CODE >1009:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B62 cinit CODE >1010:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B64 cinit CODE >1011:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B66 cinit CODE >1012:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B6A cinit CODE >1013:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B6E cinit CODE >1014:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B6E cinit CODE >1015:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B70 cinit CODE >1016:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B74 cinit CODE >1017:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B76 cinit CODE >1018:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B78 cinit CODE >1019:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B7A cinit CODE >1023:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B7C cinit CODE >1024:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B7E cinit CODE >1025:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B80 cinit CODE >1026:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B82 cinit CODE >1027:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B84 cinit CODE >1028:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B86 cinit CODE >1029:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B8A cinit CODE >1030:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B8E cinit CODE >1031:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B8E cinit CODE >1032:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B90 cinit CODE >1033:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B94 cinit CODE >1034:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B96 cinit CODE >1035:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B98 cinit CODE >1036:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B9A cinit CODE >1040:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B9C cinit CODE >1041:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1B9E cinit CODE >1042:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BA0 cinit CODE >1043:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BA2 cinit CODE >1044:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BA4 cinit CODE >1045:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BA6 cinit CODE >1046:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BAA cinit CODE >1047:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BAE cinit CODE >1048:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BAE cinit CODE >1049:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BB0 cinit CODE >1050:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BB4 cinit CODE >1051:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BB6 cinit CODE >1052:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BB8 cinit CODE >1053:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BBA cinit CODE >1057:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BBC cinit CODE >1058:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BBE cinit CODE >1059:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BC0 cinit CODE >1060:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BC2 cinit CODE >1061:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BC4 cinit CODE >1062:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BC6 cinit CODE >1063:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BCA cinit CODE >1064:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BCE cinit CODE >1065:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BCE cinit CODE >1066:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BD0 cinit CODE >1067:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BD4 cinit CODE >1068:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BD6 cinit CODE >1069:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BD8 cinit CODE >1070:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BDA cinit CODE >1074:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BDC cinit CODE >1075:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BDE cinit CODE >1076:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BE0 cinit CODE >1077:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BE2 cinit CODE >1078:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BE4 cinit CODE >1079:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BE6 cinit CODE >1085:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BE6 cinit CODE >1087:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BE8 cinit CODE >1088:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BEA cinit CODE >1090:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BEC cinit CODE >1091:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BEE cinit CODE >1092:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
+1BF0 cinit CODE >1093:C:\Users\Lenovo\AppData\Local\Temp\s6ik.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -781,7 +781,7 @@ __HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\LED_fan2.X.production
 __HidataBANK2 0 0 ABS 0 idataBANK2 dist/default/production\LED_fan2.X.production.obj
 __size_of_display_num 0 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\LED_fan2.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\LED_fan2.X.production.obj
 mode_clock@dark_494 37 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 mode_clock@dark_498 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
@@ -791,13 +791,13 @@ __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\LED_fan2.X.pro
 _LATA F89 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 _LATD F8C 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 _TMR1 FCE 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+___sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
 _face E1 0 BANK0 1 dataBANK0 dist/default/production\LED_fan2.X.production.obj
 _love 8C 0 BANK0 1 dataBANK0 dist/default/production\LED_fan2.X.production.obj
 _main 1DE8 0 CODE 0 text0 dist/default/production\LED_fan2.X.production.obj
 _tree B7 0 BANK0 1 dataBANK0 dist/default/production\LED_fan2.X.production.obj
 btemp 69 0 COMRAM 1 temp dist/default/production\LED_fan2.X.production.obj
-start E 0 CODE 0 init C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+start E 0 CODE 0 init C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 __size_of___awmod 0 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
@@ -822,11 +822,11 @@ __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\LED_fan2.X.production
 display_num@i 23 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 display_num@n 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 mode_walker@update_next_time 312 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
-__accesstop 80 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
-intlevel0 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
-intlevel1 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
-intlevel2 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
-intlevel3 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+__accesstop 80 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
+intlevel0 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
+intlevel1 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
+intlevel2 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
+intlevel3 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
 mode_tree@show_417 326 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_tree@show_423 32A 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_tree@show_427 32E 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
@@ -845,12 +845,12 @@ __pidataCOMRAM 1EA4 0 CODE 0 idataCOMRAM dist/default/production\LED_fan2.X.prod
 ___wmul@multiplicand 15 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 _mode_clock 1252 0 CODE 0 text4 dist/default/production\LED_fan2.X.production.obj
 ___awdiv@dividend 13 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
 mode_walker@dark 302 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_walker@four 322 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_walker@move 332 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_walker@show 32E 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\LED_fan2.X.production.obj
 mode_tree@dark_421 30C 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_tree@dark_426 310 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
@@ -931,7 +931,7 @@ mode_walker@bright_461 308 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan
 mode_walker@state_change_cycle 30C 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\LED_fan2.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\LED_fan2.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
 _snow_car 200 0 BANK2 1 dataBANK2 dist/default/production\LED_fan2.X.production.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\LED_fan2.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\LED_fan2.X.production.obj
@@ -1047,8 +1047,8 @@ __Lfardata 0 0 FARRAM 0 fardata dist/default/production\LED_fan2.X.production.ob
 _tc_int 8 0 CODE 0 intcode dist/default/production\LED_fan2.X.production.obj
 mode_walker@F3089 96 0 BANK0 1 dataBANK0 dist/default/production\LED_fan2.X.production.obj
 mode_walker@delay 334 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
-stackhi 5FF 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
-stacklo 34E 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+stackhi 5FF 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
+stacklo 34E 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
 mode_walker@pic_i 32C 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_walker@state 330 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 __Lintcode 8 0 CODE 0 intcode dist/default/production\LED_fan2.X.production.obj
@@ -1103,7 +1103,7 @@ __ptext9 D10 0 CODE 0 text9 dist/default/production\LED_fan2.X.production.obj
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\LED_fan2.X.production.obj
 mode_clock@display_cycle 27 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 __Ltext11 0 0 ABS 0 text11 dist/default/production\LED_fan2.X.production.obj
-__ramtop 600 0 RAM 0 ramtop C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+__ramtop 600 0 RAM 0 ramtop C:\Users\Lenovo\AppData\Local\Temp\s6ik.obj
 __Lpowerup E 0 CODE 0 powerup dist/default/production\LED_fan2.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\LED_fan2.X.production.obj
 mode_clock@bright 31 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj

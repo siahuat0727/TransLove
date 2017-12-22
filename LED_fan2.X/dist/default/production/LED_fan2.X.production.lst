@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.44 build -154322312 
-                                                                                               Sat Dec 23 03:07:13 2017
+                                                                                               Sat Dec 23 03:32:43 2017
 
 Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140600
      1                           	processor	18F4520
@@ -4647,10 +4647,10 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
   4629  0018A6  6E23               	movwf	mode_snow@elk_pic_i,c
   4630  0018A8                     l111:
   4631                           
-  4632                           ;main2.c: 526: delay = 3820;
+  4632                           ;main2.c: 526: delay = 3780;
   4633  0018A8  0E0E               	movlw	14
   4634  0018AA  6E2E               	movwf	mode_snow@delay+1,c
-  4635  0018AC  0EEC               	movlw	236
+  4635  0018AC  0EC4               	movlw	196
   4636  0018AE  6E2D               	movwf	mode_snow@delay,c
   4637  0018B0                     l3330:
   4638  0018B0  062D               	decf	mode_snow@delay,f,c
@@ -4956,10 +4956,10 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
   4938  0013C0  C030  F01C         	movff	mode_clock@secL+1,display_num@n+1
   4939  0013C4  ECFA  F00D         	call	_display_num	;wreg free
   4940                           
-  4941                           ;main2.c: 1006: delay = 980;
+  4941                           ;main2.c: 1006: delay = 1010;
   4942  0013C8  0E03               	movlw	3
   4943  0013CA  6E4C               	movwf	mode_clock@delay+1,c
-  4944  0013CC  0ED4               	movlw	212
+  4944  0013CC  0EF2               	movlw	242
   4945  0013CE  6E4B               	movwf	mode_clock@delay,c
   4946  0013D0                     l3902:
   4947  0013D0  064B               	decf	mode_clock@delay,f,c
@@ -5300,10 +5300,10 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
   5282  0015FE                     l3994:
   5283                           
   5284                           ;main2.c: 1050: }
-  5285                           ;main2.c: 1052: delay = 980;
+  5285                           ;main2.c: 1052: delay = 1010;
   5286  0015FE  0E03               	movlw	3
   5287  001600  6E4C               	movwf	mode_clock@delay+1,c
-  5288  001602  0ED4               	movlw	212
+  5288  001602  0EF2               	movlw	242
   5289  001604  6E4B               	movwf	mode_clock@delay,c
   5290  001606                     l3996:
   5291  001606  064B               	decf	mode_clock@delay,f,c
@@ -7304,7 +7304,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.44 build -154322312 
-Symbol Table                                                                                   Sat Dec 23 03:07:13 2017
+Symbol Table                                                                                   Sat Dec 23 03:32:43 2017
 
                   _update_time 1E3A                              _A 0052                              _E 009E  
                             _L 00AD                              _N 004D                              _O 00A8  

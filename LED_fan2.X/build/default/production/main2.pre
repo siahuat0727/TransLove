@@ -4343,7 +4343,7 @@ if(!(++count_elk & 0b11))
 if(++elk_pic_i == 3)
 elk_pic_i = 0;
 
-delay = 3820;
+delay = 3780;
 while(delay--);
 }
 }
@@ -4815,7 +4815,7 @@ display_num(secH);
 display_num(secL);
 
 
-delay = 980;
+delay = 1010;
 while(delay--);
 
 
@@ -4861,7 +4861,7 @@ int dark = 40;
 while(dark--);
 }
 
-delay = 980;
+delay = 1010;
 while(delay--);
 }
 

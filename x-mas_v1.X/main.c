@@ -173,7 +173,7 @@ unsigned char data[MAX_DATA] = {
 	0b01000000
 };
 
-unsigned char* NOW = (unsigned char*)data + 122;
+unsigned char* NOW = (unsigned char*)data + 96;
 unsigned char* TAIL = data + MAX_DATA - 1;
 //unsigned char temp;
 

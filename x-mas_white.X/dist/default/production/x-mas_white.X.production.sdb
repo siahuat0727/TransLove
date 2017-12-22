@@ -23,26 +23,26 @@
 [v ___flmul __flmul `(d  1 e 3 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"197 C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+"196 C:\Users\Lenovo\MPLABXProjects\x-mas_white.X\white_fan.c
 [v _main main `(v  1 e 1 0 ]
-"218
+"216
 [v _LED_DISP LED_DISP `(v  1 e 1 0 ]
-"234
+"231
 [v _add_word add_word `(v  1 e 1 0 ]
-"240
+"236
 [v _prev prev `(*.39uc  1 e 2 0 ]
-"247
+"242
 [v _next next `(*.39uc  1 e 2 0 ]
 [v i2_next next `(*.39uc  1 e 2 0 ]
-"264
+"257
 [v _ISR_Init ISR_Init `(v  1 e 1 0 ]
-"273
+"266
 [v _MyusartRead MyusartRead `(v  1 e 1 0 ]
-"281
+"274
 [v _Myusartwrite Myusartwrite `(v  1 e 1 0 ]
-"287
+"280
 [v _Myusartinit Myusartinit `(v  1 e 1 0 ]
-"332
+"321
 [v _Hi_ISR Hi_ISR `II(v  1 e 1 0 ]
 "975 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f4520.h
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
@@ -276,91 +276,90 @@
 [v _INTCONbits INTCONbits `VES168  1 e 1 @4082 ]
 "7785
 [v _RCIF RCIF `VEb  1 e 0 @31989 ]
-"77 C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+"77 C:\Users\Lenovo\MPLABXProjects\x-mas_white.X\white_fan.c
 [v _data data `[600]uc  1 e 600 0 ]
-"176
+"175
 [v _NOW NOW `*.39uc  1 e 2 0 ]
-"177
+"176
 [v _TAIL TAIL `*.39uc  1 e 2 0 ]
-"182
+"181
 [v _global_char global_char `uc  1 e 1 0 ]
-"197
+"196
 [v _main main `(v  1 e 1 0 ]
 {
-"206
+"204
 [v main@start start `*.39uc  1 a 2 35 ]
-"215
+"213
 } 0
-"247
+"242
 [v _next next `(*.39uc  1 e 2 0 ]
 {
 [v next@ptr ptr `*.39uc  1 p 2 21 ]
-"252
+"246
 } 0
-"287
+"280
 [v _Myusartinit Myusartinit `(v  1 e 1 0 ]
 {
-"331
+"320
 } 0
-"218
+"216
 [v _LED_DISP LED_DISP `(v  1 e 1 0 ]
 {
-"226
-[v LED_DISP@dark dark `i  1 a 2 27 ]
 "223
-[v LED_DISP@bright bright `i  1 a 2 25 ]
-"221
-[v LED_DISP@i i `i  1 a 2 33 ]
+[v LED_DISP@dark dark `i  1 a 2 27 ]
 "220
-[v LED_DISP@iter iter `*.39uc  1 a 2 31 ]
-"230
-[v LED_DISP@delay delay `i  1 a 2 29 ]
+[v LED_DISP@bright bright `i  1 a 2 25 ]
 "218
+[v LED_DISP@i i `i  1 a 2 33 ]
+"217
+[v LED_DISP@iter iter `*.39uc  1 a 2 31 ]
+"227
+[v LED_DISP@delay delay `i  1 a 2 29 ]
+"216
 [v LED_DISP@start start `*.39uc  1 p 2 23 ]
-"232
+"229
 } 0
-"240
+"236
 [v _prev prev `(*.39uc  1 e 2 0 ]
 {
 [v prev@ptr ptr `*.39uc  1 p 2 21 ]
-"245
+"240
 } 0
-"264
+"257
 [v _ISR_Init ISR_Init `(v  1 e 1 0 ]
 {
-"272
+"265
 } 0
-"332
+"321
 [v _Hi_ISR Hi_ISR `II(v  1 e 1 0 ]
 {
-"339
+"329
 } 0
-"281
+"274
 [v _Myusartwrite Myusartwrite `(v  1 e 1 0 ]
 {
 [v Myusartwrite@a a `uc  1 a 1 wreg ]
 [v Myusartwrite@a a `uc  1 a 1 wreg ]
-"284
+"277
 [v Myusartwrite@a a `uc  1 a 1 0 ]
-"286
+"279
 } 0
-"273
+"266
 [v _MyusartRead MyusartRead `(v  1 e 1 0 ]
 {
-"280
+"273
 } 0
-"234
+"231
 [v _add_word add_word `(v  1 e 1 0 ]
 {
 [v add_word@c c `uc  1 a 1 wreg ]
 [v add_word@c c `uc  1 a 1 wreg ]
-"236
 [v add_word@c c `uc  1 a 1 2 ]
-"238
+"234
 } 0
-"247
+"242
 [v i2_next next `(*.39uc  1 e 2 0 ]
 {
 [v i2next@ptr ptr `*.39uc  1 p 2 0 ]
-"252
+"246
 } 0

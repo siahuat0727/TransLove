@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.44 build -154322312 
-                                                                                               Sat Dec 23 06:51:48 2017
+                                                                                               Fri Dec 22 17:19:27 2017
 
 Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140600
      1                           	processor	18F4520
@@ -99,13 +99,13 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
     85  000017  7F                 	db	127
     86  000018  7F                 	db	127
     87  000019  00                 	db	0
-    88  00001A  00                 	db	0
-    89  00001B  38                 	db	56
-    90  00001C  7C                 	db	124
+    88  00001A  38                 	db	56
+    89  00001B  7C                 	db	124
+    90  00001C  54                 	db	84
     91  00001D  54                 	db	84
-    92  00001E  54                 	db	84
-    93  00001F  5C                 	db	92
-    94  000020  18                 	db	24
+    92  00001E  5C                 	db	92
+    93  00001F  18                 	db	24
+    94  000020  00                 	db	0
     95  000021  00                 	db	0
     96  000022  00                 	db	0
     97  000023  41                 	db	65
@@ -908,7 +908,7 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
    894 ;;
    895 ;; *************** function _main *****************
    896 ;; Defined at:
-   897 ;;		line 197 in file "main.c"
+   897 ;;		line 196 in file "white_fan.c"
    898 ;; Parameters:    Size  Location     Type
    899 ;;		None
    900 ;; Auto vars:     Size  Location     Type
@@ -945,7 +945,7 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
    931  0003F6                     _main:
    932                           	opt stack 25
    933                           
-   934                           ;main.c: 199: OSCCONbits.IRCF = 0b110;
+   934                           ;white_fan.c: 197: OSCCONbits.IRCF = 0b110;
    935                           
    936                           ;incstack = 0
    937  0003F6  50D3               	movf	4051,w,c	;volatile
@@ -953,35 +953,35 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
    939  0003FA  0960               	iorlw	96
    940  0003FC  6ED3               	movwf	4051,c	;volatile
    941                           
-   942                           ;main.c: 200: TRISD = 0;
+   942                           ;white_fan.c: 198: TRISD = 0;
    943  0003FE  0E00               	movlw	0
    944  000400  6E95               	movwf	3989,c	;volatile
    945                           
-   946                           ;main.c: 201: TRISA = 0;
+   946                           ;white_fan.c: 199: TRISA = 0;
    947  000402  0E00               	movlw	0
    948  000404  6E92               	movwf	3986,c	;volatile
    949                           
-   950                           ;main.c: 202: Myusartinit();
+   950                           ;white_fan.c: 200: Myusartinit();
    951  000406  EC67  F002         	call	_Myusartinit	;wreg free
    952                           
-   953                           ;main.c: 203: ISR_Init();
+   953                           ;white_fan.c: 201: ISR_Init();
    954  00040A  EC7E  F002         	call	_ISR_Init	;wreg free
    955                           
-   956                           ;main.c: 206: unsigned char* start = (unsigned char*)data;
+   956                           ;white_fan.c: 204: unsigned char* start = (unsigned char*)data;
    957  00040E  0EA8               	movlw	low _data
    958  000410  6E24               	movwf	main@start,c
    959  000412  0E03               	movlw	high _data
    960  000414  6E25               	movwf	main@start+1,c
    961  000416                     l59:
    962                           
-   963                           ;main.c: 210: start = next(start);
+   963                           ;white_fan.c: 208: start = next(start);
    964  000416  C024  F016         	movff	main@start,next@ptr
    965  00041A  C025  F017         	movff	main@start+1,next@ptr+1
    966  00041E  EC1C  F002         	call	_next	;wreg free
    967  000422  C016  F024         	movff	?_next,main@start
    968  000426  C017  F025         	movff	?_next+1,main@start+1
    969                           
-   970                           ;main.c: 211: LED_DISP(start);
+   970                           ;white_fan.c: 209: LED_DISP(start);
    971  00042A  C024  F018         	movff	main@start,LED_DISP@start
    972  00042E  C025  F019         	movff	main@start+1,LED_DISP@start+1
    973  000432  EC87  F001         	call	_LED_DISP	;wreg free
@@ -999,7 +999,7 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
    985                           
    986 ;; *************** function _next *****************
    987 ;; Defined at:
-   988 ;;		line 247 in file "main.c"
+   988 ;;		line 242 in file "white_fan.c"
    989 ;; Parameters:    Size  Location     Type
    990 ;;  ptr             2   21[COMRAM] PTR unsigned char 
    991 ;;		 -> data(600), 
@@ -1034,7 +1034,7 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
   1020  000438                     _next:
   1021                           	opt stack 26
   1022                           
-  1023                           ;main.c: 249: if(ptr == TAIL)
+  1023                           ;white_fan.c: 243: if(ptr == TAIL)
   1024                           
   1025                           ;incstack = 0
   1026  000438  5026               	movf	_TAIL,w,c
@@ -1045,7 +1045,7 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
   1031  000442  A4D8               	btfss	status,2,c
   1032  000444  D005               	goto	l86
   1033                           
-  1034                           ;main.c: 250: return (unsigned char*)data;
+  1034                           ;white_fan.c: 244: return (unsigned char*)data;
   1035  000446  0EA8               	movlw	low _data
   1036  000448  6E16               	movwf	?_next,c
   1037  00044A  0E03               	movlw	high _data
@@ -1054,7 +1054,7 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
   1040  000450                     l86:
   1041  000450                     l878:
   1042                           
-  1043                           ;main.c: 251: return ptr+1;
+  1043                           ;white_fan.c: 245: return ptr+1;
   1044  000450  0E01               	movlw	1
   1045  000452  2416               	addwf	next@ptr,w,c
   1046  000454  6E16               	movwf	?_next,c
@@ -1076,7 +1076,7 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
   1062                           
   1063 ;; *************** function _Myusartinit *****************
   1064 ;; Defined at:
-  1065 ;;		line 287 in file "main.c"
+  1065 ;;		line 280 in file "white_fan.c"
   1066 ;; Parameters:    Size  Location     Type
   1067 ;;		None
   1068 ;; Auto vars:     Size  Location     Type
@@ -1110,852 +1110,849 @@ Microchip Technology Omniscient Code Generator v1.44 (Free mode) build 201709140
   1096  0004CE                     _Myusartinit:
   1097                           	opt stack 26
   1098                           
-  1099                           ;main.c: 290: TRISCbits.TRISC6 = 1;
+  1099                           ;white_fan.c: 283: TRISCbits.TRISC6 = 1;
   1100                           
   1101                           ;incstack = 0
   1102  0004CE  8C94               	bsf	3988,6,c	;volatile
   1103                           
-  1104                           ;main.c: 291: TRISCbits.TRISC7 = 1;
+  1104                           ;white_fan.c: 284: TRISCbits.TRISC7 = 1;
   1105  0004D0  8E94               	bsf	3988,7,c	;volatile
   1106                           
-  1107                           ;main.c: 304: BAUDCONbits.BRG16 = 0 ;
+  1107                           ;white_fan.c: 297: BAUDCONbits.BRG16 = 0 ;
   1108  0004D2  96B8               	bcf	4024,3,c	;volatile
   1109                           
-  1110                           ;main.c: 305: TXSTAbits.BRGH = 1;
+  1110                           ;white_fan.c: 298: TXSTAbits.BRGH = 1;
   1111  0004D4  84AC               	bsf	4012,2,c	;volatile
   1112                           
-  1113                           ;main.c: 306: SPBRG = 25;
+  1113                           ;white_fan.c: 299: SPBRG = 25;
   1114  0004D6  0E19               	movlw	25
   1115  0004D8  6EAF               	movwf	4015,c	;volatile
   1116                           
-  1117                           ;main.c: 309: TXSTAbits.SYNC = 0;
+  1117                           ;white_fan.c: 302: TXSTAbits.SYNC = 0;
   1118  0004DA  98AC               	bcf	4012,4,c	;volatile
   1119                           
-  1120                           ;main.c: 310: RCSTAbits.SPEN = 1;
+  1120                           ;white_fan.c: 303: RCSTAbits.SPEN = 1;
   1121  0004DC  8EAB               	bsf	4011,7,c	;volatile
   1122                           
-  1123                           ;main.c: 315: PIR1bits.TXIF =
-  1124                           ;main.c: 316: 1;
-  1125  0004DE  889E               	bsf	3998,4,c	;volatile
-  1126                           
-  1127                           ;main.c: 317: PIR1bits.RCIF =
-  1128                           ;main.c: 318: 0;
-  1129  0004E0  9A9E               	bcf	3998,5,c	;volatile
-  1130                           
-  1131                           ;main.c: 319: TXSTAbits.TXEN = 1;
-  1132  0004E2  8AAC               	bsf	4012,5,c	;volatile
-  1133                           
-  1134                           ;main.c: 320: RCSTAbits.CREN = 1;
-  1135  0004E4  88AB               	bsf	4011,4,c	;volatile
-  1136                           
-  1137                           ;main.c: 322: PIE1bits.TXIE = 0;
-  1138  0004E6  989D               	bcf	3997,4,c	;volatile
-  1139                           
-  1140                           ;main.c: 323: IPR1bits.TXIP =
-  1141                           ;main.c: 324: 1;
-  1142  0004E8  889F               	bsf	3999,4,c	;volatile
+  1123                           ;white_fan.c: 308: PIR1bits.TXIF = 1;
+  1124  0004DE  889E               	bsf	3998,4,c	;volatile
+  1125                           
+  1126                           ;white_fan.c: 309: PIR1bits.RCIF = 0;
+  1127  0004E0  9A9E               	bcf	3998,5,c	;volatile
+  1128                           
+  1129                           ;white_fan.c: 310: TXSTAbits.TXEN = 1;
+  1130  0004E2  8AAC               	bsf	4012,5,c	;volatile
+  1131                           
+  1132                           ;white_fan.c: 311: RCSTAbits.CREN = 1;
+  1133  0004E4  88AB               	bsf	4011,4,c	;volatile
+  1134                           
+  1135                           ;white_fan.c: 313: PIE1bits.TXIE = 0;
+  1136  0004E6  989D               	bcf	3997,4,c	;volatile
+  1137                           
+  1138                           ;white_fan.c: 314: IPR1bits.TXIP = 1;
+  1139  0004E8  889F               	bsf	3999,4,c	;volatile
+  1140                           
+  1141                           ;white_fan.c: 315: PIE1bits.RCIE = 1;
+  1142  0004EA  8A9D               	bsf	3997,5,c	;volatile
   1143                           
-  1144                           ;main.c: 325: PIE1bits.RCIE = 1;
-  1145  0004EA  8A9D               	bsf	3997,5,c	;volatile
-  1146                           
-  1147                           ;main.c: 326: IPR1bits.RCIP =
-  1148                           ;main.c: 327: 1;
-  1149  0004EC  8A9F               	bsf	3999,5,c	;volatile
-  1150  0004EE  0012               	return	
-  1151  0004F0                     __end_of_Myusartinit:
-  1152                           	opt stack 0
-  1153                           tblptru	equ	0xFF8
-  1154                           tblptrh	equ	0xFF7
-  1155                           tblptrl	equ	0xFF6
-  1156                           tablat	equ	0xFF5
-  1157                           postinc0	equ	0xFEE
-  1158                           postdec1	equ	0xFE5
-  1159                           fsr1h	equ	0xFE2
-  1160                           fsr1l	equ	0xFE1
-  1161                           status	equ	0xFD8
-  1162                           
-  1163 ;; *************** function _LED_DISP *****************
-  1164 ;; Defined at:
-  1165 ;;		line 218 in file "main.c"
-  1166 ;; Parameters:    Size  Location     Type
-  1167 ;;  start           2   23[COMRAM] PTR unsigned char 
-  1168 ;;		 -> data(600), 
-  1169 ;; Auto vars:     Size  Location     Type
-  1170 ;;  dark            2   27[COMRAM] int 
-  1171 ;;  bright          2   25[COMRAM] int 
-  1172 ;;  i               2   33[COMRAM] int 
-  1173 ;;  iter            2   31[COMRAM] PTR unsigned char 
-  1174 ;;		 -> data(600), 
-  1175 ;;  delay           2   29[COMRAM] int 
-  1176 ;; Return value:  Size  Location     Type
-  1177 ;;                  1    wreg      void 
-  1178 ;; Registers used:
-  1179 ;;		wreg, fsr2l, fsr2h, status,2, status,0, cstack
-  1180 ;; Tracked objects:
-  1181 ;;		On entry : 0/0
-  1182 ;;		On exit  : 0/0
-  1183 ;;		Unchanged: 0/0
-  1184 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
-  1185 ;;      Params:         2       0       0       0       0       0       0
-  1186 ;;      Locals:        10       0       0       0       0       0       0
-  1187 ;;      Temps:          0       0       0       0       0       0       0
-  1188 ;;      Totals:        12       0       0       0       0       0       0
-  1189 ;;Total ram usage:       12 bytes
-  1190 ;; Hardware stack levels used:    1
-  1191 ;; Hardware stack levels required when called:    5
-  1192 ;; This function calls:
-  1193 ;;		_prev
-  1194 ;; This function is called by:
-  1195 ;;		_main
-  1196 ;; This function uses a non-reentrant model
-  1197 ;;
-  1198                           
-  1199                           	psect	text3
-  1200  00030E                     __ptext3:
-  1201                           	opt stack 0
-  1202  00030E                     _LED_DISP:
-  1203                           	opt stack 25
-  1204                           
-  1205                           ;main.c: 220: unsigned char* iter = start;
+  1144                           ;white_fan.c: 316: IPR1bits.RCIP = 1;
+  1145  0004EC  8A9F               	bsf	3999,5,c	;volatile
+  1146  0004EE  0012               	return	
+  1147  0004F0                     __end_of_Myusartinit:
+  1148                           	opt stack 0
+  1149                           tblptru	equ	0xFF8
+  1150                           tblptrh	equ	0xFF7
+  1151                           tblptrl	equ	0xFF6
+  1152                           tablat	equ	0xFF5
+  1153                           postinc0	equ	0xFEE
+  1154                           postdec1	equ	0xFE5
+  1155                           fsr1h	equ	0xFE2
+  1156                           fsr1l	equ	0xFE1
+  1157                           status	equ	0xFD8
+  1158                           
+  1159 ;; *************** function _LED_DISP *****************
+  1160 ;; Defined at:
+  1161 ;;		line 216 in file "white_fan.c"
+  1162 ;; Parameters:    Size  Location     Type
+  1163 ;;  start           2   23[COMRAM] PTR unsigned char 
+  1164 ;;		 -> data(600), 
+  1165 ;; Auto vars:     Size  Location     Type
+  1166 ;;  dark            2   27[COMRAM] int 
+  1167 ;;  bright          2   25[COMRAM] int 
+  1168 ;;  i               2   33[COMRAM] int 
+  1169 ;;  iter            2   31[COMRAM] PTR unsigned char 
+  1170 ;;		 -> data(600), 
+  1171 ;;  delay           2   29[COMRAM] int 
+  1172 ;; Return value:  Size  Location     Type
+  1173 ;;                  1    wreg      void 
+  1174 ;; Registers used:
+  1175 ;;		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+  1176 ;; Tracked objects:
+  1177 ;;		On entry : 0/0
+  1178 ;;		On exit  : 0/0
+  1179 ;;		Unchanged: 0/0
+  1180 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+  1181 ;;      Params:         2       0       0       0       0       0       0
+  1182 ;;      Locals:        10       0       0       0       0       0       0
+  1183 ;;      Temps:          0       0       0       0       0       0       0
+  1184 ;;      Totals:        12       0       0       0       0       0       0
+  1185 ;;Total ram usage:       12 bytes
+  1186 ;; Hardware stack levels used:    1
+  1187 ;; Hardware stack levels required when called:    5
+  1188 ;; This function calls:
+  1189 ;;		_prev
+  1190 ;; This function is called by:
+  1191 ;;		_main
+  1192 ;; This function uses a non-reentrant model
+  1193 ;;
+  1194                           
+  1195                           	psect	text3
+  1196  00030E                     __ptext3:
+  1197                           	opt stack 0
+  1198  00030E                     _LED_DISP:
+  1199                           	opt stack 25
+  1200                           
+  1201                           ;white_fan.c: 217: unsigned char* iter = start;
+  1202                           
+  1203                           ;incstack = 0
+  1204  00030E  C018  F020         	movff	LED_DISP@start,LED_DISP@iter
+  1205  000312  C019  F021         	movff	LED_DISP@start+1,LED_DISP@iter+1
   1206                           
-  1207                           ;incstack = 0
-  1208  00030E  C018  F020         	movff	LED_DISP@start,LED_DISP@iter
-  1209  000312  C019  F021         	movff	LED_DISP@start+1,LED_DISP@iter+1
-  1210                           
-  1211                           ;main.c: 221: for(int i = 0; i < 220; ++i) {
-  1212  000316  0E00               	movlw	0
-  1213  000318  6E23               	movwf	LED_DISP@i+1,c
-  1214  00031A  0E00               	movlw	0
-  1215  00031C  6E22               	movwf	LED_DISP@i,c
-  1216  00031E                     l886:
-  1217  00031E  BE23               	btfsc	LED_DISP@i+1,7,c
-  1218  000320  D006               	goto	l65
-  1219  000322  5023               	movf	LED_DISP@i+1,w,c
-  1220  000324  E131               	bnz	l906
-  1221  000326  0EDC               	movlw	220
-  1222  000328  5C22               	subwf	LED_DISP@i,w,c
-  1223  00032A  B0D8               	btfsc	status,0,c
-  1224  00032C  D02D               	goto	u160
-  1225  00032E                     l65:
-  1226                           
-  1227                           ;main.c: 222: LATA = *iter;
-  1228  00032E  C020  FFD9         	movff	LED_DISP@iter,fsr2l
-  1229  000332  C021  FFDA         	movff	LED_DISP@iter+1,fsr2h
-  1230  000336  50DF               	movf	indf2,w,c
-  1231  000338  6E89               	movwf	3977,c	;volatile
-  1232                           
-  1233                           ;main.c: 223: int bright = 30;
-  1234  00033A  0E00               	movlw	0
-  1235  00033C  6E1B               	movwf	LED_DISP@bright+1,c
-  1236  00033E  0E1E               	movlw	30
-  1237  000340  6E1A               	movwf	LED_DISP@bright,c
-  1238  000342                     l894:
-  1239  000342  061A               	decf	LED_DISP@bright,f,c
-  1240  000344  A0D8               	btfss	status,0,c
-  1241  000346  061B               	decf	LED_DISP@bright+1,f,c
-  1242  000348  281A               	incf	LED_DISP@bright,w,c
-  1243  00034A  E1FB               	bnz	l894
-  1244  00034C  281B               	incf	LED_DISP@bright+1,w,c
-  1245  00034E  A4D8               	btfss	status,2,c
-  1246  000350  D7F8               	goto	l68
+  1207                           ;white_fan.c: 218: for(int i = 0; i < 202; ++i){
+  1208  000316  0E00               	movlw	0
+  1209  000318  6E23               	movwf	LED_DISP@i+1,c
+  1210  00031A  0E00               	movlw	0
+  1211  00031C  6E22               	movwf	LED_DISP@i,c
+  1212  00031E                     l886:
+  1213  00031E  BE23               	btfsc	LED_DISP@i+1,7,c
+  1214  000320  D006               	goto	l65
+  1215  000322  5023               	movf	LED_DISP@i+1,w,c
+  1216  000324  E131               	bnz	l906
+  1217  000326  0ECA               	movlw	202
+  1218  000328  5C22               	subwf	LED_DISP@i,w,c
+  1219  00032A  B0D8               	btfsc	status,0,c
+  1220  00032C  D02D               	goto	u160
+  1221  00032E                     l65:
+  1222                           
+  1223                           ;white_fan.c: 219: LATA = *iter;
+  1224  00032E  C020  FFD9         	movff	LED_DISP@iter,fsr2l
+  1225  000332  C021  FFDA         	movff	LED_DISP@iter+1,fsr2h
+  1226  000336  50DF               	movf	indf2,w,c
+  1227  000338  6E89               	movwf	3977,c	;volatile
+  1228                           
+  1229                           ;white_fan.c: 220: int bright = 30;
+  1230  00033A  0E00               	movlw	0
+  1231  00033C  6E1B               	movwf	LED_DISP@bright+1,c
+  1232  00033E  0E1E               	movlw	30
+  1233  000340  6E1A               	movwf	LED_DISP@bright,c
+  1234  000342                     l894:
+  1235  000342  061A               	decf	LED_DISP@bright,f,c
+  1236  000344  A0D8               	btfss	status,0,c
+  1237  000346  061B               	decf	LED_DISP@bright+1,f,c
+  1238  000348  281A               	incf	LED_DISP@bright,w,c
+  1239  00034A  E1FB               	bnz	l894
+  1240  00034C  281B               	incf	LED_DISP@bright+1,w,c
+  1241  00034E  A4D8               	btfss	status,2,c
+  1242  000350  D7F8               	goto	l68
+  1243                           
+  1244                           ;white_fan.c: 222: LATA = 0;
+  1245  000352  0E00               	movlw	0
+  1246  000354  6E89               	movwf	3977,c	;volatile
   1247                           
-  1248                           ;main.c: 225: LATA = 0;
-  1249  000352  0E00               	movlw	0
-  1250  000354  6E89               	movwf	3977,c	;volatile
-  1251                           
-  1252                           ;main.c: 226: int dark = 30;
-  1253  000356  0E00               	movlw	0
-  1254  000358  6E1D               	movwf	LED_DISP@dark+1,c
-  1255  00035A  0E1E               	movlw	30
-  1256  00035C  6E1C               	movwf	LED_DISP@dark,c
-  1257  00035E                     l898:
-  1258  00035E  061C               	decf	LED_DISP@dark,f,c
-  1259  000360  A0D8               	btfss	status,0,c
-  1260  000362  061D               	decf	LED_DISP@dark+1,f,c
-  1261  000364  281C               	incf	LED_DISP@dark,w,c
-  1262  000366  E1FB               	bnz	l898
-  1263  000368  281D               	incf	LED_DISP@dark+1,w,c
-  1264  00036A  A4D8               	btfss	status,2,c
-  1265  00036C  D7F8               	goto	l71
-  1266                           
-  1267                           ;main.c: 228: iter = prev(iter);
-  1268  00036E  C020  F016         	movff	LED_DISP@iter,prev@ptr
-  1269  000372  C021  F017         	movff	LED_DISP@iter+1,prev@ptr+1
-  1270  000376  EC2F  F002         	call	_prev	;wreg free
-  1271  00037A  C016  F020         	movff	?_prev,LED_DISP@iter
-  1272  00037E  C017  F021         	movff	?_prev+1,LED_DISP@iter+1
-  1273  000382  4A22               	infsnz	LED_DISP@i,f,c
-  1274  000384  2A23               	incf	LED_DISP@i+1,f,c
-  1275  000386  D7CB               	goto	l886
-  1276  000388                     u160:
-  1277  000388                     l906:
-  1278                           
-  1279                           ;main.c: 229: }
-  1280                           ;main.c: 230: int delay = 0;
-  1281  000388  0E00               	movlw	0
-  1282  00038A  6E1F               	movwf	LED_DISP@delay+1,c
-  1283  00038C  0E00               	movlw	0
-  1284  00038E  6E1E               	movwf	LED_DISP@delay,c
-  1285  000390                     l908:
-  1286  000390  061E               	decf	LED_DISP@delay,f,c
-  1287  000392  A0D8               	btfss	status,0,c
-  1288  000394  061F               	decf	LED_DISP@delay+1,f,c
-  1289  000396  281E               	incf	LED_DISP@delay,w,c
-  1290  000398  E1FB               	bnz	l908
-  1291  00039A  281F               	incf	LED_DISP@delay+1,w,c
-  1292  00039C  B4D8               	btfsc	status,2,c
-  1293  00039E  0012               	return	
-  1294  0003A0  D7F7               	goto	l74
-  1295  0003A2                     __end_of_LED_DISP:
-  1296                           	opt stack 0
-  1297                           tblptru	equ	0xFF8
-  1298                           tblptrh	equ	0xFF7
-  1299                           tblptrl	equ	0xFF6
-  1300                           tablat	equ	0xFF5
-  1301                           postinc0	equ	0xFEE
-  1302                           postdec1	equ	0xFE5
-  1303                           fsr1h	equ	0xFE2
-  1304                           fsr1l	equ	0xFE1
-  1305                           indf2	equ	0xFDF
-  1306                           fsr2h	equ	0xFDA
-  1307                           fsr2l	equ	0xFD9
-  1308                           status	equ	0xFD8
-  1309                           
-  1310 ;; *************** function _prev *****************
-  1311 ;; Defined at:
-  1312 ;;		line 240 in file "main.c"
-  1313 ;; Parameters:    Size  Location     Type
-  1314 ;;  ptr             2   21[COMRAM] PTR unsigned char 
-  1315 ;;		 -> data(600), 
-  1316 ;; Auto vars:     Size  Location     Type
-  1317 ;;		None
-  1318 ;; Return value:  Size  Location     Type
-  1319 ;;                  2   21[COMRAM] PTR unsigned char 
-  1320 ;; Registers used:
-  1321 ;;		wreg, status,2, status,0
-  1322 ;; Tracked objects:
-  1323 ;;		On entry : 0/0
-  1324 ;;		On exit  : 0/0
-  1325 ;;		Unchanged: 0/0
-  1326 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
-  1327 ;;      Params:         2       0       0       0       0       0       0
-  1328 ;;      Locals:         0       0       0       0       0       0       0
-  1329 ;;      Temps:          0       0       0       0       0       0       0
-  1330 ;;      Totals:         2       0       0       0       0       0       0
-  1331 ;;Total ram usage:        2 bytes
-  1332 ;; Hardware stack levels used:    1
-  1333 ;; Hardware stack levels required when called:    4
-  1334 ;; This function calls:
-  1335 ;;		Nothing
-  1336 ;; This function is called by:
-  1337 ;;		_LED_DISP
-  1338 ;; This function uses a non-reentrant model
-  1339 ;;
-  1340                           
-  1341                           	psect	text4
-  1342  00045E                     __ptext4:
-  1343                           	opt stack 0
-  1344  00045E                     _prev:
-  1345                           	opt stack 25
-  1346                           
-  1347                           ;main.c: 242: if(ptr == (unsigned char*)data)
-  1348                           
-  1349                           ;incstack = 0
-  1350  00045E  0EA8               	movlw	low _data
-  1351  000460  1816               	xorwf	prev@ptr,w,c
-  1352  000462  E109               	bnz	l864
-  1353  000464  0E03               	movlw	high _data
-  1354  000466  1817               	xorwf	prev@ptr+1,w,c
-  1355  000468  A4D8               	btfss	status,2,c
-  1356  00046A  D005               	goto	l82
-  1357                           
-  1358                           ;main.c: 243: return TAIL;
-  1359  00046C  C026  F016         	movff	_TAIL,?_prev
-  1360  000470  C027  F017         	movff	_TAIL+1,?_prev+1
-  1361  000474  0012               	return	
-  1362  000476                     l82:
-  1363  000476                     l864:
-  1364                           
-  1365                           ;main.c: 244: return ptr-1;
-  1366  000476  0EFF               	movlw	255
-  1367  000478  2416               	addwf	prev@ptr,w,c
-  1368  00047A  6E16               	movwf	?_prev,c
-  1369  00047C  0EFF               	movlw	255
-  1370  00047E  2017               	addwfc	prev@ptr+1,w,c
-  1371  000480  6E17               	movwf	?_prev+1,c
-  1372  000482  0012               	return	
-  1373  000484                     __end_of_prev:
-  1374                           	opt stack 0
-  1375                           tblptru	equ	0xFF8
-  1376                           tblptrh	equ	0xFF7
-  1377                           tblptrl	equ	0xFF6
-  1378                           tablat	equ	0xFF5
-  1379                           postinc0	equ	0xFEE
-  1380                           postdec1	equ	0xFE5
-  1381                           fsr1h	equ	0xFE2
-  1382                           fsr1l	equ	0xFE1
-  1383                           indf2	equ	0xFDF
-  1384                           fsr2h	equ	0xFDA
-  1385                           fsr2l	equ	0xFD9
-  1386                           status	equ	0xFD8
-  1387                           
-  1388 ;; *************** function _ISR_Init *****************
-  1389 ;; Defined at:
-  1390 ;;		line 264 in file "main.c"
-  1391 ;; Parameters:    Size  Location     Type
-  1392 ;;		None
-  1393 ;; Auto vars:     Size  Location     Type
+  1248                           ;white_fan.c: 223: int dark = 30;
+  1249  000356  0E00               	movlw	0
+  1250  000358  6E1D               	movwf	LED_DISP@dark+1,c
+  1251  00035A  0E1E               	movlw	30
+  1252  00035C  6E1C               	movwf	LED_DISP@dark,c
+  1253  00035E                     l898:
+  1254  00035E  061C               	decf	LED_DISP@dark,f,c
+  1255  000360  A0D8               	btfss	status,0,c
+  1256  000362  061D               	decf	LED_DISP@dark+1,f,c
+  1257  000364  281C               	incf	LED_DISP@dark,w,c
+  1258  000366  E1FB               	bnz	l898
+  1259  000368  281D               	incf	LED_DISP@dark+1,w,c
+  1260  00036A  A4D8               	btfss	status,2,c
+  1261  00036C  D7F8               	goto	l71
+  1262                           
+  1263                           ;white_fan.c: 225: iter = prev(iter);
+  1264  00036E  C020  F016         	movff	LED_DISP@iter,prev@ptr
+  1265  000372  C021  F017         	movff	LED_DISP@iter+1,prev@ptr+1
+  1266  000376  EC2F  F002         	call	_prev	;wreg free
+  1267  00037A  C016  F020         	movff	?_prev,LED_DISP@iter
+  1268  00037E  C017  F021         	movff	?_prev+1,LED_DISP@iter+1
+  1269  000382  4A22               	infsnz	LED_DISP@i,f,c
+  1270  000384  2A23               	incf	LED_DISP@i+1,f,c
+  1271  000386  D7CB               	goto	l886
+  1272  000388                     u160:
+  1273  000388                     l906:
+  1274                           
+  1275                           ;white_fan.c: 226: }
+  1276                           ;white_fan.c: 227: int delay = 0;
+  1277  000388  0E00               	movlw	0
+  1278  00038A  6E1F               	movwf	LED_DISP@delay+1,c
+  1279  00038C  0E00               	movlw	0
+  1280  00038E  6E1E               	movwf	LED_DISP@delay,c
+  1281  000390                     l908:
+  1282  000390  061E               	decf	LED_DISP@delay,f,c
+  1283  000392  A0D8               	btfss	status,0,c
+  1284  000394  061F               	decf	LED_DISP@delay+1,f,c
+  1285  000396  281E               	incf	LED_DISP@delay,w,c
+  1286  000398  E1FB               	bnz	l908
+  1287  00039A  281F               	incf	LED_DISP@delay+1,w,c
+  1288  00039C  B4D8               	btfsc	status,2,c
+  1289  00039E  0012               	return	
+  1290  0003A0  D7F7               	goto	l74
+  1291  0003A2                     __end_of_LED_DISP:
+  1292                           	opt stack 0
+  1293                           tblptru	equ	0xFF8
+  1294                           tblptrh	equ	0xFF7
+  1295                           tblptrl	equ	0xFF6
+  1296                           tablat	equ	0xFF5
+  1297                           postinc0	equ	0xFEE
+  1298                           postdec1	equ	0xFE5
+  1299                           fsr1h	equ	0xFE2
+  1300                           fsr1l	equ	0xFE1
+  1301                           indf2	equ	0xFDF
+  1302                           fsr2h	equ	0xFDA
+  1303                           fsr2l	equ	0xFD9
+  1304                           status	equ	0xFD8
+  1305                           
+  1306 ;; *************** function _prev *****************
+  1307 ;; Defined at:
+  1308 ;;		line 236 in file "white_fan.c"
+  1309 ;; Parameters:    Size  Location     Type
+  1310 ;;  ptr             2   21[COMRAM] PTR unsigned char 
+  1311 ;;		 -> data(600), 
+  1312 ;; Auto vars:     Size  Location     Type
+  1313 ;;		None
+  1314 ;; Return value:  Size  Location     Type
+  1315 ;;                  2   21[COMRAM] PTR unsigned char 
+  1316 ;; Registers used:
+  1317 ;;		wreg, status,2, status,0
+  1318 ;; Tracked objects:
+  1319 ;;		On entry : 0/0
+  1320 ;;		On exit  : 0/0
+  1321 ;;		Unchanged: 0/0
+  1322 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+  1323 ;;      Params:         2       0       0       0       0       0       0
+  1324 ;;      Locals:         0       0       0       0       0       0       0
+  1325 ;;      Temps:          0       0       0       0       0       0       0
+  1326 ;;      Totals:         2       0       0       0       0       0       0
+  1327 ;;Total ram usage:        2 bytes
+  1328 ;; Hardware stack levels used:    1
+  1329 ;; Hardware stack levels required when called:    4
+  1330 ;; This function calls:
+  1331 ;;		Nothing
+  1332 ;; This function is called by:
+  1333 ;;		_LED_DISP
+  1334 ;; This function uses a non-reentrant model
+  1335 ;;
+  1336                           
+  1337                           	psect	text4
+  1338  00045E                     __ptext4:
+  1339                           	opt stack 0
+  1340  00045E                     _prev:
+  1341                           	opt stack 25
+  1342                           
+  1343                           ;white_fan.c: 237: if(ptr == (unsigned char*)data)
+  1344                           
+  1345                           ;incstack = 0
+  1346  00045E  0EA8               	movlw	low _data
+  1347  000460  1816               	xorwf	prev@ptr,w,c
+  1348  000462  E109               	bnz	l864
+  1349  000464  0E03               	movlw	high _data
+  1350  000466  1817               	xorwf	prev@ptr+1,w,c
+  1351  000468  A4D8               	btfss	status,2,c
+  1352  00046A  D005               	goto	l82
+  1353                           
+  1354                           ;white_fan.c: 238: return TAIL;
+  1355  00046C  C026  F016         	movff	_TAIL,?_prev
+  1356  000470  C027  F017         	movff	_TAIL+1,?_prev+1
+  1357  000474  0012               	return	
+  1358  000476                     l82:
+  1359  000476                     l864:
+  1360                           
+  1361                           ;white_fan.c: 239: return ptr-1;
+  1362  000476  0EFF               	movlw	255
+  1363  000478  2416               	addwf	prev@ptr,w,c
+  1364  00047A  6E16               	movwf	?_prev,c
+  1365  00047C  0EFF               	movlw	255
+  1366  00047E  2017               	addwfc	prev@ptr+1,w,c
+  1367  000480  6E17               	movwf	?_prev+1,c
+  1368  000482  0012               	return	
+  1369  000484                     __end_of_prev:
+  1370                           	opt stack 0
+  1371                           tblptru	equ	0xFF8
+  1372                           tblptrh	equ	0xFF7
+  1373                           tblptrl	equ	0xFF6
+  1374                           tablat	equ	0xFF5
+  1375                           postinc0	equ	0xFEE
+  1376                           postdec1	equ	0xFE5
+  1377                           fsr1h	equ	0xFE2
+  1378                           fsr1l	equ	0xFE1
+  1379                           indf2	equ	0xFDF
+  1380                           fsr2h	equ	0xFDA
+  1381                           fsr2l	equ	0xFD9
+  1382                           status	equ	0xFD8
+  1383                           
+  1384 ;; *************** function _ISR_Init *****************
+  1385 ;; Defined at:
+  1386 ;;		line 257 in file "white_fan.c"
+  1387 ;; Parameters:    Size  Location     Type
+  1388 ;;		None
+  1389 ;; Auto vars:     Size  Location     Type
+  1390 ;;		None
+  1391 ;; Return value:  Size  Location     Type
+  1392 ;;                  1    wreg      void 
+  1393 ;; Registers used:
   1394 ;;		None
-  1395 ;; Return value:  Size  Location     Type
-  1396 ;;                  1    wreg      void 
-  1397 ;; Registers used:
-  1398 ;;		None
-  1399 ;; Tracked objects:
-  1400 ;;		On entry : 0/0
-  1401 ;;		On exit  : 0/0
-  1402 ;;		Unchanged: 0/0
-  1403 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
-  1404 ;;      Params:         0       0       0       0       0       0       0
-  1405 ;;      Locals:         0       0       0       0       0       0       0
-  1406 ;;      Temps:          0       0       0       0       0       0       0
-  1407 ;;      Totals:         0       0       0       0       0       0       0
-  1408 ;;Total ram usage:        0 bytes
-  1409 ;; Hardware stack levels used:    1
-  1410 ;; Hardware stack levels required when called:    4
-  1411 ;; This function calls:
-  1412 ;;		Nothing
-  1413 ;; This function is called by:
-  1414 ;;		_main
-  1415 ;; This function uses a non-reentrant model
-  1416 ;;
-  1417                           
-  1418                           	psect	text5
-  1419  0004FC                     __ptext5:
-  1420                           	opt stack 0
-  1421  0004FC                     _ISR_Init:
-  1422                           	opt stack 26
-  1423                           
-  1424                           ;main.c: 267: RCONbits.IPEN = 1;
-  1425                           
-  1426                           ;incstack = 0
-  1427  0004FC  8ED0               	bsf	4048,7,c	;volatile
-  1428                           
-  1429                           ;main.c: 268: INTCONbits.GIEH = 1;
-  1430  0004FE  8EF2               	bsf	intcon,7,c	;volatile
-  1431                           
-  1432                           ;main.c: 269: INTCONbits.GIEL = 1;
-  1433  000500  8CF2               	bsf	intcon,6,c	;volatile
-  1434                           
-  1435                           ;main.c: 271: return ;
-  1436  000502  0012               	return		;funcret
-  1437  000504                     __end_of_ISR_Init:
-  1438                           	opt stack 0
-  1439                           tblptru	equ	0xFF8
-  1440                           tblptrh	equ	0xFF7
-  1441                           tblptrl	equ	0xFF6
-  1442                           tablat	equ	0xFF5
-  1443                           intcon	equ	0xFF2
-  1444                           postinc0	equ	0xFEE
-  1445                           postdec1	equ	0xFE5
-  1446                           fsr1h	equ	0xFE2
-  1447                           fsr1l	equ	0xFE1
-  1448                           indf2	equ	0xFDF
-  1449                           fsr2h	equ	0xFDA
-  1450                           fsr2l	equ	0xFD9
-  1451                           status	equ	0xFD8
-  1452                           
-  1453 ;; *************** function _Hi_ISR *****************
-  1454 ;; Defined at:
-  1455 ;;		line 332 in file "main.c"
-  1456 ;; Parameters:    Size  Location     Type
-  1457 ;;		None
-  1458 ;; Auto vars:     Size  Location     Type
-  1459 ;;		None
-  1460 ;; Return value:  Size  Location     Type
-  1461 ;;                  1    wreg      void 
-  1462 ;; Registers used:
-  1463 ;;		wreg, fsr2l, fsr2h, status,2, status,0, cstack
-  1464 ;; Tracked objects:
-  1465 ;;		On entry : 0/0
-  1466 ;;		On exit  : 0/0
-  1467 ;;		Unchanged: 0/0
-  1468 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
-  1469 ;;      Params:         0       0       0       0       0       0       0
-  1470 ;;      Locals:         0       0       0       0       0       0       0
-  1471 ;;      Temps:         18       0       0       0       0       0       0
-  1472 ;;      Totals:        18       0       0       0       0       0       0
-  1473 ;;Total ram usage:       18 bytes
-  1474 ;; Hardware stack levels used:    1
-  1475 ;; Hardware stack levels required when called:    3
-  1476 ;; This function calls:
-  1477 ;;		_MyusartRead
-  1478 ;;		_Myusartwrite
-  1479 ;; This function is called by:
-  1480 ;;		Interrupt level 2
-  1481 ;; This function uses a non-reentrant model
-  1482 ;;
-  1483                           
-  1484                           	psect	intcode
-  1485  000008                     __pintcode:
-  1486                           	opt stack 0
-  1487  000008                     _Hi_ISR:
-  1488                           	opt stack 25
-  1489                           
-  1490                           ;incstack = 0
-  1491  000008  822D               	bsf	btemp,1,c	;set compiler interrupt flag (level 2)
-  1492  00000A  ED35  F001         	call	int_func,f	;refresh shadow registers
-  1493                           tblptru	equ	0xFF8
-  1494                           tblptrh	equ	0xFF7
-  1495                           tblptrl	equ	0xFF6
-  1496                           tablat	equ	0xFF5
-  1497                           intcon	equ	0xFF2
-  1498                           postinc0	equ	0xFEE
-  1499                           postdec1	equ	0xFE5
-  1500                           fsr1h	equ	0xFE2
-  1501                           fsr1l	equ	0xFE1
-  1502                           indf2	equ	0xFDF
-  1503                           fsr2h	equ	0xFDA
-  1504                           fsr2l	equ	0xFD9
-  1505                           status	equ	0xFD8
-  1506                           
-  1507                           	psect	intcode_body
-  1508  00026A                     __pintcode_body:
-  1509                           	opt stack 25
-  1510  00026A                     int_func:
-  1511                           	opt stack 25
-  1512  00026A  0006               	pop		; remove dummy address from shadow register refresh
-  1513  00026C  CFFA F004          	movff	pclath,??_Hi_ISR
-  1514  000270  CFFB F005          	movff	pclatu,??_Hi_ISR+1
-  1515  000274  CFE9 F006          	movff	fsr0l,??_Hi_ISR+2
-  1516  000278  CFEA F007          	movff	fsr0h,??_Hi_ISR+3
-  1517  00027C  CFE1 F008          	movff	fsr1l,??_Hi_ISR+4
-  1518  000280  CFE2 F009          	movff	fsr1h,??_Hi_ISR+5
-  1519  000284  CFD9 F00A          	movff	fsr2l,??_Hi_ISR+6
-  1520  000288  CFDA F00B          	movff	fsr2h,??_Hi_ISR+7
-  1521  00028C  CFF3 F00C          	movff	prodl,??_Hi_ISR+8
-  1522  000290  CFF4 F00D          	movff	prodh,??_Hi_ISR+9
-  1523  000294  CFF6 F00E          	movff	tblptrl,??_Hi_ISR+10
-  1524  000298  CFF7 F00F          	movff	tblptrh,??_Hi_ISR+11
-  1525  00029C  CFF8 F010          	movff	tblptru,??_Hi_ISR+12
-  1526  0002A0  CFF5 F011          	movff	tablat,??_Hi_ISR+13
-  1527  0002A4  C02D  F012         	movff	btemp,??_Hi_ISR+14
-  1528  0002A8  C02E  F013         	movff	btemp+1,??_Hi_ISR+15
-  1529  0002AC  C02F  F014         	movff	btemp+2,??_Hi_ISR+16
-  1530  0002B0  C030  F015         	movff	btemp+3,??_Hi_ISR+17
+  1395 ;; Tracked objects:
+  1396 ;;		On entry : 0/0
+  1397 ;;		On exit  : 0/0
+  1398 ;;		Unchanged: 0/0
+  1399 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+  1400 ;;      Params:         0       0       0       0       0       0       0
+  1401 ;;      Locals:         0       0       0       0       0       0       0
+  1402 ;;      Temps:          0       0       0       0       0       0       0
+  1403 ;;      Totals:         0       0       0       0       0       0       0
+  1404 ;;Total ram usage:        0 bytes
+  1405 ;; Hardware stack levels used:    1
+  1406 ;; Hardware stack levels required when called:    4
+  1407 ;; This function calls:
+  1408 ;;		Nothing
+  1409 ;; This function is called by:
+  1410 ;;		_main
+  1411 ;; This function uses a non-reentrant model
+  1412 ;;
+  1413                           
+  1414                           	psect	text5
+  1415  0004FC                     __ptext5:
+  1416                           	opt stack 0
+  1417  0004FC                     _ISR_Init:
+  1418                           	opt stack 26
+  1419                           
+  1420                           ;white_fan.c: 260: RCONbits.IPEN = 1;
+  1421                           
+  1422                           ;incstack = 0
+  1423  0004FC  8ED0               	bsf	4048,7,c	;volatile
+  1424                           
+  1425                           ;white_fan.c: 261: INTCONbits.GIEH = 1;
+  1426  0004FE  8EF2               	bsf	intcon,7,c	;volatile
+  1427                           
+  1428                           ;white_fan.c: 262: INTCONbits.GIEL = 1;
+  1429  000500  8CF2               	bsf	intcon,6,c	;volatile
+  1430                           
+  1431                           ;white_fan.c: 264: return ;
+  1432  000502  0012               	return		;funcret
+  1433  000504                     __end_of_ISR_Init:
+  1434                           	opt stack 0
+  1435                           tblptru	equ	0xFF8
+  1436                           tblptrh	equ	0xFF7
+  1437                           tblptrl	equ	0xFF6
+  1438                           tablat	equ	0xFF5
+  1439                           intcon	equ	0xFF2
+  1440                           postinc0	equ	0xFEE
+  1441                           postdec1	equ	0xFE5
+  1442                           fsr1h	equ	0xFE2
+  1443                           fsr1l	equ	0xFE1
+  1444                           indf2	equ	0xFDF
+  1445                           fsr2h	equ	0xFDA
+  1446                           fsr2l	equ	0xFD9
+  1447                           status	equ	0xFD8
+  1448                           
+  1449 ;; *************** function _Hi_ISR *****************
+  1450 ;; Defined at:
+  1451 ;;		line 321 in file "white_fan.c"
+  1452 ;; Parameters:    Size  Location     Type
+  1453 ;;		None
+  1454 ;; Auto vars:     Size  Location     Type
+  1455 ;;		None
+  1456 ;; Return value:  Size  Location     Type
+  1457 ;;                  1    wreg      void 
+  1458 ;; Registers used:
+  1459 ;;		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+  1460 ;; Tracked objects:
+  1461 ;;		On entry : 0/0
+  1462 ;;		On exit  : 0/0
+  1463 ;;		Unchanged: 0/0
+  1464 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+  1465 ;;      Params:         0       0       0       0       0       0       0
+  1466 ;;      Locals:         0       0       0       0       0       0       0
+  1467 ;;      Temps:         18       0       0       0       0       0       0
+  1468 ;;      Totals:        18       0       0       0       0       0       0
+  1469 ;;Total ram usage:       18 bytes
+  1470 ;; Hardware stack levels used:    1
+  1471 ;; Hardware stack levels required when called:    3
+  1472 ;; This function calls:
+  1473 ;;		_MyusartRead
+  1474 ;;		_Myusartwrite
+  1475 ;; This function is called by:
+  1476 ;;		Interrupt level 2
+  1477 ;; This function uses a non-reentrant model
+  1478 ;;
+  1479                           
+  1480                           	psect	intcode
+  1481  000008                     __pintcode:
+  1482                           	opt stack 0
+  1483  000008                     _Hi_ISR:
+  1484                           	opt stack 25
+  1485                           
+  1486                           ;incstack = 0
+  1487  000008  822D               	bsf	btemp,1,c	;set compiler interrupt flag (level 2)
+  1488  00000A  ED35  F001         	call	int_func,f	;refresh shadow registers
+  1489                           tblptru	equ	0xFF8
+  1490                           tblptrh	equ	0xFF7
+  1491                           tblptrl	equ	0xFF6
+  1492                           tablat	equ	0xFF5
+  1493                           intcon	equ	0xFF2
+  1494                           postinc0	equ	0xFEE
+  1495                           postdec1	equ	0xFE5
+  1496                           fsr1h	equ	0xFE2
+  1497                           fsr1l	equ	0xFE1
+  1498                           indf2	equ	0xFDF
+  1499                           fsr2h	equ	0xFDA
+  1500                           fsr2l	equ	0xFD9
+  1501                           status	equ	0xFD8
+  1502                           
+  1503                           	psect	intcode_body
+  1504  00026A                     __pintcode_body:
+  1505                           	opt stack 25
+  1506  00026A                     int_func:
+  1507                           	opt stack 25
+  1508  00026A  0006               	pop		; remove dummy address from shadow register refresh
+  1509  00026C  CFFA F004          	movff	pclath,??_Hi_ISR
+  1510  000270  CFFB F005          	movff	pclatu,??_Hi_ISR+1
+  1511  000274  CFE9 F006          	movff	fsr0l,??_Hi_ISR+2
+  1512  000278  CFEA F007          	movff	fsr0h,??_Hi_ISR+3
+  1513  00027C  CFE1 F008          	movff	fsr1l,??_Hi_ISR+4
+  1514  000280  CFE2 F009          	movff	fsr1h,??_Hi_ISR+5
+  1515  000284  CFD9 F00A          	movff	fsr2l,??_Hi_ISR+6
+  1516  000288  CFDA F00B          	movff	fsr2h,??_Hi_ISR+7
+  1517  00028C  CFF3 F00C          	movff	prodl,??_Hi_ISR+8
+  1518  000290  CFF4 F00D          	movff	prodh,??_Hi_ISR+9
+  1519  000294  CFF6 F00E          	movff	tblptrl,??_Hi_ISR+10
+  1520  000298  CFF7 F00F          	movff	tblptrh,??_Hi_ISR+11
+  1521  00029C  CFF8 F010          	movff	tblptru,??_Hi_ISR+12
+  1522  0002A0  CFF5 F011          	movff	tablat,??_Hi_ISR+13
+  1523  0002A4  C02D  F012         	movff	btemp,??_Hi_ISR+14
+  1524  0002A8  C02E  F013         	movff	btemp+1,??_Hi_ISR+15
+  1525  0002AC  C02F  F014         	movff	btemp+2,??_Hi_ISR+16
+  1526  0002B0  C030  F015         	movff	btemp+3,??_Hi_ISR+17
+  1527                           
+  1528                           ;white_fan.c: 323: if(RCIF)
+  1529  0002B4  AA9E               	btfss	3998,5,c	;volatile
+  1530  0002B6  D005               	goto	i2l107
   1531                           
-  1532                           ;main.c: 334: if(RCIF) {
-  1533  0002B4  AA9E               	btfss	3998,5,c	;volatile
-  1534  0002B6  D005               	goto	i2l107
+  1532                           ;white_fan.c: 324: {
+  1533                           ;white_fan.c: 325: MyusartRead();
+  1534  0002B8  EC78  F002         	call	_MyusartRead	;wreg free
   1535                           
-  1536                           ;main.c: 335: MyusartRead();
-  1537  0002B8  EC78  F002         	call	_MyusartRead	;wreg free
-  1538                           
-  1539                           ;main.c: 336: Myusartwrite(global_char);
-  1540  0002BC  502C               	movf	_global_char,w,c
-  1541  0002BE  EC82  F002         	call	_Myusartwrite
-  1542  0002C2                     i2l107:
-  1543                           
-  1544                           ;main.c: 337: }
-  1545                           ;main.c: 338: return ;
-  1546  0002C2  C015  F030         	movff	??_Hi_ISR+17,btemp+3
-  1547  0002C6  C014  F02F         	movff	??_Hi_ISR+16,btemp+2
-  1548  0002CA  C013  F02E         	movff	??_Hi_ISR+15,btemp+1
-  1549  0002CE  C012  F02D         	movff	??_Hi_ISR+14,btemp
-  1550  0002D2  C011  FFF5         	movff	??_Hi_ISR+13,tablat
-  1551  0002D6  C010  FFF8         	movff	??_Hi_ISR+12,tblptru
-  1552  0002DA  C00F  FFF7         	movff	??_Hi_ISR+11,tblptrh
-  1553  0002DE  C00E  FFF6         	movff	??_Hi_ISR+10,tblptrl
-  1554  0002E2  C00D  FFF4         	movff	??_Hi_ISR+9,prodh
-  1555  0002E6  C00C  FFF3         	movff	??_Hi_ISR+8,prodl
-  1556  0002EA  C00B  FFDA         	movff	??_Hi_ISR+7,fsr2h
-  1557  0002EE  C00A  FFD9         	movff	??_Hi_ISR+6,fsr2l
-  1558  0002F2  C009  FFE2         	movff	??_Hi_ISR+5,fsr1h
-  1559  0002F6  C008  FFE1         	movff	??_Hi_ISR+4,fsr1l
-  1560  0002FA  C007  FFEA         	movff	??_Hi_ISR+3,fsr0h
-  1561  0002FE  C006  FFE9         	movff	??_Hi_ISR+2,fsr0l
-  1562  000302  C005  FFFB         	movff	??_Hi_ISR+1,pclatu
-  1563  000306  C004  FFFA         	movff	??_Hi_ISR,pclath
-  1564  00030A  922D               	bcf	btemp,1,c	;clear compiler interrupt flag (level 2)
-  1565  00030C  0011               	retfie		f
-  1566  00030E                     __end_of_Hi_ISR:
-  1567                           	opt stack 0
-  1568                           pclatu	equ	0xFFB
-  1569                           pclath	equ	0xFFA
-  1570                           tblptru	equ	0xFF8
-  1571                           tblptrh	equ	0xFF7
-  1572                           tblptrl	equ	0xFF6
-  1573                           tablat	equ	0xFF5
-  1574                           prodh	equ	0xFF4
-  1575                           prodl	equ	0xFF3
-  1576                           intcon	equ	0xFF2
-  1577                           postinc0	equ	0xFEE
-  1578                           fsr0h	equ	0xFEA
-  1579                           fsr0l	equ	0xFE9
-  1580                           postdec1	equ	0xFE5
-  1581                           fsr1h	equ	0xFE2
-  1582                           fsr1l	equ	0xFE1
-  1583                           indf2	equ	0xFDF
-  1584                           fsr2h	equ	0xFDA
-  1585                           fsr2l	equ	0xFD9
-  1586                           status	equ	0xFD8
-  1587                           
-  1588 ;; *************** function _Myusartwrite *****************
-  1589 ;; Defined at:
-  1590 ;;		line 281 in file "main.c"
-  1591 ;; Parameters:    Size  Location     Type
-  1592 ;;  a               1    wreg     unsigned char 
-  1593 ;; Auto vars:     Size  Location     Type
-  1594 ;;  a               1    0[COMRAM] unsigned char 
-  1595 ;; Return value:  Size  Location     Type
-  1596 ;;                  1    wreg      void 
-  1597 ;; Registers used:
-  1598 ;;		wreg
-  1599 ;; Tracked objects:
-  1600 ;;		On entry : 0/0
-  1601 ;;		On exit  : 0/0
-  1602 ;;		Unchanged: 0/0
-  1603 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
-  1604 ;;      Params:         0       0       0       0       0       0       0
-  1605 ;;      Locals:         1       0       0       0       0       0       0
-  1606 ;;      Temps:          0       0       0       0       0       0       0
-  1607 ;;      Totals:         1       0       0       0       0       0       0
-  1608 ;;Total ram usage:        1 bytes
-  1609 ;; Hardware stack levels used:    1
-  1610 ;; This function calls:
-  1611 ;;		Nothing
-  1612 ;; This function is called by:
-  1613 ;;		_Hi_ISR
-  1614 ;; This function uses a non-reentrant model
-  1615 ;;
-  1616                           
-  1617                           	psect	text7
-  1618  000504                     __ptext7:
-  1619                           	opt stack 0
-  1620  000504                     _Myusartwrite:
-  1621                           	opt stack 27
-  1622                           
-  1623                           ;incstack = 0
-  1624                           ;Myusartwrite@a stored from wreg
-  1625  000504  6E01               	movwf	Myusartwrite@a,c
-  1626                           
-  1627                           ;main.c: 284: TXREG = a;
-  1628  000506  C001  FFAD         	movff	Myusartwrite@a,4013	;volatile
-  1629  00050A  0012               	return	
-  1630  00050C                     __end_of_Myusartwrite:
-  1631                           	opt stack 0
-  1632                           pclatu	equ	0xFFB
-  1633                           pclath	equ	0xFFA
-  1634                           tblptru	equ	0xFF8
-  1635                           tblptrh	equ	0xFF7
-  1636                           tblptrl	equ	0xFF6
-  1637                           tablat	equ	0xFF5
-  1638                           prodh	equ	0xFF4
-  1639                           prodl	equ	0xFF3
-  1640                           intcon	equ	0xFF2
-  1641                           postinc0	equ	0xFEE
-  1642                           fsr0h	equ	0xFEA
-  1643                           fsr0l	equ	0xFE9
-  1644                           postdec1	equ	0xFE5
-  1645                           fsr1h	equ	0xFE2
-  1646                           fsr1l	equ	0xFE1
-  1647                           indf2	equ	0xFDF
-  1648                           fsr2h	equ	0xFDA
-  1649                           fsr2l	equ	0xFD9
-  1650                           status	equ	0xFD8
-  1651                           
-  1652 ;; *************** function _MyusartRead *****************
-  1653 ;; Defined at:
-  1654 ;;		line 273 in file "main.c"
-  1655 ;; Parameters:    Size  Location     Type
-  1656 ;;		None
-  1657 ;; Auto vars:     Size  Location     Type
-  1658 ;;		None
-  1659 ;; Return value:  Size  Location     Type
-  1660 ;;                  1    wreg      void 
-  1661 ;; Registers used:
-  1662 ;;		wreg, fsr2l, fsr2h, status,2, status,0, cstack
-  1663 ;; Tracked objects:
-  1664 ;;		On entry : 0/0
-  1665 ;;		On exit  : 0/0
-  1666 ;;		Unchanged: 0/0
-  1667 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
-  1668 ;;      Params:         0       0       0       0       0       0       0
-  1669 ;;      Locals:         0       0       0       0       0       0       0
-  1670 ;;      Temps:          0       0       0       0       0       0       0
-  1671 ;;      Totals:         0       0       0       0       0       0       0
-  1672 ;;Total ram usage:        0 bytes
-  1673 ;; Hardware stack levels used:    1
-  1674 ;; Hardware stack levels required when called:    2
-  1675 ;; This function calls:
-  1676 ;;		_add_word
-  1677 ;; This function is called by:
-  1678 ;;		_Hi_ISR
-  1679 ;; This function uses a non-reentrant model
-  1680 ;;
-  1681                           
-  1682                           	psect	text8
-  1683  0004F0                     __ptext8:
-  1684                           	opt stack 0
-  1685  0004F0                     _MyusartRead:
-  1686                           	opt stack 25
-  1687                           
-  1688                           ;main.c: 276: global_char = RCREG;
+  1536                           ;white_fan.c: 326: Myusartwrite(global_char);
+  1537  0002BC  502C               	movf	_global_char,w,c
+  1538  0002BE  EC82  F002         	call	_Myusartwrite
+  1539  0002C2                     i2l107:
+  1540                           
+  1541                           ;white_fan.c: 327: }
+  1542                           ;white_fan.c: 328: return ;
+  1543  0002C2  C015  F030         	movff	??_Hi_ISR+17,btemp+3
+  1544  0002C6  C014  F02F         	movff	??_Hi_ISR+16,btemp+2
+  1545  0002CA  C013  F02E         	movff	??_Hi_ISR+15,btemp+1
+  1546  0002CE  C012  F02D         	movff	??_Hi_ISR+14,btemp
+  1547  0002D2  C011  FFF5         	movff	??_Hi_ISR+13,tablat
+  1548  0002D6  C010  FFF8         	movff	??_Hi_ISR+12,tblptru
+  1549  0002DA  C00F  FFF7         	movff	??_Hi_ISR+11,tblptrh
+  1550  0002DE  C00E  FFF6         	movff	??_Hi_ISR+10,tblptrl
+  1551  0002E2  C00D  FFF4         	movff	??_Hi_ISR+9,prodh
+  1552  0002E6  C00C  FFF3         	movff	??_Hi_ISR+8,prodl
+  1553  0002EA  C00B  FFDA         	movff	??_Hi_ISR+7,fsr2h
+  1554  0002EE  C00A  FFD9         	movff	??_Hi_ISR+6,fsr2l
+  1555  0002F2  C009  FFE2         	movff	??_Hi_ISR+5,fsr1h
+  1556  0002F6  C008  FFE1         	movff	??_Hi_ISR+4,fsr1l
+  1557  0002FA  C007  FFEA         	movff	??_Hi_ISR+3,fsr0h
+  1558  0002FE  C006  FFE9         	movff	??_Hi_ISR+2,fsr0l
+  1559  000302  C005  FFFB         	movff	??_Hi_ISR+1,pclatu
+  1560  000306  C004  FFFA         	movff	??_Hi_ISR,pclath
+  1561  00030A  922D               	bcf	btemp,1,c	;clear compiler interrupt flag (level 2)
+  1562  00030C  0011               	retfie		f
+  1563  00030E                     __end_of_Hi_ISR:
+  1564                           	opt stack 0
+  1565                           pclatu	equ	0xFFB
+  1566                           pclath	equ	0xFFA
+  1567                           tblptru	equ	0xFF8
+  1568                           tblptrh	equ	0xFF7
+  1569                           tblptrl	equ	0xFF6
+  1570                           tablat	equ	0xFF5
+  1571                           prodh	equ	0xFF4
+  1572                           prodl	equ	0xFF3
+  1573                           intcon	equ	0xFF2
+  1574                           postinc0	equ	0xFEE
+  1575                           fsr0h	equ	0xFEA
+  1576                           fsr0l	equ	0xFE9
+  1577                           postdec1	equ	0xFE5
+  1578                           fsr1h	equ	0xFE2
+  1579                           fsr1l	equ	0xFE1
+  1580                           indf2	equ	0xFDF
+  1581                           fsr2h	equ	0xFDA
+  1582                           fsr2l	equ	0xFD9
+  1583                           status	equ	0xFD8
+  1584                           
+  1585 ;; *************** function _Myusartwrite *****************
+  1586 ;; Defined at:
+  1587 ;;		line 274 in file "white_fan.c"
+  1588 ;; Parameters:    Size  Location     Type
+  1589 ;;  a               1    wreg     unsigned char 
+  1590 ;; Auto vars:     Size  Location     Type
+  1591 ;;  a               1    0[COMRAM] unsigned char 
+  1592 ;; Return value:  Size  Location     Type
+  1593 ;;                  1    wreg      void 
+  1594 ;; Registers used:
+  1595 ;;		wreg
+  1596 ;; Tracked objects:
+  1597 ;;		On entry : 0/0
+  1598 ;;		On exit  : 0/0
+  1599 ;;		Unchanged: 0/0
+  1600 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+  1601 ;;      Params:         0       0       0       0       0       0       0
+  1602 ;;      Locals:         1       0       0       0       0       0       0
+  1603 ;;      Temps:          0       0       0       0       0       0       0
+  1604 ;;      Totals:         1       0       0       0       0       0       0
+  1605 ;;Total ram usage:        1 bytes
+  1606 ;; Hardware stack levels used:    1
+  1607 ;; This function calls:
+  1608 ;;		Nothing
+  1609 ;; This function is called by:
+  1610 ;;		_Hi_ISR
+  1611 ;; This function uses a non-reentrant model
+  1612 ;;
+  1613                           
+  1614                           	psect	text7
+  1615  000504                     __ptext7:
+  1616                           	opt stack 0
+  1617  000504                     _Myusartwrite:
+  1618                           	opt stack 27
+  1619                           
+  1620                           ;incstack = 0
+  1621                           ;Myusartwrite@a stored from wreg
+  1622  000504  6E01               	movwf	Myusartwrite@a,c
+  1623                           
+  1624                           ;white_fan.c: 277: TXREG = a;
+  1625  000506  C001  FFAD         	movff	Myusartwrite@a,4013	;volatile
+  1626  00050A  0012               	return	
+  1627  00050C                     __end_of_Myusartwrite:
+  1628                           	opt stack 0
+  1629                           pclatu	equ	0xFFB
+  1630                           pclath	equ	0xFFA
+  1631                           tblptru	equ	0xFF8
+  1632                           tblptrh	equ	0xFF7
+  1633                           tblptrl	equ	0xFF6
+  1634                           tablat	equ	0xFF5
+  1635                           prodh	equ	0xFF4
+  1636                           prodl	equ	0xFF3
+  1637                           intcon	equ	0xFF2
+  1638                           postinc0	equ	0xFEE
+  1639                           fsr0h	equ	0xFEA
+  1640                           fsr0l	equ	0xFE9
+  1641                           postdec1	equ	0xFE5
+  1642                           fsr1h	equ	0xFE2
+  1643                           fsr1l	equ	0xFE1
+  1644                           indf2	equ	0xFDF
+  1645                           fsr2h	equ	0xFDA
+  1646                           fsr2l	equ	0xFD9
+  1647                           status	equ	0xFD8
+  1648                           
+  1649 ;; *************** function _MyusartRead *****************
+  1650 ;; Defined at:
+  1651 ;;		line 266 in file "white_fan.c"
+  1652 ;; Parameters:    Size  Location     Type
+  1653 ;;		None
+  1654 ;; Auto vars:     Size  Location     Type
+  1655 ;;		None
+  1656 ;; Return value:  Size  Location     Type
+  1657 ;;                  1    wreg      void 
+  1658 ;; Registers used:
+  1659 ;;		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+  1660 ;; Tracked objects:
+  1661 ;;		On entry : 0/0
+  1662 ;;		On exit  : 0/0
+  1663 ;;		Unchanged: 0/0
+  1664 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+  1665 ;;      Params:         0       0       0       0       0       0       0
+  1666 ;;      Locals:         0       0       0       0       0       0       0
+  1667 ;;      Temps:          0       0       0       0       0       0       0
+  1668 ;;      Totals:         0       0       0       0       0       0       0
+  1669 ;;Total ram usage:        0 bytes
+  1670 ;; Hardware stack levels used:    1
+  1671 ;; Hardware stack levels required when called:    2
+  1672 ;; This function calls:
+  1673 ;;		_add_word
+  1674 ;; This function is called by:
+  1675 ;;		_Hi_ISR
+  1676 ;; This function uses a non-reentrant model
+  1677 ;;
+  1678                           
+  1679                           	psect	text8
+  1680  0004F0                     __ptext8:
+  1681                           	opt stack 0
+  1682  0004F0                     _MyusartRead:
+  1683                           	opt stack 25
+  1684                           
+  1685                           ;white_fan.c: 269: global_char = RCREG;
+  1686                           
+  1687                           ;incstack = 0
+  1688  0004F0  CFAE F02C          	movff	4014,_global_char	;volatile
   1689                           
-  1690                           ;incstack = 0
-  1691  0004F0  CFAE F02C          	movff	4014,_global_char	;volatile
-  1692                           
-  1693                           ;main.c: 277: add_word(global_char);
-  1694  0004F4  502C               	movf	_global_char,w,c
-  1695  0004F6  EC55  F002         	call	_add_word
-  1696  0004FA  0012               	return	
-  1697  0004FC                     __end_of_MyusartRead:
-  1698                           	opt stack 0
-  1699                           pclatu	equ	0xFFB
-  1700                           pclath	equ	0xFFA
-  1701                           tblptru	equ	0xFF8
-  1702                           tblptrh	equ	0xFF7
-  1703                           tblptrl	equ	0xFF6
-  1704                           tablat	equ	0xFF5
-  1705                           prodh	equ	0xFF4
-  1706                           prodl	equ	0xFF3
-  1707                           intcon	equ	0xFF2
-  1708                           postinc0	equ	0xFEE
-  1709                           fsr0h	equ	0xFEA
-  1710                           fsr0l	equ	0xFE9
-  1711                           postdec1	equ	0xFE5
-  1712                           fsr1h	equ	0xFE2
-  1713                           fsr1l	equ	0xFE1
-  1714                           indf2	equ	0xFDF
-  1715                           fsr2h	equ	0xFDA
-  1716                           fsr2l	equ	0xFD9
-  1717                           status	equ	0xFD8
-  1718                           
-  1719 ;; *************** function _add_word *****************
-  1720 ;; Defined at:
-  1721 ;;		line 234 in file "main.c"
-  1722 ;; Parameters:    Size  Location     Type
-  1723 ;;  c               1    wreg     unsigned char 
-  1724 ;; Auto vars:     Size  Location     Type
-  1725 ;;  c               1    2[COMRAM] unsigned char 
-  1726 ;; Return value:  Size  Location     Type
-  1727 ;;                  1    wreg      void 
-  1728 ;; Registers used:
-  1729 ;;		wreg, fsr2l, fsr2h, status,2, status,0, cstack
-  1730 ;; Tracked objects:
-  1731 ;;		On entry : 0/0
-  1732 ;;		On exit  : 0/0
-  1733 ;;		Unchanged: 0/0
-  1734 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
-  1735 ;;      Params:         0       0       0       0       0       0       0
-  1736 ;;      Locals:         1       0       0       0       0       0       0
-  1737 ;;      Temps:          0       0       0       0       0       0       0
-  1738 ;;      Totals:         1       0       0       0       0       0       0
-  1739 ;;Total ram usage:        1 bytes
-  1740 ;; Hardware stack levels used:    1
-  1741 ;; Hardware stack levels required when called:    1
-  1742 ;; This function calls:
-  1743 ;;		i2_next
-  1744 ;; This function is called by:
-  1745 ;;		_MyusartRead
-  1746 ;;		_init_word
-  1747 ;; This function uses a non-reentrant model
-  1748 ;;
-  1749                           
-  1750                           	psect	text9
-  1751  0004AA                     __ptext9:
-  1752                           	opt stack 0
-  1753  0004AA                     _add_word:
-  1754                           	opt stack 25
-  1755                           
-  1756                           ;incstack = 0
-  1757                           ;add_word@c stored from wreg
-  1758  0004AA  6E03               	movwf	add_word@c,c
-  1759                           
-  1760                           ;main.c: 236: *NOW = c;
-  1761  0004AC  C028  FFD9         	movff	_NOW,fsr2l
-  1762  0004B0  C029  FFDA         	movff	_NOW+1,fsr2h
-  1763  0004B4  C003  FFDF         	movff	add_word@c,indf2
-  1764                           
-  1765                           ;main.c: 237: NOW = next(NOW);
-  1766  0004B8  C028  F001         	movff	_NOW,i2next@ptr
-  1767  0004BC  C029  F002         	movff	_NOW+1,i2next@ptr+1
-  1768  0004C0  EC42  F002         	call	i2_next	;wreg free
-  1769  0004C4  C001  F028         	movff	?i2_next,_NOW
-  1770  0004C8  C002  F029         	movff	?i2_next+1,_NOW+1
-  1771  0004CC  0012               	return		;funcret
-  1772  0004CE                     __end_of_add_word:
-  1773                           	opt stack 0
-  1774                           pclatu	equ	0xFFB
-  1775                           pclath	equ	0xFFA
-  1776                           tblptru	equ	0xFF8
-  1777                           tblptrh	equ	0xFF7
-  1778                           tblptrl	equ	0xFF6
-  1779                           tablat	equ	0xFF5
-  1780                           prodh	equ	0xFF4
-  1781                           prodl	equ	0xFF3
-  1782                           intcon	equ	0xFF2
-  1783                           postinc0	equ	0xFEE
-  1784                           fsr0h	equ	0xFEA
-  1785                           fsr0l	equ	0xFE9
-  1786                           postdec1	equ	0xFE5
-  1787                           fsr1h	equ	0xFE2
-  1788                           fsr1l	equ	0xFE1
-  1789                           indf2	equ	0xFDF
-  1790                           fsr2h	equ	0xFDA
-  1791                           fsr2l	equ	0xFD9
-  1792                           status	equ	0xFD8
-  1793                           
-  1794 ;; *************** function i2_next *****************
-  1795 ;; Defined at:
-  1796 ;;		line 247 in file "main.c"
-  1797 ;; Parameters:    Size  Location     Type
-  1798 ;;  ptr             2    0[COMRAM] PTR unsigned char 
-  1799 ;;		 -> data(600), 
-  1800 ;; Auto vars:     Size  Location     Type
-  1801 ;;		None
-  1802 ;; Return value:  Size  Location     Type
-  1803 ;;                  2    0[COMRAM] PTR unsigned char 
-  1804 ;; Registers used:
-  1805 ;;		wreg, status,2, status,0
-  1806 ;; Tracked objects:
-  1807 ;;		On entry : 0/0
-  1808 ;;		On exit  : 0/0
-  1809 ;;		Unchanged: 0/0
-  1810 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
-  1811 ;;      Params:         2       0       0       0       0       0       0
-  1812 ;;      Locals:         0       0       0       0       0       0       0
-  1813 ;;      Temps:          0       0       0       0       0       0       0
-  1814 ;;      Totals:         2       0       0       0       0       0       0
-  1815 ;;Total ram usage:        2 bytes
-  1816 ;; Hardware stack levels used:    1
-  1817 ;; This function calls:
-  1818 ;;		Nothing
-  1819 ;; This function is called by:
-  1820 ;;		_add_word
-  1821 ;; This function uses a non-reentrant model
-  1822 ;;
-  1823                           
-  1824                           	psect	text10
-  1825  000484                     __ptext10:
-  1826                           	opt stack 0
-  1827  000484                     i2_next:
-  1828                           	opt stack 25
-  1829                           
-  1830                           ;main.c: 249: if(ptr == TAIL)
-  1831                           
-  1832                           ;incstack = 0
-  1833  000484  5026               	movf	_TAIL,w,c
-  1834  000486  1801               	xorwf	i2next@ptr,w,c
-  1835  000488  E109               	bnz	i2l854
-  1836  00048A  5027               	movf	_TAIL+1,w,c
-  1837  00048C  1802               	xorwf	i2next@ptr+1,w,c
-  1838  00048E  A4D8               	btfss	status,2,c
-  1839  000490  D005               	goto	i2l86
-  1840                           
-  1841                           ;main.c: 250: return (unsigned char*)data;
-  1842  000492  0EA8               	movlw	low _data
-  1843  000494  6E01               	movwf	?i2_next,c
-  1844  000496  0E03               	movlw	high _data
-  1845  000498  6E02               	movwf	?i2_next+1,c
-  1846  00049A  0012               	return	
-  1847  00049C                     i2l86:
-  1848  00049C                     i2l854:
-  1849                           
-  1850                           ;main.c: 251: return ptr+1;
-  1851  00049C  0E01               	movlw	1
-  1852  00049E  2401               	addwf	i2next@ptr,w,c
-  1853  0004A0  6E01               	movwf	?i2_next,c
-  1854  0004A2  0E00               	movlw	0
-  1855  0004A4  2002               	addwfc	i2next@ptr+1,w,c
-  1856  0004A6  6E02               	movwf	?i2_next+1,c
-  1857  0004A8  0012               	return	
-  1858  0004AA                     __end_ofi2_next:
-  1859                           	opt stack 0
-  1860  0000                     pclatu	equ	0xFFB
-  1861                           pclath	equ	0xFFA
-  1862                           tblptru	equ	0xFF8
-  1863                           tblptrh	equ	0xFF7
-  1864                           tblptrl	equ	0xFF6
-  1865                           tablat	equ	0xFF5
-  1866                           prodh	equ	0xFF4
-  1867                           prodl	equ	0xFF3
-  1868                           intcon	equ	0xFF2
-  1869                           postinc0	equ	0xFEE
-  1870                           fsr0h	equ	0xFEA
-  1871                           fsr0l	equ	0xFE9
-  1872                           postdec1	equ	0xFE5
-  1873                           fsr1h	equ	0xFE2
-  1874                           fsr1l	equ	0xFE1
-  1875                           indf2	equ	0xFDF
-  1876                           fsr2h	equ	0xFDA
-  1877                           fsr2l	equ	0xFD9
-  1878                           status	equ	0xFD8
-  1879                           pclatu	equ	0xFFB
-  1880                           pclath	equ	0xFFA
-  1881                           tblptru	equ	0xFF8
-  1882                           tblptrh	equ	0xFF7
-  1883                           tblptrl	equ	0xFF6
-  1884                           tablat	equ	0xFF5
-  1885                           prodh	equ	0xFF4
-  1886                           prodl	equ	0xFF3
-  1887                           intcon	equ	0xFF2
-  1888                           postinc0	equ	0xFEE
-  1889                           fsr0h	equ	0xFEA
-  1890                           fsr0l	equ	0xFE9
-  1891                           postdec1	equ	0xFE5
-  1892                           fsr1h	equ	0xFE2
-  1893                           fsr1l	equ	0xFE1
-  1894                           indf2	equ	0xFDF
-  1895                           fsr2h	equ	0xFDA
-  1896                           fsr2l	equ	0xFD9
-  1897                           status	equ	0xFD8
-  1898                           
-  1899                           	psect	rparam
-  1900  0000                     pclatu	equ	0xFFB
-  1901                           pclath	equ	0xFFA
-  1902                           tblptru	equ	0xFF8
-  1903                           tblptrh	equ	0xFF7
-  1904                           tblptrl	equ	0xFF6
-  1905                           tablat	equ	0xFF5
-  1906                           prodh	equ	0xFF4
-  1907                           prodl	equ	0xFF3
-  1908                           intcon	equ	0xFF2
-  1909                           postinc0	equ	0xFEE
-  1910                           fsr0h	equ	0xFEA
-  1911                           fsr0l	equ	0xFE9
-  1912                           postdec1	equ	0xFE5
-  1913                           fsr1h	equ	0xFE2
-  1914                           fsr1l	equ	0xFE1
-  1915                           indf2	equ	0xFDF
-  1916                           fsr2h	equ	0xFDA
-  1917                           fsr2l	equ	0xFD9
-  1918                           status	equ	0xFD8
-  1919                           
-  1920                           	psect	temp
-  1921  00002D                     btemp:
-  1922                           	opt stack 0
-  1923  00002D                     	ds	1
-  1924  0000                     int$flags	set	btemp
-  1925  0000                     wtemp6	set	btemp+1
-  1926                           pclatu	equ	0xFFB
-  1927                           pclath	equ	0xFFA
-  1928                           tblptru	equ	0xFF8
-  1929                           tblptrh	equ	0xFF7
-  1930                           tblptrl	equ	0xFF6
-  1931                           tablat	equ	0xFF5
-  1932                           prodh	equ	0xFF4
-  1933                           prodl	equ	0xFF3
-  1934                           intcon	equ	0xFF2
-  1935                           postinc0	equ	0xFEE
-  1936                           fsr0h	equ	0xFEA
-  1937                           fsr0l	equ	0xFE9
-  1938                           postdec1	equ	0xFE5
-  1939                           fsr1h	equ	0xFE2
-  1940                           fsr1l	equ	0xFE1
-  1941                           indf2	equ	0xFDF
-  1942                           fsr2h	equ	0xFDA
-  1943                           fsr2l	equ	0xFD9
-  1944                           status	equ	0xFD8
+  1690                           ;white_fan.c: 270: add_word(global_char);
+  1691  0004F4  502C               	movf	_global_char,w,c
+  1692  0004F6  EC55  F002         	call	_add_word
+  1693  0004FA  0012               	return	
+  1694  0004FC                     __end_of_MyusartRead:
+  1695                           	opt stack 0
+  1696                           pclatu	equ	0xFFB
+  1697                           pclath	equ	0xFFA
+  1698                           tblptru	equ	0xFF8
+  1699                           tblptrh	equ	0xFF7
+  1700                           tblptrl	equ	0xFF6
+  1701                           tablat	equ	0xFF5
+  1702                           prodh	equ	0xFF4
+  1703                           prodl	equ	0xFF3
+  1704                           intcon	equ	0xFF2
+  1705                           postinc0	equ	0xFEE
+  1706                           fsr0h	equ	0xFEA
+  1707                           fsr0l	equ	0xFE9
+  1708                           postdec1	equ	0xFE5
+  1709                           fsr1h	equ	0xFE2
+  1710                           fsr1l	equ	0xFE1
+  1711                           indf2	equ	0xFDF
+  1712                           fsr2h	equ	0xFDA
+  1713                           fsr2l	equ	0xFD9
+  1714                           status	equ	0xFD8
+  1715                           
+  1716 ;; *************** function _add_word *****************
+  1717 ;; Defined at:
+  1718 ;;		line 231 in file "white_fan.c"
+  1719 ;; Parameters:    Size  Location     Type
+  1720 ;;  c               1    wreg     unsigned char 
+  1721 ;; Auto vars:     Size  Location     Type
+  1722 ;;  c               1    2[COMRAM] unsigned char 
+  1723 ;; Return value:  Size  Location     Type
+  1724 ;;                  1    wreg      void 
+  1725 ;; Registers used:
+  1726 ;;		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+  1727 ;; Tracked objects:
+  1728 ;;		On entry : 0/0
+  1729 ;;		On exit  : 0/0
+  1730 ;;		Unchanged: 0/0
+  1731 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+  1732 ;;      Params:         0       0       0       0       0       0       0
+  1733 ;;      Locals:         1       0       0       0       0       0       0
+  1734 ;;      Temps:          0       0       0       0       0       0       0
+  1735 ;;      Totals:         1       0       0       0       0       0       0
+  1736 ;;Total ram usage:        1 bytes
+  1737 ;; Hardware stack levels used:    1
+  1738 ;; Hardware stack levels required when called:    1
+  1739 ;; This function calls:
+  1740 ;;		i2_next
+  1741 ;; This function is called by:
+  1742 ;;		_MyusartRead
+  1743 ;;		_init_word
+  1744 ;; This function uses a non-reentrant model
+  1745 ;;
+  1746                           
+  1747                           	psect	text9
+  1748  0004AA                     __ptext9:
+  1749                           	opt stack 0
+  1750  0004AA                     _add_word:
+  1751                           	opt stack 25
+  1752                           
+  1753                           ;incstack = 0
+  1754                           ;add_word@c stored from wreg
+  1755  0004AA  6E03               	movwf	add_word@c,c
+  1756                           
+  1757                           ;white_fan.c: 232: *NOW = c;
+  1758  0004AC  C028  FFD9         	movff	_NOW,fsr2l
+  1759  0004B0  C029  FFDA         	movff	_NOW+1,fsr2h
+  1760  0004B4  C003  FFDF         	movff	add_word@c,indf2
+  1761                           
+  1762                           ;white_fan.c: 233: NOW = next(NOW);
+  1763  0004B8  C028  F001         	movff	_NOW,i2next@ptr
+  1764  0004BC  C029  F002         	movff	_NOW+1,i2next@ptr+1
+  1765  0004C0  EC42  F002         	call	i2_next	;wreg free
+  1766  0004C4  C001  F028         	movff	?i2_next,_NOW
+  1767  0004C8  C002  F029         	movff	?i2_next+1,_NOW+1
+  1768  0004CC  0012               	return		;funcret
+  1769  0004CE                     __end_of_add_word:
+  1770                           	opt stack 0
+  1771                           pclatu	equ	0xFFB
+  1772                           pclath	equ	0xFFA
+  1773                           tblptru	equ	0xFF8
+  1774                           tblptrh	equ	0xFF7
+  1775                           tblptrl	equ	0xFF6
+  1776                           tablat	equ	0xFF5
+  1777                           prodh	equ	0xFF4
+  1778                           prodl	equ	0xFF3
+  1779                           intcon	equ	0xFF2
+  1780                           postinc0	equ	0xFEE
+  1781                           fsr0h	equ	0xFEA
+  1782                           fsr0l	equ	0xFE9
+  1783                           postdec1	equ	0xFE5
+  1784                           fsr1h	equ	0xFE2
+  1785                           fsr1l	equ	0xFE1
+  1786                           indf2	equ	0xFDF
+  1787                           fsr2h	equ	0xFDA
+  1788                           fsr2l	equ	0xFD9
+  1789                           status	equ	0xFD8
+  1790                           
+  1791 ;; *************** function i2_next *****************
+  1792 ;; Defined at:
+  1793 ;;		line 242 in file "white_fan.c"
+  1794 ;; Parameters:    Size  Location     Type
+  1795 ;;  ptr             2    0[COMRAM] PTR unsigned char 
+  1796 ;;		 -> data(600), 
+  1797 ;; Auto vars:     Size  Location     Type
+  1798 ;;		None
+  1799 ;; Return value:  Size  Location     Type
+  1800 ;;                  2    0[COMRAM] PTR unsigned char 
+  1801 ;; Registers used:
+  1802 ;;		wreg, status,2, status,0
+  1803 ;; Tracked objects:
+  1804 ;;		On entry : 0/0
+  1805 ;;		On exit  : 0/0
+  1806 ;;		Unchanged: 0/0
+  1807 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+  1808 ;;      Params:         2       0       0       0       0       0       0
+  1809 ;;      Locals:         0       0       0       0       0       0       0
+  1810 ;;      Temps:          0       0       0       0       0       0       0
+  1811 ;;      Totals:         2       0       0       0       0       0       0
+  1812 ;;Total ram usage:        2 bytes
+  1813 ;; Hardware stack levels used:    1
+  1814 ;; This function calls:
+  1815 ;;		Nothing
+  1816 ;; This function is called by:
+  1817 ;;		_add_word
+  1818 ;; This function uses a non-reentrant model
+  1819 ;;
+  1820                           
+  1821                           	psect	text10
+  1822  000484                     __ptext10:
+  1823                           	opt stack 0
+  1824  000484                     i2_next:
+  1825                           	opt stack 25
+  1826                           
+  1827                           ;white_fan.c: 243: if(ptr == TAIL)
+  1828                           
+  1829                           ;incstack = 0
+  1830  000484  5026               	movf	_TAIL,w,c
+  1831  000486  1801               	xorwf	i2next@ptr,w,c
+  1832  000488  E109               	bnz	i2l854
+  1833  00048A  5027               	movf	_TAIL+1,w,c
+  1834  00048C  1802               	xorwf	i2next@ptr+1,w,c
+  1835  00048E  A4D8               	btfss	status,2,c
+  1836  000490  D005               	goto	i2l86
+  1837                           
+  1838                           ;white_fan.c: 244: return (unsigned char*)data;
+  1839  000492  0EA8               	movlw	low _data
+  1840  000494  6E01               	movwf	?i2_next,c
+  1841  000496  0E03               	movlw	high _data
+  1842  000498  6E02               	movwf	?i2_next+1,c
+  1843  00049A  0012               	return	
+  1844  00049C                     i2l86:
+  1845  00049C                     i2l854:
+  1846                           
+  1847                           ;white_fan.c: 245: return ptr+1;
+  1848  00049C  0E01               	movlw	1
+  1849  00049E  2401               	addwf	i2next@ptr,w,c
+  1850  0004A0  6E01               	movwf	?i2_next,c
+  1851  0004A2  0E00               	movlw	0
+  1852  0004A4  2002               	addwfc	i2next@ptr+1,w,c
+  1853  0004A6  6E02               	movwf	?i2_next+1,c
+  1854  0004A8  0012               	return	
+  1855  0004AA                     __end_ofi2_next:
+  1856                           	opt stack 0
+  1857  0000                     pclatu	equ	0xFFB
+  1858                           pclath	equ	0xFFA
+  1859                           tblptru	equ	0xFF8
+  1860                           tblptrh	equ	0xFF7
+  1861                           tblptrl	equ	0xFF6
+  1862                           tablat	equ	0xFF5
+  1863                           prodh	equ	0xFF4
+  1864                           prodl	equ	0xFF3
+  1865                           intcon	equ	0xFF2
+  1866                           postinc0	equ	0xFEE
+  1867                           fsr0h	equ	0xFEA
+  1868                           fsr0l	equ	0xFE9
+  1869                           postdec1	equ	0xFE5
+  1870                           fsr1h	equ	0xFE2
+  1871                           fsr1l	equ	0xFE1
+  1872                           indf2	equ	0xFDF
+  1873                           fsr2h	equ	0xFDA
+  1874                           fsr2l	equ	0xFD9
+  1875                           status	equ	0xFD8
+  1876                           pclatu	equ	0xFFB
+  1877                           pclath	equ	0xFFA
+  1878                           tblptru	equ	0xFF8
+  1879                           tblptrh	equ	0xFF7
+  1880                           tblptrl	equ	0xFF6
+  1881                           tablat	equ	0xFF5
+  1882                           prodh	equ	0xFF4
+  1883                           prodl	equ	0xFF3
+  1884                           intcon	equ	0xFF2
+  1885                           postinc0	equ	0xFEE
+  1886                           fsr0h	equ	0xFEA
+  1887                           fsr0l	equ	0xFE9
+  1888                           postdec1	equ	0xFE5
+  1889                           fsr1h	equ	0xFE2
+  1890                           fsr1l	equ	0xFE1
+  1891                           indf2	equ	0xFDF
+  1892                           fsr2h	equ	0xFDA
+  1893                           fsr2l	equ	0xFD9
+  1894                           status	equ	0xFD8
+  1895                           
+  1896                           	psect	rparam
+  1897  0000                     pclatu	equ	0xFFB
+  1898                           pclath	equ	0xFFA
+  1899                           tblptru	equ	0xFF8
+  1900                           tblptrh	equ	0xFF7
+  1901                           tblptrl	equ	0xFF6
+  1902                           tablat	equ	0xFF5
+  1903                           prodh	equ	0xFF4
+  1904                           prodl	equ	0xFF3
+  1905                           intcon	equ	0xFF2
+  1906                           postinc0	equ	0xFEE
+  1907                           fsr0h	equ	0xFEA
+  1908                           fsr0l	equ	0xFE9
+  1909                           postdec1	equ	0xFE5
+  1910                           fsr1h	equ	0xFE2
+  1911                           fsr1l	equ	0xFE1
+  1912                           indf2	equ	0xFDF
+  1913                           fsr2h	equ	0xFDA
+  1914                           fsr2l	equ	0xFD9
+  1915                           status	equ	0xFD8
+  1916                           
+  1917                           	psect	temp
+  1918  00002D                     btemp:
+  1919                           	opt stack 0
+  1920  00002D                     	ds	1
+  1921  0000                     int$flags	set	btemp
+  1922  0000                     wtemp6	set	btemp+1
+  1923                           pclatu	equ	0xFFB
+  1924                           pclath	equ	0xFFA
+  1925                           tblptru	equ	0xFF8
+  1926                           tblptrh	equ	0xFF7
+  1927                           tblptrl	equ	0xFF6
+  1928                           tablat	equ	0xFF5
+  1929                           prodh	equ	0xFF4
+  1930                           prodl	equ	0xFF3
+  1931                           intcon	equ	0xFF2
+  1932                           postinc0	equ	0xFEE
+  1933                           fsr0h	equ	0xFEA
+  1934                           fsr0l	equ	0xFE9
+  1935                           postdec1	equ	0xFE5
+  1936                           fsr1h	equ	0xFE2
+  1937                           fsr1l	equ	0xFE1
+  1938                           indf2	equ	0xFDF
+  1939                           fsr2h	equ	0xFDA
+  1940                           fsr2l	equ	0xFD9
+  1941                           status	equ	0xFD8
 
 
 Data Sizes:
@@ -2158,7 +2155,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.44 build -154322312 
-Symbol Table                                                                                   Sat Dec 23 06:51:48 2017
+Symbol Table                                                                                   Fri Dec 22 17:19:27 2017
 
                      l71 035E                       l65 032E                       l82 0476  
                      l74 0390                       l59 0416                       l68 0342  

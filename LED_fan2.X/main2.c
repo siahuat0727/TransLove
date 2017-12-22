@@ -523,14 +523,13 @@ void mode_snow()
 			if(++elk_pic_i == ELK_PIC)
 				elk_pic_i = 0;
 
-		delay = 3820;
+		delay = 3780;
 		while(delay--);
 	}
 }
 
 void mode_tree()
 {
-
 	bool six[6] = {true, false, false, false, false, false};
 	int cycle;
 	int delay;
@@ -1002,7 +1001,7 @@ void mode_clock()
 		display_num(secH);
 		display_num(secL);
 
-#define DELAY_CLOCK 980
+#define DELAY_CLOCK 1010
 		delay = DELAY_CLOCK;
 		while(delay--);
 
