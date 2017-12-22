@@ -3880,36 +3880,124 @@ extern __nonreentrant void _delaywdt(unsigned long);
 extern __nonreentrant void _delay3(unsigned char);
 
 # 77 "main.c"
-char data[256] =
-{
-0b00000001,
-0b00000010,
-0b00000100,
-0b00001000,
-0b00010000,
-0b00100010,
+unsigned char data[600] = {
+0b01111111,
+0b01111111,
+0b00110000,
+0b00011000,
+0b00110000,
+0b01111111,
+0b01111111,
+0b00000000,
+0b00000000,
+0b00111000,
+0b01111100,
+0b01010100,
+0b01010100,
+0b01011100,
+0b00011000,
+0b00000000,
+0b00000000,
+0b01000001,
+0b01111111,
+0b01111111,
 0b01000000,
-0b10000000
+0b00000000,
+0b00000000,
+0b00000000,
+0b00111000,
+0b01111100,
+0b01000100,
+0b01000100,
+0b01101100,
+0b00101000,
+0b00000000,
+0b00000000,
+0b00111000,
+0b01111100,
+0b01000100,
+0b01000100,
+0b01111100,
+0b00111000,
+0b00000000,
+0b00000000,
+0b01111100,
+0b01111100,
+0b00011000,
+0b00110000,
+0b00011100,
+0b01111100,
+0b01111000,
+0b00000000,
+0b00111000,
+0b01111100,
+0b01010100,
+0b01010100,
+0b01011100,
+0b00011000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000100,
+0b00111110,
+0b01111111,
+0b01000100,
+0b01000100,
+0b00100000,
+0b00000000,
+0b00111000,
+0b01111100,
+0b01000100,
+0b01000100,
+0b01111100,
+0b00111000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b00000000,
+0b01000000,
+0b01101000,
+0b01111010,
+0b11111111,
+0b11111111,
+0b01111010,
+0b01101000,
+0b01000000
 };
-char* now = ((char*)data) + 8;
-char* TAIL = data + 256 - 1;
-char temp;
+
+unsigned char* NOW = (unsigned char*)data + 122;
+unsigned char* TAIL = data + 600 - 1;
+
 
 
 int stringC = 0;
-char global_char;
+unsigned char global_char;
 
 
-void Myusartwrite(char);
+void Myusartwrite(unsigned char);
 void MyusartRead();
 void Myusartinit();
 void ISR_Init();
 void Mylab10_2();
-void LED_DISP(char* start);
+void LED_DISP(unsigned char* start);
 void show_words();
-char* prev(char* start);
-char* next(char* ptr);
-void add_word(char c);
+unsigned char* prev(unsigned char* start);
+unsigned char* next(unsigned char* ptr);
+void add_word(unsigned char c);
 void init_word();
 
 void main(void) {
@@ -3919,8 +4007,11 @@ TRISA = 0;
 Myusartinit();
 ISR_Init();
 
-char* start = (char*)data;
+
+unsigned char* start = (unsigned char*)data;
+
 while(1){
+
 start = next(start);
 LED_DISP(start);
 }
@@ -3929,44 +4020,44 @@ return;
 }
 
 
-void LED_DISP(char* start){
-char* iter = start;
-for(int i = 0; i < 122; ++i){
+void LED_DISP(unsigned char* start){
+unsigned char* iter = start;
+for(int i = 0; i < 220; ++i){
 LATA = *iter;
-int bright = 60;
+int bright = 30;
 while(bright--);
 LATA = 0;
-int dark = 60;
+int dark = 30;
 while(dark--);
 iter = prev(iter);
 }
-int delay = 100;
+int delay = 0;
 while(delay--);
 }
 
-void add_word(char c){
-*now = c;
-now = next(now);
+void add_word(unsigned char c){
+*NOW = c;
+NOW = next(NOW);
 }
 
-char* prev(char* ptr){
-if(ptr == (char*)data)
+unsigned char* prev(unsigned char* ptr){
+if(ptr == (unsigned char*)data)
 return TAIL;
 return ptr-1;
 }
 
-char* next(char* ptr){
+unsigned char* next(unsigned char* ptr){
 if(ptr == TAIL)
-return (char*)data;
+return (unsigned char*)data;
 return ptr+1;
 }
 
 void init_word(){
-add_word((char)255);
-add_word((char)255);
-add_word((char)200);
-add_word((char)128);
-add_word((char)64);
+add_word((unsigned char)255);
+add_word((unsigned char)255);
+add_word((unsigned char)200);
+add_word((unsigned char)128);
+add_word((unsigned char)64);
 }
 
 
@@ -3987,7 +4078,7 @@ add_word(global_char);
 
 return ;
 }
-void Myusartwrite(char a)
+void Myusartwrite(unsigned char a)
 {
 
 TXREG = a;
@@ -3999,7 +4090,7 @@ void Myusartinit()
 TRISCbits.TRISC6 = 1;
 TRISCbits.TRISC7 = 1;
 
-# 207
+# 298
 BAUDCONbits.BRG16 = 0 ;
 TXSTAbits.BRGH = 1;
 SPBRG = 25;

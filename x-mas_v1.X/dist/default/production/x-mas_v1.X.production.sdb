@@ -23,26 +23,26 @@
 [v ___flmul __flmul `(d  1 e 3 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"109 C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
+"197 C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"126
+"217
 [v _LED_DISP LED_DISP `(v  1 e 1 0 ]
-"141
+"232
 [v _add_word add_word `(v  1 e 1 0 ]
-"146
+"237
 [v _prev prev `(*.39uc  1 e 2 0 ]
-"152
+"243
 [v _next next `(*.39uc  1 e 2 0 ]
 [v i2_next next `(*.39uc  1 e 2 0 ]
-"167
+"258
 [v _ISR_Init ISR_Init `(v  1 e 1 0 ]
-"176
+"267
 [v _MyusartRead MyusartRead `(v  1 e 1 0 ]
-"184
+"275
 [v _Myusartwrite Myusartwrite `(v  1 e 1 0 ]
-"190
+"281
 [v _Myusartinit Myusartinit `(v  1 e 1 0 ]
-"231
+"322
 [v _Hi_ISR Hi_ISR `II(v  1 e 1 0 ]
 "975 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f4520.h
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
@@ -277,89 +277,89 @@
 "7785
 [v _RCIF RCIF `VEb  1 e 0 @31989 ]
 "77 C:\Users\Lenovo\MPLABXProjects\TransLove\x-mas_v1.X\main.c
-[v _data data `[256]uc  1 e 256 0 ]
-"88
-[v _now now `*.39uc  1 e 2 0 ]
-"89
+[v _data data `[600]uc  1 e 600 0 ]
+"176
+[v _NOW NOW `*.39uc  1 e 2 0 ]
+"177
 [v _TAIL TAIL `*.39uc  1 e 2 0 ]
-"94
+"182
 [v _global_char global_char `uc  1 e 1 0 ]
-"109
+"197
 [v _main main `(v  1 e 1 0 ]
 {
-"116
+"205
 [v main@start start `*.39uc  1 a 2 35 ]
-"123
+"214
 } 0
-"152
+"243
 [v _next next `(*.39uc  1 e 2 0 ]
 {
 [v next@ptr ptr `*.39uc  1 p 2 21 ]
-"156
+"247
 } 0
-"190
+"281
 [v _Myusartinit Myusartinit `(v  1 e 1 0 ]
 {
-"230
+"321
 } 0
-"126
+"217
 [v _LED_DISP LED_DISP `(v  1 e 1 0 ]
 {
-"133
+"224
 [v LED_DISP@dark dark `i  1 a 2 27 ]
-"130
+"221
 [v LED_DISP@bright bright `i  1 a 2 25 ]
-"128
+"219
 [v LED_DISP@i i `i  1 a 2 33 ]
-"127
+"218
 [v LED_DISP@iter iter `*.39uc  1 a 2 31 ]
-"137
+"228
 [v LED_DISP@delay delay `i  1 a 2 29 ]
-"126
+"217
 [v LED_DISP@start start `*.39uc  1 p 2 23 ]
-"139
+"230
 } 0
-"146
+"237
 [v _prev prev `(*.39uc  1 e 2 0 ]
 {
 [v prev@ptr ptr `*.39uc  1 p 2 21 ]
-"150
+"241
 } 0
-"167
+"258
 [v _ISR_Init ISR_Init `(v  1 e 1 0 ]
 {
-"175
+"266
 } 0
-"231
+"322
 [v _Hi_ISR Hi_ISR `II(v  1 e 1 0 ]
 {
-"239
+"330
 } 0
-"184
+"275
 [v _Myusartwrite Myusartwrite `(v  1 e 1 0 ]
 {
 [v Myusartwrite@a a `uc  1 a 1 wreg ]
 [v Myusartwrite@a a `uc  1 a 1 wreg ]
-"187
+"278
 [v Myusartwrite@a a `uc  1 a 1 0 ]
-"189
+"280
 } 0
-"176
+"267
 [v _MyusartRead MyusartRead `(v  1 e 1 0 ]
 {
-"183
+"274
 } 0
-"141
+"232
 [v _add_word add_word `(v  1 e 1 0 ]
 {
 [v add_word@c c `uc  1 a 1 wreg ]
 [v add_word@c c `uc  1 a 1 wreg ]
 [v add_word@c c `uc  1 a 1 2 ]
-"144
+"235
 } 0
-"152
+"243
 [v i2_next next `(*.39uc  1 e 2 0 ]
 {
 [v i2next@ptr ptr `*.39uc  1 p 2 0 ]
-"156
+"247
 } 0

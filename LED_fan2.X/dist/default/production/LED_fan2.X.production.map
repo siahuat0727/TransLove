@@ -5,9 +5,9 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.44\dat\en_msgs.txt -cs \
   -h+dist/default/production\LED_fan2.X.production.sym \
   --cmf=dist/default/production\LED_fan2.X.production.cmf -z -Q18F4520 \
-  -oC:\Users\Lenovo\AppData\Local\Temp\s9ag.2 \
+  -oC:\Users\Lenovo\AppData\Local\Temp\s1a4.2 \
   -Mdist/default/production/LED_fan2.X.production.map -E1 -ver=XC8 \
-  -ASTACK=03C2h-05ffh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
+  -ASTACK=034Eh-05ffh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0600h-06FFhx122 -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-07Fh \
   -AABS1=00h-05FFh -ABIGRAM=01h-05FFh -ARAM=080h-0FFh,0100h-01FFhx5 \
   -ABANK0=080h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
@@ -21,7 +21,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Lenovo\AppData\Local\Temp\s9ag.obj \
+  C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj \
   dist/default/production\LED_fan2.X.production.obj 
 
 Object code version is 3.11
@@ -34,43 +34,39 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Lenovo\AppData\Local\Temp\s9ag.obj
+C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
                 init                                  E        E        4        4       0
                 reset_vec                             0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
                 config                           300000   300000        E   300000       0
 dist/default/production\LED_fan2.X.production.obj
                 intcode                               8        8        6        4       0
-                temp                                 3F       3F        1        1       1
-                text11                             1E46     1E46       46        4       0
-                intcode_body                       1AE8     1AE8       C0        4       0
-                text9                               76A      76A      60A        4       0
-                text8                              1CFC     1CFC       84        4       0
-                text7                              1D80     1D80       70        4       0
-                text6                              1ECE     1ECE       26        4       0
-                text5                              1C64     1C64       98        4       0
-                text4                              134A     134A      418        4       0
-                text3                              1762     1762      1DC        4       0
-                text2                               D74      D74      5D6        4       0
-                text1                                12       12      758        4       0
-                text0                              1DF0     1DF0       56        4       0
-                cstackCOMRAM                         1F       1F       1E        1       1
-                cstackBANK0                          80       80       78       80       1
-                cstackBANK1                         100      100       AC      100       1
-                dataBANK3                           300      300       C2      300       1
-                dataBANK2                           200      200       E8      200       1
-                dataBANK1                           1AC      1AC       42      100       1
-                bssBANK1                            1EE      1EE        4      100       1
-                dataBANK0                            F8       F8        5       80       1
-                dataCOMRAM                            1        1       1E        1       1
-                bssCOMRAM                            3D       3D        2        1       1
-                cinit                              1BA8     1BA8       BC        4       0
-                nvBANK1                             1F2      1F2        2      100       1
-                idataBANK3                         1A26     1A26       C2        4       0
-                idataBANK2                         193E     193E       E8        4       0
-                idataBANK1                         1E8C     1E8C       42        4       0
-                idataBANK0                         1F12     1F12        5        4       0
-                idataCOMRAM                        1EF4     1EF4       1E        4       0
+                temp                                 69       69        1        1       1
+                text11                             1E3C     1E3C       44      EBC       0
+                intcode_body                       1A9A     1A9A       C0        4       0
+                text9                               D10      D10      542        4       0
+                text8                              1C78     1C78       84        4       0
+                text7                              1D78     1D78       70      EBC       0
+                text6                              1E80     1E80       26      EBC       0
+                text5                              1BF4     1BF4       84        4       0
+                text4                              1252     1252      3D4        4       0
+                text3                              1626     1626      2AC        4       0
+                text2                               74C      74C      5C4        4       0
+                text1                                12       12      73A        4       0
+                text0                              1DE8     1DE8       54      EBC       0
+                cstackCOMRAM                          1        1       4C        1       1
+                cstackBANK3                         300      300       4E      300       1
+                dataBANK2                           200      200       EE      200       1
+                dataBANK1                           100      100       DA      100       1
+                dataBANK0                            80       80       7B       80       1
+                dataCOMRAM                           4D       4D       14        1       1
+                bssCOMRAM                            61       61        6        1       1
+                cinit                              1B5A     1B5A       9A        4       0
+                nvCOMRAM                             67       67        2        1       1
+                idataBANK2                         18D2     18D2       EE        4       0
+                idataBANK1                         19C0     19C0       DA        4       0
+                idataBANK0                         1CFC     1CFC       7B        4       0
+                idataCOMRAM                        1EA6     1EA6       14      EBC       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -79,24 +75,23 @@ TOTAL           Name                               Link     Load   Length     Sp
                 intcode                               8        8        6         0
                 init                                  E        E        4         0
                 reset_vec                             0        0        4         0
-                text11                             1E46     1E46       46         0
-                intcode_body                       1AE8     1AE8       C0         0
-                text9                               76A      76A      60A         0
-                text8                              1CFC     1CFC       84         0
-                text7                              1D80     1D80       70         0
-                text6                              1ECE     1ECE       26         0
-                text5                              1C64     1C64       98         0
-                text4                              134A     134A      418         0
-                text3                              1762     1762      1DC         0
-                text2                               D74      D74      5D6         0
-                text1                                12       12      758         0
-                text0                              1DF0     1DF0       56         0
-                cinit                              1BA8     1BA8       BC         0
-                idataBANK3                         1A26     1A26       C2         0
-                idataBANK2                         193E     193E       E8         0
-                idataBANK1                         1E8C     1E8C       42         0
-                idataBANK0                         1F12     1F12        5         0
-                idataCOMRAM                        1EF4     1EF4       1E         0
+                text11                             1E3C     1E3C       44         0
+                intcode_body                       1A9A     1A9A       C0         0
+                text9                               D10      D10      542         0
+                text8                              1C78     1C78       84         0
+                text7                              1D78     1D78       70         0
+                text6                              1E80     1E80       26         0
+                text5                              1BF4     1BF4       84         0
+                text4                              1252     1252      3D4         0
+                text3                              1626     1626      2AC         0
+                text2                               74C      74C      5C4         0
+                text1                                12       12      73A         0
+                text0                              1DE8     1DE8       54         0
+                cinit                              1B5A     1B5A       9A         0
+                idataBANK2                         18D2     18D2       EE         0
+                idataBANK1                         19C0     19C0       DA         0
+                idataBANK0                         1CFC     1CFC       7B         0
+                idataCOMRAM                        1EA6     1EA6       14         0
 
         CLASS   CONST          
 
@@ -105,10 +100,11 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   MEDIUMCONST    
 
         CLASS   COMRAM         
-                temp                                 3F       3F        1         1
-                cstackCOMRAM                         1F       1F       1E         1
-                dataCOMRAM                            1        1       1E         1
-                bssCOMRAM                            3D       3D        2         1
+                temp                                 69       69        1         1
+                cstackCOMRAM                          1        1       4C         1
+                dataCOMRAM                           4D       4D       14         1
+                bssCOMRAM                            61       61        6         1
+                nvCOMRAM                             67       67        2         1
 
         CLASS   ABS1           
 
@@ -117,20 +113,16 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   RAM            
 
         CLASS   BANK0          
-                cstackBANK0                          80       80       78         1
-                dataBANK0                            F8       F8        5         1
+                dataBANK0                            80       80       7B         1
 
         CLASS   BANK1          
-                cstackBANK1                         100      100       AC         1
-                dataBANK1                           1AC      1AC       42         1
-                bssBANK1                            1EE      1EE        4         1
-                nvBANK1                             1F2      1F2        2         1
+                dataBANK1                           100      100       DA         1
 
         CLASS   BANK2          
-                dataBANK2                           200      200       E8         1
+                dataBANK2                           200      200       EE         1
 
         CLASS   BANK3          
-                dataBANK3                           300      300       C2         1
+                cstackBANK3                         300      300       4E         1
 
         CLASS   BANK4          
 
@@ -153,12 +145,13 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
-                dataCOMRAM                     000001  00003F  000040         1       1  COMRAM  
-                intcode                        000008  001F0F  001F17         4       0  CODE    
-                cstackBANK0                    000080  00007D  0000FD        80       1  BANK0   
-                cstackBANK1                    000100  0000F4  0001F4       100       1  BANK1   
-                dataBANK2                      000200  0000E8  0002E8       200       1  BANK2   
-                dataBANK3                      000300  0000C2  0003C2       300       1  BANK3   
+                cstackCOMRAM                   000001  000069  00006A         1       1  COMRAM  
+                intcode                        000008  001D6F  001D77         4       0  CODE    
+                dataBANK0                      000080  00007B  0000FB        80       1  BANK0   
+                dataBANK1                      000100  0000DA  0001DA       100       1  BANK1   
+                dataBANK2                      000200  0000EE  0002EE       200       1  BANK2   
+                cstackBANK3                    000300  00004E  00034E       300       1  BANK3   
+                text7                          001D78  000142  001EBA       EBC       0  CODE    
                 idloc                          200000  000008  200008    200000       0  IDLOC   
                 config                         300000  00000E  30000E    300000       0  CONFIG  
 
@@ -166,53 +159,68 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
-        BANK0            0000FD-0000FF                3
-        BANK1            0001F4-0001FF                C
-        BANK2            0002E8-0002FF               18
-        BANK3            0003C2-0003FF               3E
+        BANK0            0000FB-0000FF                5
+        BANK1            0001DA-0001FF               26
+        BANK2            0002EE-0002FF               12
+        BANK3            00034E-0003FF               B2
         BANK4            000400-0004FF              100
         BANK5            000500-0005FF              100
-        BIGRAM           000040-00007F               40
-                         0000FD-0000FF                3
-                         0001F4-0001FF                C
-                         0002E8-0002FF               18
-                         0003C2-0005FF              23E
+        BIGRAM           00006A-00007F               16
+                         0000FB-0000FF                5
+                         0001DA-0001FF               26
+                         0002EE-0002FF               12
+                         00034E-0005FF              2B2
         CODE             000004-000007                4
-                         001F17-007FFF             60E9
-        COMRAM           000040-00007F               40
+                         001D77-001D77                1
+                         001EBA-007FFF             6146
+        COMRAM           00006A-00007F               16
         CONST            000004-000007                4
-                         001F17-007FFF             60E9
+                         001D77-001D77                1
+                         001EBA-007FFF             6146
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      001F17-007FFF             60E9
-        RAM              0000FD-0000FF                3
-                         0001F4-0001FF                C
-                         0002E8-0002FF               18
-                         0003C2-0005FF              100
+        MEDIUMCONST      001D77-001D77                1
+                         001EBA-007FFF             6146
+        RAM              0000FB-0000FF                5
+                         0001DA-0001FF               26
+                         0002EE-0002FF               12
+                         00034E-0005FF              100
         SFR              000F80-000FFF               80
-        SMALLCONST       001F17-007FFF              100
-        STACK            0003C2-0005FF              23E
+        SMALLCONST       001D77-001D77                1
+                         001EBA-007FFF              100
+        STACK            00034E-0005FF              2B2
 
                                   Symbol Table
 
-?___awdiv                      cstackCOMRAM 000031
-?___awmod                      cstackCOMRAM 000031
-?___wmul                       cstackCOMRAM 000031
+?___awdiv                      cstackCOMRAM 000013
+?___awmod                      cstackCOMRAM 000013
+?___wmul                       cstackCOMRAM 000013
+_A                             dataCOMRAM   000052
+_E                             dataBANK0    00009E
 _INTCONbits                    (abs)        000FF2
 _IPR1bits                      (abs)        000F9F
+_L                             dataBANK0    0000AD
 _LATA                          (abs)        000F89
 _LATAbits                      (abs)        000F89
 _LATD                          (abs)        000F8C
 _LATDbits                      (abs)        000F8C
+_MAS                           dataBANK2    000256
+_N                             dataCOMRAM   00004D
+_O                             dataBANK0    0000A8
 _OSCCONbits                    (abs)        000FD3
 _PIE1bits                      (abs)        000F9D
 _PIR1bits                      (abs)        000F9E
+_R                             dataCOMRAM   000057
 _RCONbits                      (abs)        000FD0
+_S                             dataBANK0    0000B2
+_T                             dataCOMRAM   00005C
 _T1CON                         (abs)        000FCD
 _TMR1                          (abs)        000FCE
 _TMR1IE                        (abs)        007CE8
 _TMR1IF                        (abs)        007CF0
 _TRISA                         (abs)        000F92
 _TRISD                         (abs)        000F95
+_V                             dataBANK0    0000A3
+_X                             dataBANK1    0001BE
 __CFG_LVP$ON                   (abs)        000000
 __CFG_MCLRE$ON                 (abs)        000000
 __CFG_OSC$INTIO67              (abs)        000000
@@ -230,21 +238,18 @@ __Hbigbss                      bigbss       000000
 __Hbigdata                     bigdata      000000
 __Hbigram                      bigram       000000
 __Hbss                         bss          000000
-__HbssBANK1                    bssBANK1     000000
 __HbssCOMRAM                   bssCOMRAM    000000
 __Hcinit                       cinit        000000
 __Hclrtext                     clrtext      000000
 __Hcomram                      comram       000000
 __Hconfig                      config       30000E
 __Hconst                       const        000000
-__HcstackBANK0                 cstackBANK0  000000
-__HcstackBANK1                 cstackBANK1  000000
+__HcstackBANK3                 cstackBANK3  000000
 __HcstackCOMRAM                cstackCOMRAM 000000
 __Hdata                        data         000000
 __HdataBANK0                   dataBANK0    000000
 __HdataBANK1                   dataBANK1    000000
 __HdataBANK2                   dataBANK2    000000
-__HdataBANK3                   dataBANK3    000000
 __HdataCOMRAM                  dataCOMRAM   000000
 __Heeprom_data                 eeprom_data  000000
 __Hfarbss                      farbss       000000
@@ -254,7 +259,6 @@ __Hidata                       idata        000000
 __HidataBANK0                  idataBANK0   000000
 __HidataBANK1                  idataBANK1   000000
 __HidataBANK2                  idataBANK2   000000
-__HidataBANK3                  idataBANK3   000000
 __HidataCOMRAM                 idataCOMRAM  000000
 __Hidloc                       idloc        200008
 __Hifardata                    ifardata     000000
@@ -267,7 +271,7 @@ __Hintret                      intret       000000
 __Hintsave_regs                intsave_regs 000000
 __Hirdata                      irdata       000000
 __Hmediumconst                 mediumconst  000000
-__HnvBANK1                     nvBANK1      000000
+__HnvCOMRAM                    nvCOMRAM     000000
 __HnvFARRAM                    nvFARRAM     000000
 __Hnvbit                       nvbit        000000
 __Hnvrram                      nvrram       000000
@@ -283,11 +287,11 @@ __Hrparam                      rparam       000000
 __Hsfr                         sfr          000000
 __Hsmallconst                  smallconst   000000
 __Hspace_0                     (abs)        30000E
-__Hspace_1                     (abs)        0003C2
+__Hspace_1                     (abs)        00034E
 __Hspace_2                     (abs)        000000
 __Hstack                       stack        000000
 __Hstruct                      struct       000000
-__Htemp                        temp         000040
+__Htemp                        temp         00006A
 __Htext                        text         000000
 __Htext0                       text0        000000
 __Htext1                       text1        000000
@@ -312,21 +316,18 @@ __Lbigbss                      bigbss       000000
 __Lbigdata                     bigdata      000000
 __Lbigram                      bigram       000000
 __Lbss                         bss          000000
-__LbssBANK1                    bssBANK1     000000
 __LbssCOMRAM                   bssCOMRAM    000000
 __Lcinit                       cinit        000000
 __Lclrtext                     clrtext      000000
 __Lcomram                      comram       000000
 __Lconfig                      config       300000
 __Lconst                       const        000000
-__LcstackBANK0                 cstackBANK0  000000
-__LcstackBANK1                 cstackBANK1  000000
+__LcstackBANK3                 cstackBANK3  000000
 __LcstackCOMRAM                cstackCOMRAM 000000
 __Ldata                        data         000000
 __LdataBANK0                   dataBANK0    000000
 __LdataBANK1                   dataBANK1    000000
 __LdataBANK2                   dataBANK2    000000
-__LdataBANK3                   dataBANK3    000000
 __LdataCOMRAM                  dataCOMRAM   000000
 __Leeprom_data                 eeprom_data  000000
 __Lfarbss                      farbss       000000
@@ -336,7 +337,6 @@ __Lidata                       idata        000000
 __LidataBANK0                  idataBANK0   000000
 __LidataBANK1                  idataBANK1   000000
 __LidataBANK2                  idataBANK2   000000
-__LidataBANK3                  idataBANK3   000000
 __LidataCOMRAM                 idataCOMRAM  000000
 __Lidloc                       idloc        200000
 __Lifardata                    ifardata     000000
@@ -349,7 +349,7 @@ __Lintret                      intret       000000
 __Lintsave_regs                intsave_regs 000000
 __Lirdata                      irdata       000000
 __Lmediumconst                 mediumconst  000000
-__LnvBANK1                     nvBANK1      000000
+__LnvCOMRAM                    nvCOMRAM     000000
 __LnvFARRAM                    nvFARRAM     000000
 __Lnvbit                       nvbit        000000
 __Lnvrram                      nvrram       000000
@@ -369,7 +369,7 @@ __Lspace_1                     (abs)        000000
 __Lspace_2                     (abs)        000000
 __Lstack                       stack        000000
 __Lstruct                      struct       000000
-__Ltemp                        temp         00003F
+__Ltemp                        temp         000069
 __Ltext                        text         000000
 __Ltext0                       text0        000000
 __Ltext1                       text1        000000
@@ -383,75 +383,71 @@ __Ltext7                       text7        000000
 __Ltext8                       text8        000000
 __Ltext9                       text9        000000
 __S0                           (abs)        30000E
-__S1                           (abs)        0003C2
+__S1                           (abs)        00034E
 __S2                           (abs)        000000
-___awdiv                       text8        001CFC
-___awdiv@counter               cstackCOMRAM 000035
-___awdiv@dividend              cstackCOMRAM 000031
-___awdiv@divisor               cstackCOMRAM 000033
-___awdiv@quotient              cstackCOMRAM 000037
-___awdiv@sign                  cstackCOMRAM 000036
-___awmod                       text7        001D80
-___awmod@counter               cstackCOMRAM 000035
-___awmod@dividend              cstackCOMRAM 000031
-___awmod@divisor               cstackCOMRAM 000033
-___awmod@sign                  cstackCOMRAM 000036
+___awdiv                       text8        001C78
+___awdiv@counter               cstackCOMRAM 000017
+___awdiv@dividend              cstackCOMRAM 000013
+___awdiv@divisor               cstackCOMRAM 000015
+___awdiv@quotient              cstackCOMRAM 000019
+___awdiv@sign                  cstackCOMRAM 000018
+___awmod                       text7        001D78
+___awmod@counter               cstackCOMRAM 000017
+___awmod@dividend              cstackCOMRAM 000013
+___awmod@divisor               cstackCOMRAM 000015
+___awmod@sign                  cstackCOMRAM 000018
 ___inthi_sp                    stack        000000
 ___intlo_sp                    stack        000000
 ___param_bank                  (abs)        000000
 ___rparam_used                 (abs)        000001
 ___sp                          stack        000000
-___wmul                        text6        001ECE
-___wmul@multiplicand           cstackCOMRAM 000033
-___wmul@multiplier             cstackCOMRAM 000031
-___wmul@product                cstackCOMRAM 000035
+___wmul                        text6        001E80
+___wmul@multiplicand           cstackCOMRAM 000015
+___wmul@multiplier             cstackCOMRAM 000013
+___wmul@product                cstackCOMRAM 000017
 __accesstop                    (abs)        000080
 __activetblptr                 (abs)        000002
-__end_of___awdiv               text8        001D80
-__end_of___awmod               text7        001DF0
-__end_of___wmul                text6        001EF4
-__end_of__initialization       cinit        001C56
-__end_of_display_num           text5        001CFC
-__end_of_main                  text0        001E46
-__end_of_mode_TransLove        text9        000D74
-__end_of_mode_clock            text4        001762
-__end_of_mode_snow             text3        00193E
-__end_of_mode_tree             text2        00134A
-__end_of_mode_walker           text1        00076A
-__end_of_tc_int                intcode_body 001BA8
-__end_of_update_time           text11       001E8C
-__initialization               cinit        001BA8
+__end_of___awdiv               text8        001CFC
+__end_of___awmod               text7        001DE8
+__end_of___wmul                text6        001EA6
+__end_of__initialization       cinit        001BE6
+__end_of_display_num           text5        001C78
+__end_of_main                  text0        001E3C
+__end_of_mode_TransLove        text9        001252
+__end_of_mode_clock            text4        001626
+__end_of_mode_snow             text3        0018D2
+__end_of_mode_tree             text2        000D10
+__end_of_mode_walker           text1        00074C
+__end_of_tc_int                intcode_body 001B5A
+__end_of_update_time           text11       001E80
+__initialization               cinit        001B5A
 __mediumconst                  mediumconst  000000
-__pbssBANK1                    bssBANK1     0001EE
-__pbssCOMRAM                   bssCOMRAM    00003D
-__pcinit                       cinit        001BA8
-__pcstackBANK0                 cstackBANK0  000080
-__pcstackBANK1                 cstackBANK1  000100
-__pcstackCOMRAM                cstackCOMRAM 00001F
-__pdataBANK0                   dataBANK0    0000F8
-__pdataBANK1                   dataBANK1    0001AC
+__pbssCOMRAM                   bssCOMRAM    000061
+__pcinit                       cinit        001B5A
+__pcstackBANK3                 cstackBANK3  000300
+__pcstackCOMRAM                cstackCOMRAM 000001
+__pdataBANK0                   dataBANK0    000080
+__pdataBANK1                   dataBANK1    000100
 __pdataBANK2                   dataBANK2    000200
-__pdataBANK3                   dataBANK3    000300
-__pdataCOMRAM                  dataCOMRAM   000001
-__pidataBANK0                  idataBANK0   001F12
-__pidataBANK1                  idataBANK1   001E8C
-__pidataBANK2                  idataBANK2   00193E
-__pidataBANK3                  idataBANK3   001A26
-__pidataCOMRAM                 idataCOMRAM  001EF4
+__pdataCOMRAM                  dataCOMRAM   00004D
+__pidataBANK0                  idataBANK0   001CFC
+__pidataBANK1                  idataBANK1   0019C0
+__pidataBANK2                  idataBANK2   0018D2
+__pidataCOMRAM                 idataCOMRAM  001EA6
 __pintcode                     intcode      000008
-__pintcode_body                intcode_body 001AE8
-__pnvBANK1                     nvBANK1      0001F2
-__ptext0                       text0        001DF0
+__pintcode_body                intcode_body 001A9A
+__pnvCOMRAM                    nvCOMRAM     000067
+__ptext0                       text0        001DE8
 __ptext1                       text1        000012
-__ptext11                      text11       001E46
-__ptext2                       text2        000D74
-__ptext3                       text3        001762
-__ptext4                       text4        00134A
-__ptext5                       text5        001C64
-__ptext6                       text6        001ECE
-__ptext7                       text7        001D80
-__ptext8                       text8        001CFC
-__ptext9                       text9        00076A
+__ptext11                      text11       001E3C
+__ptext2                       text2        00074C
+__ptext3                       text3        001626
+__ptext4                       text4        001252
+__ptext5                       text5        001BF4
+__ptext6                       text6        001E80
+__ptext7                       text7        001D78
+__ptext8                       text8        001C78
+__ptext9                       text9        000D10
 __ramtop                       ramtop       000600
 __size_of___awdiv              (abs)        000000
 __size_of___awmod              (abs)        000000
@@ -466,175 +462,149 @@ __size_of_mode_walker          (abs)        000000
 __size_of_tc_int               (abs)        000000
 __size_of_update_time          (abs)        000000
 __smallconst                   smallconst   000000
-_count                         bssCOMRAM    00003D
-_display_num                   text5        001C64
-_hours                         nvBANK1      0001F2
-_main                          text0        001DF0
-_minutes                       bssBANK1     0001EE
-_mode_TransLove                text9        00076A
-_mode_clock                    text4        00134A
-_mode_snow                     text3        001762
-_mode_tree                     text2        000D74
+_arrow                         dataBANK1    000100
+_count                         bssCOMRAM    000065
+_display_num                   text5        001BF4
+_elk                           dataBANK2    0002A6
+_face                          dataBANK0    0000E1
+_hours                         nvCOMRAM     000067
+_love                          dataBANK0    00008C
+_main                          text0        001DE8
+_minutes                       bssCOMRAM    000061
+_mode_TransLove                text9        000D10
+_mode_clock                    text4        001252
+_mode_snow                     text3        001626
+_mode_tree                     text2        00074C
 _mode_walker                   text1        000012
-_seconds                       bssBANK1     0001F0
+_num                           dataBANK1    00018C
+_seconds                       bssCOMRAM    000063
+_snow_car                      dataBANK2    000200
 _tc_int                        intcode      000008
-_update_time                   text11       001E46
-_walker                        dataBANK3    000356
-btemp                          temp         00003F
-display_num@F3131              dataBANK2    000250
-display_num@bright_i           cstackBANK0  0000B2
-display_num@dark_i             cstackBANK0  0000B4
-display_num@i                  cstackBANK0  0000B8
-display_num@iter               cstackBANK0  0000B6
-display_num@n                  cstackCOMRAM 000039
-display_num@num                cstackBANK0  000080
-end_of_initialization          cinit        001C56
-int$flags                      temp         00003F
-int_func                       intcode_body 001AE8
+_tree                          dataBANK0    0000B7
+_update_time                   text11       001E3C
+_walker                        dataBANK1    000120
+btemp                          temp         000069
+display_num@bright_i           cstackCOMRAM 00001D
+display_num@dark_i             cstackCOMRAM 00001F
+display_num@i                  cstackCOMRAM 000023
+display_num@iter               cstackCOMRAM 000021
+display_num@n                  cstackCOMRAM 00001B
+end_of_initialization          cinit        001BE6
+int$flags                      temp         000069
+int_func                       intcode_body 001A9A
 intlevel0                      text         000000
 intlevel1                      text         000000
 intlevel2                      text         000000
 intlevel3                      text         000000
-mode_TransLove@A               cstackBANK0  0000B4
-mode_TransLove@E               cstackBANK0  0000D2
-mode_TransLove@F3098           dataBANK1    0001D2
-mode_TransLove@F3100           dataBANK2    0002AC
-mode_TransLove@F3102           dataBANK0    0000F8
-mode_TransLove@F3104           dataCOMRAM   00001A
-mode_TransLove@F3106           dataCOMRAM   000015
-mode_TransLove@F3108           dataCOMRAM   000010
-mode_TransLove@F3110           dataCOMRAM   00000B
-mode_TransLove@F3112           dataCOMRAM   000006
-mode_TransLove@F3114           dataCOMRAM   000001
-mode_TransLove@F3116           dataBANK1    0001E9
-mode_TransLove@F3118           dataBANK1    0001E4
-mode_TransLove@L               cstackBANK0  0000C3
-mode_TransLove@N               cstackBANK0  0000B9
-mode_TransLove@O               cstackBANK0  0000C8
-mode_TransLove@R               cstackBANK0  0000AF
-mode_TransLove@S               cstackBANK0  0000BE
-mode_TransLove@T               cstackBANK0  0000AA
-mode_TransLove@V               cstackBANK0  0000CD
-mode_TransLove@arrow           cstackBANK0  000080
-mode_TransLove@arrow_i         cstackBANK0  0000E3
-mode_TransLove@arrow_speed     cstackBANK0  0000DF
-mode_TransLove@bright          cstackBANK0  0000D9
-mode_TransLove@cycle           cstackBANK0  0000D7
-mode_TransLove@dark            cstackBANK0  0000DB
-mode_TransLove@delay           cstackBANK0  0000E1
-mode_TransLove@i               cstackBANK0  0000E5
-mode_TransLove@love            cstackBANK0  0000A0
-mode_TransLove@stop_arrow      cstackBANK0  0000DD
-mode_clock@F3140               dataBANK2    0002CC
-mode_clock@F3143               dataBANK2    000200
-mode_clock@F3145               dataBANK1    0001AC
-mode_clock@MAS                 cstackBANK1  000100
-mode_clock@X                   cstackBANK1  00016A
-mode_clock@bright              cstackBANK1  000190
-mode_clock@bright_507          cstackBANK1  000194
-mode_clock@bright_511          cstackBANK1  000198
-mode_clock@dark                cstackBANK1  000192
-mode_clock@dark_508            cstackBANK1  000196
-mode_clock@dark_512            cstackBANK1  00019A
-mode_clock@delay               cstackBANK1  0001AA
-mode_clock@display_cycle       cstackBANK1  000186
-mode_clock@face                cstackBANK1  000150
-mode_clock@face_i              cstackBANK1  0001A2
-mode_clock@i                   cstackBANK1  00019E
-mode_clock@i_505               cstackBANK1  0001A6
-mode_clock@i_510               cstackBANK1  0001A4
-mode_clock@j                   cstackBANK1  0001A0
-mode_clock@minH                cstackBANK1  000188
-mode_clock@minL                cstackBANK1  00018A
-mode_clock@secH                cstackBANK1  00018C
-mode_clock@secL                cstackBANK1  00018E
-mode_clock@show                cstackBANK1  0001A8
-mode_clock@state               cstackBANK1  00019C
-mode_snow@F3011                dataBANK3    000300
-mode_snow@count                cstackBANK0  0000D8
-mode_snow@delay                cstackBANK0  0000E2
-mode_snow@display_cycle        cstackBANK0  0000D6
-mode_snow@i                    cstackBANK0  0000DE
-mode_snow@i_378                cstackBANK0  0000DC
-mode_snow@show                 cstackBANK0  0000E0
-mode_snow@snow_car             cstackBANK0  000080
-mode_snow@walker_pic_i         cstackBANK0  0000DA
-mode_tree@F3023                dataBANK2    000282
-mode_tree@F3025                dataBANK1    0001C6
-mode_tree@bright               cstackBANK0  0000AE
-mode_tree@bright_400           cstackBANK0  0000B4
-mode_tree@bright_405           cstackBANK0  0000B8
-mode_tree@bright_409           cstackBANK0  0000BC
-mode_tree@bright_415           cstackBANK0  0000C0
-mode_tree@count                cstackBANK0  0000F4
-mode_tree@count_4              cstackBANK0  0000AA
-mode_tree@cycle                cstackBANK0  0000EE
-mode_tree@dark                 cstackBANK0  0000B0
-mode_tree@dark_401             cstackBANK0  0000B6
-mode_tree@dark_406             cstackBANK0  0000BA
-mode_tree@dark_410             cstackBANK0  0000BE
-mode_tree@dark_416             cstackBANK0  0000C2
-mode_tree@delay                cstackBANK0  0000F6
-mode_tree@i                    cstackBANK0  0000CC
-mode_tree@i_398                cstackBANK0  0000D2
-mode_tree@i_404                cstackBANK0  0000D6
-mode_tree@i_408                cstackBANK0  0000DA
-mode_tree@i_414                cstackBANK0  0000E0
-mode_tree@interval             cstackBANK0  0000F2
-mode_tree@move                 cstackBANK0  0000CE
-mode_tree@show                 cstackBANK0  0000CA
-mode_tree@show_397             cstackBANK0  0000D0
-mode_tree@show_403             cstackBANK0  0000D4
-mode_tree@show_407             cstackBANK0  0000D8
-mode_tree@show_413             cstackBANK0  0000DE
-mode_tree@six                  cstackBANK0  0000E2
-mode_tree@six_i                cstackBANK0  0000C8
-mode_tree@six_i_396            cstackBANK0  0000F0
-mode_tree@six_ptr              cstackBANK0  0000C4
-mode_tree@six_ptr_395          cstackBANK0  0000C6
-mode_tree@state                cstackBANK0  0000AC
-mode_tree@tree                 cstackBANK0  000080
-mode_tree@tree_i               cstackBANK0  0000DC
-mode_tree@wait                 cstackBANK0  0000B2
-mode_walker@F3068              dataBANK1    0001DC
-mode_walker@bright             cstackBANK0  000082
-mode_walker@bright_439         cstackBANK0  000086
-mode_walker@bright_443         cstackBANK0  00008A
-mode_walker@column             cstackBANK0  00009C
-mode_walker@column_438         cstackBANK0  00009E
-mode_walker@column_442         cstackBANK0  0000A0
-mode_walker@dark               cstackBANK0  000084
-mode_walker@dark_436           cstackBANK0  000098
-mode_walker@dark_440           cstackBANK0  000088
-mode_walker@dark_441           cstackBANK0  000090
-mode_walker@dark_444           cstackBANK0  00008C
-mode_walker@delay              cstackBANK0  000080
-mode_walker@delay_432          cstackBANK0  0000B2
-mode_walker@delay_437          cstackBANK0  0000B0
-mode_walker@display_cycle      cstackBANK0  0000AC
-mode_walker@four               cstackBANK0  0000A4
-mode_walker@i                  cstackBANK0  0000BA
-mode_walker@move               cstackBANK0  0000B6
-mode_walker@pic_cycle          cstackBANK0  000096
-mode_walker@pic_cycle_i        cstackBANK0  0000A2
-mode_walker@pic_i              cstackBANK0  0000AE
-mode_walker@show               cstackBANK0  0000B4
-mode_walker@state              cstackBANK0  0000B8
-mode_walker@state_change_cycle cstackBANK0  00008E
-mode_walker@update             cstackBANK0  000092
-mode_walker@update_next_time   cstackBANK0  000094
+mode_TransLove@arrow_i         cstackCOMRAM 000023
+mode_TransLove@arrow_speed     cstackCOMRAM 00001F
+mode_TransLove@bright          cstackCOMRAM 000019
+mode_TransLove@cycle           cstackCOMRAM 000017
+mode_TransLove@dark            cstackCOMRAM 00001B
+mode_TransLove@delay           cstackCOMRAM 000021
+mode_TransLove@i               cstackCOMRAM 000025
+mode_TransLove@stop_arrow      cstackCOMRAM 00001D
+mode_clock@bright              cstackCOMRAM 000031
+mode_clock@bright_493          cstackCOMRAM 000035
+mode_clock@bright_497          cstackCOMRAM 000039
+mode_clock@dark                cstackCOMRAM 000033
+mode_clock@dark_494            cstackCOMRAM 000037
+mode_clock@dark_498            cstackCOMRAM 00003B
+mode_clock@delay               cstackCOMRAM 00004B
+mode_clock@display_cycle       cstackCOMRAM 000027
+mode_clock@face_i              cstackCOMRAM 000043
+mode_clock@i                   cstackCOMRAM 00003F
+mode_clock@i_491               cstackCOMRAM 000047
+mode_clock@i_496               cstackCOMRAM 000045
+mode_clock@j                   cstackCOMRAM 000041
+mode_clock@minH                cstackCOMRAM 000029
+mode_clock@minL                cstackCOMRAM 00002B
+mode_clock@secH                cstackCOMRAM 00002D
+mode_clock@secL                cstackCOMRAM 00002F
+mode_clock@show                cstackCOMRAM 000049
+mode_clock@state               cstackCOMRAM 00003D
+mode_snow@count_elk            cstackCOMRAM 00001F
+mode_snow@count_walker         cstackCOMRAM 00001D
+mode_snow@delay                cstackCOMRAM 00002D
+mode_snow@display_cycle        cstackCOMRAM 00001B
+mode_snow@elk_pic_i            cstackCOMRAM 000023
+mode_snow@i                    cstackCOMRAM 000029
+mode_snow@i_399                cstackCOMRAM 000025
+mode_snow@i_400                cstackCOMRAM 000027
+mode_snow@show                 cstackCOMRAM 00002B
+mode_snow@walker_pic_i         cstackCOMRAM 000021
+mode_tree@F3046                dataBANK0    000080
+mode_tree@bright               cstackBANK3  000304
+mode_tree@bright_420           cstackBANK3  00030A
+mode_tree@bright_425           cstackBANK3  00030E
+mode_tree@bright_429           cstackBANK3  000312
+mode_tree@bright_435           cstackBANK3  000316
+mode_tree@count                cstackBANK3  00034A
+mode_tree@count_4              cstackBANK3  000300
+mode_tree@cycle                cstackBANK3  000344
+mode_tree@dark                 cstackBANK3  000306
+mode_tree@dark_421             cstackBANK3  00030C
+mode_tree@dark_426             cstackBANK3  000310
+mode_tree@dark_430             cstackBANK3  000314
+mode_tree@dark_436             cstackBANK3  000318
+mode_tree@delay                cstackBANK3  00034C
+mode_tree@i                    cstackBANK3  000322
+mode_tree@i_418                cstackBANK3  000328
+mode_tree@i_424                cstackBANK3  00032C
+mode_tree@i_428                cstackBANK3  000330
+mode_tree@i_434                cstackBANK3  000336
+mode_tree@interval             cstackBANK3  000348
+mode_tree@move                 cstackBANK3  000324
+mode_tree@show                 cstackBANK3  000320
+mode_tree@show_417             cstackBANK3  000326
+mode_tree@show_423             cstackBANK3  00032A
+mode_tree@show_427             cstackBANK3  00032E
+mode_tree@show_433             cstackBANK3  000334
+mode_tree@six                  cstackBANK3  000338
+mode_tree@six_i                cstackBANK3  00031E
+mode_tree@six_i_416            cstackBANK3  000346
+mode_tree@six_ptr              cstackBANK3  00031A
+mode_tree@six_ptr_415          cstackBANK3  00031C
+mode_tree@state                cstackBANK3  000302
+mode_tree@tree_i               cstackBANK3  000332
+mode_tree@wait                 cstackBANK3  000308
+mode_walker@F3089              dataBANK0    000096
+mode_walker@bright             cstackBANK3  000300
+mode_walker@bright_457         cstackBANK3  000304
+mode_walker@bright_461         cstackBANK3  000308
+mode_walker@column             cstackBANK3  00031A
+mode_walker@column_456         cstackBANK3  00031C
+mode_walker@column_460         cstackBANK3  00031E
+mode_walker@dark               cstackBANK3  000302
+mode_walker@dark_455           cstackBANK3  000316
+mode_walker@dark_458           cstackBANK3  000306
+mode_walker@dark_459           cstackBANK3  00030E
+mode_walker@dark_462           cstackBANK3  00030A
+mode_walker@delay              cstackBANK3  000334
+mode_walker@display_cycle      cstackBANK3  00032A
+mode_walker@four               cstackBANK3  000322
+mode_walker@i                  cstackBANK3  000336
+mode_walker@move               cstackBANK3  000332
+mode_walker@pic_cycle          cstackBANK3  000314
+mode_walker@pic_cycle_i        cstackBANK3  000320
+mode_walker@pic_i              cstackBANK3  00032C
+mode_walker@show               cstackBANK3  00032E
+mode_walker@state              cstackBANK3  000330
+mode_walker@state_change_cycle cstackBANK3  00030C
+mode_walker@update             cstackBANK3  000310
+mode_walker@update_next_time   cstackBANK3  000312
 stackhi                        (abs)        0005FF
-stacklo                        (abs)        0003C2
+stacklo                        (abs)        00034E
 start                          init         00000E
-start_initialization           cinit        001BA8
-wtemp6                         temp         000040
+start_initialization           cinit        001B5A
+wtemp6                         temp         00006A
 
 
 FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 1019 in file "main2.c"
+		line 1078 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -667,37 +637,35 @@ Total ram usage:        0 bytes
 
  *************** function _mode_walker *****************
  Defined at:
-		line 361 in file "main2.c"
+		line 671 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  dark            2    4[BANK0 ] int 
-  bright          2    2[BANK0 ] int 
-  column          2   28[BANK0 ] int 
-  dark            2   12[BANK0 ] int 
-  bright          2   10[BANK0 ] int 
-  dark            2    8[BANK0 ] int 
-  bright          2    6[BANK0 ] int 
-  dark            4   24[BANK0 ] long 
-  delay           2   50[BANK0 ] int 
-  column          2   32[BANK0 ] int 
-  column          2   30[BANK0 ] int 
-  delay           2    0[BANK0 ] int 
-  dark            2   16[BANK0 ] int 
-  i               2   58[BANK0 ] int 
-  four            8   36[BANK0 ] int [4]
-  state           2   56[BANK0 ] int 
-  move            2   54[BANK0 ] int 
-  show            2   52[BANK0 ] PTR unsigned int 
+  dark            2    2[BANK3 ] int 
+  bright          2    0[BANK3 ] int 
+  column          2   26[BANK3 ] int 
+  dark            2   10[BANK3 ] int 
+  bright          2    8[BANK3 ] int 
+  dark            2    6[BANK3 ] int 
+  bright          2    4[BANK3 ] int 
+  dark            4   22[BANK3 ] long 
+  column          2   30[BANK3 ] int 
+  column          2   28[BANK3 ] int 
+  dark            2   14[BANK3 ] int 
+  i               2   54[BANK3 ] int 
+  four            8   34[BANK3 ] int [4]
+  delay           2   52[BANK3 ] int 
+  move            2   50[BANK3 ] int 
+  state           2   48[BANK3 ] int 
+  show            2   46[BANK3 ] PTR unsigned int 
 		 -> walker(108), 
-  delay           2   48[BANK0 ] int 
-  pic_i           2   46[BANK0 ] int 
-  display_cycl    2   44[BANK0 ] int 
-  pic_cycle_i     2   34[BANK0 ] int 
-  pic_cycle       2   22[BANK0 ] const int 
-  update_next_    2   20[BANK0 ] int 
-  update          2   18[BANK0 ] int 
-  state_change    2   14[BANK0 ] int 
+  pic_i           2   44[BANK3 ] int 
+  display_cycl    2   42[BANK3 ] int 
+  pic_cycle_i     2   32[BANK3 ] int 
+  pic_cycle       2   20[BANK3 ] const int 
+  update_next_    2   18[BANK3 ] int 
+  update          2   16[BANK3 ] int 
+  state_change    2   12[BANK3 ] int 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
@@ -708,14 +676,13 @@ Total ram usage:        0 bytes
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
       Params:         0       0       0       0       0       0       0
-      Locals:         0      60       0       0       0       0       0
+      Locals:         0       0       0       0      56       0       0
       Temps:          6       0       0       0       0       0       0
-      Totals:         6      60       0       0       0       0       0
-Total ram usage:       66 bytes
+      Totals:         6       0       0       0      56       0       0
+Total ram usage:       62 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    3
  This function calls:
-		___awmod
 		___wmul
  This function is called by:
 		_main
@@ -724,52 +691,51 @@ Total ram usage:       66 bytes
 
  *************** function _mode_tree *****************
  Defined at:
-		line 207 in file "main2.c"
+		line 539 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  wait            2   50[BANK0 ] int 
-  dark            2   54[BANK0 ] int 
-  bright          2   52[BANK0 ] int 
-  dark            2   48[BANK0 ] int 
-  bright          2   46[BANK0 ] int 
-  dark            2   66[BANK0 ] int 
-  bright          2   64[BANK0 ] int 
-  i               2   82[BANK0 ] int 
-  i               2   76[BANK0 ] int 
-  i               2   96[BANK0 ] int 
-  show            2   80[BANK0 ] PTR int 
-		 -> mode_tree@tree(42), 
-  show            2   74[BANK0 ] PTR int 
-		 -> mode_tree@tree(42), 
-  show            2   94[BANK0 ] PTR int 
-		 -> mode_tree@tree(42), 
-  dark            2   62[BANK0 ] int 
-  bright          2   60[BANK0 ] int 
-  dark            2   58[BANK0 ] int 
-  bright          2   56[BANK0 ] int 
-  six_i           2  112[BANK0 ] int 
-  six_i           2   72[BANK0 ] int 
-  tree_i          2   92[BANK0 ] int 
-  i               2   90[BANK0 ] int 
-  i               2   86[BANK0 ] int 
-  six_ptr         2   70[BANK0 ] PTR int 
+  wait            2    8[BANK3 ] int 
+  dark            2   12[BANK3 ] int 
+  bright          2   10[BANK3 ] int 
+  dark            2    6[BANK3 ] int 
+  bright          2    4[BANK3 ] int 
+  dark            2   24[BANK3 ] int 
+  bright          2   22[BANK3 ] int 
+  i               2   40[BANK3 ] int 
+  i               2   34[BANK3 ] int 
+  i               2   54[BANK3 ] int 
+  show            2   38[BANK3 ] PTR int 
+		 -> tree(42), 
+  show            2   32[BANK3 ] PTR int 
+		 -> tree(42), 
+  show            2   52[BANK3 ] PTR int 
+		 -> tree(42), 
+  dark            2   20[BANK3 ] int 
+  bright          2   18[BANK3 ] int 
+  dark            2   16[BANK3 ] int 
+  bright          2   14[BANK3 ] int 
+  six_i           2   70[BANK3 ] int 
+  six_i           2   30[BANK3 ] int 
+  tree_i          2   50[BANK3 ] int 
+  i               2   48[BANK3 ] int 
+  i               2   44[BANK3 ] int 
+  six_ptr         2   28[BANK3 ] PTR int 
 		 -> mode_tree@six(12), 
-  six_ptr         2   68[BANK0 ] PTR int 
+  six_ptr         2   26[BANK3 ] PTR int 
 		 -> mode_tree@six(12), 
-  show            2   88[BANK0 ] PTR int 
-		 -> mode_tree@tree(42), 
-  show            2   84[BANK0 ] PTR int 
-		 -> mode_tree@tree(42), 
-  move            2   78[BANK0 ] int 
-  tree           42    0[BANK0 ] int [21]
-  six            12   98[BANK0 ] int [6]
-  delay           2  118[BANK0 ] int 
-  count           2  116[BANK0 ] int 
-  interval        2  114[BANK0 ] int 
-  cycle           2  110[BANK0 ] int 
-  state           2   44[BANK0 ] int 
-  count_4         2   42[BANK0 ] int 
+  show            2   46[BANK3 ] PTR int 
+		 -> tree(42), 
+  show            2   42[BANK3 ] PTR int 
+		 -> tree(42), 
+  move            2   36[BANK3 ] int 
+  six            12   56[BANK3 ] int [6]
+  delay           2   76[BANK3 ] int 
+  count           2   74[BANK3 ] int 
+  interval        2   72[BANK3 ] int 
+  cycle           2   68[BANK3 ] int 
+  state           2    2[BANK3 ] int 
+  count_4         2    0[BANK3 ] int 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
@@ -780,10 +746,10 @@ Total ram usage:       66 bytes
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
       Params:         0       0       0       0       0       0       0
-      Locals:         0     120       0       0       0       0       0
+      Locals:         0       0       0       0      78       0       0
       Temps:          2       0       0       0       0       0       0
-      Totals:         2     120       0       0       0       0       0
-Total ram usage:      122 bytes
+      Totals:         2       0       0       0      78       0       0
+Total ram usage:       80 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    2
  This function calls:
@@ -795,33 +761,35 @@ Total ram usage:      122 bytes
 
  *************** function _mode_snow *****************
  Defined at:
-		line 100 in file "main2.c"
+		line 474 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  i               2   92[BANK0 ] int 
-  i               2   94[BANK0 ] int 
-  snow_car       86    0[BANK0 ] int [43]
-  delay           2   98[BANK0 ] int 
-  show            2   96[BANK0 ] PTR int 
-		 -> walker(108), mode_snow@snow_car(86), 
-  walker_pic_i    2   90[BANK0 ] int 
-  count           2   88[BANK0 ] int 
-  display_cycl    2   86[BANK0 ] int 
+  i               2   38[COMRAM] int 
+  i               2   36[COMRAM] int 
+  i               2   40[COMRAM] int 
+  delay           2   44[COMRAM] int 
+  show            2   42[COMRAM] PTR int 
+		 -> elk(72), snow_car(86), walker(108), 
+  elk_pic_i       2   34[COMRAM] int 
+  walker_pic_i    2   32[COMRAM] int 
+  count_elk       2   30[COMRAM] int 
+  count_walker    2   28[COMRAM] int 
+  display_cycl    2   26[COMRAM] int 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
       Params:         0       0       0       0       0       0       0
-      Locals:         0     100       0       0       0       0       0
+      Locals:        20       0       0       0       0       0       0
       Temps:          2       0       0       0       0       0       0
-      Totals:         2     100       0       0       0       0       0
-Total ram usage:      102 bytes
+      Totals:        22       0       0       0       0       0       0
+Total ram usage:       22 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    3
  This function calls:
@@ -833,48 +801,45 @@ Total ram usage:      102 bytes
 
  *************** function _mode_clock *****************
  Defined at:
-		line 815 in file "main2.c"
+		line 958 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  dark            2  150[BANK1 ] int 
-  bright          2  148[BANK1 ] int 
-  j               2  160[BANK1 ] int 
-  dark            2  154[BANK1 ] int 
-  bright          2  152[BANK1 ] int 
-  dark            2  146[BANK1 ] int 
-  bright          2  144[BANK1 ] int 
-  i               2  164[BANK1 ] int 
-  i               2  166[BANK1 ] int 
-  i               2  158[BANK1 ] int 
-  delay           2  170[BANK1 ] int 
-  show            2  168[BANK1 ] PTR int 
-		 -> mode_clock@MAS(80), mode_clock@X(28), 
-  face_i          2  162[BANK1 ] PTR int 
-		 -> mode_clock@face(26), 
-  secL            2  142[BANK1 ] int 
-  secH            2  140[BANK1 ] int 
-  minL            2  138[BANK1 ] int 
-  minH            2  136[BANK1 ] int 
-  MAS            80    0[BANK1 ] int [10][4]
-  X              28  106[BANK1 ] int [14]
-  face           26   80[BANK1 ] int [13]
-  state           2  156[BANK1 ] int 
-  display_cycl    2  134[BANK1 ] int 
+  dark            2   54[COMRAM] int 
+  bright          2   52[COMRAM] int 
+  j               2   64[COMRAM] int 
+  dark            2   58[COMRAM] int 
+  bright          2   56[COMRAM] int 
+  dark            2   50[COMRAM] int 
+  bright          2   48[COMRAM] int 
+  i               2   68[COMRAM] int 
+  i               2   70[COMRAM] int 
+  i               2   62[COMRAM] int 
+  delay           2   74[COMRAM] int 
+  show            2   72[COMRAM] PTR int 
+		 -> MAS(80), X(28), 
+  face_i          2   66[COMRAM] PTR int 
+		 -> face(26), 
+  secL            2   46[COMRAM] int 
+  secH            2   44[COMRAM] int 
+  minL            2   42[COMRAM] int 
+  minH            2   40[COMRAM] int 
+  state           2   60[COMRAM] int 
+  display_cycl    2   38[COMRAM] int 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
       Params:         0       0       0       0       0       0       0
-      Locals:         0       0     172       0       0       0       0
+      Locals:        38       0       0       0       0       0       0
       Temps:          2       0       0       0       0       0       0
-      Totals:         2       0     172       0       0       0       0
-Total ram usage:      174 bytes
+      Totals:        40       0       0       0       0       0       0
+Total ram usage:       40 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    4
  This function calls:
@@ -889,30 +854,29 @@ Total ram usage:      174 bytes
 
  *************** function _display_num *****************
  Defined at:
-		line 731 in file "main2.c"
+		line 946 in file "main2.c"
  Parameters:    Size  Location     Type
   n               2   26[COMRAM] int 
  Auto vars:     Size  Location     Type
-  dark_i          2   52[BANK0 ] int 
-  bright_i        2   50[BANK0 ] int 
-  i               2   56[BANK0 ] int 
-  num            50    0[BANK0 ] unsigned char [5][10]
-  iter            2   54[BANK0 ] PTR unsigned char 
-		 -> display_num@num(50), 
+  dark_i          2   30[COMRAM] int 
+  bright_i        2   28[COMRAM] int 
+  i               2   34[COMRAM] int 
+  iter            2   32[COMRAM] PTR unsigned char 
+		 -> num(50), 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
       Params:         2       0       0       0       0       0       0
-      Locals:         0      58       0       0       0       0       0
+      Locals:         8       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0
-      Totals:         2      58       0       0       0       0       0
-Total ram usage:       60 bytes
+      Totals:        10       0       0       0       0       0       0
+Total ram usage:       10 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    3
  This function calls:
@@ -984,7 +948,6 @@ Total ram usage:        6 bytes
  This function calls:
 		Nothing
  This function is called by:
-		_mode_walker
 		_mode_clock
  This function uses a non-reentrant model
 
@@ -1024,43 +987,32 @@ Total ram usage:        8 bytes
 
  *************** function _mode_TransLove *****************
  Defined at:
-		line 556 in file "main2.c"
+		line 865 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  delay           2   97[BANK0 ] int 
-  dark            2   91[BANK0 ] int 
-  bright          2   89[BANK0 ] int 
-  i               2  101[BANK0 ] int 
-  arrow          32    0[BANK0 ] unsigned int [16]
-  love           10   32[BANK0 ] unsigned char [10]
-  E               5   82[BANK0 ] unsigned char [5]
-  V               5   77[BANK0 ] unsigned char [5]
-  O               5   72[BANK0 ] unsigned char [5]
-  L               5   67[BANK0 ] unsigned char [5]
-  S               5   62[BANK0 ] unsigned char [5]
-  N               5   57[BANK0 ] unsigned char [5]
-  A               5   52[BANK0 ] unsigned char [5]
-  R               5   47[BANK0 ] unsigned char [5]
-  T               5   42[BANK0 ] unsigned char [5]
-  arrow_i         2   99[BANK0 ] int 
-  arrow_speed     2   95[BANK0 ] int 
-  stop_arrow      2   93[BANK0 ] int 
-  cycle           2   87[BANK0 ] int 
+  delay           2   32[COMRAM] int 
+  dark            2   26[COMRAM] int 
+  bright          2   24[COMRAM] int 
+  i               2   36[COMRAM] int 
+  arrow_i         2   34[COMRAM] int 
+  arrow_speed     2   30[COMRAM] int 
+  stop_arrow      2   28[COMRAM] int 
+  cycle           2   22[COMRAM] int 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0
+		wreg, fsr2l, fsr2h, status,2, status,0
  Tracked objects:
 		On entry : 
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
       Params:         0       0       0       0       0       0       0
-      Locals:         0     103       0       0       0       0       0
+      Locals:        16       0       0       0       0       0       0
       Temps:          4       0       0       0       0       0       0
-      Totals:         4     103       0       0       0       0       0
-Total ram usage:      107 bytes
+      Totals:        20       0       0       0       0       0       0
+Total ram usage:       20 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    2
  This function calls:
@@ -1072,7 +1024,7 @@ Total ram usage:      107 bytes
 
  *************** function _tc_int *****************
  Defined at:
-		line 1006 in file "main2.c"
+		line 1065 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1102,7 +1054,7 @@ Total ram usage:       18 bytes
 
  *************** function _update_time *****************
  Defined at:
-		line 995 in file "main2.c"
+		line 1054 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1134,35 +1086,35 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awmod.c
-		___awmod       		CODE           	1D80	0000	113
+		___awmod       		CODE           	1D78	0000	113
 
 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awmod.c estimated size: 113
 
 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
-		___wmul        		CODE           	1ECE	0000	39
+		___wmul        		CODE           	1E80	0000	39
 
 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c estimated size: 39
 
 main2.c
-		_mode_snow     		CODE           	1762	0000	477
-		_display_num   		CODE           	1C64	0000	153
-		_mode_tree     		CODE           	0D74	0000	1495
-		_main          		CODE           	1DF0	0000	87
-		_mode_clock    		CODE           	134A	0000	1049
+		_mode_snow     		CODE           	1626	0000	685
+		_display_num   		CODE           	1BF4	0000	133
+		_mode_tree     		CODE           	074C	0000	1477
+		_main          		CODE           	1DE8	0000	85
+		_mode_clock    		CODE           	1252	0000	981
 		_tc_int        		CODE           	0008	0000	199
-		_update_time   		CODE           	1E46	0000	71
-		_mode_TransLove		CODE           	076A	0000	1547
-		_mode_walker   		CODE           	0012	0000	1881
+		_update_time   		CODE           	1E3C	0000	69
+		_mode_TransLove		CODE           	0D10	0000	1347
+		_mode_walker   		CODE           	0012	0000	1851
 
-main2.c estimated size: 6959
+main2.c estimated size: 6827
 
 shared
-		__initialization		CODE           	1BA8	0000	175
+		__initialization		CODE           	1B5A	0000	141
 
-shared estimated size: 175
+shared estimated size: 141
 
 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awdiv.c
-		___awdiv       		CODE           	1CFC	0000	133
+		___awdiv       		CODE           	1C78	0000	133
 
 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awdiv.c estimated size: 133
 

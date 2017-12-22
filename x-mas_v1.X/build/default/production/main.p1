@@ -15,17 +15,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
 "1475
 [v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
-"99 main.c
+"187 main.c
 [v _Myusartinit `(v ~T0 @X0 0 ef ]
-"100
+"188
 [v _ISR_Init `(v ~T0 @X0 0 ef ]
-"105
+"193
 [v _next `(*uc ~T0 @X0 0 ef1`*uc ]
-"102
+"190
 [v _LED_DISP `(v ~T0 @X0 0 ef1`*uc ]
 "975 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f4520.h
 [v _LATA `Vuc ~T0 @X0 0 e@3977 ]
-"104 main.c
+"192 main.c
 [v _prev `(*uc ~T0 @X0 0 ef1`*uc ]
 "5658 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic18f4520.h
 [s S233 :1 `uc 1 ]
@@ -3023,442 +3023,702 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 166: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 168: extern __nonreentrant void _delay3(unsigned char);
 "77 main.c
-[v _data `uc ~T0 @X0 -> 256 `i e ]
+[v _data `uc ~T0 @X0 -> 600 `i e ]
 [i _data
 :U ..
+"78
+-> -> 127 `i `uc
 "79
--> -> 1 `i `uc
+-> -> 127 `i `uc
 "80
--> -> 2 `i `uc
+-> -> 48 `i `uc
 "81
--> -> 4 `i `uc
+-> -> 24 `i `uc
 "82
--> -> 8 `i `uc
+-> -> 48 `i `uc
 "83
--> -> 16 `i `uc
+-> -> 127 `i `uc
 "84
--> -> 34 `i `uc
+-> -> 127 `i `uc
 "85
--> -> 64 `i `uc
+-> -> 0 `i `uc
+"86
+-> -> 0 `i `uc
 "87
--> -> 128 `i `uc
+-> -> 56 `i `uc
+"88
+-> -> 124 `i `uc
+"89
+-> -> 84 `i `uc
+"90
+-> -> 84 `i `uc
+"91
+-> -> 92 `i `uc
+"92
+-> -> 24 `i `uc
+"93
+-> -> 0 `i `uc
+"94
+-> -> 0 `i `uc
+"95
+-> -> 65 `i `uc
+"96
+-> -> 127 `i `uc
+"97
+-> -> 127 `i `uc
+"98
+-> -> 64 `i `uc
+"99
+-> -> 0 `i `uc
+"100
+-> -> 0 `i `uc
+"101
+-> -> 0 `i `uc
+"102
+-> -> 56 `i `uc
+"103
+-> -> 124 `i `uc
+"104
+-> -> 68 `i `uc
+"105
+-> -> 68 `i `uc
+"106
+-> -> 108 `i `uc
+"107
+-> -> 40 `i `uc
+"108
+-> -> 0 `i `uc
+"109
+-> -> 0 `i `uc
+"110
+-> -> 56 `i `uc
+"111
+-> -> 124 `i `uc
+"112
+-> -> 68 `i `uc
+"113
+-> -> 68 `i `uc
+"114
+-> -> 124 `i `uc
+"115
+-> -> 56 `i `uc
+"116
+-> -> 0 `i `uc
+"117
+-> -> 0 `i `uc
+"118
+-> -> 124 `i `uc
+"119
+-> -> 124 `i `uc
+"120
+-> -> 24 `i `uc
+"121
+-> -> 48 `i `uc
+"122
+-> -> 28 `i `uc
+"123
+-> -> 124 `i `uc
+"124
+-> -> 120 `i `uc
+"125
+-> -> 0 `i `uc
+"126
+-> -> 56 `i `uc
+"127
+-> -> 124 `i `uc
+"128
+-> -> 84 `i `uc
+"129
+-> -> 84 `i `uc
+"130
+-> -> 92 `i `uc
+"131
+-> -> 24 `i `uc
+"132
+-> -> 0 `i `uc
+"133
+-> -> 0 `i `uc
+"134
+-> -> 0 `i `uc
+"135
+-> -> 0 `i `uc
+"136
+-> -> 0 `i `uc
+"137
+-> -> 0 `i `uc
+"138
+-> -> 0 `i `uc
+"139
+-> -> 0 `i `uc
+"140
+-> -> 0 `i `uc
+"141
+-> -> 0 `i `uc
+"142
+-> -> 0 `i `uc
+"143
+-> -> 4 `i `uc
+"144
+-> -> 62 `i `uc
+"145
+-> -> 127 `i `uc
+"146
+-> -> 68 `i `uc
+"147
+-> -> 68 `i `uc
+"148
+-> -> 32 `i `uc
+"149
+-> -> 0 `i `uc
+"150
+-> -> 56 `i `uc
+"151
+-> -> 124 `i `uc
+"152
+-> -> 68 `i `uc
+"153
+-> -> 68 `i `uc
+"154
+-> -> 124 `i `uc
+"155
+-> -> 56 `i `uc
+"156
+-> -> 0 `i `uc
+"157
+-> -> 0 `i `uc
+"158
+-> -> 0 `i `uc
+"159
+-> -> 0 `i `uc
+"160
+-> -> 0 `i `uc
+"161
+-> -> 0 `i `uc
+"162
+-> -> 0 `i `uc
+"163
+-> -> 0 `i `uc
+"164
+-> -> 0 `i `uc
+"165
+-> -> 0 `i `uc
+"166
+-> -> 64 `i `uc
+"167
+-> -> 104 `i `uc
+"168
+-> -> 122 `i `uc
+"169
+-> -> 255 `i `uc
+"170
+-> -> 255 `i `uc
+"171
+-> -> 122 `i `uc
+"172
+-> -> 104 `i `uc
+"174
+-> -> 64 `i `uc
 ..
 ]
-[; ;main.c: 77: char data[256] =
-[; ;main.c: 78: {
-[; ;main.c: 79: 0b00000001,
-[; ;main.c: 80: 0b00000010,
-[; ;main.c: 81: 0b00000100,
-[; ;main.c: 82: 0b00001000,
-[; ;main.c: 83: 0b00010000,
-[; ;main.c: 84: 0b00100010,
-[; ;main.c: 85: 0b01000000,
-[; ;main.c: 86: 0b10000000
-[; ;main.c: 87: };
-"88
-[v _now `*uc ~T0 @X0 1 e ]
-[i _now
-+ &U _data * -> -> 8 `i `x -> -> # *U &U _data `i `x
+[; ;main.c: 77: unsigned char data[600] = {
+[; ;main.c: 78: 0b01111111,
+[; ;main.c: 79: 0b01111111,
+[; ;main.c: 80: 0b00110000,
+[; ;main.c: 81: 0b00011000,
+[; ;main.c: 82: 0b00110000,
+[; ;main.c: 83: 0b01111111,
+[; ;main.c: 84: 0b01111111,
+[; ;main.c: 85: 0b00000000,
+[; ;main.c: 86: 0b00000000,
+[; ;main.c: 87: 0b00111000,
+[; ;main.c: 88: 0b01111100,
+[; ;main.c: 89: 0b01010100,
+[; ;main.c: 90: 0b01010100,
+[; ;main.c: 91: 0b01011100,
+[; ;main.c: 92: 0b00011000,
+[; ;main.c: 93: 0b00000000,
+[; ;main.c: 94: 0b00000000,
+[; ;main.c: 95: 0b01000001,
+[; ;main.c: 96: 0b01111111,
+[; ;main.c: 97: 0b01111111,
+[; ;main.c: 98: 0b01000000,
+[; ;main.c: 99: 0b00000000,
+[; ;main.c: 100: 0b00000000,
+[; ;main.c: 101: 0b00000000,
+[; ;main.c: 102: 0b00111000,
+[; ;main.c: 103: 0b01111100,
+[; ;main.c: 104: 0b01000100,
+[; ;main.c: 105: 0b01000100,
+[; ;main.c: 106: 0b01101100,
+[; ;main.c: 107: 0b00101000,
+[; ;main.c: 108: 0b00000000,
+[; ;main.c: 109: 0b00000000,
+[; ;main.c: 110: 0b00111000,
+[; ;main.c: 111: 0b01111100,
+[; ;main.c: 112: 0b01000100,
+[; ;main.c: 113: 0b01000100,
+[; ;main.c: 114: 0b01111100,
+[; ;main.c: 115: 0b00111000,
+[; ;main.c: 116: 0b00000000,
+[; ;main.c: 117: 0b00000000,
+[; ;main.c: 118: 0b01111100,
+[; ;main.c: 119: 0b01111100,
+[; ;main.c: 120: 0b00011000,
+[; ;main.c: 121: 0b00110000,
+[; ;main.c: 122: 0b00011100,
+[; ;main.c: 123: 0b01111100,
+[; ;main.c: 124: 0b01111000,
+[; ;main.c: 125: 0b00000000,
+[; ;main.c: 126: 0b00111000,
+[; ;main.c: 127: 0b01111100,
+[; ;main.c: 128: 0b01010100,
+[; ;main.c: 129: 0b01010100,
+[; ;main.c: 130: 0b01011100,
+[; ;main.c: 131: 0b00011000,
+[; ;main.c: 132: 0b00000000,
+[; ;main.c: 133: 0b00000000,
+[; ;main.c: 134: 0b00000000,
+[; ;main.c: 135: 0b00000000,
+[; ;main.c: 136: 0b00000000,
+[; ;main.c: 137: 0b00000000,
+[; ;main.c: 138: 0b00000000,
+[; ;main.c: 139: 0b00000000,
+[; ;main.c: 140: 0b00000000,
+[; ;main.c: 141: 0b00000000,
+[; ;main.c: 142: 0b00000000,
+[; ;main.c: 143: 0b00000100,
+[; ;main.c: 144: 0b00111110,
+[; ;main.c: 145: 0b01111111,
+[; ;main.c: 146: 0b01000100,
+[; ;main.c: 147: 0b01000100,
+[; ;main.c: 148: 0b00100000,
+[; ;main.c: 149: 0b00000000,
+[; ;main.c: 150: 0b00111000,
+[; ;main.c: 151: 0b01111100,
+[; ;main.c: 152: 0b01000100,
+[; ;main.c: 153: 0b01000100,
+[; ;main.c: 154: 0b01111100,
+[; ;main.c: 155: 0b00111000,
+[; ;main.c: 156: 0b00000000,
+[; ;main.c: 157: 0b00000000,
+[; ;main.c: 158: 0b00000000,
+[; ;main.c: 159: 0b00000000,
+[; ;main.c: 160: 0b00000000,
+[; ;main.c: 161: 0b00000000,
+[; ;main.c: 162: 0b00000000,
+[; ;main.c: 163: 0b00000000,
+[; ;main.c: 164: 0b00000000,
+[; ;main.c: 165: 0b00000000,
+[; ;main.c: 166: 0b01000000,
+[; ;main.c: 167: 0b01101000,
+[; ;main.c: 168: 0b01111010,
+[; ;main.c: 169: 0b11111111,
+[; ;main.c: 170: 0b11111111,
+[; ;main.c: 171: 0b01111010,
+[; ;main.c: 172: 0b01101000,
+[; ;main.c: 173: 0b01000000
+[; ;main.c: 174: };
+"176
+[v _NOW `*uc ~T0 @X0 1 e ]
+[i _NOW
++ &U _data * -> -> 122 `i `x -> -> # *U &U _data `i `x
 ]
-[; ;main.c: 88: char* now = ((char*)data) + 8;
-"89
+[; ;main.c: 176: unsigned char* NOW = (unsigned char*)data + 122;
+"177
 [v _TAIL `*uc ~T0 @X0 1 e ]
 [i _TAIL
-- + &U _data * -> -> 256 `i `x -> -> # *U &U _data `i `x * -> -> 1 `i `x -> -> # *U + &U _data * -> -> 256 `i `x -> -> # *U &U _data `i `x `i `x
+- + &U _data * -> -> 600 `i `x -> -> # *U &U _data `i `x * -> -> 1 `i `x -> -> # *U + &U _data * -> -> 600 `i `x -> -> # *U &U _data `i `x `i `x
 ]
-[; ;main.c: 89: char* TAIL = data + 256 - 1;
-"90
-[v _temp `uc ~T0 @X0 1 e ]
-[; ;main.c: 90: char temp;
-"93
+[; ;main.c: 177: unsigned char* TAIL = data + 600 - 1;
+"181
 [v _stringC `i ~T0 @X0 1 e ]
 [i _stringC
 -> 0 `i
 ]
-[; ;main.c: 93: int stringC = 0;
-"94
+[; ;main.c: 181: int stringC = 0;
+"182
 [v _global_char `uc ~T0 @X0 1 e ]
-[; ;main.c: 94: char global_char;
-[; ;main.c: 97: void Myusartwrite(char);
-[; ;main.c: 98: void MyusartRead();
-[; ;main.c: 99: void Myusartinit();
-[; ;main.c: 100: void ISR_Init();
-[; ;main.c: 101: void Mylab10_2();
-[; ;main.c: 102: void LED_DISP(char* start);
-[; ;main.c: 103: void show_words();
-[; ;main.c: 104: char* prev(char* start);
-[; ;main.c: 105: char* next(char* ptr);
-[; ;main.c: 106: void add_word(char c);
-[; ;main.c: 107: void init_word();
+[; ;main.c: 182: unsigned char global_char;
+[; ;main.c: 185: void Myusartwrite(unsigned char);
+[; ;main.c: 186: void MyusartRead();
+[; ;main.c: 187: void Myusartinit();
+[; ;main.c: 188: void ISR_Init();
+[; ;main.c: 189: void Mylab10_2();
+[; ;main.c: 190: void LED_DISP(unsigned char* start);
+[; ;main.c: 191: void show_words();
+[; ;main.c: 192: unsigned char* prev(unsigned char* start);
+[; ;main.c: 193: unsigned char* next(unsigned char* ptr);
+[; ;main.c: 194: void add_word(unsigned char c);
+[; ;main.c: 195: void init_word();
 [v $root$_main `(v ~T0 @X0 0 e ]
-"109
+"197
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 109: void main(void) {
+[; ;main.c: 197: void main(void) {
 [e :U _main ]
 [f ]
-[; ;main.c: 110: OSCCONbits.IRCF = 0b110;
-"110
+[; ;main.c: 198: OSCCONbits.IRCF = 0b110;
+"198
 [e = . . _OSCCONbits 0 3 -> -> 6 `i `uc ]
-[; ;main.c: 111: TRISD = 0;
-"111
+[; ;main.c: 199: TRISD = 0;
+"199
 [e = _TRISD -> -> 0 `i `uc ]
-[; ;main.c: 112: TRISA = 0;
-"112
+[; ;main.c: 200: TRISA = 0;
+"200
 [e = _TRISA -> -> 0 `i `uc ]
-[; ;main.c: 113: Myusartinit();
-"113
+[; ;main.c: 201: Myusartinit();
+"201
 [e ( _Myusartinit ..  ]
-[; ;main.c: 114: ISR_Init();
-"114
+[; ;main.c: 202: ISR_Init();
+"202
 [e ( _ISR_Init ..  ]
-"116
+"205
 [v _start `*uc ~T0 @X0 1 a ]
-[; ;main.c: 116: char* start = (char*)data;
+[; ;main.c: 205: unsigned char* start = (unsigned char*)data;
 [e = _start &U _data ]
-[; ;main.c: 117: while(1){
-"117
+[; ;main.c: 207: while(1){
+"207
 [e :U 278 ]
 {
-[; ;main.c: 118: start = next(start);
-"118
+[; ;main.c: 209: start = next(start);
+"209
 [e = _start ( _next (1 _start ]
-[; ;main.c: 119: LED_DISP(start);
-"119
+[; ;main.c: 210: LED_DISP(start);
+"210
 [e ( _LED_DISP (1 _start ]
-"120
+"211
 }
 [e :U 277 ]
-"117
+"207
 [e $U 278  ]
 [e :U 279 ]
-[; ;main.c: 120: }
-[; ;main.c: 121: return;
-"121
+[; ;main.c: 211: }
+[; ;main.c: 212: return;
+"212
 [e $UE 276  ]
-[; ;main.c: 123: }
-"123
+[; ;main.c: 214: }
+"214
 [e :UE 276 ]
 }
-"126
+"217
 [v _LED_DISP `(v ~T0 @X0 1 ef1`*uc ]
 {
-[; ;main.c: 126: void LED_DISP(char* start){
+[; ;main.c: 217: void LED_DISP(unsigned char* start){
 [e :U _LED_DISP ]
 [v _start `*uc ~T0 @X0 1 r1 ]
 [f ]
-"127
+"218
 [v _iter `*uc ~T0 @X0 1 a ]
-[; ;main.c: 127: char* iter = start;
+[; ;main.c: 218: unsigned char* iter = start;
 [e = _iter _start ]
-[; ;main.c: 128: for(int i = 0; i < 122; ++i){
-"128
+[; ;main.c: 219: for(int i = 0; i < 220; ++i){
+"219
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 122 `i 281  ]
+[e $ < _i -> 220 `i 281  ]
 [e $U 282  ]
 [e :U 281 ]
 {
-[; ;main.c: 129: LATA = *iter;
-"129
+[; ;main.c: 220: LATA = *iter;
+"220
 [e = _LATA *U _iter ]
-"130
+"221
 [v _bright `i ~T0 @X0 1 a ]
-[; ;main.c: 130: int bright = 60;
-[e = _bright -> 60 `i ]
-[; ;main.c: 131: while(bright--);
-"131
+[; ;main.c: 221: int bright = 30;
+[e = _bright -> 30 `i ]
+[; ;main.c: 222: while(bright--);
+"222
 [e $U 284  ]
 [e :U 285 ]
 [e :U 284 ]
 [e $ != -- _bright -> 1 `i -> 0 `i 285  ]
 [e :U 286 ]
-[; ;main.c: 132: LATA = 0;
-"132
+[; ;main.c: 223: LATA = 0;
+"223
 [e = _LATA -> -> 0 `i `uc ]
-"133
+"224
 [v _dark `i ~T0 @X0 1 a ]
-[; ;main.c: 133: int dark = 60;
-[e = _dark -> 60 `i ]
-[; ;main.c: 134: while(dark--);
-"134
+[; ;main.c: 224: int dark = 30;
+[e = _dark -> 30 `i ]
+[; ;main.c: 225: while(dark--);
+"225
 [e $U 287  ]
 [e :U 288 ]
 [e :U 287 ]
 [e $ != -- _dark -> 1 `i -> 0 `i 288  ]
 [e :U 289 ]
-[; ;main.c: 135: iter = prev(iter);
-"135
+[; ;main.c: 226: iter = prev(iter);
+"226
 [e = _iter ( _prev (1 _iter ]
-"136
+"227
 }
-"128
+"219
 [e =+ _i -> 1 `i ]
-[e $ < _i -> 122 `i 281  ]
+[e $ < _i -> 220 `i 281  ]
 [e :U 282 ]
-"136
+"227
 }
-"137
+"228
 [v _delay `i ~T0 @X0 1 a ]
-[; ;main.c: 136: }
-[; ;main.c: 137: int delay = 100;
-[e = _delay -> 100 `i ]
-[; ;main.c: 138: while(delay--);
-"138
+[; ;main.c: 227: }
+[; ;main.c: 228: int delay = 0;
+[e = _delay -> 0 `i ]
+[; ;main.c: 229: while(delay--);
+"229
 [e $U 290  ]
 [e :U 291 ]
 [e :U 290 ]
 [e $ != -- _delay -> 1 `i -> 0 `i 291  ]
 [e :U 292 ]
-[; ;main.c: 139: }
-"139
+[; ;main.c: 230: }
+"230
 [e :UE 280 ]
 }
-"141
+"232
 [v _add_word `(v ~T0 @X0 1 ef1`uc ]
 {
-[; ;main.c: 141: void add_word(char c){
+[; ;main.c: 232: void add_word(unsigned char c){
 [e :U _add_word ]
 [v _c `uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main.c: 142: *now = c;
-"142
-[e = *U _now _c ]
-[; ;main.c: 143: now = next(now);
-"143
-[e = _now ( _next (1 _now ]
-[; ;main.c: 144: }
-"144
+[; ;main.c: 233: *NOW = c;
+"233
+[e = *U _NOW _c ]
+[; ;main.c: 234: NOW = next(NOW);
+"234
+[e = _NOW ( _next (1 _NOW ]
+[; ;main.c: 235: }
+"235
 [e :UE 293 ]
 }
-"146
+"237
 [v _prev `(*uc ~T0 @X0 1 ef1`*uc ]
 {
-[; ;main.c: 146: char* prev(char* ptr){
+[; ;main.c: 237: unsigned char* prev(unsigned char* ptr){
 [e :U _prev ]
 [v _ptr `*uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main.c: 147: if(ptr == (char*)data)
-"147
+[; ;main.c: 238: if(ptr == (unsigned char*)data)
+"238
 [e $ ! == _ptr &U _data 295  ]
-[; ;main.c: 148: return TAIL;
-"148
+[; ;main.c: 239: return TAIL;
+"239
 [e ) _TAIL ]
 [e $UE 294  ]
 [e :U 295 ]
-[; ;main.c: 149: return ptr-1;
-"149
+[; ;main.c: 240: return ptr-1;
+"240
 [e ) - _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x ]
 [e $UE 294  ]
-[; ;main.c: 150: }
-"150
+[; ;main.c: 241: }
+"241
 [e :UE 294 ]
 }
-"152
+"243
 [v _next `(*uc ~T0 @X0 1 ef1`*uc ]
 {
-[; ;main.c: 152: char* next(char* ptr){
+[; ;main.c: 243: unsigned char* next(unsigned char* ptr){
 [e :U _next ]
 [v _ptr `*uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;main.c: 153: if(ptr == TAIL)
-"153
+[; ;main.c: 244: if(ptr == TAIL)
+"244
 [e $ ! == _ptr _TAIL 297  ]
-[; ;main.c: 154: return (char*)data;
-"154
+[; ;main.c: 245: return (unsigned char*)data;
+"245
 [e ) &U _data ]
 [e $UE 296  ]
 [e :U 297 ]
-[; ;main.c: 155: return ptr+1;
-"155
+[; ;main.c: 246: return ptr+1;
+"246
 [e ) + _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x ]
 [e $UE 296  ]
-[; ;main.c: 156: }
-"156
+[; ;main.c: 247: }
+"247
 [e :UE 296 ]
 }
-"158
+"249
 [v _init_word `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 158: void init_word(){
+[; ;main.c: 249: void init_word(){
 [e :U _init_word ]
 [f ]
-[; ;main.c: 159: add_word((char)255);
-"159
+[; ;main.c: 250: add_word((unsigned char)255);
+"250
 [e ( _add_word (1 -> -> 255 `i `uc ]
-[; ;main.c: 160: add_word((char)255);
-"160
+[; ;main.c: 251: add_word((unsigned char)255);
+"251
 [e ( _add_word (1 -> -> 255 `i `uc ]
-[; ;main.c: 161: add_word((char)200);
-"161
+[; ;main.c: 252: add_word((unsigned char)200);
+"252
 [e ( _add_word (1 -> -> 200 `i `uc ]
-[; ;main.c: 162: add_word((char)128);
-"162
+[; ;main.c: 253: add_word((unsigned char)128);
+"253
 [e ( _add_word (1 -> -> 128 `i `uc ]
-[; ;main.c: 163: add_word((char)64);
-"163
+[; ;main.c: 254: add_word((unsigned char)64);
+"254
 [e ( _add_word (1 -> -> 64 `i `uc ]
-[; ;main.c: 164: }
-"164
+[; ;main.c: 255: }
+"255
 [e :UE 298 ]
 }
-"167
+"258
 [v _ISR_Init `(v ~T0 @X0 1 ef ]
-"168
+"259
 {
-[; ;main.c: 167: void ISR_Init()
-[; ;main.c: 168: {
+[; ;main.c: 258: void ISR_Init()
+[; ;main.c: 259: {
 [e :U _ISR_Init ]
 [f ]
-[; ;main.c: 170: RCONbits.IPEN = 1;
-"170
+[; ;main.c: 261: RCONbits.IPEN = 1;
+"261
 [e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
-[; ;main.c: 171: INTCONbits.GIEH = 1;
-"171
+[; ;main.c: 262: INTCONbits.GIEH = 1;
+"262
 [e = . . _INTCONbits 2 2 -> -> 1 `i `uc ]
-[; ;main.c: 172: INTCONbits.GIEL = 1;
-"172
+[; ;main.c: 263: INTCONbits.GIEL = 1;
+"263
 [e = . . _INTCONbits 2 1 -> -> 1 `i `uc ]
-[; ;main.c: 174: return ;
-"174
+[; ;main.c: 265: return ;
+"265
 [e $UE 299  ]
-[; ;main.c: 175: }
-"175
+[; ;main.c: 266: }
+"266
 [e :UE 299 ]
 }
-"176
+"267
 [v _MyusartRead `(v ~T0 @X0 1 ef ]
-"177
+"268
 {
-[; ;main.c: 176: void MyusartRead()
-[; ;main.c: 177: {
+[; ;main.c: 267: void MyusartRead()
+[; ;main.c: 268: {
 [e :U _MyusartRead ]
 [f ]
-[; ;main.c: 179: global_char = RCREG;
-"179
+[; ;main.c: 270: global_char = RCREG;
+"270
 [e = _global_char _RCREG ]
-[; ;main.c: 180: add_word(global_char);
-"180
+[; ;main.c: 271: add_word(global_char);
+"271
 [e ( _add_word (1 _global_char ]
-[; ;main.c: 182: return ;
-"182
+[; ;main.c: 273: return ;
+"273
 [e $UE 300  ]
-[; ;main.c: 183: }
-"183
+[; ;main.c: 274: }
+"274
 [e :UE 300 ]
 }
-"184
+"275
 [v _Myusartwrite `(v ~T0 @X0 1 ef1`uc ]
-"185
+"276
 {
-[; ;main.c: 184: void Myusartwrite(char a)
-[; ;main.c: 185: {
+[; ;main.c: 275: void Myusartwrite(unsigned char a)
+[; ;main.c: 276: {
 [e :U _Myusartwrite ]
-"184
+"275
 [v _a `uc ~T0 @X0 1 r1 ]
-"185
+"276
 [f ]
-[; ;main.c: 187: TXREG = a;
-"187
+[; ;main.c: 278: TXREG = a;
+"278
 [e = _TXREG _a ]
-[; ;main.c: 188: return ;
-"188
+[; ;main.c: 279: return ;
+"279
 [e $UE 301  ]
-[; ;main.c: 189: }
-"189
+[; ;main.c: 280: }
+"280
 [e :UE 301 ]
 }
-"190
+"281
 [v _Myusartinit `(v ~T0 @X0 1 ef ]
-"191
+"282
 {
-[; ;main.c: 190: void Myusartinit()
-[; ;main.c: 191: {
+[; ;main.c: 281: void Myusartinit()
+[; ;main.c: 282: {
 [e :U _Myusartinit ]
 [f ]
-[; ;main.c: 193: TRISCbits.TRISC6 = 1;
-"193
+[; ;main.c: 284: TRISCbits.TRISC6 = 1;
+"284
 [e = . . _TRISCbits 0 6 -> -> 1 `i `uc ]
-[; ;main.c: 194: TRISCbits.TRISC7 = 1;
-"194
+[; ;main.c: 285: TRISCbits.TRISC7 = 1;
+"285
 [e = . . _TRISCbits 0 7 -> -> 1 `i `uc ]
-[; ;main.c: 207: BAUDCONbits.BRG16 = 0 ;
-"207
+[; ;main.c: 298: BAUDCONbits.BRG16 = 0 ;
+"298
 [e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 208: TXSTAbits.BRGH = 1;
-"208
+[; ;main.c: 299: TXSTAbits.BRGH = 1;
+"299
 [e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 209: SPBRG = 25;
-"209
+[; ;main.c: 300: SPBRG = 25;
+"300
 [e = _SPBRG -> -> 25 `i `uc ]
-[; ;main.c: 212: TXSTAbits.SYNC = 0;
-"212
+[; ;main.c: 303: TXSTAbits.SYNC = 0;
+"303
 [e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 213: RCSTAbits.SPEN = 1;
-"213
+[; ;main.c: 304: RCSTAbits.SPEN = 1;
+"304
 [e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
-[; ;main.c: 218: PIR1bits.TXIF = 1;
-"218
+[; ;main.c: 309: PIR1bits.TXIF = 1;
+"309
 [e = . . _PIR1bits 0 4 -> -> 1 `i `uc ]
-[; ;main.c: 219: PIR1bits.RCIF = 0;
-"219
+[; ;main.c: 310: PIR1bits.RCIF = 0;
+"310
 [e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 220: TXSTAbits.TXEN = 1;
-"220
+[; ;main.c: 311: TXSTAbits.TXEN = 1;
+"311
 [e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 221: RCSTAbits.CREN = 1;
-"221
+[; ;main.c: 312: RCSTAbits.CREN = 1;
+"312
 [e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
-[; ;main.c: 223: PIE1bits.TXIE = 0;
-"223
+[; ;main.c: 314: PIE1bits.TXIE = 0;
+"314
 [e = . . _PIE1bits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 224: IPR1bits.TXIP = 1;
-"224
+[; ;main.c: 315: IPR1bits.TXIP = 1;
+"315
 [e = . . _IPR1bits 0 4 -> -> 1 `i `uc ]
-[; ;main.c: 225: PIE1bits.RCIE = 1;
-"225
+[; ;main.c: 316: PIE1bits.RCIE = 1;
+"316
 [e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 226: IPR1bits.RCIP = 1;
-"226
+[; ;main.c: 317: IPR1bits.RCIP = 1;
+"317
 [e = . . _IPR1bits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 229: return ;
-"229
+[; ;main.c: 320: return ;
+"320
 [e $UE 302  ]
-[; ;main.c: 230: }
-"230
+[; ;main.c: 321: }
+"321
 [e :UE 302 ]
 }
 [v $root$_Hi_ISR `(v ~T0 @X0 0 e ]
-[v F3048 `(v ~T0 @X0 1 tf ]
-"231
-[v _Hi_ISR `IF3048 ~T0 @X0 1 e ]
-"232
+[v F3047 `(v ~T0 @X0 1 tf ]
+"322
+[v _Hi_ISR `IF3047 ~T0 @X0 1 e ]
+"323
 {
-[; ;main.c: 231: void interrupt Hi_ISR(void)
-[; ;main.c: 232: {
+[; ;main.c: 322: void interrupt Hi_ISR(void)
+[; ;main.c: 323: {
 [e :U _Hi_ISR ]
 [f ]
-[; ;main.c: 233: if(RCIF)
-"233
+[; ;main.c: 324: if(RCIF)
+"324
 [e $ ! _RCIF 304  ]
-[; ;main.c: 234: {
-"234
+[; ;main.c: 325: {
+"325
 {
-[; ;main.c: 235: MyusartRead();
-"235
+[; ;main.c: 326: MyusartRead();
+"326
 [e ( _MyusartRead ..  ]
-[; ;main.c: 236: Myusartwrite(global_char);
-"236
+[; ;main.c: 327: Myusartwrite(global_char);
+"327
 [e ( _Myusartwrite (1 _global_char ]
-"237
+"328
 }
 [e :U 304 ]
-[; ;main.c: 237: }
-[; ;main.c: 238: return ;
-"238
+[; ;main.c: 328: }
+[; ;main.c: 329: return ;
+"329
 [e $UE 303  ]
-[; ;main.c: 239: }
-"239
+[; ;main.c: 330: }
+"330
 [e :UE 303 ]
 }

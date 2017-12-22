@@ -12,24 +12,25 @@
 #pragma config LVP = OFF        // Single-Supply ICSP Enable bit (Single-Supply ICSP disabled)
 
 int count=0;
-void main(void) {
+void main(void)
+{
 //    RCONbits.IPEN=0x01;
 //    T1CON=0x95;
-    TRISAbits.RA0 = 0; // set as output
-    LATAbits.LA0 = 1;
-    
+	TRISAbits.RA0 = 0; // set as output
+	LATAbits.LA0 = 1;
+
 //    while(1){
 //        LATAbits.LA0 = ~LATAbits.LA0;
-//        
-//        long int 
+//
+//        long int
 //    }
 //    PIE1bits.TMR1IE=1;
 //    IPR1bits.TMR1IP=1;
 //    PIR1bits.TMR1IF=0;
-//    
+//
 //    INTCONbits.GIE=1;
-//    
-    while(1);
+//
+	while(1);
 }
 
 //void interrupt tc_int(void)     // High priority interrupt
@@ -37,6 +38,6 @@ void main(void) {
 //    if(TMR1IE && TMR1IF){
 //        count++;
 //        TMR1IF=0;
-//    }  
-//    
+//    }
+//
 //}
