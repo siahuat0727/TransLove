@@ -193,7 +193,6 @@ int elk[ELK_PIC][ELK_COLUMN] = {
 		0b110110000
 	},
 };
-
 #define TREE_COLUMN 21
 int tree[TREE_COLUMN] = {
 	0b0100000000,
@@ -216,7 +215,6 @@ int tree[TREE_COLUMN] = {
 	0b0000000000,
 	0b0100000000,
 };
-
 #define ARROW_COLUMN 16
 unsigned char love[10] = {
 	0b00000000,
@@ -247,7 +245,6 @@ unsigned int arrow[ARROW_COLUMN] =  {
 	0b00011100,
 	0b00001000
 };
-
 unsigned char T[5] = {
 	0b00011,
 	0b00001,
@@ -311,7 +308,6 @@ unsigned char E[5] = {
 	0b10101,
 	0b10101
 };
-
 unsigned char num[10][5] = {
 	{
 		0b00011111,
@@ -400,7 +396,6 @@ int X[14] = {
 	0b1000000000,
 	0b1000000000,
 };
-
 int MAS[4][10] = { // 'MAS
 	{
 		0b0000000000,
@@ -467,7 +462,6 @@ int face[13] = {
 	0b0011111110
 };
 
-
 void mode_snow()
 {
 	int display_cycle;
@@ -529,7 +523,7 @@ void mode_snow()
 			if(++elk_pic_i == ELK_PIC)
 				elk_pic_i = 0;
 
-		delay = 3800;
+		delay = 3820;
 		while(delay--);
 	}
 }
@@ -669,9 +663,9 @@ void mode_tree()
 
 void mode_walker()
 {
-#define QUATER_CYCLE 2080  //順時要減少(指令太多)，逆時要增加
+#define QUATER_CYCLE 2090  //順時要減少(指令太多)，逆時要增加
 #define STATE_CHANGE 120
-#define MOVE_START 1000 // 2072 - 1080 //QUATER_CYCLE - (9*(BRIGHT_INTERVAL + DARK_INTERVAL)))    
+#define MOVE_START 1010 // 2072 - 1080 //QUATER_CYCLE - (9*(BRIGHT_INTERVAL + DARK_INTERVAL)))    
 
 	bool four[4] = {true};
 	int state_change_cycle = STATE_CHANGE;
@@ -864,9 +858,9 @@ void mode_walker()
 void mode_TransLove()
 {
 
-#define LOVE_START 87 // FOR - 12
-#define LOVE_END 97 // FOR - 2
-#define FOR 99
+#define LOVE_START 88 // FOR - 12
+#define LOVE_END 98 // FOR - 2
+#define FOR 100
 #define STOP_ARROW 120
 #define ARROW_SPEED 3
 
@@ -949,7 +943,6 @@ void mode_TransLove()
 #undef FOR
 #undef STOP_ARROW
 #undef ARROW_SPEED
-#undef ARROW_COLUMN
 }
 
 void display_num(int n)
@@ -1009,7 +1002,7 @@ void mode_clock()
 		display_num(secH);
 		display_num(secL);
 
-#define DELAY_CLOCK 865
+#define DELAY_CLOCK 980
 		delay = DELAY_CLOCK;
 		while(delay--);
 
@@ -1116,5 +1109,4 @@ void main(void)
 		mode_tree();
 		mode_snow();
 	}
-	while(1);
 }

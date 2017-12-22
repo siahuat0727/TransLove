@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.44\dat\en_msgs.txt -cs \
   -h+dist/default/production\LED_fan2.X.production.sym \
   --cmf=dist/default/production\LED_fan2.X.production.cmf -z -Q18F4520 \
-  -oC:\Users\Lenovo\AppData\Local\Temp\s1a4.2 \
+  -oC:\Users\Lenovo\AppData\Local\Temp\s8ek.2 \
   -Mdist/default/production/LED_fan2.X.production.map -E1 -ver=XC8 \
   -ASTACK=034Eh-05ffh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0600h-06FFhx122 -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-07Fh \
@@ -21,7 +21,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj \
+  C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj \
   dist/default/production\LED_fan2.X.production.obj 
 
 Object code version is 3.11
@@ -34,7 +34,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
+C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
                 init                                  E        E        4        4       0
                 reset_vec                             0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
@@ -42,18 +42,18 @@ C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
 dist/default/production\LED_fan2.X.production.obj
                 intcode                               8        8        6        4       0
                 temp                                 69       69        1        1       1
-                text11                             1E3C     1E3C       44      EBC       0
+                text11                             1E3A     1E3A       44      EBC       0
                 intcode_body                       1A9A     1A9A       C0        4       0
                 text9                               D10      D10      542        4       0
                 text8                              1C78     1C78       84        4       0
                 text7                              1D78     1D78       70      EBC       0
-                text6                              1E80     1E80       26      EBC       0
+                text6                              1E7E     1E7E       26      EBC       0
                 text5                              1BF4     1BF4       84        4       0
                 text4                              1252     1252      3D4        4       0
                 text3                              1626     1626      2AC        4       0
                 text2                               74C      74C      5C4        4       0
                 text1                                12       12      73A        4       0
-                text0                              1DE8     1DE8       54      EBC       0
+                text0                              1DE8     1DE8       52      EBC       0
                 cstackCOMRAM                          1        1       4C        1       1
                 cstackBANK3                         300      300       4E      300       1
                 dataBANK2                           200      200       EE      200       1
@@ -66,7 +66,7 @@ dist/default/production\LED_fan2.X.production.obj
                 idataBANK2                         18D2     18D2       EE        4       0
                 idataBANK1                         19C0     19C0       DA        4       0
                 idataBANK0                         1CFC     1CFC       7B        4       0
-                idataCOMRAM                        1EA6     1EA6       14      EBC       0
+                idataCOMRAM                        1EA4     1EA4       14      EBC       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -75,23 +75,23 @@ TOTAL           Name                               Link     Load   Length     Sp
                 intcode                               8        8        6         0
                 init                                  E        E        4         0
                 reset_vec                             0        0        4         0
-                text11                             1E3C     1E3C       44         0
+                text11                             1E3A     1E3A       44         0
                 intcode_body                       1A9A     1A9A       C0         0
                 text9                               D10      D10      542         0
                 text8                              1C78     1C78       84         0
                 text7                              1D78     1D78       70         0
-                text6                              1E80     1E80       26         0
+                text6                              1E7E     1E7E       26         0
                 text5                              1BF4     1BF4       84         0
                 text4                              1252     1252      3D4         0
                 text3                              1626     1626      2AC         0
                 text2                               74C      74C      5C4         0
                 text1                                12       12      73A         0
-                text0                              1DE8     1DE8       54         0
+                text0                              1DE8     1DE8       52         0
                 cinit                              1B5A     1B5A       9A         0
                 idataBANK2                         18D2     18D2       EE         0
                 idataBANK1                         19C0     19C0       DA         0
                 idataBANK0                         1CFC     1CFC       7B         0
-                idataCOMRAM                        1EA6     1EA6       14         0
+                idataCOMRAM                        1EA4     1EA4       14         0
 
         CLASS   CONST          
 
@@ -151,7 +151,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 dataBANK1                      000100  0000DA  0001DA       100       1  BANK1   
                 dataBANK2                      000200  0000EE  0002EE       200       1  BANK2   
                 cstackBANK3                    000300  00004E  00034E       300       1  BANK3   
-                text7                          001D78  000142  001EBA       EBC       0  CODE    
+                text7                          001D78  000140  001EB8       EBC       0  CODE    
                 idloc                          200000  000008  200008    200000       0  IDLOC   
                 config                         300000  00000E  30000E    300000       0  CONFIG  
 
@@ -172,21 +172,21 @@ UNUSED ADDRESS RANGES
                          00034E-0005FF              2B2
         CODE             000004-000007                4
                          001D77-001D77                1
-                         001EBA-007FFF             6146
+                         001EB8-007FFF             6148
         COMRAM           00006A-00007F               16
         CONST            000004-000007                4
                          001D77-001D77                1
-                         001EBA-007FFF             6146
+                         001EB8-007FFF             6148
         EEDATA           F00000-F000FF              100
         MEDIUMCONST      001D77-001D77                1
-                         001EBA-007FFF             6146
+                         001EB8-007FFF             6148
         RAM              0000FB-0000FF                5
                          0001DA-0001FF               26
                          0002EE-0002FF               12
                          00034E-0005FF              100
         SFR              000F80-000FFF               80
         SMALLCONST       001D77-001D77                1
-                         001EBA-007FFF              100
+                         001EB8-007FFF              100
         STACK            00034E-0005FF              2B2
 
                                   Symbol Table
@@ -401,7 +401,7 @@ ___intlo_sp                    stack        000000
 ___param_bank                  (abs)        000000
 ___rparam_used                 (abs)        000001
 ___sp                          stack        000000
-___wmul                        text6        001E80
+___wmul                        text6        001E7E
 ___wmul@multiplicand           cstackCOMRAM 000015
 ___wmul@multiplier             cstackCOMRAM 000013
 ___wmul@product                cstackCOMRAM 000017
@@ -409,17 +409,17 @@ __accesstop                    (abs)        000080
 __activetblptr                 (abs)        000002
 __end_of___awdiv               text8        001CFC
 __end_of___awmod               text7        001DE8
-__end_of___wmul                text6        001EA6
+__end_of___wmul                text6        001EA4
 __end_of__initialization       cinit        001BE6
 __end_of_display_num           text5        001C78
-__end_of_main                  text0        001E3C
+__end_of_main                  text0        001E3A
 __end_of_mode_TransLove        text9        001252
 __end_of_mode_clock            text4        001626
 __end_of_mode_snow             text3        0018D2
 __end_of_mode_tree             text2        000D10
 __end_of_mode_walker           text1        00074C
 __end_of_tc_int                intcode_body 001B5A
-__end_of_update_time           text11       001E80
+__end_of_update_time           text11       001E7E
 __initialization               cinit        001B5A
 __mediumconst                  mediumconst  000000
 __pbssCOMRAM                   bssCOMRAM    000061
@@ -433,18 +433,18 @@ __pdataCOMRAM                  dataCOMRAM   00004D
 __pidataBANK0                  idataBANK0   001CFC
 __pidataBANK1                  idataBANK1   0019C0
 __pidataBANK2                  idataBANK2   0018D2
-__pidataCOMRAM                 idataCOMRAM  001EA6
+__pidataCOMRAM                 idataCOMRAM  001EA4
 __pintcode                     intcode      000008
 __pintcode_body                intcode_body 001A9A
 __pnvCOMRAM                    nvCOMRAM     000067
 __ptext0                       text0        001DE8
 __ptext1                       text1        000012
-__ptext11                      text11       001E3C
+__ptext11                      text11       001E3A
 __ptext2                       text2        00074C
 __ptext3                       text3        001626
 __ptext4                       text4        001252
 __ptext5                       text5        001BF4
-__ptext6                       text6        001E80
+__ptext6                       text6        001E7E
 __ptext7                       text7        001D78
 __ptext8                       text8        001C78
 __ptext9                       text9        000D10
@@ -481,7 +481,7 @@ _seconds                       bssCOMRAM    000063
 _snow_car                      dataBANK2    000200
 _tc_int                        intcode      000008
 _tree                          dataBANK0    0000B7
-_update_time                   text11       001E3C
+_update_time                   text11       001E3A
 _walker                        dataBANK1    000120
 btemp                          temp         000069
 display_num@bright_i           cstackCOMRAM 00001D
@@ -604,7 +604,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 1078 in file "main2.c"
+		line 1083 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -637,7 +637,7 @@ Total ram usage:        0 bytes
 
  *************** function _mode_walker *****************
  Defined at:
-		line 671 in file "main2.c"
+		line 664 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -691,7 +691,7 @@ Total ram usage:       62 bytes
 
  *************** function _mode_tree *****************
  Defined at:
-		line 539 in file "main2.c"
+		line 531 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -761,7 +761,7 @@ Total ram usage:       80 bytes
 
  *************** function _mode_snow *****************
  Defined at:
-		line 474 in file "main2.c"
+		line 465 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -801,7 +801,7 @@ Total ram usage:       22 bytes
 
  *************** function _mode_clock *****************
  Defined at:
-		line 958 in file "main2.c"
+		line 961 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -854,7 +854,7 @@ Total ram usage:       40 bytes
 
  *************** function _display_num *****************
  Defined at:
-		line 946 in file "main2.c"
+		line 948 in file "main2.c"
  Parameters:    Size  Location     Type
   n               2   26[COMRAM] int 
  Auto vars:     Size  Location     Type
@@ -987,7 +987,7 @@ Total ram usage:        8 bytes
 
  *************** function _mode_TransLove *****************
  Defined at:
-		line 865 in file "main2.c"
+		line 858 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1024,7 +1024,7 @@ Total ram usage:       20 bytes
 
  *************** function _tc_int *****************
  Defined at:
-		line 1065 in file "main2.c"
+		line 1070 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1054,7 +1054,7 @@ Total ram usage:       18 bytes
 
  *************** function _update_time *****************
  Defined at:
-		line 1054 in file "main2.c"
+		line 1058 in file "main2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1091,7 +1091,7 @@ C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awmod.c
 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awmod.c estimated size: 113
 
 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
-		___wmul        		CODE           	1E80	0000	39
+		___wmul        		CODE           	1E7E	0000	39
 
 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c estimated size: 39
 
@@ -1099,14 +1099,14 @@ main2.c
 		_mode_snow     		CODE           	1626	0000	685
 		_display_num   		CODE           	1BF4	0000	133
 		_mode_tree     		CODE           	074C	0000	1477
-		_main          		CODE           	1DE8	0000	85
+		_main          		CODE           	1DE8	0000	83
 		_mode_clock    		CODE           	1252	0000	981
 		_tc_int        		CODE           	0008	0000	199
-		_update_time   		CODE           	1E3C	0000	69
+		_update_time   		CODE           	1E3A	0000	69
 		_mode_TransLove		CODE           	0D10	0000	1347
 		_mode_walker   		CODE           	0012	0000	1851
 
-main2.c estimated size: 6827
+main2.c estimated size: 6825
 
 shared
 		__initialization		CODE           	1B5A	0000	141

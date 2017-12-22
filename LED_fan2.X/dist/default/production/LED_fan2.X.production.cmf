@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
+$C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 E E 4 1
 reset_vec CODE 0 0 0 4 1
@@ -19,19 +19,19 @@ config CONFIG 0 300000 300000 E 1
 $dist/default/production\LED_fan2.X.production.obj
 cinit CODE 0 1B5A 1B5A 9A 1
 intcode_body CODE 0 1A9A 1A9A C0 1
-text0 CODE 0 1DE8 1DE8 54 1
+text0 CODE 0 1DE8 1DE8 52 1
 text1 CODE 0 12 12 73A 1
 text2 CODE 0 74C 74C 5C4 1
 text3 CODE 0 1626 1626 2AC 1
 text4 CODE 0 1252 1252 3D4 1
 text5 CODE 0 1BF4 1BF4 84 1
-text6 CODE 0 1E80 1E80 26 1
+text6 CODE 0 1E7E 1E7E 26 1
 text7 CODE 0 1D78 1D78 70 1
 text8 CODE 0 1C78 1C78 84 1
 text9 CODE 0 D10 D10 542 1
 nvCOMRAM COMRAM 1 67 67 2 1
-text11 CODE 0 1E3C 1E3C 44 1
-idataCOMRAM CODE 0 1EA6 1EA6 14 1
+text11 CODE 0 1E3A 1E3A 44 1
+idataCOMRAM CODE 0 1EA4 1EA4 14 1
 cstackCOMRAM COMRAM 1 1 1 4C 1
 cstackBANK3 BANK3 1 300 300 4E 1
 temp COMRAM 1 69 69 1 1
@@ -63,13 +63,13 @@ BANK4 400-4FF 1
 BANK5 500-5FF 1
 CONST 4-7 1
 CONST 1D77-1D77 1
-CONST 1EBA-7FFF 1
+CONST 1EB8-7FFF 1
 STACK 34E-5FF 1
 SMALLCONST 1D77-1D77 1
-SMALLCONST 1EBA-7FFF 1
+SMALLCONST 1EB8-7FFF 1
 CODE 4-7 1
 CODE 1D77-1D77 1
-CODE 1EBA-7FFF 1
+CODE 1EB8-7FFF 1
 BIGRAM 6A-7F 1
 BIGRAM FB-FF 1
 BIGRAM 1DA-1FF 1
@@ -78,7 +78,7 @@ BIGRAM 34E-5FF 1
 COMRAM 6A-7F 1
 EEDATA F00000-F000FF 1
 MEDIUMCONST 1D77-1D77 1
-MEDIUMCONST 1EBA-7FFF 1
+MEDIUMCONST 1EB8-7FFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -93,89 +93,98 @@ MEDIUMCONST 1EBA-7FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\LED_fan2.X.production.obj
-8 intcode CODE >944:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-8 intcode CODE >1065:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E3C text11 CODE >1054:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E3C text11 CODE >1055:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E4A text11 CODE >1056:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E52 text11 CODE >1057:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E60 text11 CODE >1058:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E68 text11 CODE >1059:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E76 text11 CODE >1060:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E7E text11 CODE >1061:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1A9A intcode_body CODE >1065:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1AE4 intcode_body CODE >1067:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1AEA intcode_body CODE >1068:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1AF2 intcode_body CODE >1069:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1AF4 intcode_body CODE >1070:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1AF8 intcode_body CODE >1071:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1B02 intcode_body CODE >1072:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1B0A intcode_body CODE >1073:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1B0E intcode_body CODE >1074:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1B0E intcode_body CODE >1076:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D10 text9 CODE >865:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D10 text9 CODE >873:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D18 text9 CODE >874:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D20 text9 CODE >875:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D28 text9 CODE >876:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D30 text9 CODE >877:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D32 text9 CODE >878:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D4E text9 CODE >879:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D56 text9 CODE >880:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D58 text9 CODE >881:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D60 text9 CODE >882:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D68 text9 CODE >883:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D70 text9 CODE >884:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D78 text9 CODE >885:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+8 intcode CODE >946:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+8 intcode CODE >1070:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E3A text11 CODE >1058:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E3A text11 CODE >1060:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E48 text11 CODE >1061:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E50 text11 CODE >1062:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E5E text11 CODE >1063:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E66 text11 CODE >1064:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E74 text11 CODE >1065:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E7C text11 CODE >1066:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1A9A intcode_body CODE >1070:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1AE4 intcode_body CODE >1072:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1AEA intcode_body CODE >1073:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1AF2 intcode_body CODE >1074:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1AF4 intcode_body CODE >1075:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1AF8 intcode_body CODE >1076:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1B02 intcode_body CODE >1077:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1B0A intcode_body CODE >1078:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1B0E intcode_body CODE >1079:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1B0E intcode_body CODE >1081:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D10 text9 CODE >858:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D10 text9 CODE >867:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D18 text9 CODE >868:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D20 text9 CODE >869:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D28 text9 CODE >870:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D30 text9 CODE >871:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D32 text9 CODE >872:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D4E text9 CODE >873:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D56 text9 CODE >874:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D58 text9 CODE >875:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D58 text9 CODE >876:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D60 text9 CODE >877:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D60 text9 CODE >878:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D68 text9 CODE >879:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D68 text9 CODE >880:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D70 text9 CODE >881:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D70 text9 CODE >882:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D78 text9 CODE >883:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D78 text9 CODE >884:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D80 text9 CODE >885:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
 D80 text9 CODE >886:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
 D88 text9 CODE >887:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D90 text9 CODE >888:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-D98 text9 CODE >889:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-DA0 text9 CODE >890:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-DB2 text9 CODE >880:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-DFA text9 CODE >891:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-DFA text9 CODE >892:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-E1A text9 CODE >893:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-E42 text9 CODE >894:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-E62 text9 CODE >895:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-E8A text9 CODE >896:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-EAA text9 CODE >897:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-ED2 text9 CODE >898:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-EF2 text9 CODE >899:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-F1A text9 CODE >900:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-F3A text9 CODE >901:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-F62 text9 CODE >902:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-F82 text9 CODE >903:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-FAA text9 CODE >904:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-FCA text9 CODE >905:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-FF2 text9 CODE >906:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1012 text9 CODE >907:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-103A text9 CODE >908:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-105A text9 CODE >909:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1082 text9 CODE >910:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-10A2 text9 CODE >911:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-10CA text9 CODE >912:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-10FE text9 CODE >913:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-112C text9 CODE >914:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-116C text9 CODE >915:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-119E text9 CODE >916:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-11A6 text9 CODE >917:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-11B6 text9 CODE >918:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-11BA text9 CODE >919:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-11C2 text9 CODE >920:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-11D2 text9 CODE >878:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-11E0 text9 CODE >923:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-11EA text9 CODE >924:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-11F2 text9 CODE >926:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-11FC text9 CODE >927:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-120A text9 CODE >928:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1210 text9 CODE >930:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1218 text9 CODE >932:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1228 text9 CODE >933:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1230 text9 CODE >934:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1238 text9 CODE >935:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1240 text9 CODE >877:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1240 text9 CODE >936:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D88 text9 CODE >888:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D90 text9 CODE >889:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D90 text9 CODE >890:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D98 text9 CODE >891:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+D98 text9 CODE >892:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+DA0 text9 CODE >893:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+DB2 text9 CODE >874:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+DFA text9 CODE >894:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+DFA text9 CODE >895:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+E1A text9 CODE >896:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+E42 text9 CODE >897:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+E62 text9 CODE >898:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+E8A text9 CODE >899:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+EAA text9 CODE >900:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+ED2 text9 CODE >901:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+EF2 text9 CODE >902:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+F1A text9 CODE >903:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+F3A text9 CODE >904:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+F62 text9 CODE >905:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+F82 text9 CODE >906:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+FAA text9 CODE >907:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+FCA text9 CODE >908:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+FF2 text9 CODE >909:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1012 text9 CODE >910:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+103A text9 CODE >911:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+105A text9 CODE >912:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1082 text9 CODE >913:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+10A2 text9 CODE >914:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+10CA text9 CODE >915:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+10FE text9 CODE >916:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+112C text9 CODE >917:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+116C text9 CODE >918:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+119E text9 CODE >919:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+11A6 text9 CODE >920:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+11B6 text9 CODE >921:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+11BA text9 CODE >922:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+11C2 text9 CODE >923:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+11D2 text9 CODE >872:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+11E0 text9 CODE >926:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+11EA text9 CODE >927:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+11F2 text9 CODE >929:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+11FC text9 CODE >930:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+120A text9 CODE >931:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1210 text9 CODE >933:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1218 text9 CODE >935:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1228 text9 CODE >936:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1230 text9 CODE >937:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1238 text9 CODE >938:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1240 text9 CODE >871:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1240 text9 CODE >939:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
 1C78 text8 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awdiv.c
 1C78 text8 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awdiv.c
 1C7C text8 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awdiv.c
@@ -226,516 +235,515 @@ FF2 text9 CODE >906:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
 1DD0 text7 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awmod.c
 1DD6 text7 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awmod.c
 1DDE text7 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awmod.c
-1E80 text6 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
-1E80 text6 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
-1E8C text6 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
-1E94 text6 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
-1E9C text6 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
-1BF4 text5 CODE >946:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1BF4 text5 CODE >947:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1C14 text5 CODE >948:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1C2C text5 CODE >949:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1C38 text5 CODE >950:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1C40 text5 CODE >951:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1C50 text5 CODE >952:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1C54 text5 CODE >953:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1C5C text5 CODE >954:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1C6C text5 CODE >948:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1C76 text5 CODE >956:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1252 text4 CODE >958:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1252 text4 CODE >959:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-125A text4 CODE >960:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1262 text4 CODE >961:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1264 text4 CODE >964:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1284 text4 CODE >965:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-12A4 text4 CODE >968:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-12AC text4 CODE >969:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-12BC text4 CODE >970:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-12C4 text4 CODE >971:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-12C8 text4 CODE >972:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-12C8 text4 CODE >973:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-12CC text4 CODE >974:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-12E8 text4 CODE >975:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-12EC text4 CODE >976:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1308 text4 CODE >977:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1310 text4 CODE >978:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1320 text4 CODE >981:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-132C text4 CODE >982:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1338 text4 CODE >985:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1340 text4 CODE >986:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1350 text4 CODE >987:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1354 text4 CODE >988:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1358 text4 CODE >989:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1358 text4 CODE >990:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-135C text4 CODE >991:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1378 text4 CODE >992:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-137C text4 CODE >993:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1398 text4 CODE >994:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-13A0 text4 CODE >995:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-13B0 text4 CODE >998:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-13BC text4 CODE >999:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-13C8 text4 CODE >1002:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-13D0 text4 CODE >1003:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-13E0 text4 CODE >1006:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-13E8 text4 CODE >1007:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1400 text4 CODE >1008:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-140C text4 CODE >1009:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-142A text4 CODE >1010:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1432 text4 CODE >1011:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1442 text4 CODE >1012:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1446 text4 CODE >1013:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-144A text4 CODE >1014:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1452 text4 CODE >1015:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1462 text4 CODE >1007:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1470 text4 CODE >1019:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1488 text4 CODE >1020:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-14A8 text4 CODE >1021:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-14C0 text4 CODE >1022:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-14CC text4 CODE >1023:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-14EA text4 CODE >1024:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-14F2 text4 CODE >1025:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1502 text4 CODE >1026:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1506 text4 CODE >1027:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-150A text4 CODE >1028:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1512 text4 CODE >1029:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1522 text4 CODE >1021:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1530 text4 CODE >1031:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1538 text4 CODE >1032:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1548 text4 CODE >1019:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1556 text4 CODE >1034:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-155E text4 CODE >1035:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-156E text4 CODE >1036:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1576 text4 CODE >1037:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-158E text4 CODE >1038:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-159A text4 CODE >1039:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-15B8 text4 CODE >1040:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-15C0 text4 CODE >1041:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-15D0 text4 CODE >1042:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-15D4 text4 CODE >1043:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-15D8 text4 CODE >1044:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-15E0 text4 CODE >1045:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-15F0 text4 CODE >1037:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-15FE text4 CODE >1048:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1606 text4 CODE >1049:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1616 text4 CODE >961:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1626 text3 CODE >474:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1626 text3 CODE >478:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-162E text3 CODE >479:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1636 text3 CODE >480:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-163E text3 CODE >481:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1646 text3 CODE >483:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-164E text3 CODE >484:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1650 text3 CODE >486:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1678 text3 CODE >487:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1690 text3 CODE >488:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-169C text3 CODE >489:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-16BC text3 CODE >490:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-16CE text3 CODE >491:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-16D0 text3 CODE >493:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-16D8 text3 CODE >494:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-16E8 text3 CODE >495:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-16EC text3 CODE >496:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-16EE text3 CODE >497:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-16F6 text3 CODE >498:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1706 text3 CODE >487:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1714 text3 CODE >500:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-172C text3 CODE >501:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-173A text3 CODE >502:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1742 text3 CODE >505:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-174A text3 CODE >506:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1762 text3 CODE >507:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-176E text3 CODE >508:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-178E text3 CODE >509:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1796 text3 CODE >510:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-17A6 text3 CODE >511:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-17AA text3 CODE >512:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-17AC text3 CODE >513:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-17B4 text3 CODE >514:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-17C4 text3 CODE >506:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-17D2 text3 CODE >518:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-17F2 text3 CODE >519:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-180A text3 CODE >520:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1816 text3 CODE >521:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1836 text3 CODE >523:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-183E text3 CODE >524:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-184E text3 CODE >525:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1852 text3 CODE >526:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1854 text3 CODE >527:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-185C text3 CODE >528:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-186C text3 CODE >519:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-187A text3 CODE >530:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1892 text3 CODE >531:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-18A0 text3 CODE >532:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-18A8 text3 CODE >534:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-18B0 text3 CODE >535:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-18C0 text3 CODE >484:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-74C text2 CODE >539:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-74C text2 CODE >541:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-75E text2 CODE >544:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-768 text2 CODE >545:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-770 text2 CODE >546:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-772 text2 CODE >547:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-77A text2 CODE >548:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-77C text2 CODE >549:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-784 text2 CODE >550:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-79C text2 CODE >551:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-7A4 text2 CODE >552:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-7BC text2 CODE >553:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-7CC text2 CODE >554:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-7D8 text2 CODE >555:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-7F6 text2 CODE >556:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-7F8 text2 CODE >557:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-7FC text2 CODE >558:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-800 text2 CODE >559:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-808 text2 CODE >560:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-818 text2 CODE >562:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-820 text2 CODE >563:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-830 text2 CODE >564:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-838 text2 CODE >565:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-840 text2 CODE >566:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-850 text2 CODE >552:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-85E text2 CODE >568:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-866 text2 CODE >569:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-876 text2 CODE >550:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-88C text2 CODE >548:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-89C text2 CODE >572:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-8A4 text2 CODE >573:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-8AC text2 CODE >574:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-8AE text2 CODE >575:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-8B6 text2 CODE >576:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-8D2 text2 CODE >577:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-8DA text2 CODE >578:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-8F2 text2 CODE >579:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-902 text2 CODE >580:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-90E text2 CODE >581:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-92C text2 CODE >582:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-92E text2 CODE >583:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-932 text2 CODE >584:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-936 text2 CODE >585:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-93E text2 CODE >586:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-94E text2 CODE >588:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-956 text2 CODE >589:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-966 text2 CODE >590:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-96E text2 CODE >591:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-976 text2 CODE >592:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-986 text2 CODE >578:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-994 text2 CODE >594:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-99C text2 CODE >595:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-9A4 text2 CODE >596:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-9A8 text2 CODE >597:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-9B2 text2 CODE >598:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-9B2 text2 CODE >599:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-9BA text2 CODE >600:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-9C2 text2 CODE >601:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-9C2 text2 CODE >602:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-9D2 text2 CODE >576:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-9E8 text2 CODE >574:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-9FA text2 CODE >606:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-9FA text2 CODE >607:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A02 text2 CODE >608:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A0A text2 CODE >610:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A0A text2 CODE >611:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A22 text2 CODE >612:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A32 text2 CODE >613:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A34 text2 CODE >614:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A34 text2 CODE >615:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A4C text2 CODE >617:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A4E text2 CODE >605:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A76 text2 CODE >546:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A76 text2 CODE >617:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A86 text2 CODE >619:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A8E text2 CODE >620:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A90 text2 CODE >621:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A98 text2 CODE >622:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-AB0 text2 CODE >623:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-ABC text2 CODE >624:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-ADA text2 CODE >625:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-AE2 text2 CODE >626:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-AF2 text2 CODE >627:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-AFA text2 CODE >628:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B02 text2 CODE >629:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B12 text2 CODE >622:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B20 text2 CODE >631:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B28 text2 CODE >632:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B38 text2 CODE >620:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B48 text2 CODE >634:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B50 text2 CODE >635:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B52 text2 CODE >636:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B5A text2 CODE >637:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B72 text2 CODE >638:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B7E text2 CODE >639:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B9C text2 CODE >640:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-BA4 text2 CODE >641:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-BB4 text2 CODE >642:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-BBC text2 CODE >643:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-BC4 text2 CODE >644:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-BD4 text2 CODE >637:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-BE2 text2 CODE >646:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-BEA text2 CODE >647:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-BFA text2 CODE >635:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C0A text2 CODE >649:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C12 text2 CODE >650:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C1A text2 CODE >651:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C1C text2 CODE >652:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C2C text2 CODE >653:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C30 text2 CODE >654:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C48 text2 CODE >655:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C50 text2 CODE >656:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C68 text2 CODE >657:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C74 text2 CODE >658:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C92 text2 CODE >659:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-C9A text2 CODE >660:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-CAA text2 CODE >661:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-CB2 text2 CODE >662:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-CBA text2 CODE >663:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-CCA text2 CODE >656:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-CD8 text2 CODE >665:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-CE0 text2 CODE >666:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-CF0 text2 CODE >654:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-CFE text2 CODE >651:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-CFE text2 CODE >668:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-12 text1 CODE >671:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-12 text1 CODE >676:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-24 text1 CODE >677:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-2E text1 CODE >678:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-36 text1 CODE >679:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-3E text1 CODE >680:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-46 text1 CODE >681:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-4E text1 CODE >682:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-56 text1 CODE >683:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-5E text1 CODE >684:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-66 text1 CODE >688:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-6E text1 CODE >689:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-70 text1 CODE >690:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-7E text1 CODE >691:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-88 text1 CODE >692:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-88 text1 CODE >693:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-90 text1 CODE >694:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A0 text1 CODE >696:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-A8 text1 CODE >697:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B0 text1 CODE >699:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B2 text1 CODE >700:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-B2 text1 CODE >701:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-BA text1 CODE >702:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-BA text1 CODE >703:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-CA text1 CODE >704:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-CC text1 CODE >699:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-EA text1 CODE >704:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-EA text1 CODE >706:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-100 text1 CODE >707:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-108 text1 CODE >708:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-110 text1 CODE >709:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-118 text1 CODE >710:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-118 text1 CODE >714:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-134 text1 CODE >717:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-134 text1 CODE >718:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-13C text1 CODE >719:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-14E text1 CODE >721:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-14E text1 CODE >722:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-156 text1 CODE >723:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-168 text1 CODE >725:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-168 text1 CODE >726:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-170 text1 CODE >727:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-182 text1 CODE >729:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-182 text1 CODE >730:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-18A text1 CODE >731:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-19C text1 CODE >733:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-19C text1 CODE >734:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1A4 text1 CODE >735:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1B6 text1 CODE >716:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E6 text1 CODE >737:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E6 text1 CODE >738:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-208 text1 CODE >739:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-220 text1 CODE >740:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-23A text1 CODE >741:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-246 text1 CODE >742:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-260 text1 CODE >744:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-260 text1 CODE >745:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-264 text1 CODE >746:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-268 text1 CODE >748:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-270 text1 CODE >749:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-280 text1 CODE >750:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-284 text1 CODE >751:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-288 text1 CODE >752:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-290 text1 CODE >753:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-2A0 text1 CODE >739:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-2AE text1 CODE >757:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-2BE text1 CODE >758:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-2D0 text1 CODE >759:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-304 text1 CODE >760:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-326 text1 CODE >761:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-326 text1 CODE >762:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-348 text1 CODE >763:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-350 text1 CODE >764:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-386 text1 CODE >765:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-3BE text1 CODE >766:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-3BE text1 CODE >767:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-3F4 text1 CODE >769:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-416 text1 CODE >714:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-424 text1 CODE >772:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-436 text1 CODE >773:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-43E text1 CODE >774:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-44C text1 CODE >775:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-454 text1 CODE >779:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-464 text1 CODE >780:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-46C text1 CODE >781:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-474 text1 CODE >782:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-47C text1 CODE >783:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-480 text1 CODE >784:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-498 text1 CODE >785:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-4B2 text1 CODE >784:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-4B8 text1 CODE >787:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-4B8 text1 CODE >789:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-4C8 text1 CODE >790:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-4C8 text1 CODE >792:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-4D0 text1 CODE >793:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-4D0 text1 CODE >794:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-4D8 text1 CODE >796:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-4DA text1 CODE >786:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-50A text1 CODE >689:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-50A text1 CODE >796:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-51A text1 CODE >801:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-522 text1 CODE >802:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-52A text1 CODE >803:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-52C text1 CODE >804:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-534 text1 CODE >805:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-544 text1 CODE >806:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-54E text1 CODE >807:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-54E text1 CODE >808:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-556 text1 CODE >809:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-566 text1 CODE >812:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-56E text1 CODE >813:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-57E text1 CODE >815:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-5A0 text1 CODE >816:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-5B8 text1 CODE >817:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-5C4 text1 CODE >818:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-5DE text1 CODE >819:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-5E6 text1 CODE >820:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-5F6 text1 CODE >821:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-5FA text1 CODE >822:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-5FE text1 CODE >823:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-606 text1 CODE >825:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-616 text1 CODE >816:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-624 text1 CODE >829:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-62C text1 CODE >830:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-634 text1 CODE >831:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-644 text1 CODE >833:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-65C text1 CODE >834:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-664 text1 CODE >835:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-670 text1 CODE >836:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-68A text1 CODE >837:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-692 text1 CODE >838:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-6A2 text1 CODE >839:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-6A6 text1 CODE >840:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-6AA text1 CODE >841:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-6B2 text1 CODE >842:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-6C2 text1 CODE >833:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-6C8 text1 CODE >844:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-6D8 text1 CODE >845:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-6EA text1 CODE >846:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-6F2 text1 CODE >847:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-700 text1 CODE >848:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-708 text1 CODE >850:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-70A text1 CODE >851:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-712 text1 CODE >852:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-722 text1 CODE >855:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-72A text1 CODE >856:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-73A text1 CODE >803:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1DE8 text0 CODE >1078:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1DE8 text0 CODE >1079:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1DEE text0 CODE >1082:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1DF0 text0 CODE >1083:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1DF4 text0 CODE >1084:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1DFC text0 CODE >1085:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1DFE text0 CODE >1086:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E00 text0 CODE >1087:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E02 text0 CODE >1088:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E04 text0 CODE >1091:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E0C text0 CODE >1092:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E14 text0 CODE >1094:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E18 text0 CODE >1095:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E1C text0 CODE >1096:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E20 text0 CODE >1097:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E24 text0 CODE >1099:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E24 text0 CODE >1100:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E28 text0 CODE >1101:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E2C text0 CODE >1102:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E30 text0 CODE >1103:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E34 text0 CODE >1104:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E38 text0 CODE >1099:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1E3A text0 CODE >1106:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
-1B5A cinit CODE >850:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B5A cinit CODE >852:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B5A cinit CODE >855:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B5A cinit CODE >1006:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B5C cinit CODE >1007:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B5E cinit CODE >1008:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B60 cinit CODE >1009:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B62 cinit CODE >1010:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B64 cinit CODE >1011:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B66 cinit CODE >1012:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B6A cinit CODE >1013:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B6E cinit CODE >1014:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B6E cinit CODE >1015:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B70 cinit CODE >1016:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B74 cinit CODE >1017:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B76 cinit CODE >1018:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B78 cinit CODE >1019:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B7A cinit CODE >1023:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B7C cinit CODE >1024:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B7E cinit CODE >1025:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B80 cinit CODE >1026:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B82 cinit CODE >1027:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B84 cinit CODE >1028:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B86 cinit CODE >1029:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B8A cinit CODE >1030:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B8E cinit CODE >1031:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B8E cinit CODE >1032:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B90 cinit CODE >1033:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B94 cinit CODE >1034:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B96 cinit CODE >1035:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B98 cinit CODE >1036:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B9A cinit CODE >1040:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B9C cinit CODE >1041:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1B9E cinit CODE >1042:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BA0 cinit CODE >1043:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BA2 cinit CODE >1044:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BA4 cinit CODE >1045:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BA6 cinit CODE >1046:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BAA cinit CODE >1047:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BAE cinit CODE >1048:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BAE cinit CODE >1049:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BB0 cinit CODE >1050:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BB4 cinit CODE >1051:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BB6 cinit CODE >1052:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BB8 cinit CODE >1053:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BBA cinit CODE >1057:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BBC cinit CODE >1058:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BBE cinit CODE >1059:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BC0 cinit CODE >1060:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BC2 cinit CODE >1061:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BC4 cinit CODE >1062:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BC6 cinit CODE >1063:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BCA cinit CODE >1064:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BCE cinit CODE >1065:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BCE cinit CODE >1066:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BD0 cinit CODE >1067:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BD4 cinit CODE >1068:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BD6 cinit CODE >1069:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BD8 cinit CODE >1070:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BDA cinit CODE >1074:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BDC cinit CODE >1075:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BDE cinit CODE >1076:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BE0 cinit CODE >1077:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BE2 cinit CODE >1078:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BE4 cinit CODE >1079:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BE6 cinit CODE >1085:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BE6 cinit CODE >1087:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BE8 cinit CODE >1088:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BEA cinit CODE >1090:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BEC cinit CODE >1091:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BEE cinit CODE >1092:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
-1BF0 cinit CODE >1093:C:\Users\Lenovo\AppData\Local\Temp\s1a4.
+1E7E text6 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+1E7E text6 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+1E8A text6 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+1E92 text6 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+1E9A text6 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+1BF4 text5 CODE >948:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1BF4 text5 CODE >950:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1C14 text5 CODE >951:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1C2C text5 CODE >952:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1C38 text5 CODE >953:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1C40 text5 CODE >954:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1C50 text5 CODE >955:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1C54 text5 CODE >956:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1C5C text5 CODE >957:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1C6C text5 CODE >951:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1C76 text5 CODE >959:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1252 text4 CODE >961:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1252 text4 CODE >963:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+125A text4 CODE >964:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1262 text4 CODE >965:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1264 text4 CODE >968:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1284 text4 CODE >969:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+12A4 text4 CODE >972:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+12AC text4 CODE >973:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+12BC text4 CODE >974:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+12C4 text4 CODE >975:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+12C8 text4 CODE >976:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+12C8 text4 CODE >977:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+12CC text4 CODE >978:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+12E8 text4 CODE >979:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+12EC text4 CODE >980:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1308 text4 CODE >981:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1310 text4 CODE >982:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1320 text4 CODE >985:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+132C text4 CODE >986:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1338 text4 CODE >989:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1340 text4 CODE >990:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1350 text4 CODE >991:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1354 text4 CODE >992:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1358 text4 CODE >993:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1358 text4 CODE >994:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+135C text4 CODE >995:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1378 text4 CODE >996:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+137C text4 CODE >997:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1398 text4 CODE >998:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+13A0 text4 CODE >999:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+13B0 text4 CODE >1002:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+13BC text4 CODE >1003:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+13C8 text4 CODE >1006:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+13D0 text4 CODE >1007:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+13E0 text4 CODE >1010:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+13E8 text4 CODE >1011:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1400 text4 CODE >1012:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+140C text4 CODE >1013:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+142A text4 CODE >1014:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1432 text4 CODE >1015:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1442 text4 CODE >1016:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1446 text4 CODE >1017:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+144A text4 CODE >1018:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1452 text4 CODE >1019:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1462 text4 CODE >1011:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1470 text4 CODE >1023:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1488 text4 CODE >1024:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+14A8 text4 CODE >1025:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+14C0 text4 CODE >1026:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+14CC text4 CODE >1027:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+14EA text4 CODE >1028:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+14F2 text4 CODE >1029:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1502 text4 CODE >1030:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1506 text4 CODE >1031:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+150A text4 CODE >1032:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1512 text4 CODE >1033:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1522 text4 CODE >1025:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1530 text4 CODE >1035:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1538 text4 CODE >1036:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1548 text4 CODE >1023:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1556 text4 CODE >1038:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+155E text4 CODE >1039:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+156E text4 CODE >1040:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1576 text4 CODE >1041:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+158E text4 CODE >1042:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+159A text4 CODE >1043:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+15B8 text4 CODE >1044:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+15C0 text4 CODE >1045:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+15D0 text4 CODE >1046:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+15D4 text4 CODE >1047:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+15D8 text4 CODE >1048:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+15E0 text4 CODE >1049:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+15F0 text4 CODE >1041:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+15FE text4 CODE >1052:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1606 text4 CODE >1053:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1616 text4 CODE >965:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1626 text3 CODE >465:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1626 text3 CODE >470:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+162E text3 CODE >471:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1636 text3 CODE >472:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+163E text3 CODE >473:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1646 text3 CODE >475:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+164E text3 CODE >476:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1650 text3 CODE >478:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1678 text3 CODE >479:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1690 text3 CODE >480:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+169C text3 CODE >481:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+16BC text3 CODE >482:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+16CE text3 CODE >483:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+16D0 text3 CODE >485:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+16D8 text3 CODE >486:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+16E8 text3 CODE >487:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+16EC text3 CODE >488:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+16EE text3 CODE >489:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+16F6 text3 CODE >490:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1706 text3 CODE >479:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1714 text3 CODE >492:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+172C text3 CODE >493:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+173A text3 CODE >494:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1742 text3 CODE >497:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+174A text3 CODE >498:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1762 text3 CODE >499:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+176E text3 CODE >500:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+178E text3 CODE >501:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1796 text3 CODE >502:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+17A6 text3 CODE >503:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+17AA text3 CODE >504:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+17AC text3 CODE >505:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+17B4 text3 CODE >506:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+17C4 text3 CODE >498:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+17D2 text3 CODE >510:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+17F2 text3 CODE >511:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+180A text3 CODE >512:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1816 text3 CODE >513:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1836 text3 CODE >515:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+183E text3 CODE >516:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+184E text3 CODE >517:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1852 text3 CODE >518:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1854 text3 CODE >519:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+185C text3 CODE >520:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+186C text3 CODE >511:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+187A text3 CODE >522:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1892 text3 CODE >523:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+18A0 text3 CODE >524:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+18A8 text3 CODE >526:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+18B0 text3 CODE >527:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+18C0 text3 CODE >476:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+74C text2 CODE >531:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+74C text2 CODE >534:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+75E text2 CODE >537:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+768 text2 CODE >538:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+770 text2 CODE >539:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+772 text2 CODE >540:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+77A text2 CODE >541:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+77C text2 CODE >542:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+784 text2 CODE >543:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+79C text2 CODE >544:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+7A4 text2 CODE >545:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+7BC text2 CODE >546:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+7CC text2 CODE >547:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+7D8 text2 CODE >548:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+7F6 text2 CODE >549:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+7F8 text2 CODE >550:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+7FC text2 CODE >551:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+800 text2 CODE >552:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+808 text2 CODE >553:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+818 text2 CODE >555:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+820 text2 CODE >556:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+830 text2 CODE >557:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+838 text2 CODE >558:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+840 text2 CODE >559:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+850 text2 CODE >545:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+85E text2 CODE >561:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+866 text2 CODE >562:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+876 text2 CODE >543:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+88C text2 CODE >541:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+89C text2 CODE >565:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+8A4 text2 CODE >566:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+8AC text2 CODE >567:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+8AE text2 CODE >568:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+8B6 text2 CODE >569:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+8D2 text2 CODE >570:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+8DA text2 CODE >571:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+8F2 text2 CODE >572:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+902 text2 CODE >573:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+90E text2 CODE >574:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+92C text2 CODE >575:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+92E text2 CODE >576:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+932 text2 CODE >577:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+936 text2 CODE >578:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+93E text2 CODE >579:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+94E text2 CODE >581:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+956 text2 CODE >582:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+966 text2 CODE >583:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+96E text2 CODE >584:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+976 text2 CODE >585:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+986 text2 CODE >571:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+994 text2 CODE >587:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+99C text2 CODE >588:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+9A4 text2 CODE >589:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+9A8 text2 CODE >590:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+9B2 text2 CODE >591:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+9B2 text2 CODE >592:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+9BA text2 CODE >593:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+9C2 text2 CODE >594:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+9C2 text2 CODE >595:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+9D2 text2 CODE >569:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+9E8 text2 CODE >567:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+9FA text2 CODE >599:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+9FA text2 CODE >600:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A02 text2 CODE >601:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A0A text2 CODE >603:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A0A text2 CODE >604:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A22 text2 CODE >605:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A32 text2 CODE >606:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A34 text2 CODE >607:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A34 text2 CODE >608:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A4C text2 CODE >610:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A4E text2 CODE >598:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A76 text2 CODE >539:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A76 text2 CODE >610:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A86 text2 CODE >612:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A8E text2 CODE >613:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A90 text2 CODE >614:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A98 text2 CODE >615:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+AB0 text2 CODE >616:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+ABC text2 CODE >617:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+ADA text2 CODE >618:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+AE2 text2 CODE >619:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+AF2 text2 CODE >620:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+AFA text2 CODE >621:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B02 text2 CODE >622:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B12 text2 CODE >615:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B20 text2 CODE >624:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B28 text2 CODE >625:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B38 text2 CODE >613:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B48 text2 CODE >627:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B50 text2 CODE >628:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B52 text2 CODE >629:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B5A text2 CODE >630:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B72 text2 CODE >631:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B7E text2 CODE >632:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B9C text2 CODE >633:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+BA4 text2 CODE >634:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+BB4 text2 CODE >635:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+BBC text2 CODE >636:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+BC4 text2 CODE >637:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+BD4 text2 CODE >630:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+BE2 text2 CODE >639:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+BEA text2 CODE >640:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+BFA text2 CODE >628:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C0A text2 CODE >642:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C12 text2 CODE >643:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C1A text2 CODE >644:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C1C text2 CODE >645:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C2C text2 CODE >646:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C30 text2 CODE >647:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C48 text2 CODE >648:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C50 text2 CODE >649:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C68 text2 CODE >650:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C74 text2 CODE >651:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C92 text2 CODE >652:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+C9A text2 CODE >653:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+CAA text2 CODE >654:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+CB2 text2 CODE >655:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+CBA text2 CODE >656:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+CCA text2 CODE >649:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+CD8 text2 CODE >658:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+CE0 text2 CODE >659:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+CF0 text2 CODE >647:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+CFE text2 CODE >644:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+CFE text2 CODE >661:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+12 text1 CODE >664:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+12 text1 CODE >670:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+24 text1 CODE >671:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+2E text1 CODE >672:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+36 text1 CODE >673:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+3E text1 CODE >674:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+46 text1 CODE >675:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+4E text1 CODE >676:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+56 text1 CODE >677:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+5E text1 CODE >678:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+66 text1 CODE >682:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+6E text1 CODE >683:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+70 text1 CODE >684:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+7E text1 CODE >685:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+88 text1 CODE >686:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+88 text1 CODE >687:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+90 text1 CODE >688:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A0 text1 CODE >690:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+A8 text1 CODE >691:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B0 text1 CODE >693:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B2 text1 CODE >694:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+B2 text1 CODE >695:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+BA text1 CODE >696:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+BA text1 CODE >697:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+CA text1 CODE >698:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+CC text1 CODE >693:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+EA text1 CODE >698:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+EA text1 CODE >700:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+100 text1 CODE >701:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+108 text1 CODE >702:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+110 text1 CODE >703:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+118 text1 CODE >704:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+118 text1 CODE >708:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+134 text1 CODE >711:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+134 text1 CODE >712:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+13C text1 CODE >713:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+14E text1 CODE >715:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+14E text1 CODE >716:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+156 text1 CODE >717:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+168 text1 CODE >719:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+168 text1 CODE >720:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+170 text1 CODE >721:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+182 text1 CODE >723:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+182 text1 CODE >724:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+18A text1 CODE >725:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+19C text1 CODE >727:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+19C text1 CODE >728:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1A4 text1 CODE >729:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1B6 text1 CODE >710:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E6 text1 CODE >731:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E6 text1 CODE >732:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+208 text1 CODE >733:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+220 text1 CODE >734:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+23A text1 CODE >735:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+246 text1 CODE >736:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+260 text1 CODE >737:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+260 text1 CODE >738:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+264 text1 CODE >739:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+268 text1 CODE >741:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+270 text1 CODE >742:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+280 text1 CODE >743:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+284 text1 CODE >744:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+288 text1 CODE >745:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+290 text1 CODE >746:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+2A0 text1 CODE >733:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+2AE text1 CODE >750:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+2BE text1 CODE >751:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+2D0 text1 CODE >752:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+304 text1 CODE >753:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+326 text1 CODE >754:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+326 text1 CODE >755:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+348 text1 CODE >756:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+350 text1 CODE >757:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+386 text1 CODE >758:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+3BE text1 CODE >759:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+3BE text1 CODE >760:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+3F4 text1 CODE >762:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+416 text1 CODE >708:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+424 text1 CODE >765:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+436 text1 CODE >766:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+43E text1 CODE >767:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+44C text1 CODE >768:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+454 text1 CODE >772:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+464 text1 CODE >773:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+46C text1 CODE >774:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+474 text1 CODE >775:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+47C text1 CODE >776:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+480 text1 CODE >777:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+498 text1 CODE >778:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+4B2 text1 CODE >777:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+4B8 text1 CODE >780:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+4B8 text1 CODE >782:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+4C8 text1 CODE >783:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+4C8 text1 CODE >785:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+4D0 text1 CODE >786:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+4D0 text1 CODE >787:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+4D8 text1 CODE >789:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+4DA text1 CODE >779:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+50A text1 CODE >683:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+50A text1 CODE >789:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+51A text1 CODE >794:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+522 text1 CODE >795:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+52A text1 CODE >796:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+52C text1 CODE >797:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+534 text1 CODE >798:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+544 text1 CODE >799:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+54E text1 CODE >800:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+54E text1 CODE >801:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+556 text1 CODE >802:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+566 text1 CODE >805:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+56E text1 CODE >806:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+57E text1 CODE >808:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+5A0 text1 CODE >809:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+5B8 text1 CODE >810:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+5C4 text1 CODE >811:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+5DE text1 CODE >812:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+5E6 text1 CODE >813:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+5F6 text1 CODE >814:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+5FA text1 CODE >815:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+5FE text1 CODE >816:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+606 text1 CODE >818:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+616 text1 CODE >809:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+624 text1 CODE >822:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+62C text1 CODE >823:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+634 text1 CODE >824:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+644 text1 CODE >826:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+65C text1 CODE >827:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+664 text1 CODE >828:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+670 text1 CODE >829:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+68A text1 CODE >830:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+692 text1 CODE >831:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+6A2 text1 CODE >832:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+6A6 text1 CODE >833:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+6AA text1 CODE >834:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+6B2 text1 CODE >835:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+6C2 text1 CODE >826:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+6C8 text1 CODE >837:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+6D8 text1 CODE >838:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+6EA text1 CODE >839:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+6F2 text1 CODE >840:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+700 text1 CODE >841:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+708 text1 CODE >843:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+70A text1 CODE >844:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+712 text1 CODE >845:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+722 text1 CODE >848:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+72A text1 CODE >849:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+73A text1 CODE >796:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1DE8 text0 CODE >1083:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1DE8 text0 CODE >1085:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1DEE text0 CODE >1088:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1DF0 text0 CODE >1089:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1DF4 text0 CODE >1090:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1DFC text0 CODE >1091:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1DFE text0 CODE >1092:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E00 text0 CODE >1093:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E02 text0 CODE >1094:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E04 text0 CODE >1097:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E0C text0 CODE >1098:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E14 text0 CODE >1100:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E18 text0 CODE >1101:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E1C text0 CODE >1102:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E20 text0 CODE >1103:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E24 text0 CODE >1105:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E24 text0 CODE >1106:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E28 text0 CODE >1107:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E2C text0 CODE >1108:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E30 text0 CODE >1109:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E34 text0 CODE >1110:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1E38 text0 CODE >1105:C:\Users\Lenovo\MPLABXProjects\TransLove\LED_fan2.X\main2.c
+1B5A cinit CODE >850:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B5A cinit CODE >852:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B5A cinit CODE >855:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B5A cinit CODE >1006:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B5C cinit CODE >1007:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B5E cinit CODE >1008:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B60 cinit CODE >1009:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B62 cinit CODE >1010:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B64 cinit CODE >1011:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B66 cinit CODE >1012:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B6A cinit CODE >1013:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B6E cinit CODE >1014:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B6E cinit CODE >1015:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B70 cinit CODE >1016:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B74 cinit CODE >1017:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B76 cinit CODE >1018:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B78 cinit CODE >1019:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B7A cinit CODE >1023:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B7C cinit CODE >1024:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B7E cinit CODE >1025:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B80 cinit CODE >1026:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B82 cinit CODE >1027:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B84 cinit CODE >1028:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B86 cinit CODE >1029:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B8A cinit CODE >1030:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B8E cinit CODE >1031:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B8E cinit CODE >1032:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B90 cinit CODE >1033:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B94 cinit CODE >1034:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B96 cinit CODE >1035:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B98 cinit CODE >1036:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B9A cinit CODE >1040:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B9C cinit CODE >1041:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1B9E cinit CODE >1042:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BA0 cinit CODE >1043:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BA2 cinit CODE >1044:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BA4 cinit CODE >1045:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BA6 cinit CODE >1046:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BAA cinit CODE >1047:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BAE cinit CODE >1048:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BAE cinit CODE >1049:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BB0 cinit CODE >1050:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BB4 cinit CODE >1051:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BB6 cinit CODE >1052:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BB8 cinit CODE >1053:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BBA cinit CODE >1057:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BBC cinit CODE >1058:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BBE cinit CODE >1059:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BC0 cinit CODE >1060:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BC2 cinit CODE >1061:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BC4 cinit CODE >1062:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BC6 cinit CODE >1063:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BCA cinit CODE >1064:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BCE cinit CODE >1065:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BCE cinit CODE >1066:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BD0 cinit CODE >1067:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BD4 cinit CODE >1068:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BD6 cinit CODE >1069:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BD8 cinit CODE >1070:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BDA cinit CODE >1074:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BDC cinit CODE >1075:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BDE cinit CODE >1076:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BE0 cinit CODE >1077:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BE2 cinit CODE >1078:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BE4 cinit CODE >1079:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BE6 cinit CODE >1085:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BE6 cinit CODE >1087:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BE8 cinit CODE >1088:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BEA cinit CODE >1090:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BEC cinit CODE >1091:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BEE cinit CODE >1092:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
+1BF0 cinit CODE >1093:C:\Users\Lenovo\AppData\Local\Temp\s8ek.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -773,7 +781,7 @@ __HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\LED_fan2.X.production
 __HidataBANK2 0 0 ABS 0 idataBANK2 dist/default/production\LED_fan2.X.production.obj
 __size_of_display_num 0 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\LED_fan2.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\LED_fan2.X.production.obj
 mode_clock@dark_494 37 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 mode_clock@dark_498 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
@@ -783,18 +791,18 @@ __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\LED_fan2.X.pro
 _LATA F89 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 _LATD F8C 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 _TMR1 FCE 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
+___sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
 _face E1 0 BANK0 1 dataBANK0 dist/default/production\LED_fan2.X.production.obj
 _love 8C 0 BANK0 1 dataBANK0 dist/default/production\LED_fan2.X.production.obj
 _main 1DE8 0 CODE 0 text0 dist/default/production\LED_fan2.X.production.obj
 _tree B7 0 BANK0 1 dataBANK0 dist/default/production\LED_fan2.X.production.obj
 btemp 69 0 COMRAM 1 temp dist/default/production\LED_fan2.X.production.obj
-start E 0 CODE 0 init C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
+start E 0 CODE 0 init C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 __size_of___awmod 0 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\LED_fan2.X.production.obj
-_update_time 1E3C 0 CODE 0 text11 dist/default/production\LED_fan2.X.production.obj
+_update_time 1E3A 0 CODE 0 text11 dist/default/production\LED_fan2.X.production.obj
 mode_walker@dark_455 316 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_walker@dark_458 306 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_walker@dark_459 30E 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
@@ -814,11 +822,11 @@ __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\LED_fan2.X.production
 display_num@i 23 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 display_num@n 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 mode_walker@update_next_time 312 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
-__accesstop 80 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
-intlevel0 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
-intlevel1 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
-intlevel2 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
-intlevel3 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
+__accesstop 80 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+intlevel0 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+intlevel1 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+intlevel2 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+intlevel3 0 0 CODE 0 text C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
 mode_tree@show_417 326 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_tree@show_423 32A 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_tree@show_427 32E 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
@@ -833,23 +841,23 @@ mode_snow@count_elk 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\LED_fan2.X.production.obj
 ___awdiv@sign 18 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\LED_fan2.X.production.obj
-__pidataCOMRAM 1EA6 0 CODE 0 idataCOMRAM dist/default/production\LED_fan2.X.production.obj
+__pidataCOMRAM 1EA4 0 CODE 0 idataCOMRAM dist/default/production\LED_fan2.X.production.obj
 ___wmul@multiplicand 15 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 _mode_clock 1252 0 CODE 0 text4 dist/default/production\LED_fan2.X.production.obj
 ___awdiv@dividend 13 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
 mode_walker@dark 302 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_walker@four 322 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_walker@move 332 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_walker@show 32E 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\LED_fan2.X.production.obj
 mode_tree@dark_421 30C 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_tree@dark_426 310 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_tree@dark_430 314 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_tree@dark_436 318 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\LED_fan2.X.production.obj
-__end_of___wmul 1EA6 0 CODE 0 text6 dist/default/production\LED_fan2.X.production.obj
+__end_of___wmul 1EA4 0 CODE 0 text6 dist/default/production\LED_fan2.X.production.obj
 mode_tree@dark 306 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_tree@move 324 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_tree@show 320 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
@@ -923,7 +931,7 @@ mode_walker@bright_461 308 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan
 mode_walker@state_change_cycle 30C 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\LED_fan2.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\LED_fan2.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
 _snow_car 200 0 BANK2 1 dataBANK2 dist/default/production\LED_fan2.X.production.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\LED_fan2.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\LED_fan2.X.production.obj
@@ -970,10 +978,10 @@ __Lrbit 0 0 COMRAM 1 rbit dist/default/production\LED_fan2.X.production.obj
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\LED_fan2.X.production.obj
 __Ltemp 69 0 COMRAM 1 temp dist/default/production\LED_fan2.X.production.obj
 __Ltext 0 0 ABS 0 text dist/default/production\LED_fan2.X.production.obj
-___wmul 1E80 0 CODE 0 text6 dist/default/production\LED_fan2.X.production.obj
+___wmul 1E7E 0 CODE 0 text6 dist/default/production\LED_fan2.X.production.obj
 __LcstackBANK3 0 0 ABS 0 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 int$flags 69 0 COMRAM 1 temp dist/default/production\LED_fan2.X.production.obj
-__end_of_update_time 1E80 0 CODE 0 text11 dist/default/production\LED_fan2.X.production.obj
+__end_of_update_time 1E7E 0 CODE 0 text11 dist/default/production\LED_fan2.X.production.obj
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 __Hintret 0 0 ABS 0 intret dist/default/production\LED_fan2.X.production.obj
 __Hirdata 0 0 CODE 0 irdata dist/default/production\LED_fan2.X.production.obj
@@ -1019,7 +1027,7 @@ __Htext11 0 0 ABS 0 text11 dist/default/production\LED_fan2.X.production.obj
 mode_TransLove@bright 19 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 ___awmod@counter 17 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 _PIE1bits F9D 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
-__ptext11 1E3C 0 CODE 0 text11 dist/default/production\LED_fan2.X.production.obj
+__ptext11 1E3A 0 CODE 0 text11 dist/default/production\LED_fan2.X.production.obj
 mode_snow@walker_pic_i 21 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 ___awdiv 1C78 0 CODE 0 text8 dist/default/production\LED_fan2.X.production.obj
 ___awmod 1D78 0 CODE 0 text7 dist/default/production\LED_fan2.X.production.obj
@@ -1039,8 +1047,8 @@ __Lfardata 0 0 FARRAM 0 fardata dist/default/production\LED_fan2.X.production.ob
 _tc_int 8 0 CODE 0 intcode dist/default/production\LED_fan2.X.production.obj
 mode_walker@F3089 96 0 BANK0 1 dataBANK0 dist/default/production\LED_fan2.X.production.obj
 mode_walker@delay 334 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
-stackhi 5FF 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
-stacklo 34E 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
+stackhi 5FF 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
+stacklo 34E 0 ABS 0 - C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
 mode_walker@pic_i 32C 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 mode_walker@state 330 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
 __Lintcode 8 0 CODE 0 intcode dist/default/production\LED_fan2.X.production.obj
@@ -1088,14 +1096,14 @@ __ptext2 74C 0 CODE 0 text2 dist/default/production\LED_fan2.X.production.obj
 __ptext3 1626 0 CODE 0 text3 dist/default/production\LED_fan2.X.production.obj
 __ptext4 1252 0 CODE 0 text4 dist/default/production\LED_fan2.X.production.obj
 __ptext5 1BF4 0 CODE 0 text5 dist/default/production\LED_fan2.X.production.obj
-__ptext6 1E80 0 CODE 0 text6 dist/default/production\LED_fan2.X.production.obj
+__ptext6 1E7E 0 CODE 0 text6 dist/default/production\LED_fan2.X.production.obj
 __ptext7 1D78 0 CODE 0 text7 dist/default/production\LED_fan2.X.production.obj
 __ptext8 1C78 0 CODE 0 text8 dist/default/production\LED_fan2.X.production.obj
 __ptext9 D10 0 CODE 0 text9 dist/default/production\LED_fan2.X.production.obj
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\LED_fan2.X.production.obj
 mode_clock@display_cycle 27 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 __Ltext11 0 0 ABS 0 text11 dist/default/production\LED_fan2.X.production.obj
-__ramtop 600 0 RAM 0 ramtop C:\Users\Lenovo\AppData\Local\Temp\s1a4.obj
+__ramtop 600 0 RAM 0 ramtop C:\Users\Lenovo\AppData\Local\Temp\s8ek.obj
 __Lpowerup E 0 CODE 0 powerup dist/default/production\LED_fan2.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\LED_fan2.X.production.obj
 mode_clock@bright 31 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
@@ -1122,7 +1130,7 @@ mode_walker@pic_cycle 314 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2
 mode_TransLove@i 25 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\LED_fan2.X.production.obj
 mode_tree@count_4 300 0 BANK3 1 cstackBANK3 dist/default/production\LED_fan2.X.production.obj
-__end_of_main 1E3C 0 CODE 0 text0 dist/default/production\LED_fan2.X.production.obj
+__end_of_main 1E3A 0 CODE 0 text0 dist/default/production\LED_fan2.X.production.obj
 __pintcode 8 0 CODE 0 intcode dist/default/production\LED_fan2.X.production.obj
 _T1CON FCD 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
 _TRISA F92 0 ABS 0 - dist/default/production\LED_fan2.X.production.obj
@@ -1180,7 +1188,7 @@ __Hintcode E 0 CODE 0 intcode dist/default/production\LED_fan2.X.production.obj
 # All other numeric quantities are in decimal.
 %SEGMENTS
 idloc 0 200000 200000 8 1
-text7 0 1D78 1D78 142 1
+text7 0 1D78 1D78 140 1
 cstackCOMRAM 1 1 1 69 1
 cstackBANK3 1 300 300 4E 1
 reset_vec 0 0 0 4 1
