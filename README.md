@@ -35,5 +35,5 @@
 + 箭頭帶動整個圖形往前衝
   + 推測是一回合結束後的額外計算讓整個delay而順著風扇轉動的方向旋轉，化 bug 為效果 (?)
   
-## 影片鏈接
+## Video Link
 感謝TransLove組員拍的[影片](https://drive.google.com/file/d/1thJAmzimf2tKKtVldifW-y-2IbbCIKAz/view)
